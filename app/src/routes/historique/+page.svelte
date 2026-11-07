@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { fetchIndex } from '#lib/api.js';
+  import { BASE, fetchIndex } from '#lib/api.js';
   import { formatDateFR } from '#lib/veille-utils.js';
   import type { Index } from '#lib/types.js';
 
@@ -23,7 +23,7 @@
   <ul class="history">
     {#each index.veilles as v (v.date)}
       <li>
-        <a href="/veille/{v.date}">{formatDateFR(v.date)}</a>
+        <a href="{BASE}veille/{v.date}">{formatDateFR(v.date)}</a>
         <span class="muted">— {v.articlesCount} articles, {v.sourcesCount} sources</span>
       </li>
     {/each}

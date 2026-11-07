@@ -42,7 +42,10 @@ jobs:
           fi
 
       # prebuild (sync-data.mjs) copie data/ -> app/static/data avant le build
+      # VIBE_VEILLE_BASE : GitHub Pages "project" sert le site sous /vibe-veille/
       - run: npm run build -w app
+        env:
+          VIBE_VEILLE_BASE: /vibe-veille
 
       - uses: actions/upload-pages-artifact@v3
         with:

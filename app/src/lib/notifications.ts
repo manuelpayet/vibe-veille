@@ -1,5 +1,7 @@
 // Badge "nouvelle veille" : compare la date de la dernière veille publiée
 // (data/index.json) avec la dernière date vue stockée en localStorage.
+import { BASE } from './api.js';
+
 const KEY = 'veille:lastSeenDate';
 
 export function getLastSeenDate(storage: Storage): string | null {
@@ -35,7 +37,7 @@ export interface AppConfig {
 
 export async function fetchAppConfig(): Promise<AppConfig> {
   try {
-    const r = await fetch('/config.json');
+    const r = await fetch(`${BASE}config.json`);
     if (!r.ok) return {};
     return (await r.json()) as AppConfig;
   } catch {

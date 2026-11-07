@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import '../app.css';
-  import { fetchIndex } from '#lib/api.js';
+  import { BASE, fetchIndex } from '#lib/api.js';
   import { fetchAppConfig, hasNewVeille, markVeilleSeen, ntfySubscribeUrl } from '#lib/notifications.js';
 
   let { children } = $props();
@@ -13,7 +13,7 @@
     const [index, config] = await Promise.all([fetchIndex(), fetchAppConfig()]);
     ntfyUrl = ntfySubscribeUrl(config.ntfyTopic ?? null);
     const latest = index.veilles[0]?.date ?? null;
-    if (latest && window.location.pathname === '/') {
+    if (latest && window.location.pathname === BASE) {
       // visiter la veille du jour la marque comme vue
       markVeilleSeen(latest, localStorage);
       newBadge = false;
@@ -25,12 +25,12 @@
 
 <header class="topbar">
   <nav>
-    <a class="brand" href="/">Vibe Veille</a>
-    <a href="/">
+    <a class="brand" href="{BASE}">Vibe Veille</a>
+    <a href="{BASE}">
       Veille du jour
       {#if newBadge}<span class="badge">Nouveau</span>{/if}
     </a>
-    <a href="/historique">Historique</a>
+    <a href="{BASE}historique">Historique</a>
     <a href={ntfyUrl} target="_blank" rel="noopener noreferrer" title="S'abonner aux notifications push (ntfy)">
       Notifs push
     </a>

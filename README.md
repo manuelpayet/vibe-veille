@@ -39,6 +39,13 @@ rebuild et déploie le site avec les nouvelles données.
    La Push API interdit l'abonnement web push cross-origin, donc la notif proactive passe par
    l'app ntfy ; la PWA affiche en plus un badge « Nouveau » tant que la veille n'est pas lue.
 
+## Déploiement GitHub Pages (project pages)
+
+Le site est servi sous `https://<user>.github.io/<repo>/` : le workflow `deploy-pages.yml`
+build avec `VIBE_VEILLE_BASE=/vibe-veille` (`paths.base` + `paths.relative=false` dans
+`app/vite.config.ts`), donc toutes les URLs (data, manifest, SW, nav) sont préfixées.
+En local/e2e, aucun base path n'est défini (URLs relatives à la racine).
+
 ## Développement local
 
 ```bash

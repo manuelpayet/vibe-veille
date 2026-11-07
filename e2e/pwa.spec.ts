@@ -6,11 +6,11 @@ test('le manifest PWA est servi et valide', async ({ page }) => {
   const manifest = await res.json();
   expect(manifest.name).toBe('Vibe Veille');
   expect(manifest.display).toBe('standalone');
-  expect(manifest.start_url).toBe('/');
+  expect(['./', '/']).toContain(manifest.start_url); // relatif = compatible base path
   expect(manifest.icons.length).toBeGreaterThanOrEqual(2);
-  // le manifest est linké dans le HTML
+  // le manifest est linké dans le HTML (href relatif ou absolu selon le base path)
   await page.goto('/');
-  await expect(page.locator('link[rel="manifest"]')).toHaveAttribute('href', '/manifest.webmanifest');
+  await expect(page.locator('link[rel="manifest"]')).toHaveAttribute('href', /manifest\.webmanifest$/);
 });
 
 test('les icônes sont servies', async ({ page }) => {

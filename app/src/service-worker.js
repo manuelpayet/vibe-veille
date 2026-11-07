@@ -6,7 +6,8 @@ import { version } from '$app/env';
 const CACHE = `vibe-veille-${version}`;
 // en SvelteKit 3, immutable/assets/prerendered sont des { path } (ou des strings)
 const toPath = (x) => (typeof x === 'string' ? x : x.path);
-const ASSETS = [...immutable, ...assets, ...prerendered].map(toPath).concat(['/', '/404.html']);
+// chemins relatifs à la racine du SW (base incluse) : valables à la racine ET sous /vibe-veille/
+const ASSETS = [...immutable, ...assets, ...prerendered].map(toPath).concat(['./', '404.html']);
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
