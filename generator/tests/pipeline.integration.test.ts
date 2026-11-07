@@ -70,7 +70,7 @@ afterAll(async () => {
 describe('runPipeline (intégration, serveur HTTP local)', () => {
   it('produit une veille valide : fenêtre 24h, dédup cross-source, source en échec tolérée', async () => {
     const now = new Date('2026-11-07T10:00:00Z');
-    const veille = await runPipeline({ configPath, outDir, now, windowHours: 24 });
+    const veille = await runPipeline({ configPath, outDir, now, windowHours: 24, llm: false });
 
     // schéma zod
     expect(() => veilleSchema.parse(veille)).not.toThrow();
@@ -106,7 +106,7 @@ describe('runPipeline (intégration, serveur HTTP local)', () => {
 
   it('met à jour index.json sans doublon de date', async () => {
     const now = new Date('2026-11-07T11:00:00Z');
-    await runPipeline({ configPath, outDir, now, windowHours: 24 });
+    await runPipeline({ configPath, outDir, now, windowHours: 24, llm: false });
     const index = JSON.parse(readFileSync(path.join(outDir, 'index.json'), 'utf8'));
     expect(index.veilles).toHaveLength(1);
     expect(index.veilles[0].generatedAt).toBe('2026-11-07T11:00:00.000Z');

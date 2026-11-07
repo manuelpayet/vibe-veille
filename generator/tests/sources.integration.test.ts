@@ -67,7 +67,7 @@ afterAll(async () => {
 describe('pipeline multi-sources (intégration)', () => {
   it('agrège HN + Reddit + statuspage + RSS avec dédup cross-source', async () => {
     const now = new Date('2026-11-07T10:00:00Z'); // fenêtre 24h : tout passe
-    const veille = await runPipeline({ configPath, outDir, now, windowHours: 24 });
+    const veille = await runPipeline({ configPath, outDir, now, windowHours: 24, llm: false });
     expect(() => veilleSchema.parse(veille)).not.toThrow();
 
     const bySource = Object.fromEntries(veille.sources.map((s) => [s.id, s.count]));

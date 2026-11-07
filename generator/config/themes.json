@@ -1,0 +1,60 @@
+{
+  "themes": [
+    {
+      "id": "ccaas-genesys",
+      "label": "CCaaS — Genesys Cloud",
+      "description": "Genesys Cloud : release notes, évolutions API/SDK, auth et rate limits, dépréciations, roadmap. Plateforme principale, impact métier direct."
+    },
+    {
+      "id": "ccaas-aws-connect",
+      "label": "CCaaS — Amazon Connect / AWS",
+      "description": "Amazon Connect et AWS : nouvelles fonctionnalités, intégrations IA (Lex, Contact Lens), pricing, mises à jour SDK/API."
+    },
+    {
+      "id": "ia-contact-center",
+      "label": "IA dans le contact center",
+      "description": "Agents virtuels, résumés d'appels, copilotes agents — le marché qui bouge le plus vite."
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "description": "Releases (3/an), dépréciations et removals d'API, changements de sécurité."
+    },
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "description": "Prometheus, Grafana, OpenTelemetry — releases et breaking changes."
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "description": "CVEs des images de base, politiques d'images, admission, SBOM, scan."
+    },
+    {
+      "id": "cicd-gitlab",
+      "label": "CI/CD — GitLab CI",
+      "description": "Features, breaking changes, évolutions de pricing/licensing — le risque principal est le coût."
+    },
+    {
+      "id": "iac-opentofu",
+      "label": "IaC — OpenTofu",
+      "description": "Releases, migrations, compatibilité registry."
+    },
+    {
+      "id": "helm-traefik",
+      "label": "Helm / Traefik",
+      "description": "Releases majeures, breaking changes de charts et de configuration."
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "description": "Versions LTS et intermédiaires, comportement en conteneur (mémoire, CPU, GC), Spring le cas échéant."
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & tooling",
+      "description": "Maven/Gradle ; en secondaire Poetry/uv et Node LTS — se limiter aux breaking changes."
+    }
+  ],
+  "horsPerimetre": "vLLM, inférence LLM, GPU scheduling (veille perso homelab/self-hosting) : hors veille pro, marquer ces articles avec le thème \"hors-sujet\"."
+}

@@ -16,12 +16,29 @@ export const articleSchema = z.object({
 });
 export type Article = z.infer<typeof articleSchema>;
 
+export const themeSchema = z.object({
+  id: z.string(),
+  label: z.string(),
+  trend: z.string(), // résumé de la tendance du thème, en français (2-3 phrases)
+  topArticles: z.array(z.string()).max(5) // ids des articles du top 5 du thème
+});
+export type Theme = z.infer<typeof themeSchema>;
+
+export const veilleStatsSchema = z.object({
+  llmCalls: z.number(),
+  promptTokens: z.number(),
+  completionTokens: z.number(),
+  estimatedCostEur: z.number()
+});
+
 export const veilleSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   generatedAt: z.string(), // ISO 8601
   window: z.object({ from: z.string(), to: z.string() }),
   sources: z.array(z.object({ id: z.string(), name: z.string(), count: z.number() })),
-  articles: z.array(articleSchema)
+  articles: z.array(articleSchema),
+  themes: z.array(themeSchema).default([]), // rempli par le pipeline LLM (inc 3)
+  stats: veilleStatsSchema.optional() // conso LLM (inc 3)
 });
 export type Veille = z.infer<typeof veilleSchema>;
 
