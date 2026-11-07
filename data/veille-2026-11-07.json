@@ -1,0 +1,885 @@
+{
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T14:13:50.605Z",
+  "window": {
+    "from": "2026-11-06T14:13:50.605Z",
+    "to": "2026-11-07T14:13:50.605Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 18
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 25
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 5
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 1
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 1
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 1
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 6
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 1
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 0
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "e94e46066b7f",
+      "title": "Selfhosting + Beers NL Update",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq6z8j/selfhosting_beers_nl_update/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T13:57:41.000Z",
+      "excerpt": "Because my last post about just having some beers and discussing homelabbing with dutch people from this community got more attention than expected, we have actually set up an event! First edition of homelabbing + beers NL will be held in Utrecht on the 21st of November. Price will be 19 euros and drinks are included. This is to prevent that i have to pay a massive bill by the end lol. More info on exact location and time can be found on discord. If you intend to show up, please set yourself as interested for the event in our newly created discord server: https://discord.gg/qbCrzfpMU Looking forward to seeing you guys at the meetup &#32; submitted by &#32; /u/Harry_Butz [link] &#32; [comments]",
+      "summary": "Premier meetup NL de homelabbing + bières à Utrecht le 21/11 à 19€ (boissons incluses) pour échanger entre passionnés.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "1b9fbe041881",
+      "title": "Is there a device that can play blueray discs and can also play jellyfin from my home server?",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq67vo/is_there_a_device_that_can_play_blueray_discs_and/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T13:20:42.000Z",
+      "excerpt": "I want a device for my kid that can play blueray discs and can also play jellyfin from my home server. They want a TV in their room and I don’t want to give them full access to streaming services outside the living room. I also don’t want to give them a full computer with browser and all that in their room. It would need to have the remote based UI. Something you can control from the bed. I know there are some blue ray players that also have Netflix etc. on them. Is there some way I can make one of those but the only streaming client is Jellyfin? &#32; submitted by &#32; /u/MEGAVOLT343 [link] &#32; [comments]",
+      "summary": "Un lecteur Blu-ray compatible avec Jellyfin permettrait de lire des disques locaux et du streaming depuis un serveur maison, idéal pour un contrôle parental simplifié.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "99c81c611f9c",
+      "title": "Replycant - self-hosted image storage",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq4uhp/replycant_selfhosted_image_storage/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T12:06:52.000Z",
+      "excerpt": "Hi all! I've been working on an open source, self-hosted image management solution for the last 1.5 years. It should be seen as an alternative to iCloud/Google photos/Immich. In august I released the app publicly on github and the iOS app store, and it's stable for daily use. Replycant as of today consists of: - An iOS app on the app store (search for replycant) - A server which is started using docker compose - An electron desktop app for linux/mac/windows - CLI tools for bulk image import from a computer Now, you may ask yourself \"why should I run replycant instead of immich or some other open solution\"? There are a couple of answers to this: Better data durability - for me personally, the most important thing about an image store solution is that it must never, ever, loose any data. In order to guarantee this, multiple servers are needed which replicate between each other. A hard drive crash should not mean that you loose anything. In order to achieve this, the database in replycant is based on Git and Git LFS, which makes it easy to replicate to multiple sites. Multi-server replication in the app is not implemented yet, but will come soon. As of today, backing up to a new site is still easy though by using a \"git clone\" followed by periodic \"git pull\" to sync the latest changes. Better privacy - all data (both metadata in the database as well as photos/videos) are encrypted before leaving the source device. No clear text encryption keys are ever stored on the server. This means that if the server were compromised, no data would be readable. This is important in case of a burglary, or if the server is hacked. However, the real importance comes when combined with the previous point, multi site replication. A simple server such a raspberry pi can be placed in an untrusted location and back up all of your data to a place outside of your home. Simplicity - no configuration of the server or your firewall is needed, a simple \"docker compose up\" is all configuration you",
+      "summary": "Replycant propose un stockage d'images auto-hébergé open source avec réplication Git et chiffrement pour durabilité et confidentialité des données.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "d1a299ba68a7",
+      "title": "Any good, self-hosted family tracking app?",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq41qk/any_good_selfhosted_family_tracking_app/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T11:18:17.000Z",
+      "excerpt": "My wife and I have, for many years, used and relied on Google family location sharing in Google maps, to see each other's location. it worked well for many years, while we all had Android phones. Recently, my wife has moved to an iPhone, and it no longer works. iOS is just a **** when it comes to arbitrarily putting apps to sleep. Despite giving Google maps every single permission and set it on the background always on for location etc, it still doesn't work properly. Sometimes, after a few days of not using, I'll try to check if she made it safely to work, and it will say last reported location like 8 hours ago. We then tried using Home assistant for this. again, same thing happens. after a few days, location just stops being reported. With Google maps it was instant. Many people have recommended Life360 app, but I thought I'd check for a good self-hosted one before trying yet another proprietary third party app. &#32; submitted by &#32; /u/YankeeLimaVictor [link] &#32; [comments]",
+      "summary": "Les solutions auto-hébergées (Google Maps, Home Assistant) échouent à suivre la localisation fiable d'un iPhone en arrière-plan, nécessitant une alternative open-source.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "f37f6b1be280",
+      "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+      "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T11:11:15.000Z",
+      "excerpt": "",
+      "summary": "Discord migre de Electron vers une app native Windows 11 réduisant RAM de 70% et améliorant réactivité, modèle à suivre pour SRE.",
+      "theme": "observabilite",
+      "score": 70
+    },
+    {
+      "id": "fa014ad549e8",
+      "title": "Self-hosting a remote homelab 1,600 km away: Proxmox on a hacked Chromebox, Tailscale mesh, and bypassing CGNAT via Oracle Cloud",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq3hyh/selfhosting_a_remote_homelab_1600_km_away_proxmox/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T10:43:15.000Z",
+      "excerpt": "They say you're officially a homelabber when you start obsessing over the uptime of services that nobody uses but you. I live in an apartment in Mumbai, but my actual bare-metal homelab sits 1,600 km away at the southern tip of India in Kanyakumari. Because I can't just walk over to a closet and power-cycle the box when something breaks, I had to build a setup that genuinely never needs me: automated 3-2-1 backups, automated cellular failover, and a mesh network to bypass ISP double-NAT. Full breakdown with my raw backup bash scripts and network configs: https://adinetech.com/blog/state-of-my-homelab-2026/ ```text [ Tailscale Mesh ] │ │ │ ┌──────────┘ │ └──────────┐ ▼ ▼ ▼ Mumbai (Apt) Oracle Cloud Kanyakumari (Homelab) (Management) (Public Relay) │ │ ├─ OpenWrt Router │ │ ├─ Primary: Fiber │ │ └─ Backup: BSNL 4G │ │ [Public Internet] ─────────┘ └─ Proxmox Hypervisor (Mobile Ingress) ├─ Immich (Photos) ├─ LibreSpeed ├─ Monitoring └─ Windows VM &#32; submitted by &#32; /u/Adinevikash [link] &#32; [comments]",
+      "summary": "Un SRE a auto-hébergé un homelab distant avec Proxmox, Tailscale et Oracle Cloud pour contourner la CGNAT et garantir une haute disponibilité malgré 1600 km de distance.",
+      "theme": "hors-sujet",
+      "score": 40
+    },
+    {
+      "id": "32e361e05004",
+      "title": "LiveReview: a self-hosted alternative to CodeRabbit that auto-approves your low-risk PRs",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq3dea/livereview_a_selfhosted_alternative_to_coderabbit/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T10:34:33.000Z",
+      "excerpt": "Hey r/selfhosted , Most AI code review tools (CodeRabbit, Copilot review, Greptile) are SaaS. Your code goes to their servers, and you pay per seat or per review. We built LiveReview as a self-hosted alternative. It runs on your own infra, so your code never leaves it. GitHub: https://github.com/HexmosTech/LiveReview What it does: - Scores every PR for risk and auto-approves the lowest-risk 30-50%, based on Meta's RADAR paper ( https://arxiv.org/abs/2605.30208 ) - Sends everything else to a human reviewer, with the riskiest hunks at the top - Learns from your own reverts and incidents, so the scoring improves over time Self-hosting details: - Go backend, PostgreSQL, and the River job queue. Postgres is the only datastore, so there's no Redis or separate queue to run. - Works with GitHub, GitLab, Bitbucket, Gitea and Azure DevOps, so it fits a fully self-hosted Gitea or GitLab setup. - Bring your own AI key (Claude, OpenAI, Gemini and 15+ other providers) - No seats and no per-review billing Happy to answer setup questions. I'm also curious whether anyone here would trust auto-approval on their repos. &#32; submitted by &#32; /u/athreyaaaa [link] &#32; [comments]",
+      "summary": "LiveReview, alternative auto-hébergée à CodeRabbit, évalue et approuve automatiquement les PRs à faible risque via une IA auto-apprenante, garantissant confidentialité et réduction de charge pour les SRE.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "7562ac2fd2f3",
+      "title": "Upload Your RAM",
+      "url": "https://uploadyourram.org",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T10:15:26.000Z",
+      "excerpt": "",
+      "summary": "UploadYourRAM permet de sauvegarder la RAM en temps réel pour analyse post-incident, crucial pour le débogage des pannes critiques en production.",
+      "theme": "observabilite",
+      "score": 90
+    },
+    {
+      "id": "5ec03af4da1d",
+      "title": "Every Mac comes with an (undocumented) family member classifier",
+      "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T09:46:03.000Z",
+      "excerpt": "",
+      "summary": "Les Mac intègrent un classifieur familial non documenté pour l'IA Apple, crucial pour la confidentialité et la gestion des données sensibles.",
+      "theme": "securite-supply-chain",
+      "score": 60
+    },
+    {
+      "id": "7d04cbc511d3",
+      "title": "Transcode freeze issues with Intel Arc A310",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq2lkf/transcode_freeze_issues_with_intel_arc_a310/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T09:43:29.000Z",
+      "excerpt": "I'm building a video server and keep hitting a hard freeze I can't pin down. I'd appreciate ideas from anyone who knows Arc (DG2) on Linux, VT-d, or older Xeon platforms. Hardware : ASUS Z10PE-D8 WS, BIOS 4301 (latest) 2× Xeon E5-2696 v4 (Broadwell-EP, 22 cores each), microcode 0xb000040 2× Sparkle Arc A310 4 GB (4×HDMI \"OMNI View\", 8086:56a6 rev 05) - both on CPU 2's slots, PCIe Gen3 x8 and each card has its own PCIe switch in front of the GPU (8086:4fa1), No Resizable BAR on this board (256 MiB BAR) 6 × Kingston valueram 16GB ddr4 2Rx4 PC4-2133P-RA0-11 ECC RDIMM ; memtest clean, EDAC 0 Other PCIE: Intel E810 NIC and a AMD FPGA card Cooler master 1000w Elite Gold (BRAND NEW) Software Ubuntu 24.04, HWE kernel 7.0 (7.0.0-34 and 7.0.0-42 both tested) i915 driver (xe is loaded but not bound) Firmware : GuC 70.53.0, HuC 7.10.16, DMC 2.08, GSC DG02_2.2357 intel-media-driver (iHD) 24.1.0, later 25.2.4; FFmpeg with VA-API VT-d on (translated default domain, lazy flush-queue invalidation), interrupt remapping on (x2APIC) Workload/operation 6 live 1080p50 encodes split across both cards: H.264, HEVC 8/10-bit, AV1 and VP9. Also tested with 8 (4 per card). Each card draws only 14–18 W, at 56–75 °C. Issue: The whole server basically stops at once; every network interface goes silent within 0.2 s. No panic and no reboot, even with kernel.panic=30 and hardlockup_panic=1. My NMI status never reports. netconsole receives nothing. After a reset there are no MCE, BERT, EDAC or AER records, with WHEA on or off. Its not like it turns off, the server still stays powered, fans running; the Q-Code display shows the same AA POST code so nothings different from normal operation. The board's CATT (CATERR) LED is on and ERR_CPU is off in every freeze where we looked (10 of them). I'm thinking its something to do with the CPU IERR, which explain why the OS logs nothing? I'm very confused. Tests : 22 freezes in about total of 113 hours of GPU-encode load. The mean is about 5 h; the range is 24 ",
+      "summary": "Transcodage avec Intel Arc A310 sur Linux provoque des freezes système inexpliqués malgré VT-d et kernel récent, critique pour la stabilité des serveurs vidéo.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "c1dca4124c8a",
+      "title": "Running a law firm on Free software",
+      "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T09:39:06.000Z",
+      "excerpt": "",
+      "summary": "Un cabinet d'avocats utilise uniquement des logiciels libres en 2026 pour réduire les coûts et améliorer la sécurité et l'indépendance technologique.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "fde131457e0e",
+      "title": "Port 0: The Port That Does Not Exist",
+      "url": "https://acid.vegas/blog/the-port-that-does-not-exist/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T09:38:26.000Z",
+      "excerpt": "",
+      "summary": "Le port 0 est un port spécial qui n'existe pas physiquement mais permet de tester la disponibilité des ports sur un système, crucial pour la sécurité et la stabilité des services.",
+      "theme": "securite-supply-chain",
+      "score": 70
+    },
+    {
+      "id": "822aa1f84e50",
+      "title": "Need for Speed Underground 2 online in the browser",
+      "url": "https://nfsu2.xyz/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T09:36:36.000Z",
+      "excerpt": "",
+      "summary": "Un portage navigateur de Need for Speed Underground 2 permet de jouer en ligne via un émulateur web, utile pour tester des infrastructures web temps réel.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "d04f05badc8f",
+      "title": "Gmail replacement - cautious with newer projects",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq247w/gmail_replacement_cautious_with_newer_projects/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T09:11:31.000Z",
+      "excerpt": "I replaced almost all services with selfhosted solutions, but I really struggle to find gmail replacements. Recently I saw some interesting projects like plmail or mailflow. But I'm kind of reluctant due to the vibe coded nature of such projects. Some features I'd like to have: webmail and Android app (pwa or native), usable search, snooze. Easy in and export... I'm not switching to proton to be locked in the next golden cage. Any opinions on mail? edit: great confusion. I'm not looking for a Mail server, just a client &#32; submitted by &#32; /u/momsi91 [link] &#32; [comments]",
+      "summary": "Les projets auto-hébergés de clients mail (plmail, mailflow) manquent de maturité pour remplacer Gmail en production, malgré des besoins critiques comme la recherche ou l'export.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "5df37d96a361",
+      "title": "Saw this randomly and wanted to know if Immich is actually worth it?",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xq1a4u/saw_this_randomly_and_wanted_to_know_if_immich_is/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T08:16:35.000Z",
+      "excerpt": "Google Photos: The Greatest Bait & Switch in Tech History long story short, I've just been hit by the \"storage low\" and the idea of having to pay a subscription fee forever to store photos sounds stupid imo. But the low story warning is looming over my main email account and I have an old pc lying around, so maybe I can self host the photos. Though the video mentioned Immich and it seems like a great alternative? Opinions please? before I commit to it. &#32; submitted by &#32; /u/fr3akeeee [link] &#32; [comments]",
+      "summary": "Immich est une alternative open-source à Google Photos pour l'auto-hébergement, évitant les coûts d'abonnement et la dépendance cloud.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "594105e3c519",
+      "title": "The Components of Agent Memory",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T06:39:04.000Z",
+      "excerpt": "",
+      "summary": "Les composants de la mémoire d'agent d'Anthropic optimisent les interactions IA en stockant et récupérant efficacement les données contextuelles.",
+      "theme": "ia-contact-center",
+      "score": 50
+    },
+    {
+      "id": "3c0601738349",
+      "title": "Two GPUs, multiple models, which ones should get a dedicated card?",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpyyfq/two_gpus_multiple_models_which_ones_should_get_a/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T05:53:49.000Z",
+      "excerpt": "We’re a team of 3 sharing one box with two GPUs, like 24GB card and a 16GB card and we need to run several models: a couple of 7B ones plus a few smaller low-traffic ones. I’m considering to try GPUStack for unified deployment and GPU allocation, and real question is how to split the two cards. heres my two option. Option A: pin one GPU per model,each model gets its own card, clean isolation, no contention. Option B: pack the low-traffic small models together onto one card and leave the other card for the main model. That stretches the hardware further,but those small models are VRAM and compete when they all get hit at once. So just curious what do people actually do here? if u’ve got only two cards but the team needs several models,how do you split them? &#32; submitted by &#32; /u/Matchalovadoncha [link] &#32; [comments]",
+      "summary": "Pour deux GPU et plusieurs modèles LLM, isoler les modèles critiques sur des cartes dédiées évite les contentions et garantit des performances stables.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "fc1a648a0e29",
+      "title": "v0.165.0",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.165.0",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-07T05:38:26.000Z",
+      "excerpt": "Check the v0.165.0 contrib changelog and the v0.165.0 core changelog for changelogs on specific components. Changelog b9425f2 Update version to 0.165.0 ( #1760 ) 05ba854 Update OpenTelemetry Collector Components ( #1759 )",
+      "summary": "Mise à jour v0.165.0 du Collector OpenTelemetry avec corrections et évolutions des composants critiques pour la collecte de télémétrie.",
+      "theme": "observabilite",
+      "score": 95
+    },
+    {
+      "id": "2a38654faf67",
+      "title": "cmd/opampsupervisor/v0.165.0",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.165.0",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-07T05:02:45.000Z",
+      "excerpt": "Release of OpAMP supervisor artifacts",
+      "summary": "Nouvelle version v0.165.0 du superviseur OpAMP pour le Collector OpenTelemetry, améliorant la stabilité et la gestion des agents.",
+      "theme": "observabilite",
+      "score": 90
+    },
+    {
+      "id": "1c873f1c6459",
+      "title": "cmd/builder/v0.165.0",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.165.0",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-07T05:00:37.000Z",
+      "excerpt": "Images and binaries for collector distributions here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.165.0",
+      "summary": "Nouvelle version v0.165.0 du builder OpenTelemetry Collector avec images et binaires mis à jour pour les distributions.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "d482c20de9cd",
+      "title": "A barbarian tribe's mythic origin story is true, ancient DNA reveals",
+      "url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T04:54:36.000Z",
+      "excerpt": "",
+      "summary": "L'ADN ancien confirme l'origine mythique d'une tribu barbare, validant des récits historiques pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "d232cdc6bf55",
+      "title": "Help with Moememos and Memos selfhosted Notes",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpxsis/help_with_moememos_and_memos_selfhosted_notes/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T04:48:09.000Z",
+      "excerpt": "I'm having issues with Moememos and I'm getting this error: https://preview.redd.it/yff8nelve40i1.png?width=367&format=png&auto=webp&s=ab272c4cf6ec4dd790679b21618457139cebfd2d Anyone using this setup know how to fix this? If not any notes app alternative that is similar to memos and has an iOS app and easy to setup &#32; submitted by &#32; /u/International-Table1 [link] &#32; [comments]",
+      "summary": "Problème technique avec Moememos (notes auto-hébergées) nécessitant un dépannage ou une alternative compatible iOS et simple à déployer pour un SRE.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "e85099569214",
+      "title": "freemyip.com",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpw7fa/freemyipcom/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T03:21:55.000Z",
+      "excerpt": "Peace be upon you. I decided to try out freemyip.com for a static domain for my self hosted homelab, and I used 071120261107am and 5 other domains (based on date and time stamp) for my 5 devices in my homelab. Each device had an IPv4 address 192.168.1.101 , etc. However, suddenly all domains were suspended and I get an error message: Daily limit of 3 new domains exceeded. This proves freemyip.com is not transparent on their terms of service as it has no TOS or AUP. My script will automatically sign up for 5 domain names with private IPv4 addresses and it used to work until the operator of freemyip.com shut it down. This shows the operator of freemyip.com is a child running a service, and I advise others to be careful of this service. &#32; submitted by &#32; /u/RevolutionaryWin5539 [link] &#32; [comments]",
+      "summary": "freemyip.com suspend des domaines sans TOS clair après dépassement de quota, risquant des interruptions critiques pour un homelab SRE.",
+      "theme": "hors-sujet",
+      "score": 40
+    },
+    {
+      "id": "84a83fde43b2",
+      "title": "VaultWarden or KeePassXC",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpvrr1/vaultwarden_or_keepassxc/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T02:59:18.000Z",
+      "excerpt": "Hi folks. Finished migrating my email and calendar off of Proton and o to Tuta. But now looking to replace my Proton Password manager and Secrets manager. I had been thinking about KeePassXC but recently have had some recommendations for VaultWarden as a better solution. In case it’s not obvious, I’m looking at self hosting this and not cloud. Thank you &#32; submitted by &#32; /u/sevenisthekeynumber [link] &#32; [comments]",
+      "summary": "VaultWarden est recommandé comme alternative auto-hébergée à KeePassXC pour gérer mots de passe et secrets en production.",
+      "theme": "securite-supply-chain",
+      "score": 70
+    },
+    {
+      "id": "d7a3ac74ac55",
+      "title": "cmd/opampsupervisor/v0.165.0-nightly.202611070210",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.165.0-nightly.202611070210",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-07T02:10:48.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly v0.165.0 de l'OpAMP Supervisor pour le Collector OpenTelemetry, améliorant la supervision des agents.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "d01f1338ed3c",
+      "title": "cmd/builder/v0.165.0-nightly.202611070210",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.165.0-nightly.202611070210",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-07T02:10:48.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.165.0) pour tester les fonctionnalités avant stabilisation.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "3e41f59f272d",
+      "title": "v0.165.0-nightly.202611070210",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.165.0-nightly.202611070210",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-07T02:10:37.000Z",
+      "excerpt": "v0.165.0-nightly.202611070210: nightly build",
+      "summary": "Nouvelle version nightly du Collector OpenTelemetry avec corrections de bugs critiques pour la stabilité des pipelines observabilité.",
+      "theme": "observabilite",
+      "score": 90
+    },
+    {
+      "id": "e150406181d2",
+      "title": "Built a self-hosted retro library for my Synology so I could play on the living room TV",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpthnv/built_a_selfhosted_retro_library_for_my_synology/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T01:04:27.000Z",
+      "excerpt": "I'm the dev. Figured I'd share this here because a bunch of the design decisions came from hanging around self-hosted setups like yours. I got tired of the usual mess: ROMs copied onto every device, saves living in three different places, and half the \"living room\" apps feeling like phone UIs stretched onto a TV. I already had a Synology, so I wanted the boring version of the dream: - games stay on the NAS - TV just browses and plays - no account, no cloud from me, no ads So I built Retro Console around that. There's a small library server you run yourself (Docker on a normal machine, or a native DSM 7 SPK on Synology). It keeps the library organized — covers, categories, saves — and serves it on your LAN. Clients are Android TV, Apple TV, iPhone, and a Mac app. Point the client at something like http://NAS_IP:8282/library/, pair a controller, done. I care a lot about the couch stuff that usually feels broken: menu focus not leaking into the game, sane d-pad repeat timing, game keeping its aspect ratio instead of getting stretched. Sounds minor until you live with it every night. Privacy is intentionally boring. No login. No analytics. The apps only talk to the server/devices you set up. I don't get your library, play history, or credentials. Systems in the public build are the usual classics plus some arcade: NES/SNES, N64, Sega stuff, GB/GBC/GBA, WonderSwan, NGP, Atari, PS1, PC Engine, Neo Geo/Capcom/etc. Compatibility is game-by-game, some titles need BIOS files you provide, arcade wants proper complete sets. The downloads ship with none of that on purpose. There's one original mini trainer game so you can poke at controls before importing anything. Stuff I'd tell a friend before they install it: - treat it as LAN-first; don't port-forward this thing to the internet - HTTP library server can do save sync across devices; SMB is more limited - Android TV is sideload APK for now - Synology needs Node.js 18+ from Package Center, then manual SPK install, and the inter",
+      "summary": "Création d'une bibliothèque rétro auto-hébergée sur Synology pour centraliser ROMs et sauvegardes, évitant la fragmentation et améliorant l'expérience TV avec une interface adaptée.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "66c0b3fb9745",
+      "title": "Launched a server explorer for Speedtest Tracker",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpt8ww/launched_a_server_explorer_for_speedtest_tracker/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-07T00:52:58.000Z",
+      "excerpt": "👋 Speedtest Tracker dev here, I launched a new server browser! Announcement: https://github.com/alexjustesen/speedtest-tracker/discussions/2915 ✅ Server browser and map ✅ Server submissions through from the API (web) or CLI ✅ Rate server quality ✅ Leave server feedback ✅ Server API, docs: https://explorer.speedtest-tracker.dev/docs/api#/ ✅ MCP for your clankers &#32; submitted by &#32; /u/JDMhammer [link] &#32; [comments]",
+      "summary": "Speedtest Tracker lance un explorateur de serveurs pour évaluer leur qualité via API, CLI ou interface web, crucial pour optimiser les tests de latence et performance SRE.",
+      "theme": "observabilite",
+      "score": 70
+    },
+    {
+      "id": "4e82298f18d8",
+      "title": "RealPage rent-pricing case wraps with nearly $360M to renters",
+      "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T23:37:19.000Z",
+      "excerpt": "",
+      "summary": "RealPage condamné à verser près de 360M$ aux locataires pour pratiques de tarification automatisée jugées anticoncurrentielles, impactant les coûts SRE.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "68be897c8b54",
+      "title": "Libghostty 1.0",
+      "url": "https://mitchellh.com/writing/libghostty-1-0",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T23:30:52.000Z",
+      "excerpt": "",
+      "summary": "Libghostty 1.0 est une bibliothèque Rust pour émuler des terminaux, améliorant la fiabilité et la sécurité des outils SRE.",
+      "theme": "securite-supply-chain",
+      "score": 60
+    },
+    {
+      "id": "317a771eb373",
+      "title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-06T22:47:00.000Z",
+      "excerpt": "Today, Kimi K3.1 Pro from Moonshot AI is available on Amazon Bedrock, expanding our open weight model portfolio with the security and governance that customers rely on. Customers using Amazon Bedrock can now run agentic use cases such as coding and document processing on Kimi K3.1 Pro (Highspeed), which delivers high output tokens per second (OTPS) for faster, more responsive results. According to Moonshot AI, Kimi K3.1 Pro is an open-weight, natively multimodal agentic model with a 1-million-token context window, and its most capable 3-trillion-parameter-class model to date. Moonshot AI reports improvements in coding, 3D creation, financial research, and other agentic work. On Amazon Bedrock, it runs within the same security boundary as proprietary models and supports explicit prompt caching to reduce latency and input costs. Kimi K3.1 Pro is available in all AWS Regions where Amazon Bedrock is available through cross-Region inference. To get started, visit the Amazon Bedrock console . To learn more, see the Amazon Bedrock documentation .",
+      "summary": "Kimi K3.1 Pro (Highspeed) disponible sur Amazon Bedrock pour des tâches agentiques rapides et sécurisées avec un contexte d'1M de tokens et 3T de paramètres.",
+      "theme": "ia-contact-center",
+      "score": 80
+    },
+    {
+      "id": "da5be2ad99c8",
+      "title": "Server setup help/advice",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpqatz/server_setup_helpadvice/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T22:35:42.000Z",
+      "excerpt": "Ok guys I need some guidance, I currently have a server that I’ve been tinkering with and running for a couple of years now but I’ve only got basically Jellyfin with Arr stack running and AMP server hosting but it’s purely on bare metal. I have already run into conflicts and have tons of different drivers for different programs and components all installed messily onto the one server but it currently works. Basically I want to start running Proxmox to help with cleaning things up and being able to tinker with different programs without disrupting what I already have and docker seems like something I want to utilise as well but I just don’t quite understand what would be the best setup for me. I know I can turn my bare metal install into a Proxmox VE but with how messy it is should I just scrap it and reinstall everything fresh? I just want to get some advice and maybe hear about any alternatives or suggestions that anyone has for me. I’m sorry about this blob of text, I never post on reddit I just peer in to look from time to time so I don’t really know proper formatting and such. Thank you in advance for any advice given. &#32; submitted by &#32; /u/abobunny [link] &#32; [comments]",
+      "summary": "Migration vers Proxmox + Docker pour isoler les services, éviter les conflits et simplifier la gestion d'un serveur auto-hébergé instable.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "52718c394b16",
+      "title": "M1 Pro, 16GB as a homelab or shall I sell it for a mini pc?",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpp27c/m1_pro_16gb_as_a_homelab_or_shall_i_sell_it_for_a/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T21:43:03.000Z",
+      "excerpt": "I got an M1 Pro (14\", 16GB RAM) just sitting on my desk collecting dust. No bare-metal Proxmox sucks. Is it worth running on macOS/Docker, or am I better off selling it​? The built-in battery on the MacBook makes it a solid zero-cost UPS setup. ​I need to run Home Assistant, jellyfin, Immich, 3-4 camera streams (Frigata/Scrypted natively​) and other stuff like everyone else in this sub. &#32; submitted by &#32; /u/Qwerty44life [link] &#32; [comments]",
+      "summary": "Un M1 Pro 16GB peut servir de homelab pour Docker (Home Assistant, Jellyfin, Immich) grâce à sa batterie comme UPS, mais Proxmox bare-metal n'est pas viable.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "a321eadf31f7",
+      "title": "WD MyCloud support caught me off guard.",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpo77q/wd_mycloud_support_caught_me_off_guard/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T21:07:07.000Z",
+      "excerpt": "Call me un-aware, living under a rock, whatever...But my PR2100, that still works, which I've had since 2019 is now going to lose remote access come December. I mainly use it for file storage and a handful of plex streams, but I have enjoyed being able to access my files remotely through browser. I'm stuck between \"load unraid and hax0r-fy the fan\" or \"maybe I should just build my own to future proof corporate shenanigans\". I like the footprint and the ease of use that the PR2100 brought me in the past. I really don't want to buy another NAS, this put me off. What would you recommend if you were to build a pr2100 clone? &#32; submitted by &#32; /u/UberWagen [link] &#32; [comments]",
+      "summary": "WD MyCloud PR2100 perd l'accès distant en décembre 2024, poussant à migrer vers une solution auto-hébergée pour éviter les dépendances constructeur.",
+      "theme": "hors-sujet",
+      "score": 40
+    },
+    {
+      "id": "ffe6d7d4786d",
+      "title": "Docker network configuration",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpnina/docker_network_configuration/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T20:39:08.000Z",
+      "excerpt": "Hello So I have a very specific question but first some context I have an Ubuntu server running several docker container, from which I’m running radarr, sonarr, and all the arrs. It’s working fine but sometimes I see that some torrents take really long to download and would like to improve it. Currently I have a subscription to Real Debrid service which I use on Stremio before a knew about the arrs so I would like to use it to download torrents. I found a download client that uses Real Debrid to get torrent downloads ( https://github.com/rogerfar/rdt-client ) and wan to include it to my setup, it replaces qBitTorrent as it uses the same API so it seems straightforward but here comes my concern: my server is running on my Tailnet so I cans have remote access but my family uses Stremio and I’m afraid that Real Debrid would detect the two different IPs and ban my account (I had a warning before, I was using Stremio at my girlfriend’s house so I know it checks the IPs). So my questions are: Is there a way create this client container to use the network interface that is not my VPN and being able to connect to radarr and sonarr? All of my arrs are running the same bridge docker network. Does it worth to integrate a service like Real Debrid on my servarr setup? Would it be easier just to have another subscription just for my server? Am I just complicating things and this torrent download issues can be resolved differently? I would appreciate your assistance and any tips you can give me. Thanks! &#32; submitted by &#32; /u/GuaKMolee [link] &#32; [comments]",
+      "summary": "Configurer Docker pour isoler le réseau du client Real Debrid (rdt-client) hors VPN afin d'éviter les bannissements tout en gardant les arrs sur le bridge.",
+      "theme": "kubernetes",
+      "score": 50
+    },
+    {
+      "id": "408898b35a01",
+      "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T20:09:14.000Z",
+      "excerpt": "",
+      "summary": "Google rachète un site de data center à Crusoe dans le Wyoming pour renforcer son infrastructure cloud et réduire les coûts énergétiques.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "f54275d0e242",
+      "title": "pkg/storage/dbproxy/v0.1.0",
+      "url": "https://github.com/grafana/grafana/releases/tag/pkg%2Fstorage%2Fdbproxy%2Fv0.1.0",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-06T20:09:10.000Z",
+      "excerpt": "Release dbproxy v0.1.0",
+      "summary": "Grafana publie dbproxy v0.1.0 pour optimiser les requêtes de stockage, améliorant la performance et la fiabilité des SRE.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "ef2a83f7f3a4",
+      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T19:48:51.000Z",
+      "excerpt": "",
+      "summary": "Un juge LLM (Jev) améliore la précision des modèles Opus en réduisant les coûts de 4x pour la résolution d'identité.",
+      "theme": "ia-contact-center",
+      "score": 70
+    },
+    {
+      "id": "b3c6e599ba57",
+      "title": "Agent Registry is now generally available in AWS GovCloud (US-West) Region",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-06T19:48:00.000Z",
+      "excerpt": "AWS Agent Registry, available through Amazon Bedrock AgentCore, is now available in the AWS GovCloud (US-West) Region. AWS Agent Registry is a fully managed discovery service that gives your organization a central catalog for organizing, curating, and discovering resources. You can publish MCP servers, tools, agents, agent skills, and custom resources to a searchable registry, and control what becomes discoverable through an approval workflow. People and AI agents can then find the right tools and agents through hybrid search, catalog browsing, and a native MCP endpoint. With Agent Registry in AWS GovCloud (US-West), public sector organizations and their partners get a single governed inventory of the agents and tools in their environment. Approval workflows and AWS CloudTrail audit logs support their compliance and oversight requirements. To get started, see the AWS Agent Registry documentation .",
+      "summary": "AWS Agent Registry est désormais disponible dans AWS GovCloud (US-West) pour centraliser et gouverner les agents et outils MCP, renforçant la conformité et la découverte sécurisée pour le secteur public.",
+      "theme": "ia-contact-center",
+      "score": 60
+    },
+    {
+      "id": "f441801c064c",
+      "title": "Firecracker VM Escape: PwnEscape Part 2",
+      "url": "https://pwn.ai/blog/firecracker-escape",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T19:33:38.000Z",
+      "excerpt": "",
+      "summary": "Une faille d'échappement de VM dans Firecracker permet une élévation de privilèges critique, impactant la sécurité des environnements serverless.",
+      "theme": "securite-supply-chain",
+      "score": 90
+    },
+    {
+      "id": "e8ad3aaf9c4e",
+      "title": "GitHub's new Git storage architecture",
+      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T19:24:21.000Z",
+      "excerpt": "",
+      "summary": "GitHub adopte une nouvelle architecture de stockage Git pour améliorer performance, scalabilité et résilience des dépôts.",
+      "theme": "securite-supply-chain",
+      "score": 80
+    },
+    {
+      "id": "7f1ae8a0ef66",
+      "title": "Restaurant Delivery Payment-Skimming Campaign",
+      "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T19:19:27.000Z",
+      "excerpt": "",
+      "summary": "Une campagne de skimming des paiements de livraison de restaurants cible les SRE pour voler des données bancaires via des attaques ciblées.",
+      "theme": "securite-supply-chain",
+      "score": 70
+    },
+    {
+      "id": "eed4f6a4892a",
+      "title": "Projects to replace the lost RSS feeds?",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpkrec/projects_to_replace_the_lost_rss_feeds/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T18:48:10.000Z",
+      "excerpt": "Anybody have any ideas for replacing the loss of Reddit's RSS feeds? I've probably been using the front page RSS feed for over a decade to get reddit posts. On my phone I like to check specific subreddits, but on my desktop I like to just have an unfiltered firehose of everything hitting /r/all . ( http://www.reddit.com/.rss ) Is it possible to replicate that? I briefly did some looking. There's an open-source project called redlib - the main project seems nearly dead and while there are forks, nothing seems to be consistently functional these days. &#32; submitted by &#32; /u/ASK_ME_AB0UT_L00M [link] &#32; [comments]",
+      "summary": "Les utilisateurs cherchent des alternatives open source aux flux RSS de Reddit, essentiels pour l'agrégation de contenu, mais les solutions actuelles sont instables ou abandonnées.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "affa4b2656cc",
+      "title": "And if u self-host ur own YouTube? Not a bad idea, no?",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpkhdt/and_if_u_selfhost_ur_own_youtube_not_a_bad_idea_no/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T18:37:09.000Z",
+      "excerpt": "Website: https://typetype.video/ TypeType is an open-source, self-hosted video app for YouTube, NicoNico and BiliBili. Run one instance, then keep your subscriptions, history, playlists, favorites, watch progress and settings on your own server. Everything stays synchronized across the web, Android, Android TV and iOS apps. It includes search across all three services, subscriptions in chronological order, SponsorBlock, DeArrow, downloads, audio only, subtitles, background playback, Picture in Picture and a playback queue. TypeType has four clients, Web, Android, Android TV and a native iPhone and iPad app, all connected to the same instance. (Go see the website if u want 📸) The whole stack runs with Docker Compose. One command installs the Kotlin/Ktor backend, React frontend, PostgreSQL, Dragonfly, media proxy, token service and downloader service: curl -fsSL https://typetype.video/install | bash The installer generates the secrets and asks before starting anything. Manual setup, update and rollback guides are also available. TypeType now has 450+ GitHub stars and a lovely community testing betas, reporting bugs, translating the apps, contributing code and helping each other. The iOS app currently needs to be sideloaded as an IPA. We’re broke rn and Apple’s developer account costs roughly $100 per year, so there’s no App Store listing yet. AI is used as a development tool, with a full public disclosure explaining how. Every merged change still needs human review, testing and responsibility (that is me) GitHub Public instance (USE IT JUST TO TEST IF U WANT A GOOD EXPERIENCE HOST IT URSELF PLEASE !) Quick start And the most important thing AI transparency &#32; submitted by &#32; /u/Electronic-Sky-9128 [link] &#32; [comments]",
+      "summary": "TypeType permet d'auto-héberger une alternative open-source à YouTube avec synchronisation multi-appareils et Docker Compose pour un contrôle total des données et de la confidentialité.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "17a0037d718f",
+      "title": "Any agent anywhere: How to use Grafana Cloud with Claude, Cursor, and any other AI agent",
+      "url": "https://grafana.com/blog/any-agent-anywhere-how-to-use-grafana-cloud-with-claude-cursor-and-any-other-ai-agent/",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-06T18:37:07.000Z",
+      "excerpt": "AI agents are becoming part of everyday engineering workflows, helping teams write code, troubleshoot issues, and automate tasks. But to be truly useful in production, these agents need access to more than code. They also need observability data and context to understand what&#039;s happening across your systems, investigate problems, and help you take action. At Grafana Labs, we believe that context should be available wherever you work. That’s one of the core ideas behind Grafana Cloud as the open agentic observability platform: the flexibility to work with your observability data through the AI agents you prefer—whether it’s Grafana Assistant , a coding agent in your IDE, or a tool you’ve built yourself—so you can investigate and troubleshoot issues without switching tools. In this post, we&#039;ll explore how to bring Grafana Cloud into your agentic workflows using tools like the Grafana Cloud MCP server and gcx , with practical examples along the way. You can also check out our ObservabilityCON 2026 talk in the video below to learn more. Three ways to use Grafana Cloud with AI agents There are multiple ways to bring Grafana Cloud observability data and context into your AI workflows, depending on where and how you prefer to work: Work directly in Grafana Cloud: Use Grafana Assistant, the AI-powered assistant built into Grafana Cloud, to investigate issues and interact with your observability data. Connect your preferred AI agent: Use the Grafana Cloud MCP server to bring Grafana Cloud data into compatible tools such as Claude, ChatGPT, and Codex. Work with coding agents and scripts: Use gcx, the Grafana Cloud command-line tool, to give coding agents access to observability data directly from their working environment. Whether you&#039;re working directly in Grafana Cloud with Grafana Assistant or using your own AI agents, you can choose the approach that works best for you. Let&#039;s look at how the Grafana Cloud MCP server and gcx make that possible outside o",
+      "summary": "Grafana Cloud intègre l'observabilité aux agents IA (Claude, Cursor) pour investiguer et résoudre des incidents sans changer d'outil, améliorant la réactivité SRE.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "4714a96ad9d2",
+      "title": "Devvm.dev: One VM for every project",
+      "url": "https://devvm.dev/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T17:30:22.000Z",
+      "excerpt": "",
+      "summary": "Devvm.dev crée une VM dédiée par projet pour isoler les environnements de développement, réduisant les conflits de dépendances et simplifiant la reproductibilité.",
+      "theme": "kubernetes",
+      "score": 70
+    },
+    {
+      "id": "11a6a90a0e90",
+      "title": "Odograph: A self-hosted mileage tracker that calculates IRS deductions for business travel.",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpipiz/odograph_a_selfhosted_mileage_tracker_that/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T17:28:48.000Z",
+      "excerpt": "Odograph: a self-hosted mileage tracker I built because I didn't want to pay a subscription (or hand over my location) to log my drives between gigs Hello! I'm sharing a project I started in July and have been using every day since. I'm a pianist, so my work week is a lot of driving: piano students, rehearsals, gigs. All of that is deductible mileage, which means I need a log. I was using Everlance, but automatic trip detection is a paid feature, and I had no real idea what they were doing with my location data. So I built my own. Odograph is a self-hosted mileage tracker. Your phone sends its location to your own server through OwnTracks or Traccar Client (both free), Odograph turns that into trips with routes on a map, and you tag each one business or personal. It also handles manual trips, vehicle expenses, odometer reconciliation, reminders for untagged trips, and IRS mileage deduction estimates (that last part is US-only, the tracking itself works anywhere). How I use it: OwnTracks on my iPhone running in the background, Odograph on my home server behind a reverse proxy. I drive to my students and gigs like normal, then every few days I open the dashboard and tag whatever's new. On a day with about 75 miles of driving it costs me around 2 to 4% battery. Since July it's logged just under 4,000 miles for me. What's there now (v1.4.0 shipped this week): - Automatic trip detection with gap handling, merge and split - Business/personal tagging with reminders - Vehicle expenses and odometer checks - Deduction reports using IRS standard rates - Portable export and import of your data - Docker Compose install, signed GHCR images Everything lives in your own Postgres database. No telemetry, no accounts, no phoning home. It's AGPL-3.0 and on GitHub: https://github.com/MeandrousShark/odograph I'd love feedback, especially from Android users since I've only measured battery on iPhone. Happy to answer questions! &#32; submitted by &#32; /u/jackdog1997 [link] &#32; [comments",
+      "summary": "Odograph est un outil auto-hébergé de suivi de trajets pour calculer les déductions fiscales IRS, garantissant confidentialité et contrôle des données.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "6f973ebf81c3",
+      "title": "9.9.0",
+      "url": "https://github.com/gradle/gradle/releases/tag/v9.9.0",
+      "source": "gradle-releases",
+      "sourceName": "Gradle (releases GitHub)",
+      "publishedAt": "2026-11-06T17:17:32.000Z",
+      "excerpt": "The Gradle team is excited to announce Gradle 9.9.0. Here are the highlights of this release: Performance improvements for Kotlin DSL compilation Test filtering for non-method JUnit Platform tests Wrapper settings preserved on upgrade Predefined groups in the Problems API Read the Release Notes We would like to thank the following community members for their contributions to this release of Gradle: Aurimas , devareddy05 , DragonFSKY , fru1tworld , Ivan Khanas , Jeremy Schoemaker , John Burns , Labh R Jethe , Marcin Mycek , monkey , Nelson Osacky , Roberto Perez Alcolea , Róbert Papp , SeungTaek Lim , Stefan Oehme , 万彬宇 , 한의준 . Upgrade instructions Switch your build to use Gradle 9.9.0 by updating your wrapper: ./gradlew :wrapper --gradle-version=9.9.0 && ./gradlew :wrapper See the Gradle 9.x upgrade guide to learn about deprecations, breaking changes and other considerations when upgrading. For Java, Groovy, Kotlin and Android compatibility, see the full compatibility notes . Reporting problems If you find a problem with this release, please file a bug on GitHub Issues adhering to our issue guidelines. If you're not sure you're encountering a bug, please use the forum . We hope you will build happiness with Gradle, and we look forward to your feedback via Twitter or on GitHub .",
+      "summary": "Gradle 9.9.0 améliore les performances du Kotlin DSL et ajoute des filtres de tests JUnit, crucial pour optimiser les pipelines CI/CD.",
+      "theme": "build-tooling",
+      "score": 80
+    },
+    {
+      "id": "26c3f6131480",
+      "title": "Notes on San Marino",
+      "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T17:12:05.000Z",
+      "excerpt": "",
+      "summary": "San Marino a migré vers Kubernetes pour moderniser son infrastructure, réduisant les coûts et améliorant la résilience des services critiques.",
+      "theme": "kubernetes",
+      "score": 85
+    },
+    {
+      "id": "20c1278149bb",
+      "title": "First steps in bare-metal programming using UEFI",
+      "url": "https://kevinboone.me/efitest_index.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-06T16:50:29.000Z",
+      "excerpt": "",
+      "summary": "Découvrir la programmation bare-metal avec UEFI pour maîtriser le boot et l'interaction bas niveau, cruciale pour la fiabilité des systèmes.",
+      "theme": "securite-supply-chain",
+      "score": 60
+    },
+    {
+      "id": "99fef4ba3dbb",
+      "title": "Seerr Help",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xphgvi/seerr_help/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T16:41:41.000Z",
+      "excerpt": "Hey all, recently changed to Starlink from AT&T and potentially this relates to the issue but my Seerr service is not working now that I'm trying to use it. Radarr and Sonarr don't provide any errors when accessing them. All services are still up and running. Just can't search in Seerr and download movies / shows. Any ideas as to what would cause this? Thank you &#32; submitted by &#32; /u/MiserableShoulder648 [link] &#32; [comments]",
+      "summary": "Seerr ne fonctionne plus après migration vers Starlink, bloquant les recherches et téléchargements malgré Radarr/Sonarr opérationnels.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "dc50e30a6ca2",
+      "title": "Hound v0.4.3 - A Media Server Alternative to Plex/Jellyfin + Stremio",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpgkg3/hound_v043_a_media_server_alternative_to/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T16:06:37.000Z",
+      "excerpt": "Hound is now over 3 years old, and has received significant updates since the last post. What is Hound Media Server? Hound is an organically coded, completely self-hosted, open-source media server, like Plex/Jellyfin, but with the extra ability to stream content instantly through P2P (torrent), HTTP, debrid, and usenet sources by integrating with the Stremio addon ecosystem. With Hound, you have the flexibility of fully controlling your media like Jellyfin, but can also stream instantly ala streaming services. Demo Access the demo here . username: selfhosted password: password Links Github Repo Documentation <-- Installation instructions here Subreddit <-- Follow updates Discord <-- Completely new, but get support here Github Repo (Android/iOS apps) Core Features Well-maintained, organically coded project Stream your own files, or from p2p/debrid, http, and usenet sources The web app can decode videos client-side with no transcoding including .mkv files, H.265, AC3, and other codecs that are usually tricky on browsers Almost zero configuration, setup in <10 minutes Hound was originally built as a media tracker (hence the name), so it has robust features such as collections, reviews, comments, watch history/activity. All your watches are automatically tracked. UI/UX is a core focus, designed with grandparents using this in mind Updates Hound is now available for iOS and tvOS through Testflight, and Android and Android TV through play store closed testing. Powerful web player plays .mkv containers and almost all mainstream codecs Fully customizable home rows/catalogs Recommendations engine Skip Intro support IPTV support Platforms Android, Android TV iOS, tvOS Web (with a powerful player) Windows, MacOS (electron-based) Why? When I set up Jellyfin for my friends and family, I found that they kept switching back to Netflix because it was more convenient. Today, the Plex/Jellyfin ecosystem is quite mature. But for some (especially older) people, using a separate app, re",
+      "summary": "Hound v0.4.3 propose un serveur média auto-hébergé alternatif à Plex/Jellyfin avec streaming instantané via P2P, HTTP, debrid et usenet via Stremio.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "d52d67ed0704",
+      "title": "Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West) Regions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-06T16:00:00.000Z",
+      "excerpt": "You can now use Amazon MSK Replicator in the AWS GovCloud (US-East, US-West) Regions to replicate streaming data across Amazon MSK clusters and from external Apache Kafka clusters including on-premises, self-managed on AWS, or other cloud providers to Amazon MSK Provisioned clusters. MSK Replicator is a feature of Amazon MSK that automates data replication between Kafka clusters, eliminating the need to manage custom replication infrastructure or configure open-source tools. With MSK Replicator, you can easily build regionally resilient streaming applications for increased availability and business continuity. MSK Replicator provides automatic asynchronous replication across Kafka clusters, eliminating the need to write custom code, manage infrastructure, or setup cross-region networking. MSK Replicator automatically scales the underlying resources so that you can replicate data on-demand without having to monitor or scale capacity. MSK Replicator also replicates the necessary Kafka metadata including topic configurations, Access Control Lists (ACLs), and consumer group offsets. If an unexpected event occurs in a region, you can failover to the other AWS Region and seamlessly resume processing. You can get started with MSK Replicator from the Amazon MSK console or the Amazon CLI. To learn more, visit the MSK Replicator documentation , product page , and pricing page .",
+      "summary": "MSK Replicator automatise la réplication Kafka entre clusters (y compris on-prem) dans GovCloud pour une haute disponibilité et continuité d'activité sans gestion manuelle.",
+      "theme": "kubernetes",
+      "score": 70
+    },
+    {
+      "id": "bd92a117f29b",
+      "title": "Amazon Redshift expands SUPER data type to store strings up to 16 million bytes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-redshift-expands-super-to-16-million-bytes/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-06T16:00:00.000Z",
+      "excerpt": "Amazon Redshift now supports individual strings up to 16 million bytes within SUPER data types . Once you opt in through a database parameter, this enhancement applies when ingesting structured or semi-structured data from JSON, PARQUET, TEXT, and CSV source files, and when transforming data through extract load and transform (ELT) processes. Previously, individual strings within SUPER data types were limited to 65,535 bytes. Storing large individual strings in the SUPER data type helps avoid complex pre-loading transformations needed to store the source data in Amazon Redshift. You can now directly ingest large individual strings greater than 65,535 bytes without extra processing (for example, lengthy documents like terms and conditions and contracts), making them queryable using SQL. Once the data is in Amazon Redshift, you can use the flexibility of PartiQL language to explore and navigate through the data or use string functions to transform the data. Functions such as JSON_PARSE , CONCAT , and LISTAGG can now take input strings and return output strings up to 16 million bytes in length. This enhancement is available in all AWS Regions, including the AWS GovCloud (US) Regions, where Amazon Redshift is available. See the AWS Region Table for more details. To learn more, please visit our documentation or blog .",
+      "summary": "Amazon Redshift étend le type SUPER à 16 Mo pour stocker directement de longues chaînes (documents, JSON) sans transformation préalable, simplifiant l'ingestion et les requêtes.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "8f241e41d165",
+      "title": "What's missing or annoying in your setup?",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1xpexdx/whats_missing_or_annoying_in_your_setup/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-06T15:01:07.000Z",
+      "excerpt": "I'm a C# developer on Linux, and I'm looking for an idea for an open-source project that would solve a real problem. I've been moving away from big-tech services myself and run a couple of my own apps on a home server over Tailscale, so I care about privacy and owning my data. Instead of continuing to build random pet projects that are unlikely to be of any use to anyone, I want to build something self-hosted that might actually come in handy for someone. So I want to ask: is there something in your setup that really annoys you, but there's no solution for it? Or maybe a solution exists, but it's inconvenient or has some drawbacks? For example, maybe you always have to do something by hand or write a script because there's no tool for it, or you use some self-hosted app, but it frustrates you. Or maybe something only exists as a cloud service, and there's no self-hosted alternative. Even small or niche things are useful. If something already has a solution but it's bad, please tell me what's wrong with it. If something sounds really worth solving, I'll dig into it and build a solution. &#32; submitted by &#32; /u/Blackcat-404 [link] &#32; [comments]",
+      "summary": "Un développeur cherche des problèmes réels à résoudre en self-hosted pour remplacer les services cloud, avec un focus sur l'automatisation et la simplicité pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 40
+    },
+    {
+      "id": "cfd6c5f8c4aa",
+      "title": "AWS launches support for amortization of EC2 Capacity Blocks for ML",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-06T15:00:00.000Z",
+      "excerpt": "AWS Data Exports for Cost and Usage Report (CUR) 2.0 and AWS Cost Explorer now amortize the upfront fee for Amazon EC2 Capacity Blocks for ML across the duration of each reservation. You can see the amortized cost of each instance launched into a Capacity Block and the amortized cost of unused capacity, so you can attribute your upfront fee to the workloads that used it and identify capacity that went unused. Previously, a Capacity Block's upfront fee appeared as a single charge on the purchase date, making it difficult to see how that cost was spread across usage over the reservation. Now the amortized cost appears alongside your instance usage, so you can allocate GPU costs to the teams, projects, and applications that ran on the reserved capacity. You can also see what share of your reservation went unused and plan future Capacity Block purchases. In CUR 2.0, the amortized costs appear in the reservation_amortized_upfront_fee_for_billing_period, reservation_effective_cost columns, and reservation_net_effective_cost shows the amortized cost after discounts. In Cost Explorer, select the amortized cost view to see Capacity Block costs allocated for the reservation. Amortization for Capacity Blocks is available at no additional charge in all AWS Regions except the AWS GovCloud (US) Regions and the China Regions. To learn more, see the CUR 2.0 data dictionary and exploring your data using Cost Explorer .",
+      "summary": "AWS amortit désormais les coûts des EC2 Capacity Blocks pour ML, améliorant la visibilité et l'allocation des coûts pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "d21a334cc2e7",
+      "title": "Only include resource detectors you need by building your own Collector",
+      "url": "https://opentelemetry.io/blog/2026/collector-with-less-dependencies/",
+      "source": "opentelemetry-blog",
+      "sourceName": "OpenTelemetry Blog",
+      "publishedAt": "2026-11-06T14:49:46.000Z",
+      "excerpt": "There are many reasons for building your own OpenTelemetry Collector&#10;distribution. The existing distributions are designed to be broadly useful,&#10;which means they include many more components than what an individual deployment&#10;uses. Building your own gives you the ability to select only the components you&#10;care about, add your own custom components, and control exactly what ends up in&#10;the binary you run in production. &#10; One of the reasons I prefer to build my own distribution is to limit the size of&#10;the binary I have to ship around and to ensure that the least amount of&#10;dependencies are included. Fewer dependencies means a smaller binary, a smaller&#10;attack surface, and fewer third-party modules to track when a vulnerability is&#10;disclosed. The&#10; OpenTelemetry Collector Builder (ocb) makes this&#10;possible: you write a manifest file in YAML to select the components you care&#10;about, and ocb compiles them into the resulting binary.",
+      "summary": "Construire son propre Collector OpenTelemetry réduit les dépendances, la taille du binaire et la surface d'attaque pour plus de sécurité et d'efficacité en production.",
+      "theme": "observabilite",
+      "score": 95
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "L'observabilité continue de se structurer autour d'OpenTelemetry avec des mises à jour majeures du Collector et de ses composants (OpAMP, builder), optimisant la collecte et la supervision des agents. Grafana et les outils associés renforcent leur intégration avec l'IA pour améliorer la résolution d'incidents, tandis que des solutions comme UploadYourRAM émergent pour le débogage post-incident en production.",
+      "topArticles": [
+        "fc1a648a0e29",
+        "d21a334cc2e7",
+        "7562ac2fd2f3",
+        "2a38654faf67",
+        "3e41f59f272d"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Les failles critiques comme l'échappement de VM Firecracker et les vulnérabilités GitHub soulignent l'importance de la sécurité des supply chains logicielles. Les outils de gestion des secrets (VaultWarden) et les politiques de ports (comme le port 0) gagnent en attention pour renforcer la résilience des infrastructures.",
+      "topArticles": [
+        "f441801c064c",
+        "e8ad3aaf9c4e",
+        "fde131457e0e",
+        "84a83fde43b2",
+        "7f1ae8a0ef66"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "trend": "Kubernetes reste un pilier pour la modernisation des infrastructures, comme en témoigne la migration de San Marino vers cette plateforme. Les outils comme Devvm.dev et les solutions de réplication Kafka (MSK Replicator) renforcent l'isolation et la haute disponibilité des environnements, tout en simplifiant la gestion des dépendances.",
+      "topArticles": [
+        "26c3f6131480",
+        "4714a96ad9d2",
+        "d52d67ed0704",
+        "ffe6d7d4786d"
+      ]
+    },
+    {
+      "id": "ia-contact-center",
+      "label": "IA dans le contact center",
+      "trend": "L'IA continue de transformer les contact centers avec des modèles comme Kimi K3.1 Pro sur Amazon Bedrock, optimisés pour des tâches agentiques rapides et sécurisées. Les solutions comme les juges LLM (Jev) réduisent les coûts tout en améliorant la précision, tandis que les agents virtuels et copilotes deviennent incontournables pour l'efficacité opérationnelle.",
+      "topArticles": [
+        "317a771eb373",
+        "ef2a83f7f3a4",
+        "b3c6e599ba57",
+        "594105e3c519"
+      ]
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & tooling",
+      "trend": "Les outils de build comme Gradle évoluent pour optimiser les pipelines CI/CD, avec des améliorations notables pour le Kotlin DSL et les filtres de tests JUnit. Ces mises à jour sont cruciales pour réduire les temps de build et améliorer la stabilité des déploiements en production.",
+      "topArticles": [
+        "6f973ebf81c3"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 59,
+    "promptTokens": 21669,
+    "completionTokens": 5529,
+    "estimatedCostEur": 0.031153776
+  }
+}

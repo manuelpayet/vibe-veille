@@ -39,6 +39,32 @@ const analysisOutputSchema = z.object({
   )
 });
 
+// Parse défensif de la réponse d'analyse : nettoyage des fences markdown et
+// normalisation des champs manquants avant validation zod.
+function parseAnalysisOutput(raw: string) {
+  let text = raw.trim();
+  if (text.startsWith('```')) {
+    text = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+  }
+  const data = JSON.parse(text);
+  const assignments = (Array.isArray(data?.assignments) ? data.assignments : [])
+    .filter((a: any) => a && typeof a.articleId === 'string')
+    .map((a: any) => ({
+      articleId: a.articleId,
+      theme: typeof a.theme === 'string' && a.theme !== '' ? a.theme : 'autre',
+      score: Number.isFinite(a.score) ? Math.max(0, Math.min(100, Number(a.score))) : 50
+    }));
+  const themes = (Array.isArray(data?.themes) ? data.themes : [])
+    .filter((t: any) => t && typeof t.id === 'string')
+    .map((t: any) => ({
+      id: t.id,
+      label: typeof t.label === 'string' && t.label !== '' ? t.label : t.id,
+      trend: typeof t.trend === 'string' ? t.trend : '',
+      topArticles: Array.isArray(t.topArticles) ? t.topArticles.filter((x: any) => typeof x === 'string') : []
+    }));
+  return analysisOutputSchema.parse({ assignments, themes });
+}
+
 // Enrichit les articles (résumé + thème + score) et produit les tendances par thème.
 // `hors-sujet` est exclu de la liste des thèmes (veille pro uniquement).
 export async function enrichWithLlm(
@@ -85,15 +111,22 @@ export async function enrichWithLlm(
     title: a.title,
     summary: a.summary ?? ''
   }));
-  const r = await chat(analysisMessages(input, themesConfig), {
-    model: analysisModel,
-    json: true,
-    temperature: 0.3,
-    maxTokens: 6000,
-    baseUrl: opts.baseUrl
-  });
-  track(analysisModel, r.usage);
-  const analysis = analysisOutputSchema.parse(JSON.parse(r.content));
+  let analysis;
+  try {
+    const r = await chat(analysisMessages(input, themesConfig), {
+      model: analysisModel,
+      json: true,
+      temperature: 0.3,
+      maxTokens: 8000,
+      baseUrl: opts.baseUrl
+    });
+    track(analysisModel, r.usage);
+    analysis = parseAnalysisOutput(r.content);
+  } catch (err) {
+    // une analyse qui échoue ne doit pas perdre les résumés : on logue et on continue sans thèmes
+    console.error(`[llm] analyse globale en échec (${(err as Error).message}), veille sans thèmes`);
+    return { themes: [], stats };
+  }
 
   const assignments = new Map(analysis.assignments.map((x) => [x.articleId, x]));
   for (const a of articles) {
