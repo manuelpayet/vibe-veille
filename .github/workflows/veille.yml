@@ -1,0 +1,70 @@
+name: Veille quotidienne
+
+# Génère la veille SRE (collecte sources + analyse Mistral), commite data/ sur main
+# et envoie une notification ntfy.sh. Le déploiement GitHub Pages est déclenché
+# séparément par deploy-pages.yml sur chaque push sur main.
+on:
+  schedule:
+    - cron: '0 7 * * *' # tous les jours à 07:00 UTC
+  workflow_dispatch: # déclenchement manuel
+
+permissions:
+  contents: write # pour pousser le commit data/
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Génère la veille (collecte + Mistral)
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: npm run start -w generator
+
+      - name: Commit data/ si la veille a changé
+        id: commit
+        run: |
+          git config user.name "vibe-veille-bot"
+          git config user.email "vibe-veille-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Aucun changement dans data/"
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            git commit -m "chore(data): veille SRE du $DATE"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Notification ntfy.sh
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: |
+          if [ -z "$NTFY_TOPIC" ]; then
+            echo "Secret NTFY_TOPIC non configuré : notification ignorée"
+            exit 0
+          fi
+          DATE=$(date -u +%Y-%m-%d)
+          AUTH=()
+          if [ -n "$NTFY_TOKEN" ]; then AUTH=(-H "Authorization: Bearer $NTFY_TOKEN"); fi
+          curl -sf -X POST "https://ntfy.sh/$NTFY_TOPIC" \
+            -H "Title: Nouvelle veille SRE - $DATE" \
+            -H "Priority: 3" \
+            -H "Tags: satellite" \
+            "${AUTH[@]}" \
+            -d "Ta veille SRE du $DATE est en ligne sur GitHub Pages."

@@ -22,3 +22,6 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+      # dry-run du générateur SANS appel Mistral (mécanique du pipeline uniquement)
+      - name: Dry-run du générateur (sans LLM)
+        run: npm run start -w generator -- --no-llm --out /tmp/veille-dry-run
