@@ -4,5 +4,5 @@
     "strict": true,
     "sourceMap": true
   },
-  "exclude": ["build", "node_modules", ".svelte-kit"]
+  "exclude": ["build", "node_modules", ".svelte-kit", "scripts", "src/service-worker.js"]
 }

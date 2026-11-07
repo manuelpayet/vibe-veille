@@ -2,8 +2,23 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Vibe Veille</title>
+    <meta name="description" content="Veille SRE quotidienne générée par IA : tendances par thème et top articles résumés." />
+    <meta name="theme-color" content="#6366f1" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <script>
+      // enregistre le service worker (PWA) dès que possible
+      if ('serviceWorker' in navigator) {
+        addEventListener('load', function () {
+          navigator.serviceWorker.register('/service-worker.js').catch(function (err) {
+            console.warn('SW non enregistré:', err);
+          });
+        });
+      }
+    </script>
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">
