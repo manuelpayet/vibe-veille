@@ -54,6 +54,9 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          # URL du site déployé : au clic sur la notif, PC -> onglet navigateur,
+          # téléphone -> la PWA installée s'ouvre (l'URL est dans son scope)
+          SITE_URL: ${{ vars.SITE_URL || 'https://manuelpayet.github.io/vibe-veille/' }}
         run: |
           if [ -z "$NTFY_TOPIC" ]; then
             echo "Secret NTFY_TOPIC non configuré : notification ignorée"
@@ -66,5 +69,7 @@ jobs:
             -H "Title: Nouvelle veille SRE - $DATE" \
             -H "Priority: 3" \
             -H "Tags: satellite" \
+            -H "Click: $SITE_URL" \
+            -H "Icon: ${SITE_URL}icons/icon-192.png" \
             "${AUTH[@]}" \
-            -d "Ta veille SRE du $DATE est en ligne sur GitHub Pages."
+            -d "Ta veille SRE du $DATE est en ligne : $SITE_URL"

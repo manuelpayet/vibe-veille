@@ -38,6 +38,10 @@ rebuild et déploie le site avec les nouvelles données.
    et cliquer « Subscribe » dans l'app web ntfy (ou s'abonner au topic dans l'app mobile ntfy).
    La Push API interdit l'abonnement web push cross-origin, donc la notif proactive passe par
    l'app ntfy ; la PWA affiche en plus un badge « Nouveau » tant que la veille n'est pas lue.
+   - Au clic sur la notif, l'en-tête ntfy `Click` ouvre `$SITE_URL` : onglet navigateur sur PC,
+     **PWA installée sur Android** (l'URL est dans le scope de la webapp ; iOS ouvre Safari).
+   - Variable de repo optionnelle : `SITE_URL` (Settings → Variables) pour surcharger l'URL par défaut
+     `https://manuelpayet.github.io/vibe-veille/`.
 
 ## Déploiement GitHub Pages (project pages)
 
