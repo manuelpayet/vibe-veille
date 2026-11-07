@@ -1,6 +1,5 @@
 import type { Article, Veille } from './types.js';
-import { loadSources } from './sources/index.js';
-import { fetchRssSource } from './sources/rss.js';
+import { getFetcher, loadSources } from './sources/index.js';
 import { writeVeille } from './output.js';
 
 export interface PipelineOptions {
@@ -37,7 +36,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<Veille> {
 
   for (const source of sources) {
     try {
-      const articles = await fetchRssSource(source, now);
+      const articles = await getFetcher(source)(source, now);
       const kept = articles.filter((a) => inWindow(a.publishedAt, from, now));
       sourceStats.push({ id: source.id, name: source.name, count: kept.length });
       all.push(...kept);

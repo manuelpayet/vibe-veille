@@ -6,7 +6,8 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check-sources": "tsx scripts/check-sources.ts"
   },
   "dependencies": {
     "fast-xml-parser": "^5.12.0",

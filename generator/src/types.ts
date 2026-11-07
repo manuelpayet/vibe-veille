@@ -36,12 +36,29 @@ export const indexSchema = z.object({ veilles: z.array(indexEntrySchema) });
 export type IndexEntry = z.infer<typeof indexEntrySchema>;
 
 // Configuration d'une source de veille (generator/config/sources.json).
-// Le type sera élargi à l'incrément 2 (hackernews, reddit, statuspage...).
-export const sourceConfigSchema = z.object({
+const baseSource = z.object({
   id: z.string(),
   name: z.string(),
-  type: z.enum(['rss']),
-  url: z.string(),
   enabled: z.boolean().default(true)
 });
+
+export const sourceConfigSchema = z.discriminatedUnion('type', [
+  baseSource.extend({ type: z.literal('rss'), url: z.string() }),
+  baseSource.extend({
+    type: z.literal('hackernews'),
+    baseUrl: z.string().default('https://hacker-news.firebaseio.com'),
+    limit: z.number().default(30)
+  }),
+  baseSource.extend({
+    type: z.literal('reddit'),
+    baseUrl: z.string().default('https://www.reddit.com'),
+    subreddits: z.array(z.string()).min(1),
+    limit: z.number().default(25)
+  }),
+  baseSource.extend({
+    type: z.literal('statuspage'),
+    apiBase: z.string(), // ex: https://www.cloudflarestatus.com (API publique statuspage.io)
+    limit: z.number().default(20)
+  })
+]);
 export type SourceConfig = z.infer<typeof sourceConfigSchema>;

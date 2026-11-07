@@ -97,7 +97,10 @@ export function articleId(url: string): string {
 }
 
 // Fetch une source RSS et produit des articles bruts (sans appel LLM).
-export async function fetchRssSource(source: SourceConfig, now: Date = new Date()): Promise<Article[]> {
+export async function fetchRssSource(
+  source: Extract<SourceConfig, { type: 'rss' }>,
+  now: Date = new Date()
+): Promise<Article[]> {
   const xml = await fetchText(source.url);
   const items = parseFeed(xml, now);
   return items
