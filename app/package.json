@@ -12,7 +12,7 @@
     "dev": "vite dev",
     "prebuild": "node scripts/sync-data.mjs",
     "build": "vite build",
-    "build:e2e": "DATA_SRC=../e2e/fixtures/data node scripts/sync-data.mjs && vite build",
+    "build:e2e": "DATA_SRC=../e2e/fixtures/data node scripts/sync-data.mjs && cp ../e2e/fixtures/config.json static/config.json && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"

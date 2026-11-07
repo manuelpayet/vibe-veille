@@ -9,3 +9,4 @@ coverage/
 test-results/
 playwright-report/
 app/static/data/
+app/static/config.json
