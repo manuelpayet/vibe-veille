@@ -25,12 +25,21 @@ test('le service worker s enregistre et la dernière veille reste lisible hors-l
   await page.goto('/');
   await expect(page.getByRole('heading', { name: 'Veille du 07/11/2026' })).toBeVisible();
 
-  // attend que le SW soit actif
+  // attend que le SW soit actif, contrôle la page, et ait précaché les données
   const swReady = await page.evaluate(async () => {
     const reg = await navigator.serviceWorker.ready;
     return !!reg?.active;
   });
   expect(swReady).toBe(true);
+  await page.waitForFunction(async () => {
+    if (!navigator.serviceWorker.controller) return false;
+    const keys = await caches.keys();
+    for (const k of keys) {
+      const c = await caches.open(k);
+      if (await c.match('/data/index.json', { ignoreVary: true })) return true;
+    }
+    return false;
+  }, undefined, { timeout: 15_000 });
 
   // hors-ligne : la page et les données doivent venir du cache
   await context.setOffline(true);

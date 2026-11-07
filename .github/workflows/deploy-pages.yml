@@ -1,0 +1,60 @@
+name: Deploy Pages
+
+# Build l'app SvelteKit (avec data/ embarqué) et la déploie sur GitHub Pages
+# via l'action officielle. Déclenché sur chaque push sur main (ex: commit data/
+# du workflow veille) et manuellement.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Config publique (topic ntfy pour le lien de notif)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          mkdir -p app/static
+          if [ -n "$NTFY_TOPIC" ]; then
+            printf '{"ntfyTopic":"%s"}\n' "$NTFY_TOPIC" > app/static/config.json
+          else
+            printf '{}\n' > app/static/config.json
+          fi
+
+      # prebuild (sync-data.mjs) copie data/ -> app/static/data avant le build
+      - run: npm run build -w app
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Déploiement sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

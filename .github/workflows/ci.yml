@@ -25,3 +25,16 @@ jobs:
       # dry-run du générateur SANS appel Mistral (mécanique du pipeline uniquement)
       - name: Dry-run du générateur (sans LLM)
         run: npm run start -w generator -- --no-llm --out /tmp/veille-dry-run
+
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Tests e2e Playwright (build + preview local avec fixtures)
+        run: npm run test:e2e

@@ -2,33 +2,79 @@
 
 Veille SRE quotidienne, 100 % statique : un workflow GitHub Actions collecte les sources,
 l'API Mistral résume et structure les tendances, le résultat est commité dans `data/` et
-publié sur GitHub Pages sous forme d'app SvelteKit (PWA, notifications via ntfy.sh).
+publié sur GitHub Pages sous forme de PWA SvelteKit, avec notification ntfy.sh.
 
 ## Architecture
 
 ```
-generator/   package Node/TS exécuté par le workflow : fetch des sources (RSS blogs/newsletters,
-             API Hacker News, JSON Reddit, status pages cloud) → résumé de chaque article
-             (mistral-small-latest) → analyse globale des tendances (mistral-large-latest)
-             → data/veille-<date>.json + data/index.json
-app/         front SvelteKit (adapter-static) : veille du jour + historique, PWA installable,
-             badge "nouvelle veille" + notifications push ntfy.sh
-data/        veilles générées, commitées par le workflow
-.github/workflows/veille.yml        cron 07:00 UTC + manuel : génère la veille, commit, notif ntfy
-.github/workflows/deploy-pages.yml  déploiement GitHub Pages sur push main
+generator/   package Node/TS exécuté par le workflow : fetch des sources -> résumé de chaque
+             article (mistral-small-latest) -> analyse globale des tendances (mistral-large-latest)
+             -> data/veille-<date>.json + data/index.json
+app/         PWA SvelteKit (adapter-static, SPA) : veille du jour, historique /veille/<date>,
+             badge "Nouveau", service worker offline, manifest
+ data/        veilles générées, commitées par le workflow (tout l'historique est conservé)
+e2e/         tests Playwright (fixtures dans e2e/fixtures/data)
+.github/workflows/veille.yml        cron 07:00 UTC + manuel : génère la veille, commit data/, notif ntfy
+.github/workflows/deploy-pages.yml  sur push main : build app (data/ embarqué) + deploy-pages
+.github/workflows/ci.yml            typecheck + tests unitaires + build + dry-run générateur + e2e
 ```
+
+Flux d'une veille : `veille.yml` (07:00 UTC) → collecte (RSS/Atom, API Hacker News, RSS Reddit,
+statuspage.io) sur les dernières 24 h → dédup par URL → **mistral-small-latest** résume chaque
+article en FR (1 phrase) → **mistral-large-latest** classe par thème (liste fixe pro, voir
+`generator/config/themes.json`), score 0-100, tendance du thème en 2-3 phrases, top 5 par thème
+→ écrit `data/veille-<date>.json` → commit sur `main` → notif `ntfy.sh/<topic>` → `deploy-pages.yml`
+rebuild et déploie le site avec les nouvelles données.
+
+## Setup (à faire une fois sur GitHub)
+
+1. Créer le repo (ici `manuelpayet/vibe-veille`), activer **Settings → Pages → Source: GitHub Actions**.
+2. Secrets (**Settings → Secrets and variables → Actions**) :
+   - `MISTRAL_API_KEY` : clé API Mistral (https://console.mistral.ai)
+   - `NTFY_TOPIC` : topic ntfy.sh (nom long et non guessable, ex. `vibe-veille-x7f2...`)
+   - `NTFY_TOKEN` : token d'accès ntfy (optionnel, si le topic est protégé) — `ntfy token` dans l'app
+3. Premier run : **Actions → "Veille quotidienne" → Run workflow** (ou attendre le cron 07:00 UTC).
+4. Notifications push : ouvrir le lien « Notifs push » du site (pointe vers `https://ntfy.sh/<topic>`)
+   et cliquer « Subscribe » dans l'app web ntfy (ou s'abonner au topic dans l'app mobile ntfy).
+   La Push API interdit l'abonnement web push cross-origin, donc la notif proactive passe par
+   l'app ntfy ; la PWA affiche en plus un badge « Nouveau » tant que la veille n'est pas lue.
 
 ## Développement local
 
 ```bash
 npm ci
-npm run typecheck
-npm test
-npm run build
-npm run dev        # front en local
-npm run start -w generator   # lance le générateur en local (nécessite MISTRAL_API_KEY)
+npm run typecheck     # tsc (generator) + svelte-check (app)
+npm test              # tests unitaires generator + app
+npm run test:e2e      # Playwright : build avec fixtures + preview local
+npm run build         # build le site (copie data/ -> app/static/data si data/ existe)
+npm run dev           # dev server de l'app
+npm run start -w generator            # génère une veille (MISTRAL_API_KEY requis, écrit dans data/)
+npm run start -w generator -- --no-llm --out /tmp/x   # dry-run sans LLM
+npm run check-sources -w generator    # teste chaque source de config/sources.json
 ```
 
-## Secrets GitHub requis
+## Ajouter une source
 
-`MISTRAL_API_KEY`, `NTFY_TOPIC`, `NTFY_TOKEN` (voir README à jour en fin de projet).
+Éditer `generator/config/sources.json` (types : `rss`, `hackernews`, `reddit`, `statuspage`),
+puis valider avec `npm run check-sources -w generator`.
+
+## Thèmes
+
+`generator/config/themes.json` : liste fixe des thèmes pro (CCaaS Genesys/AWS, IA contact center,
+Kubernetes, observabilité, sécurité/supply-chain, GitLab CI, OpenTofu, Helm/Traefik, Java/JVM,
+build tooling). Le LLM peut créer un thème ponctuel si besoin (hybride) ; `horsPerimetre`
+(vLLM, inférence LLM, GPU scheduling) est exclu de la veille pro.
+
+## Coût LLM
+
+Par veille : ~N appels `mistral-small-latest` (1/article, plafond 80) + 1 appel
+`mistral-large-latest`. Le coût estimé est loggé dans le run et stocké dans `stats.estimatedCostEur`
+de chaque veille (ordre de grandeur, constants dans `generator/src/mistral/client.ts`).
+
+## Limites connues
+
+- Reddit rate-limite les IPs datacenter (429) : le fetcher est tolérant par subreddit.
+- Azure Updates, le blog GCP et le blog Genesys n'exposent plus de flux RSS publics utilisables ;
+  leur actu passe par AWS What's New / HN / Reddit / releases GitHub.
+- Status pages AWS/GCP/Azure ne sont pas sur statuspage.io ; seul Cloudflare est suivi en
+  incidents directs (les autres remontent via les blogs/What's New).

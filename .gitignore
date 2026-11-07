@@ -10,3 +10,5 @@ test-results/
 playwright-report/
 app/static/data/
 app/static/config.json
+mistral-api-key.txt
+*.pem
