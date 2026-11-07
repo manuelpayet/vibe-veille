@@ -1,0 +1,16 @@
+[
+  { "id": "k8s-blog", "name": "Kubernetes Blog", "type": "rss", "url": "https://kubernetes.io/feed.xml" },
+  { "id": "gitlab", "name": "GitLab (about.gitlab.com)", "type": "rss", "url": "https://about.gitlab.com/atom.xml" },
+  { "id": "aws-whats-new", "name": "AWS What's New", "type": "rss", "url": "https://aws.amazon.com/about-aws/whats-new/recent/feed/" },
+  { "id": "azure-updates", "name": "Azure Updates", "type": "rss", "url": "https://azure.microsoft.com/en-us/updates/feed/" },
+  { "id": "gcp-blog", "name": "Google Cloud Blog", "type": "rss", "url": "https://cloud.google.com/blog/rss.xml" },
+  { "id": "cloudflare-blog", "name": "Cloudflare Blog", "type": "rss", "url": "https://blog.cloudflare.com/rss/" },
+  { "id": "prometheus-blog", "name": "Prometheus Blog", "type": "rss", "url": "https://prometheus.io/blog/index.xml" },
+  { "id": "grafana-blog", "name": "Grafana Blog", "type": "rss", "url": "https://grafana.com/blog/feed/" },
+  { "id": "opentelemetry-blog", "name": "OpenTelemetry Blog", "type": "rss", "url": "https://opentelemetry.io/blog/index.xml" },
+  { "id": "opentofu-blog", "name": "OpenTofu Blog", "type": "rss", "url": "https://opentofu.org/blog/feed.xml" },
+  { "id": "helm-blog", "name": "Helm Blog", "type": "rss", "url": "https://helm.sh/blog/feed.xml" },
+  { "id": "spring-blog", "name": "Spring Blog", "type": "rss", "url": "https://spring.io/blog.atom" },
+  { "id": "inside-java", "name": "Inside Java (OpenJDK)", "type": "rss", "url": "https://inside.java/feed.xml" },
+  { "id": "sre-weekly", "name": "SRE Weekly (newsletter)", "type": "rss", "url": "https://sreweekly.com/feed/" }
+]

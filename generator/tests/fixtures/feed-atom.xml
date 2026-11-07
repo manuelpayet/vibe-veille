@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Flux Atom de test</title>
+  <link href="https://exemple-atom.test/" rel="self"/>
+  <entry>
+    <title>Grafana 12.2 disponible</title>
+    <link rel="alternate" href="https://exemple-atom.test/grafana-12-2"/>
+    <published>2026-11-07T07:15:00Z</published>
+    <summary>&lt;p&gt;Grafana 12.2 est sorti.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Grafana 12.2 est sorti avec de nouvelles alertes.&lt;/p&gt;</content>
+  </entry>
+</feed>
