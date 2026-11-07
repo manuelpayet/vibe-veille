@@ -3,10 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
+  "imports": {
+    "#lib": "./src/lib",
+    "#lib/*": "./src/lib/*"
+  },
   "scripts": {
+    "predev": "node scripts/sync-data.mjs",
     "dev": "vite dev",
+    "prebuild": "node scripts/sync-data.mjs",
     "build": "vite build",
+    "build:e2e": "DATA_SRC=../e2e/fixtures/data node scripts/sync-data.mjs && vite build",
     "preview": "vite preview",
+    "test": "vitest run",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {

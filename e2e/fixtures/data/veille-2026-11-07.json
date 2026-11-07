@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T07:05:00.000Z",
+  "window": { "from": "2026-11-06T07:00:00.000Z", "to": "2026-11-07T07:05:00.000Z" },
+  "sources": [
+    { "id": "hackernews", "name": "Hacker News (top stories)", "count": 2 },
+    { "id": "k8s-releases", "name": "Kubernetes (releases GitHub)", "count": 1 },
+    { "id": "grafana-blog", "name": "Grafana Blog", "count": 1 }
+  ],
+  "articles": [
+    {
+      "id": "aaaaaaa11111",
+      "title": "Kubernetes 1.35 released",
+      "url": "https://ext.test/k8s-1-35",
+      "source": "k8s-releases",
+      "sourceName": "Kubernetes (releases GitHub)",
+      "publishedAt": "2026-11-07T06:00:00.000Z",
+      "excerpt": "Release 1.35 de Kubernetes.",
+      "summary": "Résumé fixture : K8s 1.35 est sorti avec des changements de sécurité.",
+      "theme": "kubernetes",
+      "score": 95
+    },
+    {
+      "id": "bbbbbbb22222",
+      "title": "Grafana 12.2 disponible",
+      "url": "https://ext.test/grafana-12-2",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-07T05:30:00.000Z",
+      "excerpt": "Grafana 12.2.",
+      "summary": "Résumé fixture : Grafana 12.2 embarque de nouvelles alertes.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "ccccccc33333",
+      "title": "HN: PostgreSQL 18 is out",
+      "url": "https://ext.test/pg18",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T04:00:00.000Z",
+      "excerpt": "",
+      "summary": "Résumé fixture : PostgreSQL 18 disponible.",
+      "theme": "kubernetes",
+      "score": 60
+    },
+    {
+      "id": "ddddddd44444",
+      "title": "HN: Show HN fixture",
+      "url": "https://ext.test/show-hn",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-07T03:00:00.000Z",
+      "excerpt": "",
+      "summary": null,
+      "theme": "hors-sujet",
+      "score": 10
+    }
+  ],
+  "themes": [
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "trend": "Tendance fixture : grosse activité autour de la release 1.35 et de la sécurité.",
+      "topArticles": ["aaaaaaa11111", "ccccccc33333"]
+    },
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Tendance fixture : Grafana 12.2 en tête.",
+      "topArticles": ["bbbbbbb22222"]
+    }
+  ],
+  "stats": { "llmCalls": 5, "promptTokens": 12000, "completionTokens": 2000, "estimatedCostEur": 0.031 }
+}
