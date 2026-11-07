@@ -50,7 +50,7 @@
     z-index: 10;
   }
   nav {
-    max-width: 52rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 0.75rem 1rem;
     display: flex;
@@ -80,7 +80,7 @@
     vertical-align: middle;
   }
   .page {
-    max-width: 52rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 1.5rem 1rem 4rem;
   }

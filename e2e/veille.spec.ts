@@ -13,7 +13,8 @@ test('la page d accueil affiche la dernière veille avec thèmes et top articles
   await expect(cards.first()).toContainText('Kubernetes 1.35 released');
   await expect(cards.first()).toContainText('Résumé fixture : K8s 1.35');
   await expect(cards.first().locator('a.title')).toHaveAttribute('href', 'https://ext.test/k8s-1-35');
-  await expect(cards.first().locator('.score')).toHaveText('95/100');
+  await expect(cards.first().locator('.score')).toHaveText('95');
+  await expect(cards.first().locator('.score')).toHaveClass(/high/); // pastille verte >= 80
 
   // le thème hors-sujet n est pas affiché
   await expect(page.locator('.theme', { hasText: 'Hors sujet' })).toHaveCount(0);
