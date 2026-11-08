@@ -21,5 +21,5 @@
   <VeilleView {veille} />
 {:else}
   <h1>Veille du jour</h1>
-  <p>Aucune veille générée pour l'instant — le premier run du workflow GitHub Actions arrive à 07:00 UTC.</p>
+  <p>Aucune veille générée pour l'instant — le premier run du workflow GitHub Actions arrive vers 07:07 UTC.</p>
 {/if}

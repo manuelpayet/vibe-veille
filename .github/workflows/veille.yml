@@ -5,8 +5,19 @@ name: Veille quotidienne
 # séparément par deploy-pages.yml sur chaque push sur main.
 on:
   schedule:
-    - cron: '0 7 * * *' # tous les jours à 07:00 UTC
+    # Créneaux décalés en minutes : GitHub documente un pic de charge (et des runs
+    # manqués) au début de chaque heure. Plusieurs créneaux = rattrapage si l'un d'eux
+    # est manqué ; le garde-fou ci-dessous rend les doublons impossibles.
+    - cron: '7 7 * * *'   # 07:07 UTC
+    - cron: '37 7 * * *'  # 07:37 UTC (rattrapage)
+    - cron: '22 8 * * *'  # 08:22 UTC (dernier rattrapage)
   workflow_dispatch: # déclenchement manuel
+    inputs:
+      force:
+        description: 'Forcer la génération même si la veille du jour existe déjà'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write # pour pousser le commit data/
@@ -21,19 +32,39 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Garde-fou idempotent : si la veille du jour existe déjà dans data/, on saute
+      # (protège contre les créneaux de rattrapage qui se suivent et les runs manuels
+      # répétés). Un dispatch manuel avec force=true bypass ce garde-fou.
+      - name: Garde-fou — la veille du jour existe déjà ?
+        id: guard
+        env:
+          FORCE: ${{ inputs.force }}
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          if [ "$FORCE" != "true" ] && [ -f "data/veille-$TODAY.json" ]; then
+            echo "Veille du $TODAY déjà présente dans data/ — rien à faire."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-node@v4
+        if: steps.guard.outputs.skip != 'true'
         with:
           node-version: 24
           cache: npm
 
       - run: npm ci
+        if: steps.guard.outputs.skip != 'true'
 
       - name: Génère la veille (collecte + Mistral)
+        if: steps.guard.outputs.skip != 'true'
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: npm run start -w generator
 
       - name: Commit data/ si la veille a changé
+        if: steps.guard.outputs.skip != 'true'
         id: commit
         run: |
           git config user.name "vibe-veille-bot"
@@ -50,7 +81,7 @@ jobs:
           fi
 
       - name: Notification ntfy.sh
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.guard.outputs.skip != 'true' && steps.commit.outputs.changed == 'true'
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}

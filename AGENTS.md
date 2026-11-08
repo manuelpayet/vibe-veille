@@ -35,8 +35,9 @@ app/         PWA SvelteKit 3 (SPA, adapter-static, fallback 404.html)
              static/                   manifest.webmanifest, icons/, config.json (généré au deploy)
 data/        veilles commitées par le bot (tout l'historique conservé)
 e2e/         tests Playwright + fixtures (e2e/fixtures/data)
-.github/workflows/  ci.yml (typecheck+tests+build+dry-run+e2e), veille.yml (cron 07:00 UTC
-                    + manuel : génère, commit data/, notif ntfy), deploy-pages.yml (push main)
+.github/workflows/  ci.yml (typecheck+tests+build+dry-run+e2e), veille.yml (cron 07:07/07:37/08:22 UTC
+                    + manuel [input force] : génère, commit data/, notif ntfy ; garde-fou idempotent
+                    data/veille-<date>.json = 1 veille/jour max), deploy-pages.yml (push main)
 ```
 
 ## Commandes
@@ -82,6 +83,12 @@ npm run check-sources -w generator              # teste toutes les sources
 
 ## Pièges connus (ne pas les redécouvrir)
 
+- **Cron GitHub Actions peu fiable** : des créneaux `schedule` peuvent être manqués sans
+  aucun run créé, avec un pic de charge documenté au début de chaque heure (vu : aucun run
+  `schedule` le 2026-11-08 avec un workflow pourtant actif sur la branche par défaut).
+  → veille.yml utilise des créneaux décalés en minutes (07:07/07:37/08:22 UTC) + un
+  garde-fou idempotent (skip si `data/veille-<YYYY-MM-DD>.json` existe, bypass avec
+  l'input `force` du workflow_dispatch). Ne pas remettre un cron à pile 07:00.
 - **Base path GitHub Pages projet** : le site est servi sous `/vibe-veille/`. Le build de
   déploiement passe `VIBE_VEILLE_BASE=/vibe-veille` (voir `deploy-pages.yml`) →
   `paths.base` + `paths.relative=false` dans `app/vite.config.ts`. Côté client, utiliser
@@ -115,7 +122,8 @@ npm run check-sources -w generator              # teste toutes les sources
 1. Settings → Pages → Source: **GitHub Actions**.
 2. Secrets Actions : `MISTRAL_API_KEY`, `NTFY_TOPIC`, `NTFY_TOKEN` (optionnel).
 3. Variable de repo optionnelle : `SITE_URL`.
-4. Premier run manuel : Actions → « Veille quotidienne » → Run workflow.
+4. Premier run manuel : Actions → « Veille quotidienne » → Run workflow (case « force » pour
+   régénérer une veille du jour déjà existante).
 
 ## Déploiement
 

@@ -14,12 +14,13 @@ app/         PWA SvelteKit (adapter-static, SPA) : veille du jour, historique /v
              badge "Nouveau", service worker offline, manifest
  data/        veilles générées, commitées par le workflow (tout l'historique est conservé)
 e2e/         tests Playwright (fixtures dans e2e/fixtures/data)
-.github/workflows/veille.yml        cron 07:00 UTC + manuel : génère la veille, commit data/, notif ntfy
+.github/workflows/veille.yml        cron 07:07/07:37/08:22 UTC + manuel (case « force ») : génère la
+                                    veille, commit data/, notif ntfy — garde-fou idempotent (1 veille/jour max)
 .github/workflows/deploy-pages.yml  sur push main : build app (data/ embarqué) + deploy-pages
 .github/workflows/ci.yml            typecheck + tests unitaires + build + dry-run générateur + e2e
 ```
 
-Flux d'une veille : `veille.yml` (07:00 UTC) → collecte (RSS/Atom, API Hacker News, RSS Reddit,
+Flux d'une veille : `veille.yml` (créneaux 07:07 / 07:37 / 08:22 UTC) → collecte (RSS/Atom, API Hacker News, RSS Reddit,
 statuspage.io) sur les dernières 24 h → dédup par URL → **mistral-small-latest** résume chaque
 article en FR (1 phrase) → **mistral-large-latest** classe par thème (liste fixe pro, voir
 `generator/config/themes.json`), score 0-100, tendance du thème en 2-3 phrases, top 5 par thème
@@ -33,7 +34,9 @@ rebuild et déploie le site avec les nouvelles données.
    - `MISTRAL_API_KEY` : clé API Mistral (https://console.mistral.ai)
    - `NTFY_TOPIC` : topic ntfy.sh (nom long et non guessable, ex. `vibe-veille-x7f2...`)
    - `NTFY_TOKEN` : token d'accès ntfy (optionnel, si le topic est protégé) — `ntfy token` dans l'app
-3. Premier run : **Actions → "Veille quotidienne" → Run workflow** (ou attendre le cron 07:00 UTC).
+3. Premier run : **Actions → "Veille quotidienne" → Run workflow** (ou attendre le premier créneau cron, 07:07 UTC).
+   Le workflow est idempotent : si `data/veille-<date du jour>.json` existe déjà, il ne régénère rien
+   (sauf dispatch manuel avec la case « force » cochée).
 4. Notifications push : ouvrir le lien « Notifs push » du site (pointe vers `https://ntfy.sh/<topic>`)
    et cliquer « Subscribe » dans l'app web ntfy (ou s'abonner au topic dans l'app mobile ntfy).
    La Push API interdit l'abonnement web push cross-origin, donc la notif proactive passe par
@@ -84,6 +87,9 @@ de chaque veille (ordre de grandeur, constants dans `generator/src/mistral/clien
 
 ## Limites connues
 
+- Les **runs planifiés GitHub Actions sont peu fiables** : créneaux manqués sans run créé,
+  avec un pic de charge documenté au début de chaque heure. D'où les créneaux décalés en
+  minutes (07:07/07:37/08:22 UTC) + le garde-fou idempotent (une seule veille par jour).
 - Reddit rate-limite les IPs datacenter (429) : le fetcher est tolérant par subreddit.
 - Azure Updates, le blog GCP et le blog Genesys n'exposent plus de flux RSS publics utilisables ;
   leur actu passe par AWS What's New / HN / Reddit / releases GitHub.
