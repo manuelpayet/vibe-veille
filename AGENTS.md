@@ -79,12 +79,36 @@ npm run check-sources -w generator              # teste toutes les sources
   "sources": [{ "id": "...", "name": "...", "count": 0 }],
   "articles": [{ "id": "sha1(url)[:12]", "title": "...", "url": "...", "source": "...",
                  "sourceName": "...", "publishedAt": "ISO", "excerpt": "...",
-                 "summary": "résumé FR (LLM) | null", "theme": "... | null", "score": 0-100 | null }],
+                 "summary": "résumé FR (LLM) | null", "theme": "... | null", "score": 0-100 | null,
+                 "origin": "\"collecte\" | \"manuel\" (optionnel, absent = collecte)",
+                 "note": "string | null (optionnel, note perso — manuels uniquement)",
+                 "addedAt": "ISO (optionnel, date de capture — manuels uniquement)" }],
   "themes": [{ "id": "...", "label": "...", "trend": "2-3 phrases FR", "topArticles": ["id", "... max 5"] }],
   "stats": { "llmCalls": 0, "promptTokens": 0, "completionTokens": 0, "estimatedCostEur": 0 }
 }
 ```
 `data/index.json` = `{ "veilles": [{ date, generatedAt, file, articlesCount, sourcesCount }] }` (tri date desc).
+
+## Inbox — ajouts manuels d'articles
+
+- Repo privé séparé **`vibe-veille-inbox`** : une issue = un article proposé manuellement
+  (extension navigateur / partage Android de la PWA). Le workflow `inbox.yml` de CE repo
+  consomme les issues (`on: issues: opened/labeled` + cron horaire de rattrapage) et pousse
+  le résultat dans `vibe-veille` (`data/` + `config/sources.json`) via un PAT serveur.
+- **Contrat d'une issue** : label `a-traiter` à la création ; body = bloc ```json``` avec le
+  schéma `InboxIssueBody` (`generator/src/inbox/schema.ts`) : `version: 1`, `url`, `title`,
+  `excerpt`, `publishedAt` (null si inconnu), `note`, `addedAt`, `sourceDomain`.
+  Labels : `a-traiter` → `traite` + closed (intégré) ; `source-candidate` → `source-ok` /
+  `source-refuse` (validation d'une source candidate, depuis l'app GitHub ou la PWA `/inbox`).
+- Côté client (extension / PWA) : **aucun secret embarqué** — GitHub App + device flow
+  (extension) / web flow (PWA), token user-to-server scopé `issues: write` sur l'inbox seul.
+- Un article manuel intègre la **veille du jour hors fenêtre 24h** avec `origin: "manuel"`,
+  `note`, `addedAt` ; dédup par URL comme les articles collectés.
+- Setup one-time (UI GitHub, manuel) : créer le repo privé `vibe-veille-inbox` ; créer la
+  GitHub App (device flow activé, permission « Issues: read and write », installée sur
+  l'inbox uniquement ; web flow activé pour la PWA) ; secret du repo inbox :
+  `VIBE_VEILLE_PAT` (fine-grained, `contents: write` sur `vibe-veille` seul) ; variables/ secrets
+  de `vibe-veille` pour les clients : `INBOX_APP_ID`, `INBOX_APP_CLIENT_ID`.
 
 ## Pièges connus (ne pas les redécouvrir)
 

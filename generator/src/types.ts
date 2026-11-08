@@ -12,7 +12,11 @@ export const articleSchema = z.object({
   excerpt: z.string(), // extrait brut (HTML retiré, tronqué) pour le futur résumé LLM
   summary: z.string().nullable(),
   theme: z.string().nullable(),
-  score: z.number().nullable()
+  score: z.number().nullable(),
+  // Ajout manuel via l'inbox (absents sur les veilles existantes : rétrocompat)
+  origin: z.enum(['collecte', 'manuel']).optional(),
+  note: z.string().nullable().optional(), // note perso de la capture (manuels uniquement)
+  addedAt: z.string().optional() // ISO 8601, date de la capture (manuels uniquement)
 });
 export type Article = z.infer<typeof articleSchema>;
 
