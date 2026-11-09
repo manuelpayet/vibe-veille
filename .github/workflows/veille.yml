@@ -104,3 +104,21 @@ jobs:
             -H "Icon: ${SITE_URL}icons/icon-192.png" \
             "${AUTH[@]}" \
             -d "Ta veille SRE du $DATE est en ligne : $SITE_URL"
+
+      # Heartbeat healthchecks.io : alerte si aucun run ne se termine un jour donné
+      # (watchdog externe + cron GitHub tombés en panne). Secret HEALTHCHECKS_PING_URL :
+      # URL de ping du check (https://hc-ping.com/<uuid>), check attendu 1x/jour, grace 2h.
+      - name: Ping healthchecks.io
+        if: always()
+        env:
+          HEALTHCHECKS_PING_URL: ${{ secrets.HEALTHCHECKS_PING_URL }}
+        run: |
+          if [ -z "$HEALTHCHECKS_PING_URL" ]; then
+            echo "Secret HEALTHCHECKS_PING_URL non configuré : ping ignoré"
+            exit 0
+          fi
+          if [ "${{ job.status }}" = "success" ]; then
+            curl -sf "$HEALTHCHECKS_PING_URL" || echo "ping healthchecks échoué (non bloquant)"
+          else
+            curl -sf "$HEALTHCHECKS_PING_URL/fail" || echo "ping healthchecks /fail échoué (non bloquant)"
+          fi

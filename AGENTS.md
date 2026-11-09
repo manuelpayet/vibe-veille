@@ -35,9 +35,14 @@ app/         PWA SvelteKit 3 (SPA, adapter-static, fallback 404.html)
              static/                   manifest.webmanifest, icons/, config.json (généré au deploy)
 data/        veilles commitées par le bot (tout l'historique conservé)
 e2e/         tests Playwright + fixtures (e2e/fixtures/data)
+watchdog/    Worker Cloudflare (déployé hors repo npm, wrangler) : cron triggers 07:07/07:37/08:22 UTC
+             -> POST API workflow_dispatch veille.yml (GH_PAT en secret Cloudflare). Déclencheur
+             PRINCIPAL de la veille (le scheduler GitHub droppe des runs sans trace).
+             README local : setup + alternative cron-job.org. Non un workspace npm racine.
 .github/workflows/  ci.yml (typecheck+tests+build+dry-run+e2e), veille.yml (cron 07:07/07:37/08:22 UTC
-                    + manuel [input force] : génère, commit data/, notif ntfy ; garde-fou idempotent
-                    data/veille-<date>.json = 1 veille/jour max), deploy-pages.yml (push main)
+                    en FALLBACK + manuel [input force] : génère, commit data/, notif ntfy,
+                    ping healthchecks.io ; garde-fou idempotent data/veille-<date>.json = 1 veille/jour max),
+                    deploy-pages.yml (push main)
 ```
 
 ## Commandes
@@ -83,12 +88,18 @@ npm run check-sources -w generator              # teste toutes les sources
 
 ## Pièges connus (ne pas les redécouvrir)
 
-- **Cron GitHub Actions peu fiable** : des créneaux `schedule` peuvent être manqués sans
-  aucun run créé, avec un pic de charge documenté au début de chaque heure (vu : aucun run
-  `schedule` le 2026-11-08 avec un workflow pourtant actif sur la branche par défaut).
-  → veille.yml utilise des créneaux décalés en minutes (07:07/07:37/08:22 UTC) + un
-  garde-fou idempotent (skip si `data/veille-<YYYY-MM-DD>.json` existe, bypass avec
-  l'input `force` du workflow_dispatch). Ne pas remettre un cron à pile 07:00.
+- **Cron GitHub Actions peu fiable / scheduler dégradé** : la doc officielle admet que
+  sous forte charge « some queued jobs may be dropped » (aucun run créé, aucune notif).
+  Vu sur ce repo : AUCUN run `schedule` depuis la création du workflow (2026-11-07), test
+  ping `*/10 * * * *` le 2026-11-09 = 5 créneaux manqués d'affilée, workflow pourtant
+  `active`, fichier sur `main`. Dégradation massive constatée depuis les incidents du
+  2026-08-26 (GitHub Community #206019/#206027/#207346). → le déclencheur principal est
+  le **watchdog externe** (`watchdog/`, Worker Cloudflare, 3 dispatches/jour) ; le cron
+  veille.yml (créneaux décalés 07:07/07:37/08:22 UTC) reste en fallback + garde-fou
+  idempotent (skip si `data/veille-<YYYY-MM-DD>.json` existe, bypass avec l'input `force`
+  du workflow_dispatch) + heartbeat healthchecks.io (secret `HEALTHCHECKS_PING_URL`,
+  check 1x/jour grace 2h) pour être alerté d'une veille manquante. Ne pas remettre un
+  cron à pile 07:00.
 - **Base path GitHub Pages projet** : le site est servi sous `/vibe-veille/`. Le build de
   déploiement passe `VIBE_VEILLE_BASE=/vibe-veille` (voir `deploy-pages.yml`) →
   `paths.base` + `paths.relative=false` dans `app/vite.config.ts`. Côté client, utiliser
@@ -120,9 +131,13 @@ npm run check-sources -w generator              # teste toutes les sources
 ## Setup GitHub (one-time)
 
 1. Settings → Pages → Source: **GitHub Actions**.
-2. Secrets Actions : `MISTRAL_API_KEY`, `NTFY_TOPIC`, `NTFY_TOKEN` (optionnel).
+2. Secrets Actions : `MISTRAL_API_KEY`, `NTFY_TOPIC`, `NTFY_TOKEN` (optionnel),
+   `HEALTHCHECKS_PING_URL` (Ping URL du check healthchecks.io, heartbeat du run veille).
 3. Variable de repo optionnelle : `SITE_URL`.
-4. Premier run manuel : Actions → « Veille quotidienne » → Run workflow (case « force » pour
+4. Déployer le watchdog : voir `watchdog/README.md` (Worker Cloudflare, secret `GH_PAT` =
+   PAT GitHub scope `workflow` ou fine-grained `Actions: read and write` sur ce repo —
+   jamais commité).
+5. Premier run manuel : Actions → « Veille quotidienne » → Run workflow (case « force » pour
    régénérer une veille du jour déjà existante).
 
 ## Déploiement

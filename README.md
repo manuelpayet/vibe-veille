@@ -14,8 +14,13 @@ app/         PWA SvelteKit (adapter-static, SPA) : veille du jour, historique /v
              badge "Nouveau", service worker offline, manifest
  data/        veilles générées, commitées par le workflow (tout l'historique est conservé)
 e2e/         tests Playwright (fixtures dans e2e/fixtures/data)
-.github/workflows/veille.yml        cron 07:07/07:37/08:22 UTC + manuel (case « force ») : génère la
-                                    veille, commit data/, notif ntfy — garde-fou idempotent (1 veille/jour max)
+watchdog/    Worker Cloudflare (cron triggers 07:07/07:37/08:22 UTC) qui déclenche veille.yml
+             via l'API workflow_dispatch (GH_PAT en secret) — déclencheur principal, car le
+             scheduler GitHub `schedule:` est best-effort et droppe des runs sans trace.
+             Voir watchdog/README.md (alternative zero-code : cron-job.org)
+.github/workflows/veille.yml        cron 07:07/07:37/08:22 UTC (fallback) + manuel (case « force ») :
+                                    génère la veille, commit data/, notif ntfy, ping healthchecks.io —
+                                    garde-fou idempotent (1 veille/jour max)
 .github/workflows/deploy-pages.yml  sur push main : build app (data/ embarqué) + deploy-pages
 .github/workflows/ci.yml            typecheck + tests unitaires + build + dry-run générateur + e2e
 ```
@@ -34,7 +39,15 @@ rebuild et déploie le site avec les nouvelles données.
    - `MISTRAL_API_KEY` : clé API Mistral (https://console.mistral.ai)
    - `NTFY_TOPIC` : topic ntfy.sh (nom long et non guessable, ex. `vibe-veille-x7f2...`)
    - `NTFY_TOKEN` : token d'accès ntfy (optionnel, si le topic est protégé) — `ntfy token` dans l'app
-3. Premier run : **Actions → "Veille quotidienne" → Run workflow** (ou attendre le premier créneau cron, 07:07 UTC).
+3. **Watchdog externe (recommandé)** : déployer `watchdog/` (Worker Cloudflare gratuit) qui
+   déclenche le workflow 3x le matin via l'API — voir [watchdog/README.md](watchdog/README.md).
+   Créer un PAT GitHub (scope `workflow`, ou fine-grained `Actions: read and write` sur ce repo)
+   et le stocker en secret Cloudflare `GH_PAT` (jamais dans le repo).
+4. **Alarme veille manquante** : créer un check sur https://healthchecks.io (période 1 jour,
+   grace 2 h) et mettre son Ping URL dans les secrets Actions : `HEALTHCHECKS_PING_URL`.
+   `veille.yml` ping cette URL à chaque run (`/fail` si échec) : si aucun ping n'arrive,
+   healthchecks.io alerte (le cron GitHub ne prévient jamais d'un run droppé).
+5. Premier run : **Actions → "Veille quotidienne" → Run workflow** (ou attendre le premier créneau, 07:07 UTC).
    Le workflow est idempotent : si `data/veille-<date du jour>.json` existe déjà, il ne régénère rien
    (sauf dispatch manuel avec la case « force » cochée).
 4. Notifications push : ouvrir le lien « Notifs push » du site (pointe vers `https://ntfy.sh/<topic>`)
@@ -87,9 +100,14 @@ de chaque veille (ordre de grandeur, constants dans `generator/src/mistral/clien
 
 ## Limites connues
 
-- Les **runs planifiés GitHub Actions sont peu fiables** : créneaux manqués sans run créé,
-  avec un pic de charge documenté au début de chaque heure. D'où les créneaux décalés en
-  minutes (07:07/07:37/08:22 UTC) + le garde-fou idempotent (une seule veille par jour).
+- Les **runs planifiés GitHub Actions sont peu fiables** : la doc officielle admet que
+  sous forte charge « some queued jobs may be dropped », sans aucun run créé ni notification.
+  Dégradation massive constatée depuis les incidents du 2026-08-26 (discussions GitHub
+  Community #206019 / #206027 / #207346) : sur ce repo aucun run `schedule` n'a jamais été
+  créé (test ping `*/10 * * * *` le 2026-11-09 : 5 créneaux manqués d'affilée, workflow
+  pourtant `active`). D'où le **watchdog externe** (`watchdog/`, Worker Cloudflare) comme
+  déclencheur principal, les créneaux décalés en minutes en fallback, le garde-fou
+  idempotent (une seule veille par jour) et le heartbeat healthchecks.io.
 - Reddit rate-limite les IPs datacenter (429) : le fetcher est tolérant par subreddit.
 - Azure Updates, le blog GCP et le blog Genesys n'exposent plus de flux RSS publics utilisables ;
   leur actu passe par AWS What's New / HN / Reddit / releases GitHub.
