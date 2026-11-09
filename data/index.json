@@ -1,6 +1,13 @@
 {
   "veilles": [
     {
+      "date": "2026-11-09",
+      "generatedAt": "2026-11-09T15:18:25.604Z",
+      "file": "veille-2026-11-09.json",
+      "articlesCount": 28,
+      "sourcesCount": 23
+    },
+    {
       "date": "2026-11-07",
       "generatedAt": "2026-11-07T14:25:31.494Z",
       "file": "veille-2026-11-07.json",
