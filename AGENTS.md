@@ -124,6 +124,12 @@ npm run check-sources -w generator              # teste toutes les sources
   du workflow_dispatch) + heartbeat healthchecks.io (secret `HEALTHCHECKS_PING_URL`,
   check 1x/jour grace 2h) pour être alerté d'une veille manquante. Ne pas remettre un
   cron à pile 07:00.
+- **Push avec le GITHUB_TOKEN ne déclenche rien** : un commit poussé par un workflow avec le
+  token par défaut (vibe-veille-bot) ne lance AUCUN workflow `on: push` (règle GitHub) —
+  vu le 2026-11-09 : commit `3f4e544` (veille du 09) poussé sans déclencher CI ni Deploy Pages,
+  le site continuait de servir la veille du 07. → veille.yml déclenche explicitement
+  deploy-pages.yml via l'API (`actions: write` + POST .../workflows/deploy-pages.yml/dispatches)
+  après chaque commit data/.
 - **Base path GitHub Pages projet** : le site est servi sous `/vibe-veille/`. Le build de
   déploiement passe `VIBE_VEILLE_BASE=/vibe-veille` (voir `deploy-pages.yml`) →
   `paths.base` + `paths.relative=false` dans `app/vite.config.ts`. Côté client, utiliser

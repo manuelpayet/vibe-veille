@@ -30,7 +30,10 @@ statuspage.io) sur les dernières 24 h → dédup par URL → **mistral-small-la
 article en FR (1 phrase) → **mistral-large-latest** classe par thème (liste fixe pro, voir
 `generator/config/themes.json`), score 0-100, tendance du thème en 2-3 phrases, top 5 par thème
 → écrit `data/veille-<date>.json` → commit sur `main` → notif `ntfy.sh/<topic>` → `deploy-pages.yml`
-rebuild et déploie le site avec les nouvelles données.
+rebuild et déploie le site avec les nouvelles données. **Le déploiement n'est PAS déclenché par le
+push lui-même** : un commit poussé avec le `GITHUB_TOKEN` ne lance aucun workflow `on: push`
+(règle GitHub) — `veille.yml` appelle donc explicitement l'API `workflow_dispatch` de
+`deploy-pages.yml` après chaque commit `data/`.
 
 ## Setup (à faire une fois sur GitHub)
 
