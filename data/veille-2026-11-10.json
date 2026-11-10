@@ -1,0 +1,739 @@
+{
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T15:31:40.359Z",
+  "window": {
+    "from": "2026-11-09T15:31:40.359Z",
+    "to": "2026-11-10T15:31:40.359Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 21
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 2
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 13
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 1
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 1
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 1
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 1
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "727311c8497c",
+      "title": "The Hardest Tarball?",
+      "url": "https://stoppels.ch/2026/11/07/the-hardest-tarball.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T15:00:39.000Z",
+      "excerpt": "",
+      "summary": "Un tarball corrompu peut bloquer des pipelines CI/CD critiques, impactant la disponibilité des services en production.",
+      "theme": "securite-supply-chain",
+      "score": 90
+    },
+    {
+      "id": "c1bb1a957d97",
+      "title": "v3.8.0-rc.2",
+      "url": "https://github.com/traefik/traefik/releases/tag/v3.8.0-rc.2",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-10T14:40:14.000Z",
+      "excerpt": "Important: Please read the migration guide . Bug fixes: [authentication] Limit BasicAuth password length ( #14168 @Neffi42 ) [authentication] Support connection-bound authentication schemes in Proxy-Authorization ( #14203 @Neffi42 ) [k8s/gatewayapi] Bump sigs.k8s.io/gateway-api to v1.7.0 ( #14204 @rtribotte ) [k8s/gatewayapi] Keep Gateway InsecureFrontendValidationMode condition owned by Traefik ( #14217 @colinlabs ) [k8s/ingress-nginx] Apply host-less auth-tls annotations to the default TLS option ( #14224 @rtribotte ) [k8s/ingress-nginx] Apply Ingress NGINX CORS before the redirect annotations ( #14093 @lazerg ) [k8s/ingress-nginx] Fix Ssl-Client-* headers when Ingresses share a host ( #14160 @Neffi42 ) [k8s/knative] Bump knative.dev/pkg to v0.0.0-20261102011501-7b6dcbbe4ea4 ( #14220 @kevinpollet ) [middleware] Accept uppercase Q weight in compress Accept-Encoding parsing ( #14153 @locker95 ) [middleware] Bump github.com/vulcand/oxy to v2.3.2 ( #14241 @ldez ) [middleware, performance] Limit zstd encoder memory in the Compress middleware ( #14167 @juliens ) [plugins] Fix deterministic randomness in WASM plugins ( #14107 @yugfletcher ) [plugins] Bump github.com/traefik/yaegi to v0.16.3 ( #14231 @juliens ) [server] Validate HTTP Host matcher values ( #13571 @Milad93R ) [server] Resolve dot-segments and empty segments with path parameters ( #14188 @Neffi42 ) [server, grpc] Add regression test for gRPC bidirectional streams ( #14037 @ozenyunus35 ) [service] Fix SPIFFE configuration for the TCP servers transport ( #14200 @simpleqt ) [tcp] Detect TCP connection reset on read when the error is wrapped ( #14046 @noakky ) Documentation: [k8s/gatewayapi] Bump Gateway API minimal version to v1.7.0 in v3.8.0 migration guide ( #14190 @jnoordsij ) [k8s/ingress-nginx] List missing ingress-nginx annotations as unsupported ( #14163 @lazerg ) [middleware] Use a Secret for basicAuth in the Chain middleware Kubernetes example ( #14143 @lazerg ) [middleware] Fix grammar in observabilit",
+      "summary": "Traefik v3.8.0-rc.2 corrige des bugs critiques (auth, k8s, middleware) et améliore la sécurité et la stabilité pour les SRE.",
+      "theme": "helm-traefik",
+      "score": 95
+    },
+    {
+      "id": "bc8d380b73df",
+      "title": "Ableton Live 13",
+      "url": "https://www.ableton.com/en/live/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T12:58:04.000Z",
+      "excerpt": "",
+      "summary": "Ableton Live 13 améliore la stabilité et les performances audio pour les SRE gérant des environnements multimédias critiques.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "252a67cf93cb",
+      "title": "Let over Lambda–50 Years of Lisp (2008)",
+      "url": "https://letoverlambda.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T12:35:27.000Z",
+      "excerpt": "",
+      "summary": "Lisp, langage historique, reste pertinent pour la programmation fonctionnelle et l'IA, essentiel pour l'innovation SRE moderne.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "52fb6312db3a",
+      "title": "What's new in the .NET 11 runtime",
+      "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T12:20:07.000Z",
+      "excerpt": "",
+      "summary": "La version .NET 11 du runtime améliore les performances et la fiabilité pour les SRE, réduisant les temps d'arrêt et optimisant les déploiements.",
+      "theme": "java-jvm",
+      "score": 80
+    },
+    {
+      "id": "428ac4b42c0b",
+      "title": "AlphaProof Code",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T12:11:12.000Z",
+      "excerpt": "",
+      "summary": "AlphaProof Code résout des problèmes mathématiques avancés en code, crucial pour automatiser la vérification formelle et améliorer la fiabilité des systèmes critiques.",
+      "theme": "observabilite",
+      "score": 70
+    },
+    {
+      "id": "ec4b65b7000c",
+      "title": "Show HN: A 15 MB self-hosted Netflix and Spotify for your media server",
+      "url": "https://github.com/HolyArrs/HolyArrs",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T11:51:19.000Z",
+      "excerpt": "",
+      "summary": "HolyArrs propose un serveur média auto-hébergé léger (15 Mo) pour diffuser films/musique, idéal pour les SRE cherchant des solutions autonomes et économiques.",
+      "theme": "hors-sujet",
+      "score": 15
+    },
+    {
+      "id": "85a32fe1244f",
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T11:38:57.000Z",
+      "excerpt": "",
+      "summary": "Anthropic prépare une IPO via une roadshow, impactant la stabilité des infrastructures cloud et la gestion des coûts pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "7de02ab712ce",
+      "title": "'C:\\> FORMAT C:' – relax, it's just a screen saver",
+      "url": "https://fakedos.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T10:32:36.000Z",
+      "excerpt": "",
+      "summary": "Un faux écran de veille 'FORMAT C:' sur fakedos.com rappelle l'histoire des commandes destructrices, utile pour sensibiliser les SRE aux risques de panique.",
+      "theme": "securite-supply-chain",
+      "score": 60
+    },
+    {
+      "id": "1484bc2b220d",
+      "title": "Queens Public library under ransomware attack e-borrowing suspended",
+      "url": "https://connect.queenslibrary.org/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T09:04:39.000Z",
+      "excerpt": "",
+      "summary": "La bibliothèque publique de Queens a subi une cyberattaque par ransomware, bloquant ses services numériques essentiels pour les utilisateurs.",
+      "theme": "securite-supply-chain",
+      "score": 85
+    },
+    {
+      "id": "97ab2db76bd3",
+      "title": "Is my production support experience, SRE reading, and a hands-on project enough to transition into SRE?",
+      "url": "https://www.reddit.com/r/sre/comments/1xsi47h/is_my_production_support_experience_sre_reading/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-10T09:00:03.000Z",
+      "excerpt": "I’m currently working as a Senior Associate at a major Data and Analytics firm, supporting low-latency financial data products. My experience includes investigating production issues, troubleshooting Linux and Windows systems, and working with networking technologies such as TCP/IP, UDP, and multicast. I’m looking to transition into Site Reliability Engineering, particularly roles involving Linux internals, distributed systems, performance engineering, observability, and cloud infrastructure. My current plan is to build on my existing experience through three areas: Reading and theory ● Google’s Site Reliability Engineering book. ● Brendan Gregg’s Systems Performance: Enterprise and the Cloud. Refreshing my DevOps skills I completed a DevOps course around two years ago that covered Docker, Kubernetes, Infrastructure as Code, Terraform, Ansible, and GitHub Actions. I need to refresh these skills and get more practical experience using them together. Building a hands-on project I’m planning to build a client-server application that exchanges messages, containerize it with Docker, and deploy it to AWS EKS using Terraform. I’ll generate traffic, simulate process and network failures, and use tools such as Prometheus and Grafana to monitor performance and reliability. I’ll also investigate failures using Linux performance tools, logs, and crash dumps, then implement recovery mechanisms and document the results. My goal is to demonstrate that I can investigate system behaviour, identify root causes, improve reliability, and automate recovery, rather than simply deploy an application. I’d appreciate advice on a few questions: 1. Would my current production support experience, combined with refreshed DevOps skills, these books, and a well-executed project, be enough to start applying for SRE roles? 2. How much do hiring managers value this type of project compared with direct SRE experience? 3. Which gaps should I prioritize: Linux internals, coding, Kubernetes, cloud infra",
+      "summary": "Un professionnel en support production avec des compétences Linux/réseau peut basculer vers SRE via théorie, DevOps et un projet pratique (observabilité, résilience, cloud).",
+      "theme": "hors-sujet",
+      "score": 40
+    },
+    {
+      "id": "ce6822dea839",
+      "title": "v3.7.18",
+      "url": "https://github.com/traefik/traefik/releases/tag/v3.7.18",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-10T08:33:25.000Z",
+      "excerpt": "Important: Please read the migration guide . Bug fixes: [authentication] Limit BasicAuth password length ( #14168 @Neffi42 ) [authentication] Support connection-bound authentication schemes in Proxy-Authorization ( #14203 @Neffi42 ) [k8s/ingress-nginx] Apply host-less auth-tls annotations to the default TLS option ( #14224 @rtribotte ) [k8s/ingress-nginx] Apply Ingress NGINX CORS before the redirect annotations ( #14093 @lazerg ) [k8s/ingress-nginx] Fix Ssl-Client-* headers when Ingresses share a host ( #14160 @Neffi42 ) [k8s/knative] Bump knative.dev/pkg to v0.0.0-20261102011501-7b6dcbbe4ea4 ( #14220 @kevinpollet ) [middleware] Accept uppercase Q weight in compress Accept-Encoding parsing ( #14153 @locker95 ) [middleware] Bump github.com/vulcand/oxy to v2.3.2 ( #14241 @ldez ) [middleware, performance] Limit zstd encoder memory in the Compress middleware ( #14167 @juliens ) [plugins] Fix deterministic randomness in WASM plugins ( #14107 @yugfletcher ) [plugins] Bump github.com/traefik/yaegi to v0.16.3 ( #14231 @juliens ) [server] Validate HTTP Host matcher values ( #13571 @Milad93R ) [server] Resolve dot-segments and empty segments with path parameters ( #14188 @Neffi42 ) [server, grpc] Add regression test for gRPC bidirectional streams ( #14037 @ozenyunus35 ) [service] Fix SPIFFE configuration for the TCP servers transport ( #14200 @simpleqt ) [tcp] Detect TCP connection reset on read when the error is wrapped ( #14046 @noakky ) Documentation: [k8s/ingress-nginx] List missing ingress-nginx annotations as unsupported ( #14163 @lazerg ) [middleware] Use a Secret for basicAuth in the Chain middleware Kubernetes example ( #14143 @lazerg ) [middleware] Fix grammar in observability and InFlightReq pages ( #14209 @m-shahi ) [plugins] Fix typos in plugin type error and documentation ( #14186 @sarankumar1325 ) Add version to the dot-segments migration note ( #14248 @kevinpollet ) Fix Docker Hub link in README ( #14198 @GUOZIJAN ) Fix broken anchors in providers overview, SP",
+      "summary": "Traefik v3.7.18 corrige des bugs critiques en auth, k8s et middleware, améliorant sécurité et stabilité pour les SRE.",
+      "theme": "helm-traefik",
+      "score": 90
+    },
+    {
+      "id": "c05e39901117",
+      "title": "v2.11.62",
+      "url": "https://github.com/traefik/traefik/releases/tag/v2.11.62",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-10T08:32:34.000Z",
+      "excerpt": "Important: Please read the migration guide . Bug fixes: [authentication] Limit BasicAuth password length ( #14168 @Neffi42 ) [authentication] Support connection-bound authentication schemes in Proxy-Authorization ( #14203 @Neffi42 ) [plugins] Bump github.com/traefik/yaegi to v0.16.3 ( #14231 @juliens ) [server] Resolve dot-segments and empty segments with path parameters ( #14188 @Neffi42 )",
+      "summary": "Traefik v2.11.62 corrige des bugs critiques en auth et plugins, essentiel pour la stabilité et la sécurité des reverse proxys.",
+      "theme": "helm-traefik",
+      "score": 85
+    },
+    {
+      "id": "a7266a93fa89",
+      "title": "Fireworks AI security breach impacts Notion and their customers",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T07:19:38.000Z",
+      "excerpt": "",
+      "summary": "Une faille de sécurité chez Fireworks AI a exposé des données Notion et clients, impactant la confidentialité et la disponibilité des services.",
+      "theme": "securite-supply-chain",
+      "score": 90
+    },
+    {
+      "id": "f2020fc8a1a5",
+      "title": "When Missing Telemetry Is the Signal",
+      "url": "https://opentelemetry.io/blog/2026/when-missing-telemetry-is-the-signal/",
+      "source": "opentelemetry-blog",
+      "sourceName": "OpenTelemetry Blog",
+      "publishedAt": "2026-11-10T06:42:06.000Z",
+      "excerpt": "An empty dashboard can mean that nothing happened. It can also mean that the&#10;system stopped reporting what happened. On a dashboard, they look the same. One&#10;needs no action. The other means you are missing the information you need to&#10;act. &#10; Take a workflow where events enter a service, pass through a processing stage,&#10;and reach storage. An operator then uses the stored result. Every service can&#10;remain available while one data transfer silently drops events. Error rates stay&#10;low, yet the operator is working with an incomplete view.",
+      "summary": "Une absence de télémétrie peut masquer une panne silencieuse, faussant la visibilité et l'action SRE.",
+      "theme": "observabilite",
+      "score": 95
+    },
+    {
+      "id": "731b359b01ad",
+      "title": "ClickHouse Acquires Xata",
+      "url": "https://xata.io/blog/xata-is-joining-clickhouse",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T06:14:51.000Z",
+      "excerpt": "",
+      "summary": "ClickHouse acquiert Xata pour renforcer ses capacités de base de données vectorielle et analytique temps réel.",
+      "theme": "observabilite",
+      "score": 70
+    },
+    {
+      "id": "fe0656248ddf",
+      "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T06:01:08.000Z",
+      "excerpt": "",
+      "summary": "Amazon a réduit ses coûts de millions en remplaçant Sonnet 4.6 par Strands Decider pour l'optimisation des décisions, améliorant l'efficacité opérationnelle.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "2f7eb611b838",
+      "title": "Your TV can see through walls (2025)",
+      "url": "https://maurycyz.com/projects/fading/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T05:24:45.000Z",
+      "excerpt": "",
+      "summary": "Des chercheurs exploitent les signaux TV pour cartographier l'intérieur des bâtiments via des fuites électromagnétiques, impactant la confidentialité et la sécurité des SRE.",
+      "theme": "securite-supply-chain",
+      "score": 75
+    },
+    {
+      "id": "6aa26246d681",
+      "title": "Ultorg: The User Interface for Relational Databases",
+      "url": "https://www.ultorg.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T03:59:39.000Z",
+      "excerpt": "",
+      "summary": "Ultorg propose une interface utilisateur moderne pour bases de données relationnelles, simplifiant leur gestion et exploitation pour les SRE.",
+      "theme": "observabilite",
+      "score": 60
+    },
+    {
+      "id": "cb74eae5b6bc",
+      "title": "CloudWatch PromQL alarms now support EC2 and Application Auto Scaling",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-alarms-autoscaling-group-actions",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-10T03:00:00.000Z",
+      "excerpt": "Amazon CloudWatch alarms that use Prometheus Query Language (PromQL) can now trigger Amazon EC2 and Application Auto Scaling step and simple scaling policies. You can scale your EC2 Auto Scaling groups on CloudWatch OpenTelemetry metrics using the same kind of PromQL queries you use for dashboards and alerting. In this release, PromQL alarms also support EC2 Auto Scaling simple and step scaling policies. Target tracking is not currently a supported policy type for PromQL alarms. Teams moving to OpenTelemetry can scale capacity on the same metrics as the rest of their monitoring, instead of keeping separate classic metric alarms for scaling. For step scaling, how far the value is past the threshold in your PromQL query decides which step applies. The query must return a single series and compare it to a threshold. You can add EC2 Auto Scaling and Application Auto Scaling actions in the CloudWatch console when you create or edit an alarm, or with the PutMetricAlarm API, AWS CLI, AWS SDKs, or AWS CloudFormation. You can also use the PutMetricAlarm API, AWS CLI, AWS SDKs, or AWS CloudFormation. This feature is available in all AWS Regions where CloudWatch PromQL alarms are available. Standard CloudWatch alarm pricing applies. To get started, see Using PromQL in alarms and Alarm actions in the Amazon CloudWatch User Guide.",
+      "summary": "CloudWatch PromQL alarms pilotent désormais les politiques de scaling EC2 et Application Auto Scaling via OpenTelemetry, simplifiant l'automatisation des ressources.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "388545e726ab",
+      "title": "cmd/builder/v0.166.0-nightly.202611100211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611100211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-10T02:11:20.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) pour tester les fonctionnalités en amont avant stabilisation.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "056bf3840b3a",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611100211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611100211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-10T02:11:19.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, améliorant la supervision des agents.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "81d6aeece2dd",
+      "title": "v0.166.0-nightly.202611100211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611100211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-10T02:11:08.000Z",
+      "excerpt": "v0.166.0-nightly.202611100211: nightly build",
+      "summary": "Nouvelle version nightly du Collector OpenTelemetry (v0.166.0) avec des correctifs et améliorations pour la collecte de télémétrie.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "d363b026f0d9",
+      "title": "Locating the source of a mysterious beep",
+      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T00:10:46.000Z",
+      "excerpt": "",
+      "summary": "Un SRE a résolu un 'bip mystérieux' sur un serveur en traçant la source via des logs système et des outils de monitoring.",
+      "theme": "observabilite",
+      "score": 75
+    },
+    {
+      "id": "c5380c1fb93a",
+      "title": "Horible public key tricks",
+      "url": "https://maurycyz.com/projects/badcert/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T00:07:17.000Z",
+      "excerpt": "",
+      "summary": "L'article révèle des techniques de manipulation de clés publiques SSL/TLS dangereuses, critiques pour la sécurité des infrastructures SRE.",
+      "theme": "securite-supply-chain",
+      "score": 95
+    },
+    {
+      "id": "91930400e37f",
+      "title": "Amazon Bedrock AgentCore now offers a Web Search API",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "excerpt": "Today, AWS announces the general availability of the Web Search API on Amazon Bedrock AgentCore, which lets you search the web with a single API call. Web Search on AgentCore has been available as an MCP tool through AgentCore Gateway. The new InvokeWebSearch API gives applications, custom agent loops, and data pipelines search results with no resources to create. The API returns ranked results from the Amazon-operated web index behind Web Search on AgentCore. Each result includes a text extract and, when available, the page title, URL, and publication time. You can filter each request by domain and publication time, for example to find recent product announcements or check a claim against trusted domains. You call the API with the AWS SDKs or the AWS Command Line Interface (AWS CLI) and authorize calls with AWS Identity and Access Management (IAM). You can call it from your virtual private cloud (VPC) through AWS PrivateLink and log requests as AWS CloudTrail data events. Web Search API queries are billed at $7 per 1,000 queries, the same rate as Web Search through AgentCore Gateway, with no gateway charges. The Web Search API is available in US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Ireland). To learn more, see Search the web with the InvokeWebSearch API in the AgentCore Developer Guide, the Web Search page, and AgentCore pricing .",
+      "summary": "AWS Bedrock AgentCore propose une API Web Search pour interroger le web via un appel API unique, simplifiant l'intégration et réduisant les coûts d'infrastructure pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "cfeaedcb835d",
+      "title": "Announcing a New Home for Spring for Apache Pulsar",
+      "url": "https://spring.io/blog/2026/11/10/spring-pulsar-new-home-asf",
+      "source": "spring-blog",
+      "sourceName": "Spring Blog",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "excerpt": "We are excited to announce an important transition for the Spring for Apache Pulsar project! To foster even deeper integration and collaboration with the broader Pulsar community, the project is moving to a new official home as a subproject within the Apache Pulsar project at the Apache Software Foundation. Going forward, the subproject will be officially named Apache Pulsar support for Spring . Why the Move? Since its inception, Spring for Apache Pulsar has helped developers seamlessly build reactive and message-driven applications using Spring paradigms alongside Apache Pulsar's powerful messaging features. Bringing this integration directly into the Apache Pulsar project allows the community to streamline development, accelerate feature support, and ensure long-term alignment with the evolution of Apache Pulsar. Important Maintenance &#x26; Support Information As part of this transition: Final Release: Spring for Apache Pulsar 2.0.8 is the final release under the Spring project umbrella. End of Maintenance: The Spring team will no longer publish updates, maintenance patches, or bug fixes for Spring for Apache Pulsar within existing or future active Spring release trains. New Support Model: All ongoing maintenance, feature development, bug fixes, project support, and releases will now be handled directly by the Apache Pulsar project. Spring Boot Starter and Spring Cloud Stream Binder This transition also affects related ecosystem integrations: Spring Boot Starter: We will discontinue maintenance of the Spring Boot starter for Spring Pulsar. Version 2.0.8 will remain available with Spring Boot 4.2.0 . For subsequent releases, users should switch to the starter provided by the new Apache Pulsar support for Spring project. Spring Cloud Stream Binder: The Spring Cloud Stream binder for Apache Pulsar will also migrate. Spring Cloud Stream will include the Pulsar binder in its upcoming 5.1.0 release. Following that release, users should obtain the binder directly from t",
+      "summary": "Spring for Apache Pulsar devient un sous-projet Apache Pulsar pour une intégration renforcée et une maintenance centralisée, cruciale pour la stabilité des systèmes SRE.",
+      "theme": "java-jvm",
+      "score": 60
+    },
+    {
+      "id": "af0b10afed04",
+      "title": "Tutorial: The G1 Garbage Collector",
+      "url": "https://inside.java/2026/11/10/g1gc-tutorial/",
+      "source": "inside-java",
+      "sourceName": "Inside Java (OpenJDK)",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "excerpt": "In this tutorial, we will cover a brief history of G1, its key design concepts, and how to use it.",
+      "summary": "Le G1 GC est un collecteur de mémoire Java optimisé pour les gros heap, réduisant les latences critiques pour les SRE.",
+      "theme": "java-jvm",
+      "score": 90
+    },
+    {
+      "id": "5398f086fb0e",
+      "title": "Amazon CloudWatch Logs announces account-level retention policies",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-log-retention/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T22:15:00.000Z",
+      "excerpt": "Amazon CloudWatch Logs now supports account-level retention policies, so you can use a single policy to set how long log data is kept across all or subset of log groups in an AWS account. Account-level policies allow platform and security teams to bring each log group in line with their retention standards. With today's launch, you can create policies that cover all log groups in the account or apply to a specific set of log groups with names that start with a prefix, such as /aws/lambda. You can additionally choose whether it applies to existing log groups or only new ones. When more than one policy matches a log group, the longest retention period applies. For example, a central platform team can set a 90-day baseline for the account and a 1-year policy for log groups that start with /security to meet audit requirements, without tracking individual log group names. Account-level retention policies are available in all commercial AWS Regions except Middle East (Bahrain), and Middle East (UAE) at no additional cost . You can create and manage up to 20 policies per account and region using the AWS Management Console, AWS CLI, and AWS SDKs. Learn more in the CloudWatch Logs documentation , and the API reference .",
+      "summary": "AWS CloudWatch Logs permet désormais de définir des politiques de rétention au niveau du compte pour uniformiser la conservation des logs, simplifiant la conformité et réduisant la gestion manuelle.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "404b36be27c0",
+      "title": "AWS Glue adds 100 new native connectors for popular SaaS applications",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-glue-adds-100-new-native-connectors/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T21:33:00.000Z",
+      "excerpt": "AWS Glue now supports 100 new native connectors that simplify access to data in popular SaaS and REST API-based applications. Previously, bringing data from SaaS applications into AWS required writing custom code. Now, teams can create a connection once in the AWS Glue Data Catalog and reuse it across ETL jobs with the same permissions model they already use for AWS Glue. The new connectors span generative AI, finance, payments, marketing, product analytics, human resources, engineering, IT operations, and collaboration tools. AI teams can bring usage and cost data from model providers such as Anthropic to track generative AI adoption and spend. Finance teams can consolidate transactions from applications such as Adyen, Square, and Xero for faster reporting. Product and marketing teams can combine billing, usage, and campaign data from tools such as Chargebee, Amplitude, and Klaviyo to understand customer lifetime value. HR teams can unify workforce data from systems such as BambooHR and Gusto for headcount planning. Engineering teams can join incident and deployment data from tools such as PagerDuty, Sentry, Jenkins, and Vercel to track reliability. You can load the integrated data into Amazon S3 or Amazon Redshift for analytics and reporting. The 100 new AWS Glue connectors are available in all AWS Commercial Regions on Glue versions 5.0 and above. To learn more, see the complete list of available connectors and learn about connecting to individual connectors in the AWS Glue documentation.",
+      "summary": "AWS Glue ajoute 100 connecteurs natifs pour SaaS, simplifiant l'intégration de données critiques en ETL sans code personnalisé, améliorant fiabilité et productivité des équipes SRE.",
+      "theme": "observabilite",
+      "score": 70
+    },
+    {
+      "id": "c06e7b11fef8",
+      "title": "AWS STS now supports cross-partition federation for AWS identities",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-sts-cross-partition",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T20:03:00.000Z",
+      "excerpt": "AWS Security Token Service (AWS STS) now lets your workloads use their AWS Identity and Access Management (IAM) identity in one partition to get temporary credentials for an IAM role in a different partition, without storing long-term credentials, which can help improve your security posture. Partitions are groups of AWS Regions, such as the commercial and AWS GovCloud (US) Regions, and each partition has an independent instance of IAM, creating a hard boundary between them. Previously, organizations that run workloads across partitions commonly relied on long-term credentials, such as IAM user access keys, that don't expire automatically. With this launch, your workload requests a short-lived token from AWS STS in its own partition and exchanges it for temporary AWS credentials in the other partition, using the existing GetWebIdentityToken and AssumeRoleWithWebIdentity APIs. You control which identities can access each role, apply governance across your organization, and audit token use in AWS CloudTrail in both partitions. This launch helps with scenarios such as consolidated security and compliance reporting, and centralized operations tooling. If your organization already operates a public key infrastructure (PKI), IAM Roles Anywhere is another option for cross-partition access. Cross-partition federation is available at no additional charge in all commercial AWS Regions, the AWS GovCloud (US) Regions, the China Regions, and the AWS European Sovereign Cloud (Germany) Region. To learn more, see Federating AWS identities across AWS partitions in the IAM User Guide and the blog post Simplify cross-partition access with AWS IAM outbound identity federation .",
+      "summary": "AWS STS permet désormais la fédération inter-partitions pour des identités IAM, améliorant la sécurité en évitant les clés d'accès long terme et centralisant la gouvernance.",
+      "theme": "securite-supply-chain",
+      "score": 80
+    },
+    {
+      "id": "53ce314d65d5",
+      "title": "Here comes the sun[light]:An ambient Daylight Clock with time and space controls",
+      "url": "https://hannahilea.com/blog/daylight-clock/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-09T20:00:32.000Z",
+      "excerpt": "",
+      "summary": "Un cadran solaire ambiant affiche l'heure et la position du soleil, optimisant la synchronisation circadienne pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "1130d877dd4c",
+      "title": "USPS now offers official ZIP Code boundary polygons",
+      "url": "https://postalpro.usps.com/zcb",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-09T19:58:59.000Z",
+      "excerpt": "",
+      "summary": "L'USPS publie des polygones officiels des limites des codes postaux, essentiels pour la géolocalisation et la précision des services SRE.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "4ec2ac75bd33",
+      "title": "Amazon Quick is now AWS Quick",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-quick-aws-quick/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T19:00:00.000Z",
+      "excerpt": "Amazon Quick, the AI workspace built only for work, is now AWS Quick, a name that reflects the enterprise security and governance built into Quick from the start as an AWS service. The new name now appears across the Quick website, the web, desktop, and mobile apps, and AWS documentation. Existing customers don't need to take any action, and Quick works the same way it did before. Amazon Quick Sight, the business intelligence capability in Quick, is now AWS Quick Sight. Quick Sight customers can keep using their dashboards, datasets, and analyses just as they do today, with no changes to their data, settings, or pricing. With Quick, teams use AI agents to research, analyze, and act across the data and applications they already use, regardless of vendor. Quick understands your role, your team, and how your work connects, and anyone can build agents, apps, and automations in plain language that become shared assets for the whole team. Quick is HIPAA eligible and holds compliance certifications including FedRAMP, SOC 2, and ISO 27001. Your data stays in your environment and never trains someone else's models. AWS Quick is available in many AWS Regions. For more information, see the AWS Region table . To learn more, see AWS Quick .",
+      "summary": "AWS Quick remplace Amazon Quick pour renforcer la sécurité et la gouvernance AWS, sans impact pour les clients existants.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "8cf24e3bb1c9",
+      "title": "E-means: Outperforming k-means in one-tenth the epochs",
+      "url": "https://e-means.github.io/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-09T18:45:43.000Z",
+      "excerpt": "",
+      "summary": "E-means accélère la convergence des clusters vs k-means en réduisant les epochs d'un facteur 10, optimisant ainsi les ressources SRE.",
+      "theme": "hors-sujet",
+      "score": 25
+    },
+    {
+      "id": "66670d714072",
+      "title": "Claude Fable 5.2 is now available on AWS GovCloud (US)",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/claude-fable-5-2-aws-govcloud/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T18:30:00.000Z",
+      "excerpt": "Claude Fable 5.2 is now available on AWS GovCloud (US) and brings Anthropic's most capable generally available model for technical work to regulated customers. Fable 5.2 sets a new standard on the hardest projects in coding, math, and science, and Anthropic recommends it for fields like software engineering, scientific research, and finance, where judgment, iteration, and accuracy are critical. Claude Mythos 5.2, the same underlying model as Claude Fable 5.2, with its full cyber and bio capabilities retained for cybersecurity and biology research, is available through Anthropic’s verification programs. Claude Fable 5.2 can work for hours and up to days unattended, driving autonomous work and taking on bigger, more challenging projects. It takes on large, loosely defined engineering problems across multiple repositories and monorepos, tests its own work as it goes, and is more willing to question inherited conclusions, so it finds root causes previous Claude models miss. In Anthropic’s testing, it coordinated hundreds of subagents as a lead agent and flagged results that don't reproduce. Beyond coding, it develops new analytical methods for scientific research and brings frontier reasoning to quantitative finance. Anthropic has designated Fable 5.2 and Mythos 5.2 as covered models, which require data retention for safety monitoring. Until Enterprise Frontier Safeguards is available, eligible customers can use Fable 5.2 with zero data retention. Visit the Amazon Bedrock abuse detection page to learn more about details regarding data retention for these models. To learn more, see the Amazon Bedrock documentation , and regional availability .",
+      "summary": "Claude Fable 5.2 sur AWS GovCloud offre un modèle IA avancé pour les secteurs régulés, crucial pour l'automatisation et la précision des projets techniques critiques.",
+      "theme": "hors-sujet",
+      "score": 40
+    },
+    {
+      "id": "7776275a7b50",
+      "title": "Amazon Bedrock now offers Claude Mythos 5.2 to Eligible Customers in AWS GovCloud (US)",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-claude-mythos-5-2-govcloud/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T18:30:00.000Z",
+      "excerpt": "Amazon Bedrock, the platform for building generative AI applications and agents at production scale, now offers Claude Mythos 5.2 to eligible customers in AWS GovCloud (US). Claude Mythos 5.2 is Anthropic's most advanced AI model to date for use cases across cybersecurity, software coding, and complex reasoning tasks. The model can identify sophisticated security vulnerabilities in software and demonstrate exploitability. It can also comprehend large codebases and deliver actionable findings with less manual guidance than previous AI models. This enables security teams to accelerate defensive cybersecurity work, find and fix security vulnerabilities in the world's most critical software, and address them before threats emerge. Claude Mythos 5.2 is the first of Anthropic's AI models with powerful cybersecurity capabilities to be available in AWS GovCloud (US). Claude Mythos 5.2 is available to eligible customers in AWS GovCloud (US) Regions through Amazon Bedrock . Access is limited to allow-listed organizations; to get started, visit Anthropic's Cyber Verification Program .",
+      "summary": "AWS GovCloud (US) propose désormais Claude Mythos 5.2 via Bedrock pour renforcer la cybersécurité et l'analyse de code critique avant les menaces.",
+      "theme": "hors-sujet",
+      "score": 40
+    },
+    {
+      "id": "796a7f7ee338",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-09T18:01:10.000Z",
+      "excerpt": "",
+      "summary": "Claude Fable 5.2 et Mythos 5.2 améliorent la fiabilité et la sécurité des LLM pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 45
+    },
+    {
+      "id": "f6fd78c8e766",
+      "title": "Amazon Connect Customer launches evaluation form templates",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-evaluation-form-templates/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T18:00:00.000Z",
+      "excerpt": "Amazon Connect Customer now provides evaluation form templates so managers don't have to build forms from scratch, reducing the time to deploy automated evaluations of human and AI agent performance. These templates cover typical customer interaction scenarios: customer service, inbound sales, and self-service. Each template assesses human and AI agent behaviors. For example, the customer service template includes questions such as \"Did the agent show empathy toward the customer's issue?\" Templates also include questions that assess business outcomes such as customer satisfaction and attrition risk, so managers can see how agent behaviors relate to outcomes. Managers can use the templates as-is or customize them before deploying. This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo). To learn more, visit our documentation and our webpage . For Amazon Connect Customer pricing, visit our pricing page.",
+      "summary": "Amazon Connect propose des modèles de formulaires d'évaluation pour automatiser et standardiser l'analyse des performances des agents humains et IA, accélérant les améliorations qualité et métriques business.",
+      "theme": "ccaas-aws-connect",
+      "score": 70
+    },
+    {
+      "id": "30a0560c0197",
+      "title": "Amazon MWAA now supports DuckDB operators",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-mwaa-supports-duckdb-operators/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T18:00:00.000Z",
+      "excerpt": "Amazon Managed Workflows for Apache Airflow (Amazon MWAA) now supports DuckDB operators. DuckDB is an embedded analytical database that lets customers perform data quality checks, summaries, and transformations on data from sources DuckDB supports, including Amazon S3. Native support is available for DuckDB on Amazon MWAA Provisioned environments running Apache Airflow 3.3.1. DuckDB comes preinstalled and preconfigured for AWS connections in the latest MWAA Airflow 3.3.1 update. After updating their MWAA environment to Airflow 3.3.1 and adding execution role access to their data stores, customers can start writing tasks with DuckDBExecuteQueryOperator with no additional setup. This feature is available in all AWS Regions where Amazon MWAA is available. For more information, see the AWS Region table . To learn more, see Using DuckDB with Amazon MWAA in the Amazon MWAA User Guide.",
+      "summary": "Amazon MWAA supporte désormais les opérateurs DuckDB pour des analyses SQL légères et rapides directement dans Airflow, optimisant les workflows de données.",
+      "theme": "observabilite",
+      "score": 65
+    },
+    {
+      "id": "6e336e1b6e9b",
+      "title": "Introducing an open-source UI for graph analytics over data lakes with Amazon Neptune Analytics",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-graphover-datalakes-generally-available",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T17:00:00.000Z",
+      "excerpt": "Today, AWS is introducing an open-source solution with a local web UI that helps customers turn data lake records into graphs for analysis with Amazon Neptune Analytics. By projecting selected records and relationships, customers can investigate connections across tables and run graph algorithms without building their own ETL pipelines. For example, a customer could project accounts and transactions into a graph to explore how accounts are connected or identify communities that may warrant investigation. Doing this today often means writing queries to prepare node and relationship data, creating a Neptune Analytics graph, and managing the import. Customers may also need to build a selective projection so they do not load an entire dataset for a narrower question. The new UI brings those steps into single workflow. To run graph analytics over iceberg tables, customers select an Athena catalog and database, define a property graph using SQL/PGQ, and preview rows before import. The solution runs the projection queries through Athena, stages the selected data in Amazon S3, and imports it into Neptune Analytics. The UI helps customers manage the resulting graph. They can open the loaded graph in Graph Explorer to query and visualize relationships. [1] The UI runs locally and it is available in all regions where Amazon Neptune Analytics is available. To get started, see the setup instructions .",
+      "summary": "AWS propose une UI open-source pour transformer des données de data lakes en graphes analysables via Neptune Analytics, simplifiant l'ETL et l'exploration des relations sans pipeline complexe.",
+      "theme": "observabilite",
+      "score": 75
+    },
+    {
+      "id": "86cc3b8b390e",
+      "title": "Career help needed",
+      "url": "https://www.reddit.com/r/sre/comments/1xrwyyd/career_help_needed/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-09T16:55:46.000Z",
+      "excerpt": "I work at a very large corporation as an SRE. I got into the position from the ops side and have learned quite a bit, but I want to try and either advance my career here, or find a new position elsewhere. The problem is that I largely feel like the position is a glorified ops role. I spend a lot of my time answering tickets, which usually involve just rerunning something, or being involved with production deployments, but that mostly involves running a few CICD pipelines or making relatively simple changes in AWS. Our overall stack is we receive large amounts of data from customers, process them via EMR in EC2 (I explored EKS independently and was able to get the pipelines to run, but was told that we may be moving off EMR completely so it feels moot) and then push a lot of the data to Snowflake. I don't know what happens after that, because it is not a part of the scope of my team. Most of the incidents we get are related to data pipeline failures. I see postings for SRE/DevOps/Cloud Engineer roles and I see all of the various tools and products that are listed and am familiar with them, at least enough to know what they do and how they work with other tools. However, I worry that if I got an interview I would flail around because I don't know how a lot of this stuff gets set up, mostly because it is done with other teams who just tell us what to use. Everything is very siloed here which makes it difficult to learn how to use some tools better. Another issue of concern I have is a lack of computer science/programming background. I can look at python or bash scripts and usually determine what they are doing, but I can't create them on my own for the life of me. I can use Claude to do it, or try to brute force my way via google if the script is simple enough, but that is largely it. Lastly, I see posts where people will recommend working on a project and deploying something on their own as something to point to for having knowledge. I guess my question there is what ",
+      "summary": "SRE en entreprise avec tâches trop opérationnelles (tickets, déploiements basiques) et peu d'évolution technique, craignant un manque de compétences pour des postes plus avancés.",
+      "theme": "hors-sujet",
+      "score": 50
+    },
+    {
+      "id": "8f7ed21e7947",
+      "title": "Run cost-effective, always-on agents to monitor your environment: the engineering behind Watchers",
+      "url": "https://grafana.com/blog/run-cost-effective-always-on-agents-to-monitor-your-environment-the-engineering-behind-watchers/",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-09T16:30:31.000Z",
+      "excerpt": "Alert rules are great for the failures you can predict, but they fall short on the ones you can&#039;t. With the advent of modern AI, you might think the solution is to swarm your stack with agents that monitor every last detail, but that can quickly lead to astronomical bills. And those are the gaps Watchers fill: catching what alerts miss while keeping costs in control. Generally Available as of ObservabilityCON 2026 , Watchers are always-on agents in Grafana Assistant . You describe what to monitor (in natural language) and pick your data sources, and the watcher learns what \"normal\" looks like and tells you when you drift from that state. Ultimately, this helps you surface problems without needing an alert, giving you wider coverage and more confidence in your system. But how do we keep Watchers cost-effective for our customers, especially in comparison to building your own agent that runn around the clock? For example, let&#039;s say you deploy your own version of a watcher that checks in every 10 minutes, which means it runs 4,320 times a month. If each run were an agentic investigation, which cost us between $0.56 and $1.26 in a recent experiment , that one watcher you built would cost thousands of dollars a month. Yet the Watchers running on our own Grafana Cloud stack cost a median of less than $5 a month . In this post, I&#039;ll show you the engineering behind that number, which mostly comes down to one question: where do you actually need an LLM&#039;s intelligence, and how much of it? The TL;DR on Watchers Watchers keeps an eye on one things you care about, such as a service, a dependency, or a fix you shipped after an incident. Think of it as the dashboard check you&#039;d otherwise do by hand, done around the clock. It stays quiet until something needs attention, then it sends you its assessment and the evidence behind it. For critical findings, it can also launch an Investigation in Assistant to find the cause. Here&#039;s the gist of how it helps yo",
+      "summary": "Grafana Watchers surveillent en continu les anomalies non détectées par les alertes, avec une approche économique (moins de 5$/mois) grâce à une optimisation des requêtes LLM.",
+      "theme": "observabilite",
+      "score": 90
+    },
+    {
+      "id": "3ef732dd0eb2",
+      "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-09T16:00:45.000Z",
+      "excerpt": "",
+      "summary": "Payments Canada lance le RTR pour des transactions 24/7, boostant la résilience et l'efficacité des systèmes de paiement nationaux.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "69f5a10c4804",
+      "title": "Amazon DocumentDB Serverless now provides up to 35% higher throughput",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/documentdb-serverless-platform-version-4/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T16:00:00.000Z",
+      "excerpt": "Amazon DocumentDB Serverless now provides up to 35% higher throughput with the launch of platform version 4. Platform versions represent improvements in performance, scaling capabilities, or features, and are automatically managed at the cluster level. All new serverless clusters launch on the latest platform version available in your AWS Region. You can upgrade existing clusters on platform version 3 to platform version 4 by applying the serverless-platform-version-update pending maintenance action. This gives you control over when to apply the update, either immediately or during your next scheduled maintenance window. After you upgrade to a newer platform version, you can't downgrade to a previous version. You can view the platform version of a cluster in the AWS Management Console or through the ServerlessV2PlatformVersion field of the DescribeDBClusters API. For more information, see Amazon DocumentDB serverless scaling capacity and Checking and upgrading the platform version of a serverless cluster .",
+      "summary": "DocumentDB Serverless v4 offre jusqu'à 35% de débit supérieur, améliorant performance et scalabilité pour les SRE sans gestion manuelle.",
+      "theme": "observabilite",
+      "score": 70
+    },
+    {
+      "id": "649a22990f2d",
+      "title": "Amazon Athena introduces system tables for observability, auditing, and usage analytics",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/athena-system-tables/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-09T16:00:00.000Z",
+      "excerpt": "Amazon Athena now offers system tables which automatically capture your usage data and make it available for observability, usage analysis, and audit use cases. When you enable system tables, usage data is available within minutes of query completion across your workgroups and stored as service-managed, read-only Iceberg tables on Amazon S3 Tables with configurable retention. You can query it directly with Athena, while AWS manages the tables for you, including schema definition, partitioning, compaction, and snapshot maintenance, removing all operational burden. Athena provides usage data through APIs like GetQueryExecution, CloudWatch metrics, and CloudTrail logs. With this launch, usage data is also available as iceberg tables that you can search, filter, aggregate, and join directly without building or maintaining custom pipelines. Platform teams can query the query_executions table to build cost allocation dashboards that show data scanned by workgroup, by user, or by table using simple SQL statements, and without custom ETL. Additionally, the AWS Agent Toolkit provides skills for querying system tables to surface usage patterns and optimization recommendations. Because the data is stored in the open Apache Iceberg format, you can also query it with DuckDB , Amazon Redshift, Amazon EMR or any other Iceberg-compatible engine. Athena system tables are available in all AWS Regions where Athena and Amazon S3 Tables are available. To get started, enable system tables from the Athena console or API. To learn more, visit the Amazon Athena documentation or the blog .",
+      "summary": "Amazon Athena propose des tables système Iceberg pour analyser l'usage, l'audit et l'observabilité sans gestion opérationnelle, réduisant la charge SRE.",
+      "theme": "observabilite",
+      "score": 85
+    }
+  ],
+  "themes": [
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Les risques liés à la supply-chain logicielle et aux cyberattaques restent une préoccupation majeure pour les SRE. Les articles mettent en lumière des vulnérabilités critiques (tarballs corrompus, ransomware, failles SSL/TLS) et des bonnes pratiques pour renforcer la résilience des infrastructures. La sécurité des clés publiques et la gestion des identités (fédération AWS) sont également des enjeux clés.",
+      "topArticles": [
+        "c5380c1fb93a",
+        "727311c8497c",
+        "a7266a93fa89",
+        "1484bc2b220d",
+        "c06e7b11fef8"
+      ]
+    },
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "L'observabilité reste un pilier pour les SRE, avec des avancées majeures comme les alarmes PromQL pour le scaling AWS, les tables système Iceberg pour Athena, et des outils comme Grafana Watchers pour une surveillance économique et continue. L'absence de télémétrie est désormais reconnue comme un signal critique à surveiller.",
+      "topArticles": [
+        "f2020fc8a1a5",
+        "8f7ed21e7947",
+        "cb74eae5b6bc",
+        "81d6aeece2dd",
+        "649a22990f2d"
+      ]
+    },
+    {
+      "id": "helm-traefik",
+      "label": "Helm / Traefik",
+      "trend": "Traefik continue d'évoluer avec des correctifs critiques pour la sécurité et la stabilité, notamment sur l'authentification, Kubernetes et les middlewares. Les versions récentes (v3.8.0-rc.2, v3.7.18, v2.11.62) apportent des améliorations essentielles pour les SRE gérant des reverse proxys en production.",
+      "topArticles": [
+        "c1bb1a957d97",
+        "ce6822dea839",
+        "c05e39901117"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "Les mises à jour du runtime .NET 11 et les optimisations du G1 Garbage Collector pour Java soulignent l'importance des performances et de la fiabilité des applications critiques. Ces évolutions réduisent les latences et améliorent la gestion mémoire, cruciales pour les SRE.",
+      "topArticles": [
+        "af0b10afed04",
+        "52fb6312db3a",
+        "cfeaedcb835d"
+      ]
+    },
+    {
+      "id": "ccaas-aws-connect",
+      "label": "CCaaS — Amazon Connect / AWS",
+      "trend": "Amazon Connect introduit des modèles de formulaires d'évaluation pour automatiser l'analyse des performances des agents, renforçant l'efficacité des centres de contact. Ces évolutions s'inscrivent dans une tendance plus large d'intégration de l'IA et de l'automatisation pour les SRE.",
+      "topArticles": [
+        "f6fd78c8e766"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 47,
+    "promptTokens": 16976,
+    "completionTokens": 4445,
+    "estimatedCostEur": 0.025598264000000003
+  }
+}
