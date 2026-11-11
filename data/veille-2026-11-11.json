@@ -1,0 +1,804 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T15:04:14.627Z",
+  "window": {
+    "from": "2026-11-10T15:04:14.627Z",
+    "to": "2026-11-11T15:04:14.627Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 25
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 7
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 6
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 1
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 5
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 1
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 2
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 1
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "d8029d8e4141",
+      "title": "Choosing QuePaxa, an unusual consensus algorithm",
+      "url": "https://blog.cloudflare.com/choosing-quepaxa/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-11T14:24:46.000Z",
+      "excerpt": "Cloudflare recently announced Meerkat , an experimental distributed consensus service designed to manage our internal global control plane. It is powered by a new consensus algorithm called QuePaxa . QuePaxa is an unusual choice; most consensus systems use well-established consensus algorithms like Raft, (Multi-)Paxos or Viewstamped Replication. These algorithms are well understood, have mature implementations, and usually work well. Unfortunately, common consensus algorithms often suffer in wide-area networks with volatile network connectivity and latency, i.e., networks like the Internet, which is where Meerkat runs. These algorithms rely on a single leader process being available and having predictable latency. If the leader goes down, experiences higher latency than usual, or is disconnected, the entire consensus system slows down or becomes unavailable until the leader is replaced. This is unacceptable for Meerkat. Meerkat’s global deployment environment led us to a newer consensus algorithm, QuePaxa, which promises better stability despite volatility, in large part by not relying on a leader to make progress. In this post we’ll explain why we chose QuePaxa and how the QuePaxa algorithm works. What we’re building and why it’s unique Meerkat is a distributed system in which replicas agree upon an ordered log of events, where each event is decided by a consensus algorithm. Consensus algorithms allow a group of machines to agree on a single shared truth, even if some of those machines crash or disconnect. Consensus algorithms provide an important guarantee: machines never decide conflicting values. This ensures Meerkat replicas’ logs never diverge. Meerkat uses its consensus-powered log to expose applications like a key-value store, where each entry in the log is a get or a put . Because the consensus algorithm guarantees replicas’ logs never diverge, they all construct the same key-value (KV) state. Comparable consensus-powered systems include Consul, etcd, and A",
+      "summary": "Cloudflare utilise QuePaxa, un algorithme de consensus sans leader, pour Meerkat afin de résister aux latences réseau et aux pannes dans un environnement global instable.",
+      "theme": "observabilite",
+      "score": 75
+    },
+    {
+      "id": "4094c0e884d3",
+      "title": "Pharo in the Browser with WebAssembly",
+      "url": "https://massimo-nocentini.github.io/pharo-vm/world.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T14:21:27.000Z",
+      "excerpt": "",
+      "summary": "Pharo, un langage Smalltalk, s'exécute désormais dans le navigateur via WebAssembly, améliorant la portabilité et l'accessibilité pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "dadb501df184",
+      "title": "Atuin Threads: All your agent sessions on every machine",
+      "url": "https://blog.atuin.sh/threads-agent-sessions/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T14:10:46.000Z",
+      "excerpt": "",
+      "summary": "Atuin Threads synchronise les sessions d'agents sur toutes les machines pour un historique et une reprise cohérents, crucial pour la fiabilité SRE.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "6d41d763cffc",
+      "title": "Apple is killing its Support Community forum next week",
+      "url": "https://www.theverge.com/tech/1031507/apple-community-support-forum-shutting-down",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T14:02:11.000Z",
+      "excerpt": "",
+      "summary": "Apple ferme son forum de support communautaire la semaine prochaine, privant les utilisateurs d'une source d'aide technique centralisée.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "106470241524",
+      "title": "I asked every TV manufacturer 17 questions about how they spy on you",
+      "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T13:56:05.000Z",
+      "excerpt": "",
+      "summary": "Les fabricants de TV collectent des données via ACR pour cibler la pub, posant un risque majeur de vie privée pour les utilisateurs.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "d4125130139b",
+      "title": "Show HN: Godbolt-in-a-floating-window for Neovim (C, C++, Rust)",
+      "url": "https://github.com/0xdeadf1sh/AssemblyForNeovim",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T13:34:24.000Z",
+      "excerpt": "No internet connection needed. Uses a locally-installed compiler for assembly generation.",
+      "summary": "Plugin Neovim pour générer du code assembleur localement sans connexion, optimisant le débogage et l'analyse SRE.",
+      "theme": "build-tooling",
+      "score": 60
+    },
+    {
+      "id": "488f8483b8c1",
+      "title": "EventSourcingDB 1.3.0 Is Available",
+      "url": "https://www.eventfoundation.io/resources/blog/eventsourcingdb-1-3-0-is-available",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T13:19:45.000Z",
+      "excerpt": "",
+      "summary": "EventSourcingDB 1.3.0 ajoute des améliorations de performance et de fiabilité pour les systèmes d'événements critiques en production.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "bf4b45fa964b",
+      "title": "Open research, stronger privacy: Making Firefox users harder to fingerprint",
+      "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T12:44:06.000Z",
+      "excerpt": "",
+      "summary": "Firefox améliore la protection contre le fingerprinting via des recherches ouvertes pour renforcer la vie privée des utilisateurs.",
+      "theme": "securite-supply-chain",
+      "score": 70
+    },
+    {
+      "id": "2e2cb0e4d917",
+      "title": "Can a Linear Program Do Weight-Space Programming?",
+      "url": "https://nathan.rs/posts/weight-space-lp/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T12:30:17.000Z",
+      "excerpt": "",
+      "summary": "Les programmes linéaires peuvent optimiser l'espace des poids pour améliorer l'efficacité des modèles ML, crucial pour les SRE en production.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "338093b71c15",
+      "title": "We need more goat sacrifices",
+      "url": "https://www.experimental-history.com/p/we-need-more-goat-sacrifices",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T12:29:48.000Z",
+      "excerpt": "",
+      "summary": "L'article plaide pour plus de sacrifices de chèvres en informatique pour résoudre des problèmes complexes via des rituels.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "f1b821aeac9f",
+      "title": "Next-Level Benchmarking Overfitting – Thomas Neumann",
+      "url": "http://databasearchitects.blogspot.com/2026/11/next-level-benchmarking-overfitting.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T12:09:49.000Z",
+      "excerpt": "",
+      "summary": "Les benchmarks surévalués biaisent les performances des SGBD, faussant les choix d'infrastructure critiques pour la fiabilité.",
+      "theme": "observabilite",
+      "score": 75
+    },
+    {
+      "id": "e3c1f6650544",
+      "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
+      "url": "https://pietromiotti.com/latest/maya-site/?maya",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T12:05:22.000Z",
+      "excerpt": "",
+      "summary": "Google SWE a utilisé 48 agents IA pour analyser des données Lidar de la NASA, découvrant une pyramide maya inconnue en 72h.",
+      "theme": "hors-sujet",
+      "score": 15
+    },
+    {
+      "id": "7249669f344c",
+      "title": "In Defense of Giving a Shit",
+      "url": "https://www.possibilityspace.org/blog/posts/in-defence-of-giving-a-shit/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T12:00:45.000Z",
+      "excerpt": "",
+      "summary": "Un SRE doit s'investir avec passion pour garantir la fiabilité des systèmes, crucial pour la stabilité des services.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "4e43a2f3bf1f",
+      "title": "Physically Controllable Relighting of Photographs",
+      "url": "https://yaksoy.github.io/PhysicalRelighting/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T11:38:43.000Z",
+      "excerpt": "",
+      "summary": "Nouvelle méthode d'IA pour recréer l'éclairage physique réaliste sur des photos, cruciale pour les SRE en rendu 3D et simulation.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "7f21e20f7d12",
+      "title": "13.3.1",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.3.1",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-11T11:18:23.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-102589 Security: Fix CVE-2026-107509 Security: Fix CVE-2026-110992 Security: Fix CVE-2026-111024 Security: Fix CVE-2026-13721 Security: Fix CVE-2026-14242 Features and enhancements DateTime: Update moment-timezone and easy-tz for 2026 time zone changes #136951 , @joshhunt Provisioning: allow same-host URL change on connection-backed repositories #137083 , @grafana-writer[bot]",
+      "summary": "Grafana 13.3.1 corrige 6 CVE critiques et met à jour les fuseaux horaires pour 2026, essentiel pour la sécurité et la conformité SRE.",
+      "theme": "observabilite",
+      "score": 95
+    },
+    {
+      "id": "8ba11f061fa7",
+      "title": "Using voltage glitching to unleash the A100 in my mining card",
+      "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T10:48:40.000Z",
+      "excerpt": "",
+      "summary": "Une faille de voltage glitching sur les cartes A100 permet de contourner les limites matérielles pour le minage, impactant la sécurité et la stabilité des infrastructures GPU.",
+      "theme": "securite-supply-chain",
+      "score": 70
+    },
+    {
+      "id": "a591b27a14c1",
+      "title": "Deprecating the Collector Batch Processor",
+      "url": "https://opentelemetry.io/blog/2026/collector-batching-migration/",
+      "source": "opentelemetry-blog",
+      "sourceName": "OpenTelemetry Blog",
+      "publishedAt": "2026-11-11T09:57:51.000Z",
+      "excerpt": "Batching in the OpenTelemetry Collector is a process that ensures requests&#10;are the right size for the exporter, large enough to improve compression and&#10;amortize round-trip latency, but not so large as to exceed limits. Batching&#10;combines a number of concerns that are critical to performance, reliability, and&#10;cost in running Collectors. &#10; Since OpenTelemetry began in 2019, its Collector has included a batch &#10;processor component, responsible for combining and splitting requests before&#10;sending them to downstream consumers, monitoring inbound and outbound timeouts,&#10;and holding back new requests when the pipeline is full.",
+      "summary": "OpenTelemetry supprime le Collector Batch Processor pour optimiser performance, fiabilité et coût des pipelines de télémétrie.",
+      "theme": "observabilite",
+      "score": 90
+    },
+    {
+      "id": "84304364d1d3",
+      "title": "8.14.7",
+      "url": "https://github.com/gradle/gradle/releases/tag/v8.14.7",
+      "source": "gradle-releases",
+      "sourceName": "Gradle (releases GitHub)",
+      "publishedAt": "2026-11-11T09:42:08.000Z",
+      "excerpt": "The Gradle team is excited to announce Gradle 8.14.7. Here are the highlights of this release: Java 24 support GraalVM Native Image toolchain selection Enhancements to test reporting Build Authoring improvements Read the Release Notes We would like to thank the following community members for their contributions to this release of Gradle: Aurimas , Ben Bader , Björn Kautler , chandre92 , Daniel Hammer , Danish Nawab , Florian Dreier , Ivy Chen , Jendrik Johannes , jimmy1995-gu , Madalin Valceleanu , Na Minhyeok . Upgrade instructions Switch your build to use Gradle 8.14.7 by updating your wrapper: ./gradlew :wrapper --gradle-version=8.14.7 && ./gradlew :wrapper See the Gradle 8.x upgrade guide to learn about deprecations, breaking changes and other considerations when upgrading. For Java, Groovy, Kotlin and Android compatibility, see the full compatibility notes . Reporting problems If you find a problem with this release, please file a bug on GitHub Issues adhering to our issue guidelines. If you're not sure you're encountering a bug, please use the forum . We hope you will build happiness with Gradle, and we look forward to your feedback via Twitter or on GitHub .",
+      "summary": "Gradle 8.14.7 ajoute le support de Java 24 et améliore les rapports de tests, essentiel pour les SRE pour optimiser les pipelines CI/CD et la compatibilité.",
+      "theme": "build-tooling",
+      "score": 80
+    },
+    {
+      "id": "ad6c46396837",
+      "title": "What error message sent you in completely the wrong direction?",
+      "url": "https://www.reddit.com/r/sre/comments/1xtd2sc/what_error_message_sent_you_in_completely_the/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-11T09:02:55.000Z",
+      "excerpt": "\"Connection timed out” describes what the caller experienced. There may still be a long investigation between that message and an explanation. Have you investigated a failure where the visible error pointed you towards the wrong component? What did the message say, what was actually happening, and which piece of evidence helped you separate the two? Especially interested in cases where the error was technically accurate but easy to misinterpret. &#32; submitted by &#32; /u/After-Assist-5637 [link] &#32; [comments]",
+      "summary": "Les messages d'erreur comme 'Connection timed out' peuvent induire en erreur et retarder l'identification de la cause racine d'une panne.",
+      "theme": "observabilite",
+      "score": 65
+    },
+    {
+      "id": "02df7f593e06",
+      "title": "What do you keep at full fidelity after a code-level observability trim?",
+      "url": "https://www.reddit.com/r/sre/comments/1xtcdsr/what_do_you_keep_at_full_fidelity_after_a/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-11T08:18:46.000Z",
+      "excerpt": "Finance came back at us on the monitoring spend and we got it down, mostly by cutting custom spans nobody had looked at in a while and moving a chunk of hosts to infra only metrics. Looked like a clean win on the invoice. Then the service we’d stripped back is the one that fell over, and we spent the whole thing grepping logs like it was years ago. Now I’m trying to be less stupid about round two. The question isn’t how much we can cut, it’s which paths we need at full detail and which ones we can live without until something breaks. Tool wise we’re looking at Hud and Honeycomb, since neither one is us writing another hundred spans by hand. Both still mean a fresh argument with security about what data leaves prod. Anyone done a trim like this and not regretted it later? What did you refuse to give up? &#32; submitted by &#32; /u/Abigail_Everett8356 [link] &#32; [comments]",
+      "summary": "Après avoir réduit les coûts de monitoring en supprimant des spans inutiles, un SRE a regretté de ne pas garder les données critiques en haute fidélité pour le débogage.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "cc969f56bdd4",
+      "title": "SRE dashboard with KPI's",
+      "url": "https://www.reddit.com/r/sre/comments/1xtb9px/sre_dashboard_with_kpis/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-11T07:10:19.000Z",
+      "excerpt": "Any references to UI mockups for SRE dashboards for the teams which captures KPI's, metrics like deployment, oncall, cost etc., Appreciate any pointers. &#32; submitted by &#32; /u/karni08 [link] &#32; [comments]",
+      "summary": "Un SRE demande des exemples de tableaux de bord KPI (déploiements, on-call, coûts) pour piloter l'efficacité opérationnelle et la fiabilité.",
+      "theme": "observabilite",
+      "score": 90
+    },
+    {
+      "id": "7bd2c60903fc",
+      "title": "Greg Kurtzer's Ginux is now a userspace kernel",
+      "url": "https://github.com/gmkurtzer/ginux",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T05:25:54.000Z",
+      "excerpt": "",
+      "summary": "Ginux remplace le noyau Linux par un espace utilisateur pour simplifier la maintenance et améliorer la portabilité des systèmes.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "2855a6dd0b52",
+      "title": "Show HN: Black Ops II statically recompiled to native ARM64 macOS",
+      "url": "https://github.com/adrbn/bo2-mac",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T04:56:47.000Z",
+      "excerpt": "I grew up with Black Ops 2 and wanted to see if I could make it work on my 2020 MacBook Pro. So I used Claude Opus 5.5 to create a tool that converts your copy of the game (from Steam) to a native ARM64 Mac app, with almost 60fps in all areas. The whole game is statically recompilated ahead-of-time (AOT) and does not use any emulator whatsoever, be it Wine, Crossover or Rosetta. The best thing is the performance, although some heat issues are still to fix. You get to play the whole Campaign, local Multiplayer (with bots) and local Zombies (all DLCs maps; you need to have them in your Steam library obviously) at about 60fps. Split-screen was not in the PC version, but I&#x27;ve been working on it lately; it&#x27;s coming soon! LAN mode is on the roadmap for later too :)",
+      "summary": "Un outil recompile Black Ops II en ARM64 natif pour macOS, offrant 60fps sans émulateur, crucial pour les performances et la compatibilité future.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "53d6f601edc3",
+      "title": "Protecting SSH Keys with macOS Secure Enclave",
+      "url": "https://gatezh.com/posts/macos-secure-enclave-ssh-keys/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T04:28:57.000Z",
+      "excerpt": "",
+      "summary": "macOS Secure Enclave protège les clés SSH via chiffrement matériel, réduisant les risques de vol ou de compromission des identités.",
+      "theme": "securite-supply-chain",
+      "score": 80
+    },
+    {
+      "id": "892ea3dc51c1",
+      "title": "I pointed an AI at GitLab's public change log to guess theirunwritten rules. Here's what it got right and wrong.",
+      "url": "https://www.reddit.com/r/sre/comments/1xt6k41/i_pointed_an_ai_at_gitlabs_public_change_log_to/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-11T02:53:19.000Z",
+      "excerpt": "GitLab runs production in the open, so I pulled 3 months of public change requests and incidents (83 changes, 30 incidents, ~340 comments) and had an AI propose the rules the team follows. It never saw the handbook. I wrote an answer key from the handbook before running it. Results from 2 runs, 16 proposed rules: - 11 matched rules that are in the handbook: C1/C2 approvals, on-call sign-off, DBRE review for database changes, and the end-of-year change freeze with roughly the right dates, all from behavior alone. - 3 were wrong. Both kinds of miss were the same: it took a pattern from a few tickets and called it a firm rule. \"Always staging first\" turned out to be 8 of 60 production changes. - It missed the Thanksgiving freeze completely. - 1 thing looked real and unwritten: the template asks for 2 weeks' notice to on-call for weekend C2 changes, but the two I found were arranged 4-5 days ahead. Two data points, so it's a guess. What surprised me: it found very few rules that were never written down. It mostly found places where practice differs from what's written. Caveats: one company (and one that documents far more than most), a tool reading public records, year-old tickets against today's handbook, and nobody at GitLab has confirmed any of it. Question for people who run production: where does what your team does differ most from what's written down? And would you trust a tool to tell you? &#32; submitted by &#32; /u/Resident-Kick4981 [link] &#32; [comments]",
+      "summary": "L'IA a identifié 11 règles GitLab (C1/C2, on-call, DBRE, gel annuel) en analysant 3 mois de logs, prouvant que les pratiques diffèrent souvent des docs officielles.",
+      "theme": "cicd-gitlab",
+      "score": 75
+    },
+    {
+      "id": "5e97d6822e5c",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611110209",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611110209",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-11T02:09:56.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, améliorant la supervision et la stabilité des agents.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "e840c6533086",
+      "title": "cmd/builder/v0.166.0-nightly.202611110209",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611110209",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-11T02:09:54.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) pour tester les fonctionnalités en amont avant stabilisation.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "6e7851adfe60",
+      "title": "v0.166.0-nightly.202611110209",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611110209",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-11T02:09:45.000Z",
+      "excerpt": "v0.166.0-nightly.202611110209: nightly build",
+      "summary": "Nouvelle version nightly du Collector OpenTelemetry avec corrections et améliorations pour la collecte de télémétrie.",
+      "theme": "observabilite",
+      "score": 90
+    },
+    {
+      "id": "8526b86f26c0",
+      "title": "A great old-timey game-programming hack (2013)",
+      "url": "https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T01:56:31.000Z",
+      "excerpt": "",
+      "summary": "Utiliser des timers matériels pour optimiser les jeux rétro réduit la charge CPU et améliore la précision temporelle, crucial pour la stabilité des systèmes.",
+      "theme": "hors-sujet",
+      "score": 15
+    },
+    {
+      "id": "69e17578228a",
+      "title": "Withdrawing the Primitive Patterns Preview Feature",
+      "url": "https://inside.java/2026/11/11/withdraw-primitive-patterns-preview/",
+      "source": "inside-java",
+      "sourceName": "Inside Java (OpenJDK)",
+      "publishedAt": "2026-11-11T00:00:00.000Z",
+      "excerpt": "We have decided to cease development of Primitive Types in Patterns, instanceof, and switch. The draft JEP https://openjdk.org/jeps/8393282 that would have been the sixth preview of this feature will be withdrawn, and the feature will be removed from JDK 28.",
+      "summary": "Oracle retire les motifs primitifs (Patterns) dans instanceof/switch de Java 28, stoppant leur développement après 5 préversions.",
+      "theme": "java-jvm",
+      "score": 70
+    },
+    {
+      "id": "17645413b90f",
+      "title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-and-cost-management-multi-source-custom-billing-views",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-10T23:22:00.000Z",
+      "excerpt": "Custom billing views now support AWS Billing Conductor and AWS Billing Transfer views as source views. These are the views AWS maintains per billing group and per billing transfer relationship. You can combine them into a single custom billing view, apply filters, and use that view in Cost Explorer, AWS Budgets, and the Billing and Cost Management console. There are three source view types. Billing group views contain the cost of each Billing Conductor billing group, which you can combine for chargeback and showback across business units. Billing transfer views contain the cost transferred to you for each end customer, and transfer showback views contain the cost that end customer sees. Aggregating each type gives you your total transferred cost and the total bill your end customers see. Your access does not change: you can use an AWS-managed view as a source only where you can already access it. Once created, you can share a custom billing view using AWS Resource Access Manager with accounts inside or outside your organization, so your finance team or a downstream seller works with the data in their own account. Whether you are an AWS Partner reselling AWS services or an organization using billing groups for pro forma billing, you get one consolidated view instead of one per customer or group. This feature is available in all commercial AWS Regions at no additional cost. To get started, navigate to Billing Views in the AWS Billing and Cost Management console or view the user guide .",
+      "summary": "AWS permet désormais d'agréger des vues de facturation Billing Conductor et Transfer dans une vue personnalisée pour un suivi consolidé des coûts et chargeback/showback.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "6f973b3a6bfd",
+      "title": "13.2.6",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.2.6",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-10T21:31:52.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-102589 Security: Fix CVE-2026-107509 Security: Fix CVE-2026-110992 Security: Fix CVE-2026-111024 Security: Fix CVE-2026-13721 Security: Fix CVE-2026-14242 Features and enhancements DateTime: Update moment-timezone and easy-tz for 2026 time zone changes #136950 , @joshhunt Provisioning: Handle repository build timeouts and branch outages #135723 , @ferruvich Provisioning: allow same-host URL change on connection-backed repositories #137091 , @MissingRoberto Bug fixes Unified search: Fix empty results when all query words are under 3 chars #137309 , @grafana-writer[bot]",
+      "summary": "Grafana 13.2.6 corrige 6 CVE critiques et améliore la gestion des timezones et des timeouts, essentiel pour la sécurité et la stabilité des infrastructures.",
+      "theme": "observabilite",
+      "score": 95
+    },
+    {
+      "id": "c69149bff3b6",
+      "title": "13.1.10",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.1.10",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-10T21:30:18.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-102589 Security: Fix CVE-2026-107365 Security: Fix CVE-2026-107509 Security: Fix CVE-2026-110992 Security: Fix CVE-2026-111024 Security: Fix CVE-2026-13721 Security: Fix CVE-2026-14242 Features and enhancements Provisioning: allow same-host URL change on connection-backed repositories #137090 , @MissingRoberto",
+      "summary": "Grafana 13.1.10 corrige 7 CVE critiques, essentiel pour sécuriser les environnements de monitoring SRE.",
+      "theme": "observabilite",
+      "score": 95
+    },
+    {
+      "id": "5a784ce81b46",
+      "title": "13.0.13",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.0.13",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-10T21:25:53.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-102589 Security: Fix CVE-2026-107365 Security: Fix CVE-2026-107509 Security: Fix CVE-2026-110992 Security: Fix CVE-2026-111024 Security: Fix CVE-2026-13721 Security: Fix CVE-2026-14242 Security: Fix CVE-2026-82014 Features and enhancements DateTime: Bump moment-timezone to 0.6.6 for 2026 time zone changes #136948 , @joshhunt Provisioning: allow same-host URL change on connection-backed repositories #137092 , @MissingRoberto",
+      "summary": "Grafana 13.0.13 corrige 8 CVE critiques, dont des vulnérabilités de sécurité critiques pour les SRE.",
+      "theme": "observabilite",
+      "score": 95
+    },
+    {
+      "id": "168143ea4218",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T21:25:03.000Z",
+      "excerpt": "",
+      "summary": "Apple lance une app Mac pour exécuter facilement des modèles IA locaux, réduisant la dépendance au cloud et améliorant la confidentialité.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "c7d653343bd1",
+      "title": "Six Math Essentials",
+      "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T20:58:44.000Z",
+      "excerpt": "",
+      "summary": "Six concepts mathématiques essentiels pour renforcer la fiabilité des systèmes distribués et l'analyse des données en SRE.",
+      "theme": "hors-sujet",
+      "score": 25
+    },
+    {
+      "id": "a01df12cb1c9",
+      "title": "12.4.15",
+      "url": "https://github.com/grafana/grafana/releases/tag/v12.4.15",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-10T20:49:45.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-102589 Security: Fix CVE-2026-106472 Security: Fix CVE-2026-106475 Security: Fix CVE-2026-107365 Security: Fix CVE-2026-107509 Security: Fix CVE-2026-111000 Security: Fix CVE-2026-81843 Security: Fix CVE-2026-82014 Features and enhancements DateTime: Bump moment-timezone to 0.6.6 for 2026 time zone changes #136947 , @joshhunt",
+      "summary": "Grafana 12.4.15 corrige 8 CVE critiques et met à jour moment-timezone pour les changements de fuseaux horaires 2026, essentiel pour la sécurité et la stabilité.",
+      "theme": "observabilite",
+      "score": 95
+    },
+    {
+      "id": "9fbcbefb9fa2",
+      "title": "Scion is back and is going to sell a kei truck in America",
+      "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T19:50:46.000Z",
+      "excerpt": "",
+      "summary": "Toyota relance Scion pour vendre un petit camion kei aux États-Unis, ciblant un marché urbain et économique sous-exploité.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "a1e542f19246",
+      "title": "Amazon EC2 G7 instances now available in additional regions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-additional-regions/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-10T19:30:00.000Z",
+      "excerpt": "Amazon Elastic Compute Cloud (Amazon EC2) G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs are now available in Europe (London), Asia Pacific (Mumbai, Sydney) and South America (Sao Paulo) Regions. G7 instances deliver up to 4.6x AI inference performance and up to 2.1 graphics performance compared to G6 instances. G7 instances also deliver faster performance for GPU-accelerated data analytics workloads. Customers can use G7 instances for deploying AI models for language translation, video and image analysis, speech recognition and recommender systems. They also accelerate graphics workloads such as creating and rendering real-time, cinematic-quality graphics and game streaming. Additionally, G7 instances support video transcoding, spatial computing, and data analytics workloads. G7 instances feature up to 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory per GPU and custom Intel Xeon 6 processors. They support up to 192 virtual CPUs (vCPUs) and up to 700 Gbps of Elastic Fabric Adapter (EFA) networking bandwidth. They also support up to 768 GiB of system memory, and up to 7.6 TB of local NVMe SSD storage. You can use G7 instances for Amazon EC2 in the following AWS Regions: US West (Oregon), US East (N. Virginia, Ohio) , Europe (London, Spain, Frankfurt, Stockholm) , Asia Pacific (Mumbai, Sydney) and South America (Sao Paulo). You can purchase G7 instances as On-Demand Instances, Spot Instances, or as part of Savings Plans. To get started, visit the AWS Management Console , AWS Command Line Interface (CLI), and AWS SDKs. To learn more, visit the G7 instance page .",
+      "summary": "Les instances EC2 G7 avec GPU NVIDIA RTX PRO 4500 Blackwell sont désormais disponibles dans 3 nouvelles régions AWS pour accélérer IA, graphismes et analytics.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "328a3e3b5213",
+      "title": "Amazon OpenSearch Service announces managed cross-Region disaster recovery",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-managed-cross-region-disaster-recovery/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-10T19:00:00.000Z",
+      "excerpt": "Amazon OpenSearch Service now offers managed cross-Region disaster recovery, so you can meet strict availability and business continuity requirements for mission-critical search, AI, and analytics workloads without building or maintaining replication yourself. After you create domains in two Regions, you can pair them with a single API call or a few steps in the AWS Management Console. Managed disaster recovery delivers a recovery point objective (RPO) of under one minute and a recovery time objective (RTO) of under 20 minutes. The secondary domain stays continuously in sync with the primary. For planned events such as maintenance or Region rotation, a switchover swaps the two domains' roles with zero data loss. If your primary domain becomes unavailable, a failover promotes the secondary, with data loss limited to the replication lag. After a failover, you restore protection by pairing the new primary with a secondary domain. You can monitor replication health and lag with Amazon CloudWatch metrics. Managed disaster recovery requires OpenSearch 3.7 or later and supports domains in the same AWS account, including domains encrypted with customer managed AWS Key Management Service (AWS KMS) keys. Domains that use UltraWarm storage or OpenSearch Optimized instances (OR1 or OR2) aren't supported. If you're on an earlier version, clone-based upgrades let you test OpenSearch 3.7 against your workload, cut over when you're ready, and roll back if needed. There's no additional charge for managed disaster recovery. You pay standard rates for the secondary domain and cross-Region data transfer. For details, see Amazon OpenSearch Service pricing . Managed disaster recovery is available today in all commercial AWS Regions where Amazon OpenSearch Service is available ( Region list ). To get started, see the disaster recovery documentation .",
+      "summary": "OpenSearch Service propose une reprise après sinistre inter-régions managée avec RPO <1min et RTO <20min, simplifiant la continuité des workloads critiques sans coût supplémentaire.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "7c194e31799d",
+      "title": "Spent days debugging a \"30 minute timeout\" that was actually a silent retry loop. What I'd do differently.",
+      "url": "https://www.reddit.com/r/sre/comments/1xsuit8/spent_days_debugging_a_30_minute_timeout_that_was/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-10T18:25:22.000Z",
+      "excerpt": "We run LLM agents as Temporal workflows (durable execution engine; think step functions, but in code). The loop is: call a tool, append the result to the message list, hand the whole list to the next inference step, repeat. Nothing exotic. One of these kept dying at 30 minutes. Not roughly 30. Exactly 30:00, which is its execution timeout. So naturally I assumed a slow tool. Pulled activity latencies, nothing. Checked the upstream API rate limits, fine. Added more logging, restarted things, the usual. Still died at 30:00 every single time. I was pretty convinced something upstream was hanging on us. What finally cracked it was giving up on the dashboard and reading the raw workflow history. And there it was, repeating every few seconds for half an hour: WorkflowTaskFailed cause: WORKFLOW_TASK_FAILED_CAUSE_PAYLOADS_TOO_LARGE 3.9 MB against a 2 MB limit. The workflow was trying to schedule the next step with a ~3.9 MB input. Server rejects it. SDK retries. Workflow replays deterministically to the exact same state, emits the exact same command with the exact same payload, gets rejected again. Forever. From the outside it’s indistinguishable from a hang, which is why I spent so long looking for one. Root cause was dumb in hindsight. One tool fetched commit details, and the service behind it returned the diff plus the full before and after content of every changed file. Roughly 90% of the bytes were stuff the model never read. We did have an S3 offload for big results, but it checked each result on its own, and none was over 2 MB. Five of them together were. Nothing was measuring the pile, only the items. Fix ended up being two small changes. The commit-details endpoint now returns just the diff, and the agent loop trims older tool output as the conversation grows so the message list can’t balloon. What I’d tell past me: If something dies at exactly its timeout, go read the engine’s own event history before you touch latencies. A retry loop and a hang look the same if a",
+      "summary": "Un workflow Temporal échouait à 30 min à cause d'une boucle de retry silencieuse due à des payloads >2MB, masquant un problème de taille de données.",
+      "theme": "observabilite",
+      "score": 75
+    },
+    {
+      "id": "4a8e294d0bb8",
+      "title": "Starlink Mini 2",
+      "url": "https://starlink.com/mini-2",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T18:22:32.000Z",
+      "excerpt": "",
+      "summary": "Starlink Mini 2 offre un accès internet par satellite portable et performant, crucial pour les zones isolées ou en cas de panne réseau.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "4425ceb1a10f",
+      "title": "Synaptics patent claims stop work on DisplayLink drivers",
+      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T18:02:02.000Z",
+      "excerpt": "",
+      "summary": "Synaptics bloque le développement des pilotes DisplayLink via des brevets, menaçant la compatibilité des écrans externes pour Linux.",
+      "theme": "hors-sujet",
+      "score": 15
+    },
+    {
+      "id": "5175b6a2b765",
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T18:01:15.000Z",
+      "excerpt": "Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without <span>s everywhere, `<dialog>` and showModal() give you backdrops and ideal focus management, `field-sizing` to auto-grow textareas as the user types.. (Something yesterday&#x27;s ftrain post touched on [0]) Models know about some of these by name, but consistently won&#x27;t default to using the platform-native solution and instead prefer the incumbent <div>+JS based pattern. We started an effort in Chrome to supplement coding agents with this key domain knowledge and we&#x27;re shipping our 1.0 today, in collaboration with Firefox, MDN, and Edge. 200+ guides (~1.7MB) of curated, hand-crafted implementation best-practices from web experts, updated as the web evolves. (Open source, obv, so.. we&#x27;ll welcome your bikeshedding ;) Readable versions here: [1] I&#x27;ve spent the last 9 months obsessing over how to ship this as an agent skill + (Agentic RAG) CLI without blowing up your context window. (Or cedeing activation mechanics to MCP dynamic tool search). The skill description is minmaxed for activating on relevant frontend tasks. The RAG work I&#x27;m pretty proud of… originally a 500mb native stack down to a ~7MB pure-JS package, ~10ms search on your CPU. We just introduced a deterministic &#x27;legacy-scan&#x27; (trained on 30k github repos) to identify old &#x27;n dusted patterns that your agent can modernize. (92% avg precision on held-out repos.) People make a lot of claims about what coding agents are good&#x2F;bad at. We wanted receipts, so we invested heavily in eval infra [2] to help us hill-climb, but also to identify when knowledge is common enough we can prune our guides. (Ofc, some of the things we thought AI didn&#x27;t know turned out to be wrong :) We run codex&#x2F;claude&#x2F;agy against 200 tasks without the skill and then with.. In total ~1,700 playwright&#x2F;AST-based assertions. Agents go from 55% pas",
+      "summary": "GoogleChrome propose des guides pour moderniser le JS legacy vers les primitives web natives, réduisant la dette technique et améliorant la performance et la maintenabilité.",
+      "theme": "build-tooling",
+      "score": 70
+    },
+    {
+      "id": "7f788ee3ff36",
+      "title": "AI SRE tools in late 2026: updated list, plus what we saw at KubeCon US",
+      "url": "https://www.reddit.com/r/sre/comments/1xstulo/ai_sre_tools_in_late_2026_updated_list_plus_what/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-10T18:01:03.000Z",
+      "excerpt": "About six months ago, a thread here listed the AI SRE tools. A lot has changed since then, so here is an updated list. Disclosure: I am a Senior Solutions Consultant at One2N, a reliability engineering consultancy. We work with teams across most of these tools. We don't resell any of them . The list Same five groups as last time. Each entry says what changed. 1. Investigation agents Resolve AI . The best-known standalone vendor. It moved to credit-based pricing in September. Its coding-agent plugin reads your team's SKILL.md runbooks. It has said a launch is coming in November. Traversal . Raised $120M at a $1B valuation. It says monthly investigations grew from 513 to about 73,000 this year. Nubank and Harvey are public customers. Cleric . It publishes more cost and eval data than most vendors. It is now self-serve, with standard pricing and an AWS Marketplace listing. NeuBird . Charges per investigation and fits Azure-heavy teams. It added a proxy that removes personal data inside your network before anything leaves. Sherlocks AI . Investigates beyond Kubernetes, across cloud, VMs, networks and apps. It keeps a knowledge graph of services, infrastructure and recent changes, and updates it as they change. A read-only gateway collects data inside your network. Root cause and evidence go to Slack, ServiceNow or Jira. SOC 2 Type 2, and one of the few vendors to publish how its agents run . OpsWorker . Kubernetes focus. A read-only agent runs in the cluster, and a human approves any action. Ciroos.AI. Early stage, with an ex-AppDynamics and Cisco team. Worth tracking, but probably too early for a production eval. DrDroid . It now calls itself \"alert middleware\" instead of an AI SRE. It sells narrow agents that need human approval. Wild Moose, TierZero AI. We did not track public changes for these two. Acquired since the last thread Deductive AI. Bought by Elastic in August. Robusta and HolmesGPT . Bought by Freshworks. HolmesGPT is still a CNCF Sandbox project. Open qu",
+      "summary": "En 2026, les outils IA SRE évoluent : investigation agents, pricing flexible et intégrations cloud/on-prem pour automatiser la résolution d'incidents.",
+      "theme": "ia-contact-center",
+      "score": 85
+    },
+    {
+      "id": "d438bd2ee1d8",
+      "title": "Val Town is winding down",
+      "url": "https://blog.val.town/winding-down",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-10T17:31:14.000Z",
+      "excerpt": "",
+      "summary": "Val Town ferme ses portes, impactant les workflows automatisés et les intégrations tierces pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "c06abda18d24",
+      "title": "9.9.1",
+      "url": "https://github.com/gradle/gradle/releases/tag/v9.9.1",
+      "source": "gradle-releases",
+      "sourceName": "Gradle (releases GitHub)",
+      "publishedAt": "2026-11-10T17:13:13.000Z",
+      "excerpt": "The Gradle team is excited to announce Gradle 9.9.1. Here are the highlights of this release: Performance improvements for Kotlin DSL compilation Test filtering for non-method JUnit Platform tests Wrapper settings preserved on upgrade Predefined groups in the Problems API Read the Release Notes We would like to thank the following community members for their contributions to this release of Gradle: Aurimas , devareddy05 , DragonFSKY , fru1tworld , Ivan Khanas , Jeremy Schoemaker , John Burns , Labh R Jethe , Marcin Mycek , monkey , Nelson Osacky , Roberto Perez Alcolea , Róbert Papp , SeungTaek Lim , Stefan Oehme , 万彬宇 , 한의준 . Upgrade instructions Switch your build to use Gradle 9.9.1 by updating your wrapper: ./gradlew :wrapper --gradle-version=9.9.1 && ./gradlew :wrapper See the Gradle 9.x upgrade guide to learn about deprecations, breaking changes and other considerations when upgrading. For Java, Groovy, Kotlin and Android compatibility, see the full compatibility notes . Reporting problems If you find a problem with this release, please file a bug on GitHub Issues adhering to our issue guidelines. If you're not sure you're encountering a bug, please use the forum . We hope you will build happiness with Gradle, and we look forward to your feedback via Twitter or on GitHub .",
+      "summary": "Gradle 9.9.1 améliore les performances du Kotlin DSL et la gestion des tests, crucial pour optimiser les pipelines CI/CD.",
+      "theme": "build-tooling",
+      "score": 80
+    },
+    {
+      "id": "9e898e0d21ae",
+      "title": "Amazon RDS for MySQL 26.10 is now available in Amazon RDS Database Preview Environment",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-mysql-26-10-preview-environment/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-10T17:00:00.000Z",
+      "excerpt": "Starting today, Amazon RDS for MySQL 26.10 is available in the Amazon RDS Database Preview Environment , allowing you to evaluate the pre-release of MySQL 26.10 on Amazon RDS for MySQL. MySQL 26.10 includes bug fixes, security patches, and some improvements to READ COMMITTED workload performance and purge lag warnings in the error log. On busy READ COMMITTED workloads, NUMA systems performance could be impacted as each read view that closed required a global mutex. Read-view objects can now be reused which eliminates the global mutex on closure. The error log now reports warnings when the history-list length (HLL) crosses innodb_max_purge_lag and when purge lag begins delaying DML, so you can detect purge backlogs before they affect performance. To learn more, please refer to the MySQL 26.10 release notes . Amazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the pricing in the US East (Ohio) Region.",
+      "summary": "Amazon RDS pour MySQL 26.10 en préversion améliore les performances READ COMMITTED et la détection des retards de purge, crucial pour les SRE en test.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "92b840cee1f4",
+      "title": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-extended-support/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-10T17:00:00.000Z",
+      "excerpt": "Amazon Relational Database Service (RDS) for PostgreSQL announces Amazon RDS Extended Support minor versions 13.23-rds.20260819, 12.22-rds.20260820 and 11.22-rds.20260822. Amazon RDS Extended Support provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version. You can upgrade your database using Amazon RDS Blue/Green Deployments , in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the Amazon RDS for PostgreSQL User Guide . Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the Amazon RDS Management Console or by using the AWS Command Line Interface (AWS CLI).",
+      "summary": "AWS propose 3 nouvelles versions mineures RDS PostgreSQL en Extended Support pour 3 ans de correctifs critiques après EOL, facilitant la migration.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "664f922183fe",
+      "title": "Just generate my observability ui?",
+      "url": "https://www.reddit.com/r/sre/comments/1xsro0y/just_generate_my_observability_ui/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-10T16:39:14.000Z",
+      "excerpt": "Posted this in o11y as well, but I'm not sure many people got there and this has me bothered abit. Has anyone actually had any success just building their observability UI on top of their data store with agents and not using something like Grafana. I keep hearing just an MCP server and some generated visualizations for each investigation are enough. https://clickhouse.com/blog/observability-ui-is-dead-whats-next Read this and thought, just this seems like they don't want to spend the time and product hours figuring out what users need to build opinionated products which just work. And instead just want to make it my problem. Maybe I’m just not ai pilled enough but I quite like learning a tool and knowing how to use it efficiently. &#32; submitted by &#32; /u/Dangerous_Life8385 [link] &#32; [comments]",
+      "summary": "Un SRE questionne l'efficacité d'une UI d'observabilité générée automatiquement plutôt que d'utiliser des outils éprouvés comme Grafana.",
+      "theme": "observabilite",
+      "score": 60
+    },
+    {
+      "id": "e971f09af186",
+      "title": "AWS Partner Central now provides an improved business planning experience",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-business-planning/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-10T16:00:00.000Z",
+      "excerpt": "AWS Partner Central now offers a new business planning experience in the AWS Console. AWS Partners can initiate plans for growing their AWS business or collaborate on plans initiated by AWS teams. Partners can collaborate with AWS partner development, technology, marketing, and specialist teams to define plan narratives, goals, and initiatives. AI-assisted plan readiness scores help partners identify areas to improve, while real-time tracking shows progress against goals. Partners can also add attachments and export plans to prepare for business reviews. Partners can use application programming interfaces (APIs) and software development kits (SDKs) to integrate business planning into their workflows. Programmatic notifications are also available. Business planning is available to AWS Partners who are actively engaged with AWS Partner management teams. AWS Partner Central is available in the US East (N. Virginia) Region. To get started, sign in to AWS Partner Central and choose Business Plan.",
+      "summary": "AWS Partner Central propose une expérience améliorée de planification business pour les partenaires, avec suivi en temps réel et intégration API/SDK pour optimiser leur collaboration avec AWS.",
+      "theme": "hors-sujet",
+      "score": 20
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "L'observabilité reste un pilier central pour les SRE avec des mises à jour majeures sur Grafana et OpenTelemetry. Les correctifs de sécurité critiques et les améliorations de performance (comme EventSourcingDB 1.3.0) renforcent la fiabilité des systèmes de monitoring. Les discussions sur la fidélité des données et les KPIs montrent une préoccupation croissante pour l'efficacité opérationnelle et le débogage.",
+      "topArticles": [
+        "7f21e20f7d12",
+        "6f973b3a6bfd",
+        "c69149bff3b6",
+        "5a784ce81b46",
+        "a01df12cb1c9"
+      ]
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & Tooling",
+      "trend": "Les outils de build comme Gradle et les plugins Neovim évoluent pour améliorer les pipelines CI/CD et l'analyse de code. Les mises à jour de Gradle (support Java 24, Kotlin DSL) et les optimisations locales (comme le plugin Godbolt pour Neovim) visent à réduire la dette technique et à accélérer le développement.",
+      "topArticles": [
+        "84304364d1d3",
+        "c06abda18d24",
+        "5175b6a2b765",
+        "d4125130139b"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "securite-supply-chain",
+      "trend": "La sécurité des infrastructures et des supply chains reste une priorité, avec des correctifs critiques pour les clés SSH (macOS Secure Enclave) et des vulnérabilités matérielles (voltage glitching sur A100). Les améliorations de Firefox contre le fingerprinting montrent une attention accrue à la protection des utilisateurs et des systèmes.",
+      "topArticles": [
+        "53d6f601edc3",
+        "bf4b45fa964b",
+        "8ba11f061fa7"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "Java continue d'évoluer avec des ajustements majeurs comme le retrait des motifs primitifs dans Java 28. Ces changements impactent les comportements en conteneur et les frameworks comme Spring, nécessitant une veille active pour les SRE travaillant sur des environnements Java.",
+      "topArticles": [
+        "69e17578228a"
+      ]
+    },
+    {
+      "id": "cicd-gitlab",
+      "label": "CI/CD — GitLab CI",
+      "trend": "L'analyse des logs publics de GitLab par IA révèle des pratiques non documentées, soulignant l'importance de la transparence et de l'adaptation des workflows CI/CD. Ces insights aident les SRE à mieux comprendre les règles implicites et à optimiser leurs pipelines.",
+      "topArticles": [
+        "892ea3dc51c1"
+      ]
+    },
+    {
+      "id": "ia-contact-center",
+      "label": "IA dans le Contact Center",
+      "trend": "Les outils IA pour les SRE évoluent rapidement, avec des agents d'investigation et des intégrations flexibles pour automatiser la résolution d'incidents. Ces innovations, présentées à KubeCon US, montrent un futur où l'IA joue un rôle clé dans la gestion des systèmes critiques.",
+      "topArticles": [
+        "7f788ee3ff36"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 52,
+    "promptTokens": 18357,
+    "completionTokens": 4885,
+    "estimatedCostEur": 0.028103976000000003
+  }
+}
