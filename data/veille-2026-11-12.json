@@ -1,0 +1,638 @@
+{
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T15:55:15.810Z",
+  "window": {
+    "from": "2026-11-11T15:55:15.810Z",
+    "to": "2026-11-12T15:55:15.810Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 21
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 4
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 9
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 2
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 0
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "3e5c3e8eec45",
+      "title": "ExcalidrawZ: Local Native Excalidraw on macOS/iOS",
+      "url": "https://github.com/chocoford/ExcalidrawZ",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T15:25:52.000Z",
+      "excerpt": "",
+      "summary": "ExcalidrawZ permet d'exécuter Excalidraw en natif sur macOS/iOS pour des schémas locaux sans dépendance cloud, crucial pour la confidentialité et la résilience.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "8f7f084ecdcb",
+      "title": "PostgreSQL 18.7, 17.12, 16.16, 15.20, 14.25, and 19 RC 2 Released",
+      "url": "https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T14:25:23.000Z",
+      "excerpt": "",
+      "summary": "PostgreSQL publie des correctifs de sécurité critiques pour ses versions 14 à 19, essentiels pour éviter des vulnérabilités exploitées en production.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "0ecc21d01c24",
+      "title": "Abandoned Quake 4 expansion finished by modders and now playable",
+      "url": "https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T14:18:49.000Z",
+      "excerpt": "",
+      "summary": "Des moddeurs ont finalisé l'extension abandonnée Quake 4, la rendant jouable pour les SRE cherchant des benchmarks rétro.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "19edf142065b",
+      "title": "Talking Zen 6 with Mike Clark at AMD In-Depth",
+      "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T14:12:37.000Z",
+      "excerpt": "",
+      "summary": "AMD présente Zen 6, promettant gains de performance et efficacité énergétique cruciaux pour les infrastructures SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "22c8ae7ff3be",
+      "title": "Libreagi – Save OSS Models",
+      "url": "https://libreagi.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T14:11:58.000Z",
+      "excerpt": "",
+      "summary": "Libreagi propose des modèles open source optimisés pour réduire les coûts et l'empreinte carbone des IA, crucial pour les SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "53d6f0630c02",
+      "title": "Electric Ship Batteries Promise Compact, Cooler Power",
+      "url": "https://spectrum.ieee.org/electric-ship-batteries",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T14:06:03.000Z",
+      "excerpt": "",
+      "summary": "Les batteries électriques pour navires promettent une puissance compacte et refroidie, cruciales pour l'efficacité énergétique et la réduction des coûts opérationnels en SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "ccd5118fa6f5",
+      "title": "Our software engineering interviews are changing (a little)",
+      "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T14:05:28.000Z",
+      "excerpt": "",
+      "summary": "Jane Street simplifie ses entretiens techniques en réduisant l'importance des algorithmes pour se concentrer sur la résolution de problèmes réels, crucial pour les SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "c235ba0229ac",
+      "title": "Building an Agent Harness for OTel Instrumentation with GenAI Semantic Conventions and Weaver",
+      "url": "https://opentelemetry.io/blog/2026/agent-harness-genai-instrumentation/",
+      "source": "opentelemetry-blog",
+      "sourceName": "OpenTelemetry Blog",
+      "publishedAt": "2026-11-12T13:55:25.000Z",
+      "excerpt": "Instrumenting a GenAI framework means finding suitable extension points, mapping&#10;its operations to OpenTelemetry semantic conventions, testing the result, and&#10;maintaining it as the framework changes. Doing that for each new framework takes&#10;substantial engineering time. &#10; We have been testing whether a team of agents can do much of that work. The&#10;agents inspect a framework, propose a plan, implement it against the&#10; OpenTelemetry Semantic Conventions for GenAI , and&#10;use OpenTelemetry Weaver to check&#10;the emitted telemetry. Engineers review the plan and resulting pull request.",
+      "summary": "L'article présente un outil basé sur des agents GenAI pour automatiser l'instrumentation OTel des frameworks GenAI, réduisant le temps d'ingénierie et simplifiant la maintenance.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "b8785a000ca8",
+      "title": "NVIDIA Announces CEO Transition",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T13:52:29.000Z",
+      "excerpt": "",
+      "summary": "NVIDIA annonce un changement de CEO, impactant la stratégie cloud et IA critique pour les SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "743e02b9814e",
+      "title": "Unbilled LLM scraper traffic is wrecking our cloud egress margins. At what point did your team ditch managed WAF bot-control and build custom edge middleware?",
+      "url": "https://www.reddit.com/r/sre/comments/1xud8ii/unbilled_llm_scraper_traffic_is_wrecking_our/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-12T13:49:52.000Z",
+      "excerpt": "Watching cloud COGS creep up over the last 12 months due to autonomous AI agents scraping structured enterprise data has completely broken our traditional perimeter playbook. Historically, perimeter defense was a simple \"Buy\" decision: put Cloudflare or AWS WAF in front of the origin, configure rate limiting, and let the platform team focus on core infrastructure. Modern data-ingestion bots bypass that setup by routing through massive residential proxy pools, rotating source IPs on every hit, and spoofing browser headers. Managed WAF vendors charge a premium for behavioral bot mitigation, meaning we were paying twice: first to the WAF vendor per million requests inspected, and second to AWS in Data Transfer Out and NAT Gateway fees for all the scraper traffic that slipped through and triggered heavy database reads on our origin. Furthermore, burning DevOps sprint capacity to constantly tweak regex rules and IP blocklists became an unsustainable operational sink. We ended up engineering a standalone compiled binary proxy at the edge specifically for machine-to-machine traffic isolation: The gateway separates human sessions from headless scrapers at the socket level using sub-millisecond FCrDNS validation. Unverified machine traffic hits an immediate HTTP 402 Payment Required wall before touching our internal load balancers or consuming origin CPU. External agents that actually want our structured catalogs have to pass cryptographic proof of funds (Ed25519 signature + Redis SETNX anti-replay check) tied to an active PostgreSQL ledger balance to pull the JSON payload. It stopped our egress bleed immediately and freed the team from babysitting WAF heuristics, at the cost of maintaining a custom perimeter binary. For the platform leads and infrastructure architects here: how are you justifying the ROI of managed WAF bot-control against rotating residential proxies? Are you eating the CloudFront/ALB egress costs, or enforcing hard cryptographic quotas at the edge? &#32; s",
+      "summary": "Les scrapers LLM non facturés via des proxys résidentiels ont fait exploser les coûts cloud, rendant les WAF managés inefficaces et coûteux pour les SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "56c83c766ce1",
+      "title": "Anthropic IPO",
+      "url": "https://ipo.anthropic.com/us/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T11:46:41.000Z",
+      "excerpt": "",
+      "summary": "Anthropic lance son IPO pour lever des fonds et accélérer son développement dans l'IA, crucial pour la scalabilité et la fiabilité des infrastructures SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "afe2572f77ab",
+      "title": "our ops agent has root in prod and the team is happy with the logs",
+      "url": "https://www.reddit.com/r/sre/comments/1xu9qlb/our_ops_agent_has_root_in_prod_and_the_team_is/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-12T10:50:34.000Z",
+      "excerpt": "a few people in ops built their own agent harness. it logs what the agent does, and the team trusts it enough that it now has root across prod. a lot of the jobs they're giving it are just checks. i want to start with one of those checks in staging and give it read-only credentials. if the check still works, we've got something concrete to discuss before we get into approving writes. i would look at Bay for visibility into the agent's activity if it covers our harness. the read-only restriction would still need to hold at the server. if you've had this conversation with an ops team that already trusts its logs, what got them comfortable taking away root? &#32; submitted by &#32; /u/lottie-gresham0 [link] &#32; [comments]",
+      "summary": "Une équipe SRE a déployé un agent avec droits root en prod grâce à des logs fiables, validant son utilisation avant d'étendre les permissions.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "64089dbff01c",
+      "title": "Researchers discover rare star system that emits radio signals every 8 minutes",
+      "url": "https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T10:46:20.000Z",
+      "excerpt": "",
+      "summary": "Des chercheurs ont découvert un système stellaire rare émettant des signaux radio toutes les 8 minutes, crucial pour étudier les phénomènes astrophysiques extrêmes.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "cbc9a645a65e",
+      "title": "Why Writing Correct Software Is Hard",
+      "url": "https://pron.github.io/posts/correctness-and-complexity",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T10:28:26.000Z",
+      "excerpt": "",
+      "summary": "Écrire du logiciel correct est complexe car la complexité croissante rend les bugs inévitables, impactant la fiabilité et la sécurité des systèmes.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "c1bb1a957d97",
+      "title": "v3.8.0-rc.2",
+      "url": "https://github.com/traefik/traefik/releases/tag/v3.8.0-rc.2",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-12T10:07:25.000Z",
+      "excerpt": "Important: Please read the migration guide . CVE fixed: Advisory GHSA-ccgh-9g52-6vwg Advisory GHSA-cp28-5662-543f Advisory GHSA-p956-6gvv-mxqp Advisory GHSA-x5pf-cqh3-2gv8 Advisory GHSA-rr42-h8r2-f28g Bug fixes: [authentication] Limit BasicAuth password length ( #14168 @Neffi42 ) [authentication] Support connection-bound authentication schemes in Proxy-Authorization ( #14203 @Neffi42 ) [k8s/gatewayapi] Bump sigs.k8s.io/gateway-api to v1.7.0 ( #14204 @rtribotte ) [k8s/gatewayapi] Keep Gateway InsecureFrontendValidationMode condition owned by Traefik ( #14217 @colinlabs ) [k8s/ingress-nginx] Apply host-less auth-tls annotations to the default TLS option ( #14224 @rtribotte ) [k8s/ingress-nginx] Apply Ingress NGINX CORS before the redirect annotations ( #14093 @lazerg ) [k8s/ingress-nginx] Fix Ssl-Client-* headers when Ingresses share a host ( #14160 @Neffi42 ) [k8s/knative] Bump knative.dev/pkg to v0.0.0-20261102011501-7b6dcbbe4ea4 ( #14220 @kevinpollet ) [middleware] Accept uppercase Q weight in compress Accept-Encoding parsing ( #14153 @locker95 ) [middleware] Bump github.com/vulcand/oxy to v2.3.2 ( #14241 @ldez ) [middleware, performance] Limit zstd encoder memory in the Compress middleware ( #14167 @juliens ) [plugins] Fix deterministic randomness in WASM plugins ( #14107 @yugfletcher ) [plugins] Bump github.com/traefik/yaegi to v0.16.3 ( #14231 @juliens ) [server] Validate HTTP Host matcher values ( #13571 @Milad93R ) [server] Resolve dot-segments and empty segments with path parameters ( #14188 @Neffi42 ) [server, grpc] Add regression test for gRPC bidirectional streams ( #14037 @ozenyunus35 ) [service] Fix SPIFFE configuration for the TCP servers transport ( #14200 @simpleqt ) [tcp] Detect TCP connection reset on read when the error is wrapped ( #14046 @noakky ) Documentation: [k8s/gatewayapi] Bump Gateway API minimal version to v1.7.0 in v3.8.0 migration guide ( #14190 @jnoordsij ) [k8s/ingress-nginx] List missing ingress-nginx annotations as unsupported ( #14",
+      "summary": "Traefik v3.8.0-rc.2 corrige 5 CVE critiques et améliore sécurité/authentification, middleware et compatibilité Kubernetes, essentiel pour la stabilité des SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "ce6822dea839",
+      "title": "v3.7.18",
+      "url": "https://github.com/traefik/traefik/releases/tag/v3.7.18",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-12T10:07:24.000Z",
+      "excerpt": "Important: Please read the migration guide . CVE fixed: Advisory GHSA-ccgh-9g52-6vwg Advisory GHSA-cp28-5662-543f Advisory GHSA-p956-6gvv-mxqp Advisory GHSA-x5pf-cqh3-2gv8 Advisory GHSA-rr42-h8r2-f28g Bug fixes: [authentication] Limit BasicAuth password length ( #14168 @Neffi42 ) [authentication] Support connection-bound authentication schemes in Proxy-Authorization ( #14203 @Neffi42 ) [k8s/ingress-nginx] Apply host-less auth-tls annotations to the default TLS option ( #14224 @rtribotte ) [k8s/ingress-nginx] Apply Ingress NGINX CORS before the redirect annotations ( #14093 @lazerg ) [k8s/ingress-nginx] Fix Ssl-Client-* headers when Ingresses share a host ( #14160 @Neffi42 ) [k8s/knative] Bump knative.dev/pkg to v0.0.0-20261102011501-7b6dcbbe4ea4 ( #14220 @kevinpollet ) [middleware] Accept uppercase Q weight in compress Accept-Encoding parsing ( #14153 @locker95 ) [middleware] Bump github.com/vulcand/oxy to v2.3.2 ( #14241 @ldez ) [middleware, performance] Limit zstd encoder memory in the Compress middleware ( #14167 @juliens ) [plugins] Fix deterministic randomness in WASM plugins ( #14107 @yugfletcher ) [plugins] Bump github.com/traefik/yaegi to v0.16.3 ( #14231 @juliens ) [server] Validate HTTP Host matcher values ( #13571 @Milad93R ) [server] Resolve dot-segments and empty segments with path parameters ( #14188 @Neffi42 ) [server, grpc] Add regression test for gRPC bidirectional streams ( #14037 @ozenyunus35 ) [service] Fix SPIFFE configuration for the TCP servers transport ( #14200 @simpleqt ) [tcp] Detect TCP connection reset on read when the error is wrapped ( #14046 @noakky ) Documentation: [k8s/ingress-nginx] List missing ingress-nginx annotations as unsupported ( #14163 @lazerg ) [middleware] Use a Secret for basicAuth in the Chain middleware Kubernetes example ( #14143 @lazerg ) [middleware] Fix grammar in observability and InFlightReq pages ( #14209 @m-shahi ) [plugins] Fix typos in plugin type error and documentation ( #14186 @sarankumar1325 ) Add versio",
+      "summary": "Traefik v3.7.18 corrige 5 CVE critiques et améliore sécurité/authentification, stabilité et performances pour les SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "c05e39901117",
+      "title": "v2.11.62",
+      "url": "https://github.com/traefik/traefik/releases/tag/v2.11.62",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-12T10:07:23.000Z",
+      "excerpt": "Important: Please read the migration guide . CVE fixed: Advisory GHSA-cp28-5662-543f Advisory GHSA-p956-6gvv-mxqp Advisory GHSA-rr42-h8r2-f28g Bug fixes: [authentication] Limit BasicAuth password length ( #14168 @Neffi42 ) [authentication] Support connection-bound authentication schemes in Proxy-Authorization ( #14203 @Neffi42 ) [plugins] Bump github.com/traefik/yaegi to v0.16.3 ( #14231 @juliens ) [server] Resolve dot-segments and empty segments with path parameters ( #14188 @Neffi42 )",
+      "summary": "Traefik v2.11.62 corrige 3 CVE critiques et améliore la sécurité/authentification, essentiel pour éviter des failles exploitables en production.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "116ca6bc4672",
+      "title": "what do you actually put behind 'health'",
+      "url": "https://www.reddit.com/r/sre/comments/1xu7xdn/what_do_you_actually_put_behind_health/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-12T08:58:24.000Z",
+      "excerpt": "I’m setting up monitoring for a small app on a serverspace vm. Right now the external monitor just calls health. That endpoint returns 200 while the app process is alive.But the login can still be broken if the database connection drops so a green monitor doesn’t tell me much. I thought about adding a database check, but then a short hiccup could set off an outage alert while most of the app still works. I can’t figure out where to draw the line. If you run something similar, I’d really appreciate a sanity check: what do you put in /healt and what do you monitor separately? &#32; submitted by &#32; /u/Ambitious-Lunch-5223 [link] &#32; [comments]",
+      "summary": "Un endpoint /health doit vérifier l'état critique de l'application (DB, dépendances) sans déclencher d'alerte pour des pannes temporaires, pour éviter les faux positifs.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "3d807e9b88a9",
+      "title": "I'm Working on a FOSS Linux Pinbal Simulation Engine",
+      "url": "https://www.getlazarus.org/forums/topic/17/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T05:49:34.000Z",
+      "excerpt": "",
+      "summary": "Un moteur open source de simulation de flipper Linux est en développement pour offrir une alternative libre et personnalisable aux solutions propriétaires.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "2d1caa3425ce",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611120211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611120211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-12T02:11:18.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, améliorant la supervision et la stabilité des pipelines observabilité.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "7a2533b9e3a0",
+      "title": "cmd/builder/v0.166.0-nightly.202611120211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611120211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-12T02:11:18.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) pour tester les fonctionnalités avant stabilisation, cruciale pour l'intégration continue des pipelines observabilité.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "5b070766ec4d",
+      "title": "Critical RCE Vulnerability in Apache HTTP Server",
+      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-12T02:11:11.000Z",
+      "excerpt": "",
+      "summary": "CVE-2026-119618 expose Apache HTTP Server à une RCE critique, nécessitant une mise à jour urgente pour éviter des compromissions.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "6f40fe21911d",
+      "title": "v0.166.0-nightly.202611120211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611120211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-12T02:11:07.000Z",
+      "excerpt": "v0.166.0-nightly.202611120211: nightly build",
+      "summary": "Nouvelle version nightly du Collector OpenTelemetry avec des correctifs et améliorations pour la collecte et l'export des télémétries.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "e6c8a2283f2e",
+      "title": "Ornith-1.0-9B and Ornith-1.0-35B models now available on Amazon SageMaker JumpStart",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/ornith-1-0-9b-ornith-1-0-35b-on-sagemaker-jumpstart/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T23:36:00.000Z",
+      "excerpt": "DeepReinforce AI's Ornith-1.0-9B and Ornith-1.0-35B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models are part of the Ornith 1.0 family of open-source, self-scaffolding agentic coding models released under the MIT license, achieving state-of-the-art performance among open-source models of comparable size on coding benchmarks such as Terminal-Bench 2.1, SWE-Bench, NL2Repo, and OpenClaw. These models address different agentic coding challenges with specialized capabilities: Ornith-1.0-9B is a lightweight 9B-parameter dense model post-trained on Qwen 3.5 9B, designed for efficient single-GPU deployment. With a 256K-token context window and 32 decoder layers, it is well-suited for individual developers and small teams running agentic coding workflows on a single GPU — including laptops with consumer-grade hardware. Its self-improving training framework uses reinforcement learning to jointly optimize scaffold generation and solution rollouts, enabling the model to discover better search trajectories and generate higher-quality code solutions. Ornith-1.0-35B is a 35B-parameter Mixture-of-Experts (MoE) model post-trained on Qwen 3.5, delivering stronger agentic coding performance while remaining deployable on a single 24GB consumer GPU. Like its smaller sibling, it employs reinforcement learning to jointly optimize the scaffolds that drive coding tasks and the resulting solution rollouts, discovering superior code trajectories. Its MoE architecture activates only a subset of parameters per token, providing a strong balance of quality and efficiency for production agentic coding workloads. With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases. To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to ",
+      "summary": "AWS propose Ornith-1.0-9B/35B sur SageMaker JumpStart pour des workflows d'agents de codage auto-améliorés, optimisés pour GPU unique et benchmarks avancés.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "e92befb9b57b",
+      "title": "DeepSeek-V4-Pro, DeepSeek-V4-Flash, and DeepSeek-V4.1-Flash models now available on Amazon SageMaker JumpStart",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/deepseek-v4-pro-v4-flash-v4.1-flash-on-sagemaker-jumpstart/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T23:18:00.000Z",
+      "excerpt": "DeepSeek's DeepSeek-V4-Pro, DeepSeek-V4-Flash, and DeepSeek-V4.1-Flash models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three open-weight Mixture-of-Experts (MoE) language models, released under the MIT license, deliver frontier-class performance across reasoning, coding, and agentic workloads while activating only a fraction of their total parameters per token, enabling high efficiency at scale. These models address different AI challenges with specialized capabilities: DeepSeek-V4-Pro is designed for complex reasoning and high-quality text generation at flagship scale. This 1.6T-parameter MoE model activates 49B parameters per token and supports a 1M-token context window, making it well-suited for long-document analysis, multi-step reasoning, and demanding generation tasks that require maximum model capacity. DeepSeek-V4-Flash delivers strong performance at significantly lower compute cost as an efficient 284B-parameter MoE model activating 13B parameters per token. It supports the same 1M-token context window as V4-Pro, making it ideal for latency-sensitive and cost-conscious production deployments across a wide range of language tasks. DeepSeek-V4.1-Flash provides next-generation agentic efficiency with native multimodal support. Built on a novel Causal Encoder-Decoder (CED) architecture with a 552B-parameter backbone, it activates just 8B parameters during prefill and 16B during decode, supporting a 1M-token context window and 384K max output tokens. Its Compressed Sparse Attention 2 (CSA2) and FP4 KV caching reduce the global KV cache footprint to roughly 1/4 of V4-Flash, delivering substantially improved cost efficiency for agentic workloads, coding, and vision tasks. With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases. To get started with these models, navigate to the SageMaker JumpStart model cata",
+      "summary": "DeepSeek-V4-Pro, V4-Flash et V4.1-Flash disponibles sur SageMaker JumpStart pour des workloads IA performants et écoénergétiques en production.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "32af75a9e315",
+      "title": "93% of paint splatters are valid Perl programs (2019)",
+      "url": "https://www.mcmillen.dev/sigbovik/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T22:34:23.000Z",
+      "excerpt": "",
+      "summary": "93% des éclaboussures de peinture sont des programmes Perl valides, soulignant des bugs de parsing critiques pour la robustesse des outils SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "f8d4c585f627",
+      "title": "Lock Your GitHub Actions",
+      "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T22:16:41.000Z",
+      "excerpt": "",
+      "summary": "Verrouillez les versions des actions GitHub pour éviter des exécutions non contrôlées et sécuriser vos pipelines CI/CD.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "1399104b4951",
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T21:24:35.000Z",
+      "excerpt": "",
+      "summary": "United Airlines interdit les agents IA pour réserver des vols, réduisant les risques de fraude et d'erreurs critiques en production.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "628b11404a91",
+      "title": "AWS Network Security Manager now available in AWS European Sovereign Cloud and Additional New Regions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-security-mgr-eu-sovereign-cloud/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T21:00:00.000Z",
+      "excerpt": "AWS Network Security Manager is now available in AWS European Sovereign Cloud Region and Thirty-One new Regions Today, AWS announces the general availability of AWS Network Security Manager in the AWS European Sovereign Cloud Region and additional regions. Network Security Manager is a comprehensive network security management solution designed to simplify security policy deployment and enforcement at scale. Network Security Manager supports AWS WAF and AWS Shield in AWS European Sovereign Cloud Region. The additional regions are: US East (Ohio); US West (N. California); US West (Oregon); Asia Pacific (Mumbai); Asia Pacific (Hong Kong); Asia Pacific (Taipei); Asia Pacific (Seoul); Asia Pacific (Osaka); Asia Pacific (Hyderabad); Asia Pacific (Singapore); Asia Pacific (Sydney); Asia Pacific (Melbourne); Asia Pacific (Malaysia); Asia Pacific (New Zealand); Asia Pacific (Thailand); Asia Pacific (Johor); Asia Pacific (Tokyo); Canada (Central); Canada West (Calgary); Mexico (Central); Europe (Frankfurt); Europe (Zurich); Europe (Stockholm); Europe (Ireland); Europe (Milan); Europe (Spain); Europe (London); Europe (Paris); Israel (Tel Aviv); South America (São Paulo), Africa (Cape Town). Network Security Manager features always-on security deployment automation that applies AWS WAF security protection to Internet facing assets like AWS Application Load Balancer. This automated approach helps security teams deploy and manage WAF rules and AWS Shield Advanced protections efficiently, ensuring consistent security posture across targeted accounts and resources. Teams can centrally manage security policies, automatically detect configuration drift, and apply remediation by reducing the operational overhead of manual security management while maintaining comprehensive protection. To see which regions AWS Network Security Manager is available in, visit the AWS Region Table . For pricing information, visit the AWS Network Security Manager Pricing page . for standard regions, and t",
+      "summary": "AWS Network Security Manager est désormais disponible dans l'European Sovereign Cloud et 31 nouvelles régions pour automatiser la sécurité réseau (WAF/Shield) et simplifier la gestion des politiques à grande échelle.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "d05830646ed0",
+      "title": "Emacs in the Age of Magic",
+      "url": "https://commandlinesystems.com/magic.txt",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T20:26:32.000Z",
+      "excerpt": "",
+      "summary": "Emacs reste pertinent grâce à son extensibilité et son intégration avec les outils modernes, crucial pour l'automatisation et la productivité des SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "5bbb2e2c7663",
+      "title": "AWS Cloud WAN now supports Flow Logs",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cloud-wan-flow-logs/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T20:05:00.000Z",
+      "excerpt": "AWS Cloud WAN now supports VPC Flow Logs, giving you central visibility into IP traffic across your global network. Flow Logs capture detailed information for each flow, so you can understand how traffic moves across your core network without leaving your AWS Cloud WAN account. Until now, network administrators had to stitch together VPC Flow Logs from many VPCs, accounts, and Regions to see traffic across their global network. They often depended on other teams for access to those logs. Cloud WAN Flow Logs give core network owners one consolidated view of traffic between VPCs, Regions, and on-premises networks connected over AWS Direct Connect, AWS Site-to-Site VPN, or SD-WAN. You can use this data to troubleshoot connectivity and performance problems, plan capacity from historical bandwidth trends, find unusual traffic patterns, and keep records for security and compliance. Flow log records include IP addresses, ports, protocol, traffic volume, and packet-loss counters, along with Cloud WAN metadata such as segment, Region, service insertion hops and attachment details. You can turn on Flow Logs for an entire core network, a single core network edge, or individual attachments. You can publish them to Amazon CloudWatch Logs, Amazon Simple Storage Service (Amazon S3), or Amazon Data Firehose. Cloud WAN adds no charge for Flow Logs. Standard charges apply for each destination. Cloud WAN Flow Logs are available in all AWS Regions where AWS Cloud WAN is available. You can get started with the AWS Management Console, AWS CLI, or API. To learn more, see AWS Cloud WAN Flow Logs user guide .",
+      "summary": "AWS Cloud WAN Flow Logs centralisent la visibilité du trafic IP global pour le dépannage, la sécurité et la planification de capacité sans frais supplémentaires.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "44f4180f5165",
+      "title": "Amazon EKS Provisioned Control Plane now offers a 24 GB etcd database on 4XL and 8XL tiers",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-provisioned-control-plane-larger-etcd-database/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T19:45:00.000Z",
+      "excerpt": "Amazon Elastic Kubernetes Service (Amazon EKS) now offers a larger 24 GB etcd database, up from 16 GB, for 4XL and 8XL Provisioned Control Plane clusters. etcd is the key-value store in the Kubernetes control plane that holds your cluster state, so its size limits how many Kubernetes objects your cluster can store. With 50% more capacity, you can run bigger clusters with more pods, jobs, events, and custom resources. The larger database gives more headroom to workloads that create and update many Kubernetes objects, such as large-scale AI/ML training and inference, batch processing, and CI/CD pipelines. When the etcd database fills up, you can’t add or change objects in your cluster, so the extra headroom helps keep these workloads running as they scale. To get the larger database, choose the 4XL or 8XL tier of Provisioned Control Plane on a cluster running EKS version 1.34 or later. Existing clusters on the 4XL and 8XL tiers running these versions get the larger database automatically, with no action required. The 24 GB etcd database is available in all commercial AWS Regions where Provisioned Control Plane is available. To learn more, see the Amazon EKS Provisioned Control Plane user guide .",
+      "summary": "EKS augmente la taille d'etcd à 24 Go sur les clusters 4XL/8XL, permettant des clusters plus grands et évitant les blocages critiques lors de montées en charge.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "0aac6e5bbd34",
+      "title": "Pulling the Lever in a Subway Problem",
+      "url": "https://www.jefftk.com/p/pulling-the-lever-in-a-subway-problem",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T19:22:09.000Z",
+      "excerpt": "",
+      "summary": "Un SRE doit privilégier l'action immédiate face aux incidents critiques pour minimiser l'impact utilisateur et éviter la paralysie par analyse.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "59002ed659e0",
+      "title": "Amazon Cognito now supports user pool session management",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-session-management/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T19:00:00.000Z",
+      "excerpt": "Amazon Cognito now supports session management for user pools, giving you visibility into and control over the sessions your users establish when they sign in to your applications. Single sign-on (SSO) sessions are created when a user signs in through managed login and let them access other app clients without re-authenticating. Token sessions are created when a user signs in to an app client and receives tokens. Session management lets you list a user's active SSO and token sessions across all devices and app clients and revoke any of them on demand. You can also now configure how long each app client reuses an SSO session before requiring re-authentication, instead of the previous fixed one-hour duration. Each session includes details such as session type, app client ID, device type, last activity time and location, and initial sign-in time, so you can build your own end-user or admin session experiences. You can revoke an individual session, optionally with its linked sessions, or use global sign-out to end all sessions associated with one user. You can also set a maximum number of active token sessions per user. Session management is available for user pools in the Essentials or Plus feature plans in all AWS Regions where Amazon Cognito is available. You can manage sessions using the AWS Management Console, API, AWS Command Line Interface, and AWS Software Development Kits, and configure settings with AWS CloudFormation. Visit the Developer Guide and API Reference for details.",
+      "summary": "Amazon Cognito permet désormais de gérer les sessions utilisateurs (SSO/tokens) pour renforcer la sécurité et le contrôle des accès dans les pools d'utilisateurs.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "8e4104a923ec",
+      "title": "Gemini Decisions API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T18:32:42.000Z",
+      "excerpt": "",
+      "summary": "Google lance l'API Gemini Decisions pour automatiser les décisions critiques via l'IA, réduisant les erreurs humaines et améliorant la résilience des systèmes.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "70a69d3bb582",
+      "title": "AWS emulator",
+      "url": "https://github.com/aws/aws-emulator",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T18:21:38.000Z",
+      "excerpt": "https:&#x2F;&#x2F;www.aboutamazon.com&#x2F;news&#x2F;aws&#x2F;how-autonomous-ai-agent... https:&#x2F;&#x2F;www.allthingsdistributed.com&#x2F;2026&#x2F;11&#x2F;aws-emulator-an...",
+      "summary": "AWS Emulator permet de simuler localement les services AWS pour tester et valider des configurations sans coût ni latence cloud.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "f656c70a31b9",
+      "title": "OTel Unplugged EU at FOSDEM 2027",
+      "url": "https://opentelemetry.io/blog/2026/otel-unplugged-fosdem-2027/",
+      "source": "opentelemetry-blog",
+      "sourceName": "OpenTelemetry Blog",
+      "publishedAt": "2026-11-11T18:00:16.000Z",
+      "excerpt": "&#10; OpenTelemetry is returning to FOSDEM! &#10; After this year&rsquo;s resounding success of&#10; OTel Unplugged at FOSDEM 2026 , we&rsquo;re excited&#10;to announce that OTel Unplugged will be returning to FOSDEM in 2027!! &#10; What is OTel Unplugged? &#10; OTel Unplugged is an OpenTelemetry unconference and project roadmapping&#10;session. An unconference is like a conference, only instead of a speaker track,&#10;we have a series of breakout sessions where attendees get to pick the topics. If&#10;you are an end user, this is a great opportunity to connect with maintainers and&#10;other users to get your questions answered and give feedback to the project. If&#10;you are a maintainer or contributor, the is your chance to connect with your&#10;users face to face!",
+      "summary": "OTel Unplugged EU 2027 à FOSDEM : rencontre communautaire OpenTelemetry pour contribuer et partager les bonnes pratiques de monitoring.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "47344e9439bc",
+      "title": "AWS Lambda MicroVMs now supports the x86 CPU architecture",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-x86-architecture/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "excerpt": "AWS Lambda MicroVMs now supports the x86 CPU architecture, so you can run your existing x86 applications, tools, and software dependencies without recompiling or porting them. When you create a MicroVM image, you can now choose between x86 and Arm (AWS Graviton) to give each user or job an isolated MicroVM on the architecture your workload uses. Lambda MicroVMs is a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for running user or AI-generated code, in applications such as AI coding assistants, CI/CD runners, interactive development environments, and vulnerability scanners. Today’s launch enables you to run x86-based workloads on Lambda MicroVMs as-is. For workloads that run on Arm, you can continue using AWS Graviton processors which is the default CPU architecture option. To start building x86 workloads on Lambda MicroVMs, choose the x86 architecture when you create a MicroVM image from your Dockerfile, then launch MicroVMs from that image. You can use MicroVMs through the AWS Lambda console, AWS CloudFormation, AWS Cloud Development Kit, or with your preferred agentic development tools using the Agent Toolkit for AWS . Support for the x86 CPU architecture is available in all AWS Regions where Lambda MicroVMs is available, except Asia Pacific (Hong Kong), Asia Pacific (Malaysia), Asia Pacific (Thailand), and Europe (Spain). To learn more, visit the AWS Lambda MicroVMs developer guide . For information on pricing, see Lambda MicroVMs pricing .",
+      "summary": "AWS Lambda MicroVMs supporte désormais l'architecture x86, permettant d'exécuter des workloads existants sans recompilation avec isolation VM et démarrage instantané.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "65df3f98b802",
+      "title": "Amazon EKS Auto Mode now supports security groups for Pods",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-security-groups-for-pods/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T17:26:00.000Z",
+      "excerpt": "Amazon EKS Auto Mode now supports security groups for Pods, letting you apply dedicated Amazon EC2 security group rules to individual Pods. Different workloads on the same node can carry different security groups, giving your Pods network-level segmentation without creating separate node pools for each application. Security groups for Pods extends your existing AWS network controls to the Pod level, so your Pods can reach resources such as Amazon RDS and Amazon ElastiCache databases that authorize connections by security group under the same rules the rest of your VPC uses. You define which Pods receive which security groups with a SecurityGroupPolicy resource, and Pods not matched by a policy keep using their node’s security groups. Security groups for Pods is included as part of EKS Auto Mode at no additional charge and is available on clusters running Kubernetes version 1.36 or later, in all AWS Regions where EKS Auto Mode is supported. To learn more, see Security groups for Pods in the Amazon EKS User Guide and the Amazon EKS Auto Mode product page.",
+      "summary": "EKS Auto Mode permet désormais d'appliquer des groupes de sécurité EC2 aux Pods pour une segmentation réseau fine sans nodes dédiés, simplifiant la sécurité Kubernetes.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "f0397b5fe0b9",
+      "title": "AWS Emulator is now available for building and testing AWS applications locally",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-emulator-now-available/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-11T17:00:00.000Z",
+      "excerpt": "AWS Emulator is now available for building and testing AWS applications locally. Starting today, you can use AWS Emulator to build and test AWS applications on your computer or in your continuous integration (CI) environment. Your existing AWS SDK and CLI calls go to AWS Emulator and come back in milliseconds, so you and your coding agents can find and fix errors locally, with no deployments or AWS account required. You create and manage resources with the same AWS SDK and AWS CLI calls you use with AWS, signed with credentials the emulator provides. For the operations it supports, AWS Emulator returns the same result as AWS for valid calls and the same errors for invalid ones. Operations it doesn’t yet support return 501 Not Implemented. AWS Emulator keeps the state of your resources in memory until you stop it. Each copy you start gets its own port, keys and in-memory state, so agents, test suites, and CI jobs never see each other’s resources. For example, a coding agent can create an Amazon DynamoDB table, test against it offline, and fix its code before it deploys. Services in AWS Emulator are generated from the API models AWS publishes, the same models behind the AWS SDKs. When AWS adds a service or API, it shows up in AWS Emulator, and its behavior is filled in and verified release by release. To see how its responses compare to AWS, review the AWS Emulator fidelity report . AWS Emulator doesn’t depend on an AWS Region. AWS Emulator has no additional service fee. You pay only for AWS resources when you deploy to AWS. Its source code is published under the CC0 1.0 Universal public domain dedication. To get started, see the AWS Emulator documentation , or view the source in the AWS Emulator GitHub repository .",
+      "summary": "AWS Emulator permet de tester localement des apps AWS sans coût ni déploiement, accélérant le débogage et l'intégration continue avec des réponses identiques à AWS.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "aea140098842",
+      "title": "Synthetic Monitoring",
+      "url": "https://www.reddit.com/r/sre/comments/1xtmyir/synthetic_monitoring/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-11T16:55:02.000Z",
+      "excerpt": "Hey everyone, For all of the SREs here that are currently either using or relying on or have a synthetic monitoring strategy. What are the daily fundamental questions that you expect to get answered by leveraging a synthetic monitoring strategy? &#32; submitted by &#32; /u/parchao [link] &#32; [comments]",
+      "summary": "Le monitoring synthétique répond aux questions quotidiennes sur la disponibilité et les performances des services critiques pour les SRE.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "b8e33e17317c",
+      "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+      "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-11T16:38:44.000Z",
+      "excerpt": "",
+      "summary": "Une fausse alarme incendie a inondé le seul datacenter de Jane Street à NYC, perturbant les opérations critiques.",
+      "theme": null,
+      "score": null
+    }
+  ],
+  "themes": [],
+  "stats": {
+    "llmCalls": 42,
+    "promptTokens": 11599,
+    "completionTokens": 1694,
+    "estimatedCostEur": 0.003069304
+  }
+}
