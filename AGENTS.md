@@ -155,6 +155,12 @@ npm run check-sources -w generator              # teste toutes les sources
 - **LLM** : `mistral-small-latest` = résumé par article, `mistral-large-latest` = analyse globale.
   Le parsing de la réponse d'analyse est défensif (`parseAnalysisOutput`) ; en cas d'échec total,
   la veille sort sans thèmes mais garde les résumés. Coût ~0,03 €/veille, loggé dans `stats`.
+- **Réponse Mistral 200 « sans contenu texte »** (vu les 2026-11-12 et 13 : `choices[0].message.content`
+  non string sur l'appel d'analyse `mistral-large-latest`, les résumés small passant eux très bien) :
+  le client la traite comme transitoire (retry + backoff, comme les 429) et l'erreur finale embarque
+  `finish_reason`/`refusal` pour le diagnostic ; l'analyse globale retombe ensuite sur le modèle
+  `summary` avant d'abandonner. Côté app, une veille à 0 thème affiche désormais la liste plate des
+  articles (`flatArticles` dans `VeilleView.svelte`) au lieu d'une page vide.
 - **Mistral** : clé dans `mistral-api-key.txt` (LOCAL uniquement, gitignoré) → secret GitHub
   `MISTRAL_API_KEY`. Ne jamais la committer (vérifier `git log --all -- mistral-api-key.txt` = vide).
 

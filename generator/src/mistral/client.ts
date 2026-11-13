@@ -59,8 +59,14 @@ export async function chat(messages: ChatMessage[], opts: ChatOpts): Promise<Cha
       throw new Error(`Mistral API HTTP ${res.status} : ${(await res.text()).slice(0, 300)}`);
     }
     const data = (await res.json()) as any;
-    const content = data.choices?.[0]?.message?.content;
-    if (typeof content !== 'string') throw new Error('Réponse Mistral sans contenu texte');
+    const choice = data.choices?.[0];
+    const content = choice?.message?.content;
+    if (typeof content !== 'string') {
+      lastErr = new Error(`Réponse Mistral sans contenu texte (finish_reason=${choice?.finish_reason ?? '?'}, refusal=${JSON.stringify(choice?.message?.refusal ?? null)}, content=${JSON.stringify(content)?.slice(0, 120)}), nouvel essai ${attempt + 1}/${retries + 1}`);
+      console.error(`[mistral] ${lastErr.message}`);
+      await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt));
+      continue;
+    }
     return {
       content,
       usage: {

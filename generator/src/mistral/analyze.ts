@@ -24,6 +24,7 @@ export interface LlmEnrichOptions {
   analysisModel?: string;
   concurrency?: number;
   baseUrl?: string;
+  retries?: number;
 }
 
 const summaryOutputSchema = z.object({ summary: z.string() });
@@ -91,7 +92,8 @@ export async function enrichWithLlm(
         json: true,
         temperature: 0.2,
         maxTokens: 150,
-        baseUrl: opts.baseUrl
+        baseUrl: opts.baseUrl,
+        retries: opts.retries
       });
       track(summaryModel, r.usage);
       const parsed = summaryOutputSchema.parse(JSON.parse(r.content));
@@ -112,19 +114,26 @@ export async function enrichWithLlm(
     summary: a.summary ?? ''
   }));
   let analysis;
-  try {
-    const r = await chat(analysisMessages(input, themesConfig), {
-      model: analysisModel,
-      json: true,
-      temperature: 0.3,
-      maxTokens: 8000,
-      baseUrl: opts.baseUrl
-    });
-    track(analysisModel, r.usage);
-    analysis = parseAnalysisOutput(r.content);
-  } catch (err) {
+  for (const model of [...new Set([analysisModel, summaryModel])]) {
+    try {
+      const r = await chat(analysisMessages(input, themesConfig), {
+        model,
+        json: true,
+        temperature: 0.3,
+        maxTokens: 8000,
+        baseUrl: opts.baseUrl,
+        retries: opts.retries
+      });
+      track(model, r.usage);
+      analysis = parseAnalysisOutput(r.content);
+      break;
+    } catch (err) {
+      console.error(`[llm] analyse globale en échec avec ${model} (${(err as Error).message})`);
+    }
+  }
+  if (!analysis) {
     // une analyse qui échoue ne doit pas perdre les résumés : on logue et on continue sans thèmes
-    console.error(`[llm] analyse globale en échec (${(err as Error).message}), veille sans thèmes`);
+    console.error('[llm] analyse globale en échec définitif, veille sans thèmes');
     return { themes: [], stats };
   }
 

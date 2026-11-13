@@ -6,6 +6,11 @@
 
   const byId = $derived(articleMap(veille));
 
+  // repli quand l'analyse globale a échoué (0 thèmes) : liste plate des articles, plus récent d'abord
+  const flatArticles = $derived(
+    [...veille.articles].sort((a, b) => (b.publishedAt ?? '').localeCompare(a.publishedAt ?? ''))
+  );
+
   // articles du thème hors top 5 (liste repliable)
   const restByTheme = $derived.by(() => {
     const map = new Map<string, Article[]>();
@@ -37,7 +42,22 @@
 </header>
 
 {#if veille.themes.length === 0}
-  <p class="empty">Aucun thème détecté pour cette veille.</p>
+  {#if flatArticles.length > 0}
+    <p class="empty">Aucun thème détecté pour cette veille — voici les {flatArticles.length} articles collectés :</p>
+    <ul class="flat">
+      {#each flatArticles as a (a.id)}
+        <li>
+          <div class="flat-head">
+            <a href={a.url} target="_blank" rel="noopener noreferrer">{a.title}</a>
+            <span class="source">{a.sourceName}</span>
+          </div>
+          {#if a.summary}<p class="summary">{a.summary}</p>{/if}
+        </li>
+      {/each}
+    </ul>
+  {:else}
+    <p class="empty">Aucun thème détecté pour cette veille.</p>
+  {/if}
 {:else}
   <div class="layout">
     <!-- paysage : sidebar fixe -->
@@ -278,6 +298,27 @@
     white-space: nowrap;
   }
   .more li a:hover {
+    text-decoration: underline;
+  }
+
+  .flat {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+  .flat-head {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .flat-head a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .flat-head a:hover {
     text-decoration: underline;
   }
 
