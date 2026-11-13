@@ -18,7 +18,8 @@
       "excerpt": "Release 1.35 de Kubernetes.",
       "summary": "Résumé fixture : K8s 1.35 est sorti avec des changements de sécurité.",
       "theme": "kubernetes",
-      "score": 95
+      "score": 95,
+      "dynamicTheme": "releases-majeures"
     },
     {
       "id": "bbbbbbb22222",
@@ -30,7 +31,8 @@
       "excerpt": "Grafana 12.2.",
       "summary": "Résumé fixture : Grafana 12.2 embarque de nouvelles alertes.",
       "theme": "observabilite",
-      "score": 80
+      "score": 80,
+      "dynamicTheme": "releases-majeures"
     },
     {
       "id": "ccccccc33333",
@@ -42,7 +44,8 @@
       "excerpt": "",
       "summary": "Résumé fixture : PostgreSQL 18 disponible.",
       "theme": "kubernetes",
-      "score": 60
+      "score": 60,
+      "dynamicTheme": "bases-de-donnees"
     },
     {
       "id": "ddddddd44444",
@@ -54,7 +57,8 @@
       "excerpt": "",
       "summary": null,
       "theme": "hors-sujet",
-      "score": 10
+      "score": 10,
+      "dynamicTheme": "hors-perso"
     }
   ],
   "themes": [
@@ -69,6 +73,26 @@
       "label": "Observabilité",
       "trend": "Tendance fixture : Grafana 12.2 en tête.",
       "topArticles": ["bbbbbbb22222"]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "releases-majeures",
+      "label": "Releases majeures",
+      "trend": "Tendance dynamique fixture : deux releases majeures aujourd'hui (K8s 1.35, Grafana 12.2).",
+      "topArticles": ["aaaaaaa11111", "bbbbbbb22222"]
+    },
+    {
+      "id": "bases-de-donnees",
+      "label": "Bases de données",
+      "trend": "Tendance dynamique fixture : PostgreSQL 18.",
+      "topArticles": ["ccccccc33333"]
+    },
+    {
+      "id": "hors-perso",
+      "label": "Hors périmètre pro",
+      "trend": "Tendance dynamique fixture : sujet hors veille pro remonté en vue dynamique.",
+      "topArticles": ["ddddddd44444"]
     }
   ],
   "stats": { "llmCalls": 5, "promptTokens": 12000, "completionTokens": 2000, "estimatedCostEur": 0.031 }
