@@ -61,7 +61,8 @@ export async function runPipeline(opts: PipelineOptions): Promise<Veille> {
     window: { from: from.toISOString(), to: now.toISOString() },
     sources: sourceStats,
     articles,
-    themes: []
+    themes: [],
+    dynamicThemes: []
   };
 
   // Étape LLM : résumés (small) + analyse des tendances (large)
@@ -74,10 +75,11 @@ export async function runPipeline(opts: PipelineOptions): Promise<Veille> {
     if (articles.length > maxArticles) {
       console.error(`[veille] ${articles.length - maxArticles} articles au-delà du plafond LLM (${maxArticles})`);
     }
-    const { themes, stats } = await enrichWithLlm(llmArticles, themesConfig, {
+    const { themes, dynamicThemes, stats } = await enrichWithLlm(llmArticles, themesConfig, {
       baseUrl: opts.mistralBaseUrl
     });
     veille.themes = themes;
+    veille.dynamicThemes = dynamicThemes;
     veille.stats = stats;
     console.error(
       `[veille] LLM: ${stats.llmCalls} appels, ${stats.promptTokens + stats.completionTokens} tokens, ~${stats.estimatedCostEur.toFixed(4)} EUR`

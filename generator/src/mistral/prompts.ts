@@ -67,3 +67,36 @@ JSON attendu :
     }
   ];
 }
+
+// Analyse dynamique : clustering LIBRE des articles en thèmes émergents de la
+// journée (aucune liste imposée) — c'est la seconde vue de la veille. Même
+// format de sortie que l'analyse fixe ; le score des assignments est ignoré ici.
+export function dynamicThemesMessages(articles: AnalysisInputArticle[]): ChatMessage[] {
+  const list = articles
+    .map((a) => `- id: ${a.id} | source: ${a.source} | titre: ${a.title} | résumé: ${a.summary || "(non résumé)"}`)
+    .join('\n');
+  return [
+    {
+      role: 'system',
+      content:
+        'Tu es un analyste de veille tech pour un profil SRE / platform engineer francophone. Tu réponds UNIQUEMENT en JSON valide, sans texte autour.'
+    },
+    {
+      role: 'user',
+      content: `Voici les articles collectés aujourd'hui (veille SRE) :
+
+${list}
+
+Tâche : regroupe librement ces articles en THÈMES DYNAMIQUES, ceux qui émergent vraiment aujourd'hui :
+1. 4 à 8 thèmes maximum, nommés d'après ce qui ressort concrètement de la liste (AUCUNE liste imposée) : id en slug anglais, label en français. Ne crée pas de thème "hors-sujet" : même les sujets hors périmètre pro (ex. inférence LLM, homelab) forment leurs propres thèmes ici.
+2. Pour chaque article, un assignment vers UN thème dynamique (id exact de ta liste).
+3. Pour chaque thème : écrire une "trend" en français (2-3 phrases) résumant ce qui bouge aujourd'hui sur ce sujet, et lister dans "topArticles" les ids des meilleurs articles du thème (max 5).
+
+JSON attendu :
+{
+  "assignments": [{ "articleId": "...", "theme": "releases-majeures", "score": 0 }],
+  "themes": [{ "id": "releases-majeures", "label": "Releases majeures", "trend": "...", "topArticles": ["id1", "id2"] }]
+}`
+    }
+  ];
+}
