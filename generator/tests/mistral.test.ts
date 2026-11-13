@@ -17,6 +17,8 @@ let server: Server;
 let baseUrl: string;
 let mistralHits: { model: string; body: any }[] = [];
 let failFirstWith429 = false;
+let nullContentOnce = false;
+let nullContentForLarge = false;
 
 beforeAll(async () => {
   server = createServer((req, res) => {
@@ -41,12 +43,20 @@ beforeAll(async () => {
           res.writeHead(429, { 'retry-after': '0', 'content-type': 'application/json' });
           return res.end('{"error":"rate limited"}');
         }
+        const prompt = body.messages.map((m: any) => m.content).join('\n');
+        if ((nullContentOnce || (nullContentForLarge && body.model.includes('large')))) {
+          nullContentOnce = false;
+          res.setHeader('content-type', 'application/json');
+          return res.end(JSON.stringify({
+            choices: [{ message: { content: null }, finish_reason: 'stop' }],
+            usage: { prompt_tokens: 100, completion_tokens: 0, total_tokens: 100 }
+          }));
+        }
         let content: string;
-        if (body.model.includes('small')) {
+        if (body.model.includes('small') && !prompt.includes('Thèmes autorisés')) {
           content = JSON.stringify({ summary: 'Résumé mock FR.' });
         } else {
           // extrait les ids d'articles présents dans le prompt pour construire la réponse
-          const prompt = body.messages.map((m: any) => m.content).join('\n');
           const ids = [...prompt.matchAll(/- id: ([a-f0-9]{12})/g)].map((m) => m[1]);
           content = JSON.stringify({
             assignments: ids.map((id, i) => ({ articleId: id, theme: i === 0 ? 'hors-sujet' : 'kubernetes', score: 90 - i })),
@@ -80,6 +90,8 @@ afterAll(async () => {
 afterEach(() => {
   mistralHits = [];
   failFirstWith429 = false;
+  nullContentOnce = false;
+  nullContentForLarge = false;
   delete process.env.MISTRAL_API_KEY;
   delete process.env.MISTRAL_BASE_URL;
 });
@@ -103,6 +115,22 @@ describe('client Mistral', () => {
 
   it('échoue proprement sans MISTRAL_API_KEY', async () => {
     await expect(chat([{ role: 'user', content: 'x' }], { model: 'mistral-small-latest', baseUrl: baseUrl })).rejects.toThrow(/MISTRAL_API_KEY/);
+  });
+
+  it('retry sur une réponse 200 sans contenu texte, puis succès', async () => {
+    process.env.MISTRAL_API_KEY = 'test-key';
+    nullContentOnce = true;
+    const r = await chat([{ role: 'user', content: 'hello' }], { model: 'mistral-small-latest', baseUrl: baseUrl, retries: 2 });
+    expect(r.content).toContain('summary');
+    expect(mistralHits.length).toBe(2);
+  });
+
+  it('échoue avec diagnostic si le contenu reste absent après les retries', async () => {
+    process.env.MISTRAL_API_KEY = 'test-key';
+    nullContentForLarge = true;
+    await expect(
+      chat([{ role: 'user', content: 'hello' }], { model: 'mistral-large-latest', baseUrl: baseUrl, retries: 1 })
+    ).rejects.toThrow(/sans contenu texte.*finish_reason=stop/s);
   });
 });
 
@@ -166,5 +194,21 @@ describe('enrichWithLlm + pipeline LLM (API mockée)', () => {
     expect(stats.llmCalls).toBe(2); // 1 résumé + 1 analyse
     expect(articles[0].summary).toBe('Résumé mock FR.');
     expect(themes.length).toBeGreaterThanOrEqual(0);
+  });
+
+  it('enrichWithLlm : repli sur le modèle summary si l analyse large renvoie sans contenu texte', async () => {
+    process.env.MISTRAL_API_KEY = 'test-key';
+    nullContentForLarge = true;
+    const themesConfig = loadThemesConfig(path.join(here, '..', 'config', 'themes.json'));
+    const articles: Article[] = [
+      { id: 'aaaaaaaaaaaa', title: 'A', url: 'https://x.test/a', source: 's', sourceName: 'S', publishedAt: '2026-11-07T08:00:00.000Z', excerpt: 'x', summary: null, theme: null, score: null },
+      { id: 'bbbbbbbbbbbb', title: 'B', url: 'https://x.test/b', source: 's', sourceName: 'S', publishedAt: '2026-11-07T09:00:00.000Z', excerpt: 'y', summary: null, theme: null, score: null }
+    ];
+    const { themes } = await enrichWithLlm(articles, themesConfig, { baseUrl: baseUrl, retries: 0 });
+    const isAnalysis = (h: { body: any }) => h.body.messages.map((m: any) => m.content).join('\n').includes('Thèmes autorisés');
+    expect(mistralHits.filter((h) => h.model.includes('large') && isAnalysis(h)).length).toBe(1);
+    expect(mistralHits.filter((h) => h.model.includes('small') && isAnalysis(h)).length).toBe(1);
+    expect(themes.map((t) => t.id)).toContain('kubernetes');
+    expect(articles.every((a) => a.theme !== null && a.score !== null)).toBe(true);
   });
 });
