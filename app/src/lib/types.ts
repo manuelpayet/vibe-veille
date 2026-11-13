@@ -10,6 +10,8 @@ export interface Article {
   summary: string | null;
   theme: string | null;
   score: number | null;
+  // assignation au thème dynamique (absent sur les veilles anciennes)
+  dynamicTheme?: string | null;
 }
 
 export interface Theme {
@@ -32,7 +34,8 @@ export interface Veille {
   window: { from: string; to: string };
   sources: { id: string; name: string; count: number }[];
   articles: Article[];
-  themes: Theme[];
+  themes: Theme[]; // vue "prédéfinis" (liste fixe pro)
+  dynamicThemes?: Theme[]; // vue "dynamiques" (clustering libre) — absent sur les veilles anciennes
   stats?: VeilleStats;
 }
 
