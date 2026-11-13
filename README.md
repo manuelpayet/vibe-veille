@@ -29,7 +29,9 @@ Flux d'une veille : `veille.yml` (créneaux 07:07 / 07:37 / 08:22 UTC) → colle
 statuspage.io) sur les dernières 24 h → dédup par URL → **mistral-small-latest** résume chaque
 article en FR (1 phrase) → **mistral-large-latest** classe par thème (liste fixe pro, voir
 `generator/config/themes.json`), score 0-100, tendance du thème en 2-3 phrases, top 5 par thème
-→ écrit `data/veille-<date>.json` → commit sur `main` → notif `ntfy.sh/<topic>` → `deploy-pages.yml`
+→ un **second appel mistral-large-latest** regroupe librement les mêmes articles en **thèmes
+dynamiques** (4-8 thèmes émergents de la journée, hors-périmètre inclus) → écrit
+`data/veille-<date>.json` → commit sur `main` → notif `ntfy.sh/<topic>` → `deploy-pages.yml`
 rebuild et déploie le site avec les nouvelles données. **Le déploiement n'est PAS déclenché par le
 push lui-même** : un commit poussé avec le `GITHUB_TOKEN` ne lance aucun workflow `on: push`
 (règle GitHub) — `veille.yml` appelle donc explicitement l'API `workflow_dispatch` de
@@ -88,17 +90,27 @@ npm run check-sources -w generator    # teste chaque source de config/sources.js
 Éditer `generator/config/sources.json` (types : `rss`, `hackernews`, `reddit`, `statuspage`),
 puis valider avec `npm run check-sources -w generator`.
 
-## Thèmes
+## Thèmes — deux vues
 
-`generator/config/themes.json` : liste fixe des thèmes pro (CCaaS Genesys/AWS, IA contact center,
-Kubernetes, observabilité, sécurité/supply-chain, GitLab CI, OpenTofu, Helm/Traefik, Java/JVM,
-build tooling). Le LLM peut créer un thème ponctuel si besoin (hybride) ; `horsPerimetre`
-(vLLM, inférence LLM, GPU scheduling) est exclu de la veille pro.
+Chaque veille porte deux visions des mêmes articles :
+
+- **Prédéfinis** (`themes`) : classification contrainte par la liste fixe pro de
+  `generator/config/themes.json` (CCaaS Genesys/AWS, IA contact center, Kubernetes,
+  observabilité, sécurité/supply-chain, GitLab CI, OpenTofu, Helm/Traefik, Java/JVM, build
+  tooling). Le LLM peut créer un thème ponctuel si besoin (hybride) ; `horsPerimetre`
+  (vLLM, inférence LLM, GPU scheduling) est marqué `hors-sujet` et exclu de la liste.
+- **Dynamiques** (`dynamicThemes` + `dynamicTheme` par article) : un second appel LLM regroupe
+  librement les articles en 4-8 thèmes émergents de la journée — aucune liste imposée, et le
+  hors-périmètre pro peut y former ses propres thèmes.
+
+Dans l'app, une bascule « Prédéfinis / Dynamiques » (en haut de la veille, défaut = prédéfinis)
+commute entre les deux vues ; elle est masquée sur les veilles générées avant la double vue
+(champ `dynamicThemes` absent).
 
 ## Coût LLM
 
-Par veille : ~N appels `mistral-small-latest` (1/article, plafond 80) + 1 appel
-`mistral-large-latest`. Le coût estimé est loggé dans le run et stocké dans `stats.estimatedCostEur`
+Par veille : ~N appels `mistral-small-latest` (1/article, plafond 80) + 2 appels
+`mistral-large-latest` (thèmes prédéfinis + thèmes dynamiques). Le coût estimé est loggé dans le run et stocké dans `stats.estimatedCostEur`
 de chaque veille (ordre de grandeur, constants dans `generator/src/mistral/client.ts`).
 
 ## Limites connues
