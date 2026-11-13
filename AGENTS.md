@@ -20,13 +20,15 @@ generator/   package Node/TS (workspace npm) exécuté par le workflow "veille"
              src/sources/   fetchers : rss (RSS2.0/Atom/RDF), hackernews (API v0),
                             reddit (RSS .rss par subreddit), statuspage (API statuspage.io)
              src/mistral/   client API chat completions (retry 429/backoff, json_object),
-                            prompts FR, analyze.ts (résumés small + analyse large)
+                            prompts FR, analyze.ts (résumés small + 2 analyses large :
+                            thèmes prédéfinis + clustering dynamique)
              src/pipeline.ts  collecte -> fenêtre 24h -> dédup par URL -> LLM -> data/
              src/output.ts    écrit data/veille-<date>.json + index.json
              config/          sources.json (liste des sources), themes.json (thèmes fixes pro)
              scripts/         check-sources.ts (testeur de sources), peek.ts (sonde d'URL)
 app/         PWA SvelteKit 3 (SPA, adapter-static, fallback 404.html)
-             src/lib/VeilleView.svelte  layout B : sidebar thèmes (paysage) /
+             src/lib/VeilleView.svelte  double vue (bascule Prédéfinis/Dynamiques) ;
+                                       layout B : sidebar thèmes (paysage) /
                                        chips sticky (portrait) + grille de cartes
              src/lib/api.ts   BASE (base path) + fetchIndex/fetchVeille
              src/lib/notifications.ts  badge "Nouveau" (localStorage) + lien ntfy
@@ -80,13 +82,26 @@ npm run check-sources -w generator              # teste toutes les sources
   "articles": [{ "id": "sha1(url)[:12]", "title": "...", "url": "...", "source": "...",
                  "sourceName": "...", "publishedAt": "ISO", "excerpt": "...",
                  "summary": "résumé FR (LLM) | null", "theme": "... | null", "score": 0-100 | null,
+                 "dynamicTheme": "... | null (optionnel, absent = veille antérieure à la double vue)",
                  "origin": "\"collecte\" | \"manuel\" (optionnel, absent = collecte)",
                  "note": "string | null (optionnel, note perso — manuels uniquement)",
                  "addedAt": "ISO (optionnel, date de capture — manuels uniquement)" }],
   "themes": [{ "id": "...", "label": "...", "trend": "2-3 phrases FR", "topArticles": ["id", "... max 5"] }],
+  "dynamicThemes": [ /* même shape que "themes" : clustering libre, absent = veille ancienne */ ],
   "stats": { "llmCalls": 0, "promptTokens": 0, "completionTokens": 0, "estimatedCostEur": 0 }
 }
 ```
+
+## Deux vues de thèmes
+
+- **Prédéfinis** (`themes`) : classification contrainte par la liste fixe pro de
+  `generator/config/themes.json` ; le hors-périmètre est marqué `hors-sujet` et exclu de la liste.
+- **Dynamiques** (`dynamicThemes` + `article.dynamicTheme`) : second appel LLM (mêmes modèles
+  + même repli) qui regroupe librement les articles en 4-8 thèmes émergents de la journée,
+  sans liste imposée et sans exclure le hors-périmètre. Les deux analyses sont indépendantes :
+  l'échec de l'une ne bloque pas l'autre (les résumés sont conservés quoi qu'il arrive).
+- Côté app : bascule « Prédéfinis / Dynamiques » dans `VeilleView.svelte` (défaut = prédéfinis,
+  comportement historique) ; la bascule est masquée sur les veilles sans `dynamicThemes`.
 `data/index.json` = `{ "veilles": [{ date, generatedAt, file, articlesCount, sourcesCount }] }` (tri date desc).
 
 ## Inbox — ajouts manuels d'articles
