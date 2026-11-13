@@ -40,3 +40,32 @@ test('une date inconnue affiche une page introuvable', async ({ page }) => {
   await page.goto('/veille/2020-01-01');
   await expect(page.getByRole('heading', { name: 'Veille introuvable' })).toBeVisible();
 });
+
+test('bascule entre la vue prédéfinis et la vue dynamiques', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('heading', { name: 'Veille du 07/11/2026' })).toBeVisible();
+
+  // défaut : vue prédéfinis
+  await expect(page.getByRole('button', { name: 'Prédéfinis' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.theme', { hasText: 'Kubernetes' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Dynamiques' }).click();
+  await expect(page.getByRole('button', { name: 'Dynamiques' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.theme', { hasText: 'Releases majeures' })).toBeVisible();
+  await expect(page.locator('.theme', { hasText: 'Bases de données' })).toContainText('PostgreSQL 18');
+  // le hors-sujet de la vue fixe redevient un thème en vue dynamique
+  await expect(page.locator('.theme', { hasText: 'Hors périmètre pro' })).toContainText('Show HN fixture');
+  // les thèmes prédéfinis ne sont plus affichés
+  await expect(page.locator('.theme', { hasText: 'Observabilité' })).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Prédéfinis' }).click();
+  await expect(page.locator('.theme', { hasText: 'Kubernetes' })).toBeVisible();
+  await expect(page.locator('.theme', { hasText: 'Releases majeures' })).toHaveCount(0);
+});
+
+test('une veille ancienne sans thèmes dynamiques n affiche pas la bascule', async ({ page }) => {
+  await page.goto('/veille/2026-11-06');
+  await expect(page.locator('.theme', { hasText: 'GitLab CI' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Dynamiques' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Prédéfinis' })).toHaveCount(0);
+});
