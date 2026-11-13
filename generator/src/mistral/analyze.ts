@@ -2,7 +2,7 @@ import { z } from 'zod';
 import type { Article, Theme } from '../types.js';
 import { mapLimit } from '../http.js';
 import { chat, estimateCostEur, type ChatMessage } from './client.js';
-import { analysisMessages, summaryMessages, type AnalysisInputArticle } from './prompts.js';
+import { analysisMessages, dynamicThemesMessages, summaryMessages, type AnalysisInputArticle } from './prompts.js';
 import type { ThemesConfig } from './themes.js';
 
 export const MODELS = {
@@ -39,6 +39,27 @@ const analysisOutputSchema = z.object({
     })
   )
 });
+type ParsedAnalysis = z.infer<typeof analysisOutputSchema>;
+
+// Top 5 par thème imposé côté code (tri par score) à partir des assignations.
+// `excludeHorsSujet` : la vue prédéfinie exclut "hors-sujet" (veille pro) ;
+// la vue dynamique laisse même le hors-périmètre émerger en thème.
+function buildThemes(
+  articles: Article[],
+  rawThemes: ParsedAnalysis['themes'],
+  field: 'theme' | 'dynamicTheme',
+  excludeHorsSujet: boolean
+): Theme[] {
+  return rawThemes
+    .filter((t) => !(excludeHorsSujet && t.id === 'hors-sujet'))
+    .map((t) => {
+      const inTheme = articles.filter((a) => a[field] === t.id);
+      const top = [...inTheme].sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, TOP_ARTICLES_PER_THEME);
+      return { id: t.id, label: t.label, trend: t.trend, topArticles: top.map((a) => a.id) };
+    })
+    .filter((t) => t.topArticles.length > 0)
+    .sort((a, b) => b.topArticles.length - a.topArticles.length);
+}
 
 // Parse défensif de la réponse d'analyse : nettoyage des fences markdown et
 // normalisation des champs manquants avant validation zod.
@@ -66,13 +87,14 @@ function parseAnalysisOutput(raw: string) {
   return analysisOutputSchema.parse({ assignments, themes });
 }
 
-// Enrichit les articles (résumé + thème + score) et produit les tendances par thème.
-// `hors-sujet` est exclu de la liste des thèmes (veille pro uniquement).
+// Enrichit les articles (résumé + thème prédéfini + score + thème dynamique) et
+// produit les tendances des deux vues : `themes` (liste fixe pro, "hors-sujet"
+// exclu) et `dynamicThemes` (clustering libre, rien d'exclu).
 export async function enrichWithLlm(
   articles: Article[],
   themesConfig: ThemesConfig,
   opts: LlmEnrichOptions = {}
-): Promise<{ themes: Theme[]; stats: LlmStats }> {
+): Promise<{ themes: Theme[]; dynamicThemes: Theme[]; stats: LlmStats }> {
   const stats: LlmStats = { llmCalls: 0, promptTokens: 0, completionTokens: 0, estimatedCostEur: 0 };
   const summaryModel = opts.summaryModel ?? MODELS.summary;
   const analysisModel = opts.analysisModel ?? MODELS.analysis;
@@ -106,56 +128,65 @@ export async function enrichWithLlm(
   const summaryMap = new Map<string, string | null>(summaries);
   for (const a of articles) a.summary = summaryMap.get(a.id) ?? a.summary;
 
-  // 2. Analyse globale (modèle fort, 1 appel) : thèmes + scores + tendances
   const input: AnalysisInputArticle[] = articles.map((a) => ({
     id: a.id,
     source: a.sourceName,
     title: a.title,
     summary: a.summary ?? ''
   }));
-  let analysis;
-  for (const model of [...new Set([analysisModel, summaryModel])]) {
-    try {
-      const r = await chat(analysisMessages(input, themesConfig), {
-        model,
-        json: true,
-        temperature: 0.3,
-        maxTokens: 8000,
-        baseUrl: opts.baseUrl,
-        retries: opts.retries
-      });
-      track(model, r.usage);
-      analysis = parseAnalysisOutput(r.content);
-      break;
-    } catch (err) {
-      console.error(`[llm] analyse globale en échec avec ${model} (${(err as Error).message})`);
+
+  // Un appel d'analyse (modèle fort, repli sur le modèle de résumé) ; null si échec définitif.
+  const callAnalysis = async (messages: ChatMessage[]): Promise<ParsedAnalysis | null> => {
+    for (const model of [...new Set([analysisModel, summaryModel])]) {
+      try {
+        const r = await chat(messages, {
+          model,
+          json: true,
+          temperature: 0.3,
+          maxTokens: 8000,
+          baseUrl: opts.baseUrl,
+          retries: opts.retries
+        });
+        track(model, r.usage);
+        return parseAnalysisOutput(r.content);
+      } catch (err) {
+        console.error(`[llm] analyse en échec avec ${model} (${(err as Error).message})`);
+      }
     }
-  }
-  if (!analysis) {
-    // une analyse qui échoue ne doit pas perdre les résumés : on logue et on continue sans thèmes
-    console.error('[llm] analyse globale en échec définitif, veille sans thèmes');
-    return { themes: [], stats };
-  }
+    return null;
+  };
 
-  const assignments = new Map(analysis.assignments.map((x) => [x.articleId, x]));
-  for (const a of articles) {
-    const asg = assignments.get(a.id);
-    if (asg) {
-      a.theme = asg.theme;
-      a.score = asg.score;
+  // 2. Analyse globale (thèmes prédéfinis pro) : assignments + scores + tendances.
+  // Un échec ne doit pas perdre les résumés ni bloquer la vue dynamique.
+  const analysis = await callAnalysis(analysisMessages(input, themesConfig));
+  let themes: Theme[] = [];
+  if (analysis) {
+    const assignments = new Map(analysis.assignments.map((x) => [x.articleId, x]));
+    for (const a of articles) {
+      const asg = assignments.get(a.id);
+      if (asg) {
+        a.theme = asg.theme;
+        a.score = asg.score;
+      }
     }
+    themes = buildThemes(articles, analysis.themes, 'theme', true);
+  } else {
+    console.error('[llm] analyse globale en échec définitif, veille sans thèmes prédéfinis');
   }
 
-  // Top 5 par thème imposé côté code (tri par score), thèmes hors-sujet exclus
-  const themes: Theme[] = analysis.themes
-    .filter((t) => t.id !== 'hors-sujet')
-    .map((t) => {
-      const inTheme = articles.filter((a) => a.theme === t.id);
-      const top = [...inTheme].sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).slice(0, TOP_ARTICLES_PER_THEME);
-      return { id: t.id, label: t.label, trend: t.trend, topArticles: top.map((a) => a.id) };
-    })
-    .filter((t) => t.topArticles.length > 0)
-    .sort((a, b) => b.topArticles.length - a.topArticles.length);
+  // 3. Clustering libre (thèmes dynamiques) : seconde vue, indépendante de l'analyse fixe
+  const dynamic = await callAnalysis(dynamicThemesMessages(input));
+  let dynamicThemes: Theme[] = [];
+  if (dynamic) {
+    const assignments = new Map(dynamic.assignments.map((x) => [x.articleId, x]));
+    for (const a of articles) {
+      const asg = assignments.get(a.id);
+      if (asg) a.dynamicTheme = asg.theme;
+    }
+    dynamicThemes = buildThemes(articles, dynamic.themes, 'dynamicTheme', false);
+  } else {
+    console.error('[llm] clustering dynamique en échec définitif, veille sans thèmes dynamiques');
+  }
 
-  return { themes, stats };
+  return { themes, dynamicThemes, stats };
 }

@@ -13,6 +13,9 @@ export const articleSchema = z.object({
   summary: z.string().nullable(),
   theme: z.string().nullable(),
   score: z.number().nullable(),
+  // assignation au thème dynamique (clustering libre) ; absent sur les veilles
+  // antérieures à la double vue : rétrocompat
+  dynamicTheme: z.string().nullable().optional(),
   // Ajout manuel via l'inbox (absents sur les veilles existantes : rétrocompat)
   origin: z.enum(['collecte', 'manuel']).optional(),
   note: z.string().nullable().optional(), // note perso de la capture (manuels uniquement)
@@ -41,7 +44,8 @@ export const veilleSchema = z.object({
   window: z.object({ from: z.string(), to: z.string() }),
   sources: z.array(z.object({ id: z.string(), name: z.string(), count: z.number() })),
   articles: z.array(articleSchema),
-  themes: z.array(themeSchema).default([]), // rempli par le pipeline LLM (inc 3)
+  themes: z.array(themeSchema).default([]), // thèmes prédéfinis (liste fixe pro), remplis par le LLM
+  dynamicThemes: z.array(themeSchema).default([]), // thèmes dynamiques (clustering libre), remplis par le LLM
   stats: veilleStatsSchema.optional() // conso LLM (inc 3)
 });
 export type Veille = z.infer<typeof veilleSchema>;

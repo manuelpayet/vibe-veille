@@ -53,18 +53,31 @@ beforeAll(async () => {
           }));
         }
         let content: string;
-        if (body.model.includes('small') && !prompt.includes('Thèmes autorisés')) {
+        const isAnalysis = prompt.includes('"assignments"');
+        if (!isAnalysis) {
           content = JSON.stringify({ summary: 'Résumé mock FR.' });
         } else {
           // extrait les ids d'articles présents dans le prompt pour construire la réponse
           const ids = [...prompt.matchAll(/- id: ([a-f0-9]{12})/g)].map((m) => m[1]);
-          content = JSON.stringify({
-            assignments: ids.map((id, i) => ({ articleId: id, theme: i === 0 ? 'hors-sujet' : 'kubernetes', score: 90 - i })),
-            themes: [
-              { id: 'kubernetes', label: 'Kubernetes', trend: 'Tendance mock : grosse activité K8s.', topArticles: ids.slice(1) },
-              { id: 'hors-sujet', label: 'Hors sujet', trend: 'hors périmètre', topArticles: ids.slice(0, 1) }
-            ]
-          });
+          if (prompt.includes('Thèmes autorisés')) {
+            // analyse à thèmes prédéfinis (liste fixe pro)
+            content = JSON.stringify({
+              assignments: ids.map((id, i) => ({ articleId: id, theme: i === 0 ? 'hors-sujet' : 'kubernetes', score: 90 - i })),
+              themes: [
+                { id: 'kubernetes', label: 'Kubernetes', trend: 'Tendance mock : grosse activité K8s.', topArticles: ids.slice(1) },
+                { id: 'hors-sujet', label: 'Hors sujet', trend: 'hors périmètre', topArticles: ids.slice(0, 1) }
+              ]
+            });
+          } else {
+            // clustering dynamique (libre) : le hors-sujet de la vue fixe redevient un thème
+            content = JSON.stringify({
+              assignments: ids.map((id, i) => ({ articleId: id, theme: i === 0 ? 'hors-perso' : 'releases-majeures', score: 90 - i })),
+              themes: [
+                { id: 'releases-majeures', label: 'Releases majeures', trend: 'Tendance dynamique mock.', topArticles: ids.slice(1) },
+                { id: 'hors-perso', label: 'Hors périmètre pro', trend: 'Sujet hors veille pro.', topArticles: ids.slice(0, 1) }
+              ]
+            });
+          }
         }
         res.setHeader('content-type', 'application/json');
         res.end(JSON.stringify({
@@ -154,9 +167,9 @@ describe('enrichWithLlm + pipeline LLM (API mockée)', () => {
     });
 
     expect(() => veilleSchema.parse(veille)).not.toThrow();
-    // 2 résumés (small) + 1 analyse (large)
-    expect(veille.stats?.llmCalls).toBe(3);
-    expect(veille.stats?.promptTokens).toBe(300);
+    // 2 résumés (small) + 2 analyses (large : prédéfinis + dynamiques)
+    expect(veille.stats?.llmCalls).toBe(4);
+    expect(veille.stats?.promptTokens).toBe(400);
     expect(veille.stats && veille.stats.estimatedCostEur > 0).toBe(true);
 
     const arts = veille.articles;
@@ -165,19 +178,34 @@ describe('enrichWithLlm + pipeline LLM (API mockée)', () => {
     expect(arts[1].theme).toBe('kubernetes');
     expect(arts[1].score).toBe(89);
 
-    // hors-sujet exclu ; kubernetes présent avec top <= 5
+    // hors-sujet exclu des thèmes prédéfinis ; kubernetes présent avec top <= 5
     expect(veille.themes.map((t) => t.id)).toEqual(['kubernetes']);
     expect(veille.themes[0].topArticles.length).toBeLessThanOrEqual(5);
     expect(veille.themes[0].topArticles).toContain(arts[1].id);
     expect(veille.themes[0].trend).toContain('Tendance mock');
 
-    // le prompt d'analyse contient bien la liste fixe des thèmes pro
-    const analysisCall = mistralHits.find((h) => h.model.includes('large'));
+    // vue dynamique : assignations posées sur les articles, hors-périmètre non filtré
+    expect(arts[0].dynamicTheme).toBe('hors-perso');
+    expect(arts[1].dynamicTheme).toBe('releases-majeures');
+    expect(veille.dynamicThemes.map((t) => t.id).sort()).toEqual(['hors-perso', 'releases-majeures']);
+    const dynRel = veille.dynamicThemes.find((t) => t.id === 'releases-majeures');
+    expect(dynRel?.topArticles).toEqual([arts[1].id]);
+    expect(dynRel?.trend).toContain('Tendance dynamique mock');
+
+    // le prompt d'analyse prédéfinie contient bien la liste fixe des thèmes pro
+    const analysisCall = mistralHits.find((h) => h.model.includes('large') && h.body.messages.map((m: any) => m.content).join('\n').includes('Thèmes autorisés'));
     expect(analysisCall).toBeDefined();
     const prompt = analysisCall!.body.messages.map((m: any) => m.content).join('\n');
     expect(prompt).toContain('ccaas-genesys');
     expect(prompt).toContain('kubernetes');
     expect(prompt).toContain('vLLM'); // consigne hors périmètre pro
+
+    // le prompt dynamique n'impose AUCUNE liste fixe de thèmes
+    const dynCall = mistralHits.find((h) => h.model.includes('large') && h.body.messages.map((m: any) => m.content).join('\n').includes('THÈMES DYNAMIQUES'));
+    expect(dynCall).toBeDefined();
+    const dynPrompt = dynCall!.body.messages.map((m: any) => m.content).join('\n');
+    expect(dynPrompt).not.toContain('ccaas-genesys');
+    expect(dynPrompt).toContain('AUCUNE liste imposée');
 
     // le JSON écrit sur disque est valide aussi
     const onDisk = JSON.parse(readFileSync(path.join(outDir, `veille-${veille.date}.json`), 'utf8'));
@@ -190,10 +218,11 @@ describe('enrichWithLlm + pipeline LLM (API mockée)', () => {
     const articles: Article[] = [
       { id: 'aaaaaaaaaaaa', title: 'A', url: 'https://x.test/a', source: 's', sourceName: 'S', publishedAt: '2026-11-07T08:00:00.000Z', excerpt: 'x', summary: null, theme: null, score: null }
     ];
-    const { themes, stats } = await enrichWithLlm(articles, themesConfig, { baseUrl: baseUrl });
-    expect(stats.llmCalls).toBe(2); // 1 résumé + 1 analyse
+    const { themes, dynamicThemes, stats } = await enrichWithLlm(articles, themesConfig, { baseUrl: baseUrl });
+    expect(stats.llmCalls).toBe(3); // 1 résumé + 2 analyses (prédéfinis + dynamiques)
     expect(articles[0].summary).toBe('Résumé mock FR.');
     expect(themes.length).toBeGreaterThanOrEqual(0);
+    expect(dynamicThemes.map((t) => t.id)).toContain('hors-perso'); // seul article -> i=0 dans le mock
   });
 
   it('enrichWithLlm : repli sur le modèle summary si l analyse large renvoie sans contenu texte', async () => {
@@ -204,11 +233,12 @@ describe('enrichWithLlm + pipeline LLM (API mockée)', () => {
       { id: 'aaaaaaaaaaaa', title: 'A', url: 'https://x.test/a', source: 's', sourceName: 'S', publishedAt: '2026-11-07T08:00:00.000Z', excerpt: 'x', summary: null, theme: null, score: null },
       { id: 'bbbbbbbbbbbb', title: 'B', url: 'https://x.test/b', source: 's', sourceName: 'S', publishedAt: '2026-11-07T09:00:00.000Z', excerpt: 'y', summary: null, theme: null, score: null }
     ];
-    const { themes } = await enrichWithLlm(articles, themesConfig, { baseUrl: baseUrl, retries: 0 });
-    const isAnalysis = (h: { body: any }) => h.body.messages.map((m: any) => m.content).join('\n').includes('Thèmes autorisés');
-    expect(mistralHits.filter((h) => h.model.includes('large') && isAnalysis(h)).length).toBe(1);
-    expect(mistralHits.filter((h) => h.model.includes('small') && isAnalysis(h)).length).toBe(1);
+    const { themes, dynamicThemes } = await enrichWithLlm(articles, themesConfig, { baseUrl: baseUrl, retries: 0 });
+    const isAnalysis = (h: { body: any }) => h.body.messages.map((m: any) => m.content).join('\n').includes('"assignments"');
+    expect(mistralHits.filter((h) => h.model.includes('large') && isAnalysis(h)).length).toBe(2); // fixe + dynamique, tous deux en échec
+    expect(mistralHits.filter((h) => h.model.includes('small') && isAnalysis(h)).length).toBe(2); // repli small pour les deux
     expect(themes.map((t) => t.id)).toContain('kubernetes');
-    expect(articles.every((a) => a.theme !== null && a.score !== null)).toBe(true);
+    expect(dynamicThemes.map((t) => t.id)).toContain('releases-majeures');
+    expect(articles.every((a) => a.theme !== null && a.score !== null && a.dynamicTheme !== null)).toBe(true);
   });
 });
