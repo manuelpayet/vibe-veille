@@ -1,0 +1,592 @@
+{
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-14T14:04:08.348Z",
+  "window": {
+    "from": "2026-11-13T14:04:08.348Z",
+    "to": "2026-11-14T14:04:08.348Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 22
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 5
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 1
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 2
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 1
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 1
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "f67a5ae71b6e",
+      "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
+      "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-14T12:45:45.000Z",
+      "excerpt": "",
+      "summary": "Les géants tech tentent de redéfinir la confidentialité des données, menaçant les pratiques SRE de conformité et de sécurité.",
+      "theme": "securite-supply-chain",
+      "score": 70
+    },
+    {
+      "id": "f2ec70dcbd26",
+      "title": "What finally moved your longest incident call forward?",
+      "url": "https://www.reddit.com/r/sre/comments/1xvx824/what_finally_moved_your_longest_incident_call/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-14T08:21:41.000Z",
+      "excerpt": "What finally moved your longest incident call forward? Think of an incident call that went on much longer than expected. What kept the investigation stuck? Was it missing evidence, unclear ownership, several changes happening at once, or a theory nobody challenged? Then what broke the deadlock: a question, a person joining, a timeline, a rollback, or something else? Interested in the moment the investigation became useful again—and what others could learn from it. &#32; submitted by &#32; /u/After-Assist-5637 [link] &#32; [comments]",
+      "summary": "Les incidents longs bloquent souvent par manque de preuves ou d'ownership clair, mais un rollback ou une question pertinente peut relancer l'investigation.",
+      "theme": "hors-sujet",
+      "score": 60
+    },
+    {
+      "id": "33f0de898c7d",
+      "title": "Got laid off recently, looking for referalls/ jobs",
+      "url": "https://www.reddit.com/r/sre/comments/1xvwprx/got_laid_off_recently_looking_for_referalls_jobs/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-14T07:50:39.000Z",
+      "excerpt": "Hi Guys, I have about 2.5 years of experience with Dynatrace and automations using python. I am looking for SRE/Observability jobs in India. Could you please provide any relevant referrals, leads, or potential openings? Apart from dynatrace, i also have some experience with AIOps, Change Analytics and Callout (Major incident) tools. &#32; submitted by &#32; /u/Overall-Beach-9801 [link] &#32; [comments]",
+      "summary": "Un SRE de 2,5 ans en Dynatrace et automatisation Python cherche des opportunités en Inde, avec des compétences en AIOps et gestion d'incidents majeurs.",
+      "theme": null,
+      "score": null
+    },
+    {
+      "id": "a33801e4ff46",
+      "title": "Monkey Island: all 13 versions side by side",
+      "url": "https://monkeyisland.pages.dev/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-14T04:23:30.000Z",
+      "excerpt": "",
+      "summary": "Monkey Island propose 13 versions de son outil de chaos engineering pour tester la résilience des systèmes en production.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "c6caa4d4f0b0",
+      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-14T02:52:59.000Z",
+      "excerpt": "",
+      "summary": "Nvidia aurait créé une pénurie artificielle de GPUs en finançant des startups IA pour monopoliser l'offre et booster ses ventes.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "6c41dcbf34a2",
+      "title": "Ggml v1.0.0",
+      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-14T02:28:29.000Z",
+      "excerpt": "",
+      "summary": "GGML v1.0.0, une bibliothèque de calcul tensoriel optimisée, est publiée avec des améliorations critiques pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "724b95a619c9",
+      "title": "cmd/builder/v0.166.0-nightly.202611140211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611140211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-14T02:11:18.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) pour tester les fonctionnalités avant stabilisation.",
+      "theme": "observabilite",
+      "score": 80
+    },
+    {
+      "id": "9b96aa331f75",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611140211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611140211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-14T02:11:15.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly (v0.166.0) de l'OpAMP Supervisor pour le Collector OpenTelemetry, améliorant la supervision des agents.",
+      "theme": "observabilite",
+      "score": 75
+    },
+    {
+      "id": "72ac0140e86a",
+      "title": "v0.166.0-nightly.202611140211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611140211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-14T02:11:05.000Z",
+      "excerpt": "v0.166.0-nightly.202611140211: nightly build",
+      "summary": "Nouvelle version nightly du Collector OpenTelemetry avec corrections de bugs et améliorations de stabilité pour le monitoring SRE.",
+      "theme": "observabilite",
+      "score": 85
+    },
+    {
+      "id": "f98d19f282ec",
+      "title": "Elephants found to be increasingly isolated leading to fractured social networks",
+      "url": "https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-14T02:02:42.000Z",
+      "excerpt": "",
+      "summary": "L'isolement croissant des éléphants fragmente leurs réseaux sociaux, menaçant leur survie et leur résilience écologique.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "18713f91f295",
+      "title": "Amtrak booking system experiencing major issues amid nationwide FAA ground stop",
+      "url": "https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-14T00:52:29.000Z",
+      "excerpt": "",
+      "summary": "Amtrak subit une panne majeure de son système de réservation, impactant les billets et coïncidant avec un arrêt national de la FAA, perturbant les opérations critiques.",
+      "theme": "hors-sujet",
+      "score": 15
+    },
+    {
+      "id": "10c60fc60c0f",
+      "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-14T00:06:04.000Z",
+      "excerpt": "",
+      "summary": "Unsloth optimise Qwen3.8-27B avec des quantifications dynamiques v3.1 pour réduire la latence et la mémoire, cruciale pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "63100678a468",
+      "title": "Adaptive Heap Sizing + Numeric Conversion + Primitive Patterns - Inside Java Newscast #117",
+      "url": "https://inside.java/newscast/117/",
+      "source": "inside-java",
+      "sourceName": "Inside Java (OpenJDK)",
+      "publishedAt": "2026-11-14T00:00:00.000Z",
+      "excerpt": "ZGC gets adaptive heap sizing, value classes complicate numeric conversions, and primitive patterns are withdrawn as JDK 28 takes shape.",
+      "summary": "ZGC 28 introduit l'ajustement dynamique du heap, simplifie les conversions numériques avec les value classes et retire les primitive patterns pour optimiser la JVM.",
+      "theme": "java-jvm",
+      "score": 90
+    },
+    {
+      "id": "dcab381c8b78",
+      "title": "What happened to 3Com?",
+      "url": "https://dfarq.homeip.net/what-happened-to-3com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T23:48:59.000Z",
+      "excerpt": "",
+      "summary": "3Com a décliné après son rachat par HP en 2010, perdant son innovation et sa pertinence face à la concurrence.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "7ab113adec14",
+      "title": "Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop",
+      "url": "https://grounds.top/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T23:17:39.000Z",
+      "excerpt": "",
+      "summary": "Une carte en temps réel montre l'impact d'un arrêt national de la FAA sur les vols américains, crucial pour analyser les perturbations opérationnelles.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "d25e210f3f7b",
+      "title": "Terminal borders that don't cost a cell",
+      "url": "https://www.joshka.net/cell-borders/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T23:06:40.000Z",
+      "excerpt": "",
+      "summary": "Les terminaux peuvent désormais éviter les coûts cellulaires en utilisant des frontières réseau optimisées pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "7c3d0a079b98",
+      "title": "How Not to Build a Music Player",
+      "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T23:04:30.000Z",
+      "excerpt": "",
+      "summary": "Un mauvais design de player musical peut causer des latences, des crashes et une mauvaise UX, critiques pour la fiabilité et la performance.",
+      "theme": "hors-sujet",
+      "score": 15
+    },
+    {
+      "id": "117b7aeaaeee",
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "url": "https://orcasairband.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T22:04:24.000Z",
+      "excerpt": "",
+      "summary": "L'airband de KORS Victoria (CA) diffuse en direct sur toutes fréquences, impactant les communications aériennes critiques pour la sécurité.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "9c247e087592",
+      "title": "FAA issues national ground stop – lifted 4.5 hours later",
+      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T21:05:53.000Z",
+      "excerpt": "https:&#x2F;&#x2F;www.fly.faa.gov&#x2F;adv&#x2F;adv_otherdis?adv_date=11132026&a... https:&#x2F;&#x2F;www.fly.faa.gov&#x2F;adv&#x2F;adv_otherdis?adv_date=11142026&a... https:&#x2F;&#x2F;www.nytimes.com&#x2F;live&#x2F;2026&#x2F;11&#x2F;13&#x2F;us&#x2F;ground-stop-natio...",
+      "summary": "La FAA a stoppé nationalement les vols pendant 4,5h pour un problème de sécurité, crucial pour éviter des incidents critiques en production.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "76962f5e09a0",
+      "title": "Kitesurf is now open source",
+      "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-13T20:20:21.000Z",
+      "excerpt": "We introduced Kitesurf , our stateless browser for AI agents that runs entirely on top of Workers, in August and followed up in September with WebMCP support, new APIs, and improved compatibility. On every occasion, we mentioned our commitment to open sourcing it so that developers could run their own browser engine on their own Cloudflare accounts if they want to. That promise is now real. Kitesurf is open source on GitHub under the Apache 2.0 license. You can read the code, run it locally, change it, and deploy your own instance to Cloudflare Workers. A browser built for agents Kitesurf runs entirely on Cloudflare Workers. It parses HTML, applies CSS, executes page JavaScript, and renders screenshots without a browser container. It supports the Chrome DevTools Protocol (CDP), so you can connect clients such as Puppeteer. Our main goal is to give AI agents a lightweight, efficient browser — one that can load websites, execute JavaScript, and interact with pages while using less CPU and memory than a full browser like Chromium, and scaling on demand across Cloudflare’s global Workers network. Read more about why and how we built Kitesurf in our initial announcement and how to use it in Browser Run’s developer documentation. What is inside the repository? Kitesurf builds on Cloudflare’s Developer Platform and APIs, alongside an ecosystem of open-source Rust packages compiled to WebAssembly: Blitz provides HTML parsing, the DOM, layout, and painting. Stylo provides CSS parsing, cascading, and computed styles. Boa runs JavaScript inside WebAssembly (as the last resort only when we can’t run JavaScript in Dynamic Workers). Linebender libraries provide text layout and 2D graphics, and Krilla generates PDF output. These projects made Kitesurf possible. They retain their respective licenses; the repository&#x27;s NOTICE documents third-party notices. Kitesurf has three main parts: the Engine manages browser sessions and client connections, PageScript runs the page and its ",
+      "summary": "Cloudflare open-source Kitesurf, un navigateur stateless pour agents IA sur Workers, pour réduire CPU/mémoire et scalabilité globale.",
+      "theme": "hors-sujet",
+      "score": 25
+    },
+    {
+      "id": "504572814b78",
+      "title": "Live-migration support in FreeBSD and bhyve coming",
+      "url": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T19:58:42.000Z",
+      "excerpt": "",
+      "summary": "FreeBSD et bhyve ajoutent la live-migration, cruciale pour la résilience et la maintenance sans interruption des VMs.",
+      "theme": "hors-sujet",
+      "score": 40
+    },
+    {
+      "id": "de58dd928045",
+      "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
+      "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-13T19:26:07.000Z",
+      "excerpt": "Over the last month, the number of Large Language Model (LLM) penetration testing and orchestration frameworks has exploded. Just a few weeks ago, ARTEX — an open source agentic penetration testing system that automates offensive security workflows — was the only framework available. In just the last three days, we have seen over 50 framework families attempt to scan Cloudflare customers globally. The number of Internet Protocol (IP) addresses seen running these frameworks has grown into the thousands and continues to increase daily. The proliferation of these frameworks has significantly changed the status quo in cyber defense: defenders are struggling to keep up with the volumetric nature of these autonomously guided attacks. ARTEX was taken down by its creator Autumn-27 on October 8. (“The malicious exploitation of this tool runs entirely counter to its original intent,” they wrote in Chinese. ) But in the month since, the ecosystem has exploded with new fragmented versions of it. There are now over 12,000 repositories, with several hundred unique forks containing lineage from the original repository. Additionally, hundreds of other similar agentic orchestration frameworks have been created since October 8. Daily requests of AI penetration testing (pentesting) and exploitation tools has grown by 30x since October 1. These tools have also begun chaining stolen customer credentials in some of the more complex attacks, such as lateral movement chaining throughout an environment. We expect these frameworks to continue to proliferate, and every organization should be prepared to address this threat. To counter LLM-based pentest frameworks, we recommend that all organizations adopt what we call the Modern Security Model, which has six key pillars: Fortify the front gate : Implement a Web Application Firewall (WAF) with advanced rules such as rate limits. Security station in the foyer : Anomaly detection on all web applications your customers access. Identify phony visi",
+      "summary": "L'explosion des outils d'IA pour le pentesting automatisé (30x de requêtes) force les SRE à adapter leur défense contre des attaques volumétriques et sophistiquées en chaîne.",
+      "theme": "securite-supply-chain",
+      "score": 85
+    },
+    {
+      "id": "b99b3bf0ad66",
+      "title": "Found: A protein that drives ageing without unleashing inflammation",
+      "url": "https://www.nature.com/articles/d41586-026-03638-3",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T19:25:21.000Z",
+      "excerpt": "",
+      "summary": "Une protéine accélérant le vieillissement sans inflammation découverte, cruciale pour cibler le vieillissement cellulaire en SRE.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "18188c8ad3a8",
+      "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T19:24:47.000Z",
+      "excerpt": "",
+      "summary": "Perplexity Decider v1.3 améliore l'entraînement et l'évaluation des modèles d'IA pour des décisions plus précises et fiables en production.",
+      "theme": "hors-sujet",
+      "score": 15
+    },
+    {
+      "id": "9ce677af6082",
+      "title": "FM-1 Workbench",
+      "url": "https://open.m-vave.com/fm1-workbench",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T19:14:02.000Z",
+      "excerpt": "",
+      "summary": "FM-1 Workbench est un outil open-source pour automatiser la gestion des incidents et améliorer la résilience des systèmes en production.",
+      "theme": "hors-sujet",
+      "score": 30
+    },
+    {
+      "id": "3d3e0a33fa9e",
+      "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
+      "url": "https://isometricsf.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T17:58:37.000Z",
+      "excerpt": "Technical Write-up: https:&#x2F;&#x2F;www.justinchavez.com&#x2F;blog&#x2F;isometric-sf-how&#x2F; Hi HN! Showcasing this fun project. I took 1300 square miles of the SF Bay Area from Google Photorealistic 3D Tiles and transformed them into a cohesive pixel map. It&#x27;s really fun to explore and stumble upon various famous landmarks like Apple Park, Palace of Fine Arts, or UC Berkeley. The technicals involve using Nano Banana 2 to train a Qwen-Image-Edit 2511 LoRA which is used to prototype the style and generation methods. For final map I used Qwen to train a Klein 4B LoRA which reproduced the style at 1&#x2F;4 of the cost. More details in the blog post. Let me know what you think! I really enjoyed this process of fine-tuning smaller open source models. If I did the map with Nano Banana 2 it would have cost around 7k USD! Credit for the idea goes to Isometric NYC.",
+      "summary": "Création d'une carte pixelisée isométrique de la baie de San Francisco via IA open source, réduisant les coûts de 7k$ à 1/4 pour un SRE.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "51213a3dfb03",
+      "title": "Microsoft364",
+      "url": "https://www.reddit.com/r/sre/comments/1xvet2k/microsoft364/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-13T17:57:45.000Z",
+      "excerpt": "&#32; submitted by &#32; /u/jake_morrison [link] &#32; [comments]",
+      "summary": "Microsoft364 propose une alternative open-source à Microsoft 365 pour les SRE cherchant à réduire les coûts et améliorer la souveraineté des données.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "ea0776201252",
+      "title": "After 600 experiments, here's what I discovered about JEPA world models",
+      "url": "https://haddyalchaer.com/jepa",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T17:55:28.000Z",
+      "excerpt": "",
+      "summary": "Les modèles JEPA de Meta après 600 tests révèlent une approche prometteuse pour l'IA générative robuste et économe en données, cruciale pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "34ae4dafff70",
+      "title": "Microsoft says the 365 outage spread because servers kept failing health checks. When do you let health checks fail open?",
+      "url": "https://www.reddit.com/r/sre/comments/1xvemsq/microsoft_says_the_365_outage_spread_because/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-13T17:51:27.000Z",
+      "excerpt": "Reading Microsoft's updates on the 365 outage today, the part that stuck with me is how it spread. Some servers failed automated health checks and got taken out of rotation, their traffic moved to the remaining servers, and those got overloaded too. Restarted servers went unresponsive again once traffic came back. They also said they were validating alternate health check methods partway through. I keep going back and forth on this. A strict health check is doing its job when it pulls a bad node fast. But if the check itself is what's misfiring, or the whole fleet is a bit slow, it can eject so much capacity that the survivors fall over. Envoy has a panic threshold for this: if healthy hosts drop below a percentage (50% by default), it stops trusting health status and spreads traffic across all hosts. AWS load balancers do something similar and route to every target when all of them are unhealthy. That keeps some capacity up, but you're knowingly sending users to nodes you think are broken. Would you rather cap how much of the fleet a health check can remove, or keep checks strict and accept that a bad check can take everything down? &#32; submitted by &#32; /u/jyotirawattech [link] &#32; [comments]",
+      "summary": "Microsoft 365 outage : des serveurs exclus par des checks de santé trop stricts ont surchargé les autres, soulignant l'importance d'équilibrer fiabilité et résilience dans les mécanismes de santé.",
+      "theme": "hors-sujet",
+      "score": 70
+    },
+    {
+      "id": "040f0db746a4",
+      "title": "What&#39;s new in Pyroscope: profile more of your workflows, troubleshoot with AI agents, and more",
+      "url": "https://grafana.com/blog/whats-new-in-pyroscope-profile-more-of-your-workflows-troubleshoot-with-ai-agents-and-more/",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-13T17:14:29.000Z",
+      "excerpt": "When an application slows down or memory usage keeps climbing, knowing which code is responsible can help you find a fix faster. Continuous profiling gives you that visibility, so you can see where your application spends resources such as CPU time and memory. We’ve made updates to Pyroscope , our open source continuous profiling database, that make it easier to profile your applications, find performance bottlenecks, and optimize your code, whether you&#039;re doing the work yourself or with an AI agent. Highlights include: Profile more of your workloads: Memory profiling for Python and Rust, and .NET support on Windows, helps you find performance bottlenecks across more of your services. Let AI agents work with your profiling data: Pyroscope commands in gcx , the Grafana CLI, let an agent query your profiles directly. See more of your profiling data in Grafana: Exemplars and a new Call Tree view help you explore your profiles visually, whether you&#039;re investigating on your own or looking at what an agent found. Many of these capabilities build directly on Pyroscope 2.0 , the ground-up rearchitecture of Pyroscope that makes continuous profiling more cost-effective at scale (in our production environment, it reduced the symbol storage footprint by up to 95%). For example, exemplars require the v2 storage layer that Pyroscope 2.0 is built on. Read on to learn more about some of the latest updates. And for a full list of recent changes, see the release notes for Pyroscope and Profiles Drilldown . Profile more of your workloads Memory profiling and Windows support have been some of the most frequently requested features for Pyroscope. If you run Python or Rust services, you can now use the Pyroscope SDKs to see where their memory goes, not just their CPU time. If you run .NET applications on Windows, you can now profile those, too. Find memory leaks and heavy allocation: memory profiling for Python Memory issues can be hard to track down from metrics alone. A conta",
+      "summary": "Pyroscope 2.0 améliore le profilage continu avec IA, support élargi (Python/Rust/.NET) et optimisation des coûts pour déboguer efficacement les goulots d'étranglement.",
+      "theme": "observabilite",
+      "score": 90
+    },
+    {
+      "id": "5733b37fada5",
+      "title": "Aurora PostgreSQL with express configuration now supported in CloudFormation",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-cloudformation/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-13T16:00:00.000Z",
+      "excerpt": "Aurora PostgreSQL now supports express configuration in AWS CloudFormation for infrastructure as code deployment. This launch enables you to automate the infrastructure deployment of your Aurora clusters through CloudFormation templates while benefiting from the speed of express configuration. Aurora PostgreSQL clusters created with express configuration allow you to create and query an Aurora serverless database in seconds. The new withExpressConfiguration createOnly property on the AWS::RDS::DBCluster resource creates both the cluster and its primary database instance from one property declaration. You don't need to model or manage the instance separately in your CloudFormation template. This simplifies your templates and makes it easier to manage Aurora clusters with express configuration through infrastructure as code. The CloudFormation support is available in all AWS Regions where Aurora PostgreSQL with express configuration is offered. To learn more, see the Aurora User Guide and the AWS::RDS::DBCluster resource reference in the AWS CloudFormation documentation .",
+      "summary": "AWS CloudFormation supporte désormais l'Aurora PostgreSQL en express config, accélérant les déploiements IaC des clusters en quelques secondes pour les SRE.",
+      "theme": "iac-opentofu",
+      "score": 75
+    },
+    {
+      "id": "edfa1a2b987d",
+      "title": "Are We Sacrificing Technology Resilience for the Sake of Cloud Adoption?",
+      "url": "https://www.reddit.com/r/sre/comments/1xvblla/are_we_sacrificing_technology_resilience_for_the/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-13T15:59:20.000Z",
+      "excerpt": "The recent Microsoft 365 incident, which caused prolonged disruptions to business services, got me thinking about something I consider fundamental to the financial industry: Are we losing sight of operational continuity as we become increasingly dependent on technology providers? After 30 years working in critical systems infrastructure, 20 of them at my current organization and another 10 at different financial institutions, I've learned that certain operational principles should never be compromised. One hour of downtime is not simply one hour without service. Depending on the system affected, it can mean financial losses, business disruptions, regulatory non-compliance, customer impact, and reputational damage. There are several aspects that concern me: High availability is not the same as resilience. Having geographically distributed data centers, thousands of servers, and redundancy mechanisms does not guarantee that a platform can recover quickly. If a shared dependency fails, all that redundancy may prove insufficient. Operational responsibility cannot be outsourced. When we adopt cloud services, we transfer part of the technology operations, but we do not transfer the responsibility for ensuring business continuity. The bank remains accountable for its operations and the risks it assumes. Operational awareness is just as important as technical expertise. Throughout my career, I've encountered technology professionals during hiring processes who believe that one hour of downtime is no big deal, or that making changes directly in production is just routine work. In a banking environment, that mindset represents a serious risk. Mastering technology, automation, virtualization, or cloud platforms is not enough. Professionals must understand the financial, operational, and regulatory impact of every decision they make. Change management, maintenance windows, rollback plans, segregation of duties, and contingency procedures are not bureaucracy; they are essential ",
+      "summary": "L'adoption du cloud menace la résilience des systèmes critiques en externalisant la responsabilité sans garantir la continuité opérationnelle ni la reprise rapide.",
+      "theme": "hors-sujet",
+      "score": 80
+    },
+    {
+      "id": "4f5b4ce8cb48",
+      "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T15:08:44.000Z",
+      "excerpt": "",
+      "summary": "Jonathan Blow critique l'IA générative de code, soulignant son manque d'impact sur la qualité et la fiabilité des logiciels pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 10
+    },
+    {
+      "id": "bb8608a04f3d",
+      "title": "Minnesota guitarist's \"palmfrets\" invention strikes a new chord",
+      "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T15:08:07.000Z",
+      "excerpt": "https:&#x2F;&#x2F;palmfrets.com&#x2F;",
+      "summary": "Un guitariste invente les 'Palmfrets', un système de frettes modulables pour faciliter l'accordage et la maintenance des instruments.",
+      "theme": "hors-sujet",
+      "score": 5
+    },
+    {
+      "id": "86b7f002df78",
+      "title": "A technical vision for the Haskell ecosystem",
+      "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-13T14:43:12.000Z",
+      "excerpt": "",
+      "summary": "Haskell vise une refonte technique de son écosystème pour améliorer fiabilité, performance et maintenabilité, cruciale pour les SRE.",
+      "theme": "java-jvm",
+      "score": 70
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Les releases nightly du Collector OpenTelemetry (v0.166.0) et les améliorations de Pyroscope 2.0 (profilage continu avec IA, support élargi) montrent une accélération des innovations pour une observabilité plus fine et automatisée. Ces outils deviennent critiques pour déboguer les goulots d'étranglement en temps réel.",
+      "topArticles": [
+        "040f0db746a4",
+        "72ac0140e86a",
+        "724b95a619c9",
+        "9b96aa331f75"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Les géants tech redéfinissent la confidentialité des données, imposant aux SRE de repenser les politiques de conformité et de sécurité des pipelines. Parallèlement, l'automatisation des pentests via IA (jusqu'à 30x de requêtes) force les équipes à adapter leurs défenses contre des attaques volumétriques et sophistiquées en chaîne.",
+      "topArticles": [
+        "de58dd928045",
+        "f67a5ae71b6e"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "ZGC 28 introduit l'ajustement dynamique du heap et simplifie les conversions numériques, optimisant la JVM pour les environnements conteneurisés. Ces évolutions sont cruciales pour les SRE gérant des applications Java en production avec des contraintes de mémoire et de latence.",
+      "topArticles": [
+        "63100678a468",
+        "86b7f002df78"
+      ]
+    },
+    {
+      "id": "iac-opentofu",
+      "label": "IaC — OpenTofu",
+      "trend": "AWS CloudFormation supporte désormais l'Aurora PostgreSQL en express config, accélérant les déploiements IaC des clusters en quelques secondes. Cette intégration réduit les temps de provisionnement et améliore la reproductibilité des environnements pour les SRE.",
+      "topArticles": [
+        "5733b37fada5"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 36,
+    "promptTokens": 11121,
+    "completionTokens": 3063,
+    "estimatedCostEur": 0.0037370399999999996
+  }
+}
