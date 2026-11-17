@@ -1,0 +1,820 @@
+{
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T16:50:44.768Z",
+  "window": {
+    "from": "2026-11-16T16:50:44.768Z",
+    "to": "2026-11-17T16:50:44.768Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 20
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 2
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 1
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 1
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 10
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 1
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 0
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "cd100b735815",
+      "title": "Jensen Huang says he’s open to returning in first statement since resignation",
+      "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T16:40:38.000Z",
+      "excerpt": "",
+      "summary": "Jensen Huang envisage un retour chez Nvidia, crucial pour la stabilité et l'innovation technologique de l'entreprise.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "leadership-technologique"
+    },
+    {
+      "id": "b06271f2cd1e",
+      "title": "NSA Internal Network Down",
+      "url": "https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T15:50:48.000Z",
+      "excerpt": "",
+      "summary": "Le réseau interne de communications classifiées de la NSA est hors ligne, impactant la sécurité nationale et la résilience des opérations.",
+      "theme": "securite-supply-chain",
+      "score": 95,
+      "dynamicTheme": "resilience-infrastructures-critiques"
+    },
+    {
+      "id": "e3f80aa13f80",
+      "title": "Highly classified US national security communications network goes down",
+      "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T15:38:28.000Z",
+      "excerpt": "",
+      "summary": "Un réseau de communications classifié US tombe en panne, impactant la sécurité nationale et la résilience des infrastructures critiques.",
+      "theme": "securite-supply-chain",
+      "score": 95,
+      "dynamicTheme": "resilience-infrastructures-critiques"
+    },
+    {
+      "id": "3eaf4ec14a9a",
+      "title": "Antfly learned to stop worrying and love Apache 2.0",
+      "url": "https://antfly.io/thoughts/how-antfly-learned-to-stop-worrying-and-love-apache-2",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T15:33:15.000Z",
+      "excerpt": "",
+      "summary": "Antfly a migré vers Apache 2.0 pour simplifier sa gestion des licences et renforcer sa compatibilité open source, crucial pour les SRE.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "licences-open-source"
+    },
+    {
+      "id": "2c43cd14957f",
+      "title": "Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off",
+      "url": "https://alloyhtml.com/example.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T15:07:09.000Z",
+      "excerpt": "",
+      "summary": "Alloy CSS propose des composants UI (dialogues, menus, onglets) fonctionnels sans JavaScript, crucial pour la résilience et l'accessibilité des applications SRE.",
+      "theme": "build-tooling",
+      "score": 60,
+      "dynamicTheme": "resilience-ui-accessibilite"
+    },
+    {
+      "id": "b563d314a26c",
+      "title": "In 27,280 coding agent runs, 64% of inference spend went to runs that failed",
+      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T14:53:43.000Z",
+      "excerpt": "",
+      "summary": "64% des coûts d'inférence en 27 280 exécutions d'agents de code ont échoué, gaspillant ressources et impactant la fiabilité des systèmes.",
+      "theme": "build-tooling",
+      "score": 80,
+      "dynamicTheme": "fiabilite-agents-ia"
+    },
+    {
+      "id": "91103a513ae5",
+      "title": "We don't need more apps. We need better open source",
+      "url": "https://jordankrueger.com/blog/better-open-source-not-more-apps/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T14:45:36.000Z",
+      "excerpt": "",
+      "summary": "Prioriser l'amélioration des outils open source existants plutôt que de créer de nouvelles applications réduit la dette technique et renforce la fiabilité des systèmes.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "strategie-open-source"
+    },
+    {
+      "id": "b392a8b728c9",
+      "title": "Loopholes Are for Assholes",
+      "url": "https://actsofvolition.com/2026/11/loopholes-are-for-assholes/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T14:20:32.000Z",
+      "excerpt": "",
+      "summary": "Les SRE doivent éviter les contournements techniques pour garantir la fiabilité et la sécurité des systèmes critiques.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "bonnes-pratiques-sre"
+    },
+    {
+      "id": "357aa42f9e67",
+      "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+      "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T14:19:59.000Z",
+      "excerpt": "",
+      "summary": "Les PDG de Baidu et Xiaomi alertent sur le décalage croissant entre l'engouement pour l'IA et les retours concrets, crucial pour les SRE en gestion de coûts et ROI.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "economie-ia-roi"
+    },
+    {
+      "id": "76e95097d061",
+      "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T11:45:51.000Z",
+      "excerpt": "",
+      "summary": "L'interdiction des téléphones à l'école améliore progressivement les résultats scolaires, réduisant les distractions pour les élèves.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "impact-social-technologie"
+    },
+    {
+      "id": "567d2c83df20",
+      "title": "How the Claude Code team thinks about verification",
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T10:20:40.000Z",
+      "excerpt": "",
+      "summary": "Claude Code utilise des tests automatisés et des revues de code strictes pour garantir la fiabilité et la sécurité des mises à jour logicielles.",
+      "theme": "build-tooling",
+      "score": 70,
+      "dynamicTheme": "verification-logicielle"
+    },
+    {
+      "id": "f70f51a38e39",
+      "title": "How can you compare ASPM tools for a modern development team?",
+      "url": "https://www.reddit.com/r/sre/comments/1xyefcs/how_can_you_compare_aspm_tools_for_a_modern/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-17T07:42:33.000Z",
+      "excerpt": "Hey everyone, i am here to know community advice on the following vulnerability prioritization and automated remediation options that i have explored so far. Checkmarx, Apiiro, Legit or other if you may suggest! Have you guys used these in ur development environment? I am more interested to hear about your experiences regarding what worked well for you, what fell short and which tools made security easier for you? &#32; submitted by &#32; /u/Olivia_Pryce8 [link] &#32; [comments]",
+      "summary": "Comparer les outils ASPM (Checkmarx, Apiiro, Legit) pour prioriser les vulnérabilités et automatiser la remédiation en environnement DevOps.",
+      "theme": "securite-supply-chain",
+      "score": 80,
+      "dynamicTheme": "outils-aspm"
+    },
+    {
+      "id": "a7708cb7e490",
+      "title": "Coding agents with native environments, identity and access.",
+      "url": "https://www.reddit.com/r/sre/comments/1xy93fx/coding_agents_with_native_environments_identity/",
+      "source": "reddit",
+      "sourceName": "Reddit",
+      "publishedAt": "2026-11-17T02:48:47.000Z",
+      "excerpt": "&#32; submitted by &#32; /u/jekapats [link] &#32; [comments]",
+      "summary": "Les agents IA doivent intégrer des environnements natifs, identités et accès sécurisés pour des opérations SRE fiables et contrôlées.",
+      "theme": "securite-supply-chain",
+      "score": 90,
+      "dynamicTheme": "securite-agents-ia"
+    },
+    {
+      "id": "dd357f81ff0f",
+      "title": "If an App Asks for Full Disk Access or System and App Protection Override",
+      "url": "https://support.apple.com/en-us/149699",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T02:17:04.000Z",
+      "excerpt": "",
+      "summary": "Apple alerte sur les risques de sécurité liés aux permissions admin/disk excessives pour les apps, critiques pour la stabilité et la sécurité des systèmes.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "securite-permissions-systeme"
+    },
+    {
+      "id": "119e1158a4fb",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611170211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611170211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-17T02:11:58.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, améliorant la supervision des agents.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "5abe1c9bde25",
+      "title": "cmd/builder/v0.166.0-nightly.202611170211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611170211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-17T02:11:55.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly v0.166.0 du builder OpenTelemetry Collector pour tester les fonctionnalités avant stabilisation.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "1401bc0bf126",
+      "title": "v0.166.0-nightly.202611170211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611170211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-17T02:11:43.000Z",
+      "excerpt": "v0.166.0-nightly.202611170211: nightly build",
+      "summary": "Nouvelle version nightly du Collector OpenTelemetry avec des correctifs et améliorations pour la collecte et l'export de télémétrie.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "808d70f3f21b",
+      "title": "Why 3dfx 1 cards had such a washed out color output?",
+      "url": "https://twitter.com/id_aa_carmack/status/2122478083319992513",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T00:16:24.000Z",
+      "excerpt": "",
+      "summary": "Les cartes 3dfx souffraient d'un gamma incorrect, causant des couleurs ternes, critique pour la fidélité visuelle en SRE.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "retrocomputing-graphique"
+    },
+    {
+      "id": "286648f1fe1e",
+      "title": "What CISA’s new cyber strategy means for how you ship software",
+      "url": "https://about.gitlab.com/blog/cisa-2030-cyber-strategy/",
+      "source": "gitlab",
+      "sourceName": "GitLab (about.gitlab.com)",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
+      "excerpt": "On October 26, 2026, the Cybersecurity and Infrastructure Security Agency released CISA 2030: Defend, Harden, Prevail , three pillars of a four-year strategy for securing the nation’s critical infrastructure. The focus is on operational technology, but the pillars apply to anyone building and shipping software for the government. CISA has given itself 60 days to review its current services, 180 days to publish an implementation plan, and a year to report progress. That plan is what agencies, and the vendors who supply them, will be measured against. In this article, you'll learn what each pillar asks of your software factory, and where GitLab fits in to your strategy. Why the timing matters CISA's plan lands as AI accelerates both sides of security. The same models that let agents write and ship code at machine speed also make old weaknesses cheaper to find and exploit. The Forum of Incident Response and Security Teams (FIRST) mid-year forecast projects 2026 at roughly 66,000 CVEs, up from the 59,000 it projected in February. The Verizon 2026 Data Breach Investigations Report puts the median time to fully patch a known-exploited vulnerability at 43 days, up from 32, and finds only 26% of those vulnerabilities were fully remediated. Attackers often have a working exploit within days of disclosure, and sometimes hours. Most teams still need weeks to fix a known vulnerability. Closing that gap is much of what CISA 2030 is about. Defend: Lead national cyber defense The Defend pillar sets four objectives: coordinated defense across federal, state, local, and industry partners; stronger protection for operational technology; published guidance that makes software security a strategic advantage; and secure adoption of emerging technologies like AI. The last two describe a software factory where security is built in and where people and AI agents operate under the same rules. Consider a typical week. A critical CVE drops in a library your agency uses in a dozen services. Th",
+      "summary": "CISA 2030 impose aux éditeurs de logiciels des mesures de sécurité renforcées sous 60 jours pour réduire les vulnérabilités exploitées en 43 jours.",
+      "theme": "securite-supply-chain",
+      "score": 95,
+      "dynamicTheme": "reglementation-cybersecurite"
+    },
+    {
+      "id": "06a40bd35450",
+      "title": "Optimizely compromised, served malware on Zoom, GitLab",
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-16T23:00:34.000Z",
+      "excerpt": "",
+      "summary": "Optimizely a distribué un malware via ses scripts tiers, infectant des marques majeures via Zoom et GitLab, compromettant la sécurité des utilisateurs.",
+      "theme": "securite-supply-chain",
+      "score": 98,
+      "dynamicTheme": "securite-supply-chain"
+    },
+    {
+      "id": "0a9c6c46d43a",
+      "title": "Amazon ECR now replicates image deletions across regions and accounts",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/replication-deletes-amazon-ecr",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T22:07:00.000Z",
+      "excerpt": "Amazon Elastic Container Registry (Amazon ECR) now supports replicating image deletions and tag removals to your replication destinations. Previously, ECR replication copied images to destination regions and accounts but did not replicate deletions, requiring you to manage deletions separately in each location. With replication of deletes, your destination repositories stay consistent with the source automatically. Teams running multi-region or multi-account architectures no longer need to script or manually track image cleanup across every destination. When you delete an image or remove a tag in your source registry, whether directly or through a lifecycle policy, ECR propagates that deletion to each destination in the replication rule. Replicated deletions emit EventBridge events and are recorded in CloudTrail, so you have the same visibility into deletions as you do for image pushes. Replication of deletes is available in all AWS Regions where Amazon ECR is available, at no additional cost. To get started, update your replication configuration in the Amazon ECR console or AWS CLI. For more information, see the Amazon ECR User Guide .",
+      "summary": "ECR réplique désormais les suppressions d'images entre régions/comptes, garantissant la cohérence des dépôts et simplifiant la gestion des nettoyages automatiques pour les architectures multi-régions.",
+      "theme": "iac-opentofu",
+      "score": 70,
+      "dynamicTheme": "gestion-conteneurs-registries"
+    },
+    {
+      "id": "8a9446f998bd",
+      "title": "Amazon EBS now supports associating additional KMS keys with snapshots",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ebs-snapshots-associate-kms-keys/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T22:00:00.000Z",
+      "excerpt": "Amazon Elastic Block Store (EBS) now supports associating additional AWS Key Management Service (KMS) keys with EBS snapshots. This new capability enables you to share and copy encrypted snapshots across accounts without first re-encrypting them, simplifying your disaster recovery and backup workflows. Customers use EBS snapshots as durable, point-in-time backups of EBS volumes. By associating an additional customer-managed KMS key (CMK) with a snapshot encrypted with an AWS managed key (AMK), for example, you enable cross-account sharing for that snapshot without re-encrypting its data. This feature accelerates your disaster recovery workflows and enhances operational efficiency for enterprise backup administrators and disaster recovery teams. Support for associating additional KMS keys with Amazon EBS snapshots is available in all AWS commercial, China, AWS GovCloud (US), and AWS European Sovereign Cloud (Germany) Regions, plus AWS Local Zones and AWS Outposts. You can access this capability through the AWS Console, AWS Command Line Interface (CLI), and AWS SDKs. To learn more, see the Amazon EBS documentation .",
+      "summary": "Amazon EBS permet désormais d'associer plusieurs clés KMS à un snapshot, simplifiant le partage et la réplication inter-comptes sans ré-encryption pour la reprise après sinistre.",
+      "theme": "iac-opentofu",
+      "score": 75,
+      "dynamicTheme": "securite-stockage-cloud"
+    },
+    {
+      "id": "ae2c27b931ec",
+      "title": "BugMeNot has closed",
+      "url": "https://www.bugmenot.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-16T21:32:17.000Z",
+      "excerpt": "",
+      "summary": "BugMeNot, service de comptes partagés pour contourner les inscriptions, ferme ses portes après 20 ans, impactant les workflows SRE nécessitant des tests anonymes.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "outils-de-test-anonymes"
+    },
+    {
+      "id": "1bdbffea7a47",
+      "title": "Amazon S3 Vectors now supports hybrid search combining vector and full text for more relevant search results",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/s3-vectors-hybrid-search/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T21:00:00.000Z",
+      "excerpt": "Amazon S3 Vectors now supports hybrid search that combines vector similarity search with full-text search within a single query. By combining semantic meaning and exact term matching into a single ranked list of results, hybrid search captures both intent and precise terms for retrieval-augmented generation (RAG), agent memory, and search applications. This can deliver more relevant ranked results than either method alone. Hybrid search works with the same S3 Vectors APIs and maintains subsecond latency for infrequent queries and latency around 100 milliseconds or less for frequent queries. S3 Vectors is designed to provide the same elasticity, durability, and availability as Amazon S3, and it reduces the total costs of storing and querying vectors by up to 90% compared to alternative vector solutions. With hybrid search, customers can now store the data that they want to make full-text searchable alongside the vectors. Customers write data with the PutVectors API as they do today and include the searchable text as another metadata field. S3 Vectors then automatically indexes that field for full-text search with BM25 relevance scoring. By default, S3 Vectors uses a language-agnostic text analyzer to index this data which works across most languages, and customers can optionally select a language-specific analyzer for more accurate language-aware matching. To perform a hybrid query, customers send their query text strings alongside their query vector in a single QueryVectors call; S3 Vectors runs both a vector search and a full-text search, fuses the two with Reciprocal Rank Fusion (RRF), and returns a single ranked list of the top K requested results. Customers can also run full-text and vector queries separately to apply own ranking logic, search across multiple text fields in a single query, and enable full-text search on existing data in place. Hybrid search is available today in all commercial AWS Regions where Amazon S3 Vectors is available, and in the AWS Chin",
+      "summary": "Amazon S3 Vectors ajoute la recherche hybride (vecteurs + texte) pour des résultats plus pertinents et économiques, avec latence subseconde et jusqu'à 90% de réduction de coûts.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "recherche-vecteurs-cloud"
+    },
+    {
+      "id": "44692743b794",
+      "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+      "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-16T20:48:08.000Z",
+      "excerpt": "",
+      "summary": "Comcast accusé de publicité mensongère en présentant son internet câble comme 'fibre', impactant la transparence pour les SRE.",
+      "theme": "kubernetes",
+      "score": 85,
+      "dynamicTheme": "marketing-technique"
+    },
+    {
+      "id": "3c9943ba4f13",
+      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+      "url": "https://www.cs.cmu.edu/learn/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-16T20:43:36.000Z",
+      "excerpt": "",
+      "summary": "Carnegie Mellon publie gratuitement ses cours d'informatique sur YouTube pour démocratiser l'accès aux compétences SRE et cloud.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "formation-open-source"
+    },
+    {
+      "id": "d277552cafe2",
+      "title": "Amazon Redshift now supports multi-statement transactions, conflict resolution, and time travel for Apache Iceberg",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/redshift-time-travel-multi-statement",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T20:30:00.000Z",
+      "excerpt": "Amazon Redshift now supports multi-statement transactions, automatic write-conflict resolution, and time travel for Apache Iceberg tables. You can run multi-step, concurrent transformation pipelines directly on Iceberg tables and audit the results, with the transaction semantics you expect from a data warehouse. This helps anyone writing to Iceberg tables at production scale. Batch jobs get all-or-nothing commits across multiple steps. Streaming and scheduled jobs can write to the same tables at the same time. Analysts, auditors, and AI agents can query a table as it existed at any point in time. With multi-statement transactions, you group several statements in a single BEGIN…COMMIT statement and publish them as one atomic Iceberg snapshot. This means a multi-step load such as a MERGE followed by a DELETE, can be commited together as one atomic operation, are never queryable in a half-applied state, and roll back cleanly if there's a failure. Automatic conflict resolution lets concurrent writes, such as streaming inserts alongside scheduled deletes, write to the same table and commit together when their changes don't overlap, instead of failing and retrying. Time travel lets you query a table as it existed at a past point in time with AS OF TIMESTAMP. You can use it to reproduce reports, audit changes, or recover from a bad write without keeping extra copies. These capabilities are available in all AWS commercial Regions for Amazon Redshift’s provisioned RG or serverless clusters that are writing to or querying Iceberg tables.. To get started, see the following list of resources: 1/ Resolving concurrent writes for Apache Iceberg tables using Amazon Redshift 2/ Multi-statement transactions for Apache Iceberg tables in Amazon Redshift 3/ Time travel support for Apache Iceberg",
+      "summary": "Redshift supporte désormais transactions multi-étapes, résolution automatique des conflits et time travel pour Iceberg, améliorant fiabilité et auditabilité des pipelines de données à grande échelle.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "bases-de-donnees-analytiques"
+    },
+    {
+      "id": "962d5b55a0b6",
+      "title": "Chemistry is Actually Geometry",
+      "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-16T20:22:18.000Z",
+      "excerpt": "",
+      "summary": "La chimie repose sur la géométrie moléculaire, cruciale pour prédire les réactions et optimiser les processus industriels en SRE.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "science-des-donnees"
+    },
+    {
+      "id": "e9a0eb9c2881",
+      "title": "AWS DevOps Agent is now available in AWS GovCloud (US-West)",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-devops-agent-govcloud-west/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T19:55:00.000Z",
+      "excerpt": "Now available in AWS GovCloud (US-West), AWS DevOps Agent is your always-available operations teammate that resolves and proactively prevents incidents, optimizes application reliability and performance, and handles on-demand SRE tasks across AWS, multicloud, and on-prem environments. DevOps Agent investigates incidents and identifies operational improvements as an experienced teammate would: by learning your applications and their relationships, working with your observability tools, runbooks, code repositories, and CI/CD pipelines, and correlating telemetry, code, and deployment data. It autonomously triages incidents and guides teams to rapid resolution, reducing mean time to resolution (MTTR) from hours to minutes, while analyzing patterns across historical incidents to deliver actionable recommendations that prevent future outages. For the full list of AWS Regions where AWS DevOps Agent is available, visit the Regions list. Pricing details are available on the AWS DevOps Agent pricing page . AWS Support customers receive monthly DevOps Agent credits based on the prior month's AWS Support charge: 100% for Unified Operations, 75% for Enterprise Support, or 30% for Business Support+. For many customers, this significantly reduces or eliminates DevOps Agent costs. For details, visit the support compare page . To learn more, read the launch blog and see getting started .",
+      "summary": "AWS DevOps Agent disponible dans GovCloud US-West pour automatiser la résolution d'incidents et réduire le MTTR via l'IA, optimisant la fiabilité des applications.",
+      "theme": "ia-contact-center",
+      "score": 85,
+      "dynamicTheme": "automatisation-devops-gouvernement"
+    },
+    {
+      "id": "def514b4167d",
+      "title": "Announcing the 2026 OpenTelemetry Community Award Winners",
+      "url": "https://opentelemetry.io/blog/2026/otel-community-awards/",
+      "source": "opentelemetry-blog",
+      "sourceName": "OpenTelemetry Blog",
+      "publishedAt": "2026-11-16T19:30:06.000Z",
+      "excerpt": "Congratulations to our 2026 OpenTelemetry Community Award winners! &#10; We are very pleased to announce the winners of the 2026 OpenTelemetry Community&#10;Awards! These awards recognize individuals who have made a notable impact to the&#10;OpenTelemetry project over the past year, through code, documentation, project&#10;management, outreach, adoption, and more. &#10; We’d like to extend a sincere thank you to everyone who took the time to&#10;nominate a contributor, and to project Maintainers for recognizing their peers.&#10;It truly takes a village, and this community is that village.",
+      "summary": "Les lauréats 2026 des OpenTelemetry Community Awards sont récompensés pour leurs contributions majeures au projet, essentielles pour l'observabilité et les SRE.",
+      "theme": "observabilite",
+      "score": 65,
+      "dynamicTheme": "observabilite-communaute"
+    },
+    {
+      "id": "d9cf17433a6d",
+      "title": "Amazon Connect Health medical coding is now available in public preview",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-health-medical-coding/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T19:18:00.000Z",
+      "excerpt": "Today, AWS announces the public preview of medical coding in Amazon Connect Health , a HIPAA-eligible AI service that works alongside healthcare teams across patient engagement and point-of-care workflows. Medical coding uses existing clinical documentation to suggest ICD-10-CM and CPT codes, including E&M levels and modifiers, for a provider or coder to review and approve before submission. You can integrate medical coding into your EHR or billing application through the Amazon Connect Health SDK, or use it with Amazon Connect Health ambient documentation. Each code links to the evidence that supports it and carries a confidence score, so reviewers can confirm a code before a claim goes out. In this public preview, you can choose to upload your organization's previously coded encounters, and the service builds a coding reference set specific to your organization. The corrections coders make feed that reference set and improve future coding suggestions. Medical coding is available in public preview in the US East (N. Virginia) and US West (Oregon) AWS Regions. To learn more, see medical coding in the Amazon Connect Health user guide.",
+      "summary": "AWS lance en préversion publique un service d'IA pour générer automatiquement des codes médicaux (ICD-10-CM, CPT) depuis les dossiers patients, optimisant la conformité et réduisant les erreurs de facturation.",
+      "theme": "ia-contact-center",
+      "score": 75,
+      "dynamicTheme": "ia-sectorielle-sante"
+    },
+    {
+      "id": "72ac6093e82f",
+      "title": "Amazon Connect Customer agent assist now supports interactive responses",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/Connect-Custom-agent-interactive-responses",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T19:02:00.000Z",
+      "excerpt": "Amazon Connect Customer agent assist now supports interactive components, including cards, carousels, buttons, and input fields. The AI agent analyzes conversation context in real time, recommends actions, retrieves information, and executes tasks on behalf of contact center agents using MCP tools in Connect Customer or third-party services. Interactive responses let agents review information, provide details, select options, and confirm actions without manually typing a separate request for each action. The AI agent can also recommend step-by-step guides, cases, customer profiles, and third-party applications that agents can open with one click. For example, when a customer calls to dispute a charge, the AI agent can dynamically generate an interactive list of the customer’s recent transactions. The agent can select the disputed transaction, provide or confirm the required details, and approve the action. The AI agent can then use a connected tool to create the dispute request and display confirmation in the agent workspace. This feature is available in all AWS Regions where Amazon Connect Customer agent assist is available. To learn more and get started, see Agent Assist in the Amazon Connect Administrator Guide.",
+      "summary": "Amazon Connect Agent Assist propose désormais des réponses interactives (boutons, champs) pour automatiser les actions des agents et accélérer la résolution des demandes clients en temps réel.",
+      "theme": "ia-contact-center",
+      "score": 80,
+      "dynamicTheme": "ia-service-client"
+    },
+    {
+      "id": "2d69f72d1326",
+      "title": "Scheduling the removal of the kube-proxy IPVS backend",
+      "url": "https://kubernetes.io/blog/2026/11/16/ipvs-removal/",
+      "source": "k8s-blog",
+      "sourceName": "Kubernetes Blog",
+      "publishedAt": "2026-11-16T18:35:00.000Z",
+      "excerpt": "The ipvs backend for kube-proxy was an experiment in providing a service proxy implementation with better performance than the iptables backend. While it succeeded in that goal, the kernel IPVS API has turned out to be a bad match for the Kubernetes Services API, and the ipvs backend was never able to implement all of the edge cases of Kubernetes Service functionality correctly. In Kubernetes 1.29, the project introduced the nftables backend for kube-proxy, which became GA in 1.33. Part of the plan behind adding the nftables backend was the idea that it would eventually replace both the iptables and ipvs backends. Because the ipvs backend in particular is complex, not 100% feature complete, and architecturally quite different from the other two backends (and thus more work to maintain), Kubernetes SIG Network decided to officially deprecate it as of Kubernetes 1.35 . Although it currently remains available in kube-proxy (with a warning about its deprecation), we (Kubernetes SIG Network) now plan to remove it in Kubernetes 1.40. All ipvs users should therefore be planning to migrate to either the nftables or iptables backends. Why was the ipvs backend written? The ipvs backend was originally designed to fix two different kinds of performance problems in the iptables backend: First, iptables had problems with data plane latency (the speed at which clients could establish new connections to services), because kube-proxy would write a separate iptables rule to match each service IP, so every new connection would need to be matched against a long series of rules that was O(n) in the number of services in the cluster. Second, it had an even larger problem with control plane latency (the speed at which kube-proxy could process changes to services and endpoints and update the data plane rules), because kube-proxy would rewrite the entire iptables ruleset every time any service or endpoint changed. While the list of rules itself was only O(n) in the total number of endpoints",
+      "summary": "Le backend IPVS de kube-proxy est supprimé dans Kubernetes 1.40 car incompatible avec l'API Services et trop complexe à maintenir, privilégiez nftables ou iptables.",
+      "theme": "kubernetes",
+      "score": 90,
+      "dynamicTheme": "evolution-kubernetes"
+    },
+    {
+      "id": "1ae225480523",
+      "title": "AWS KMS now supports key sharing with AWS Resource Access Manager",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/kms-key-sharing-resource-access-manager/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T18:00:00.000Z",
+      "excerpt": "AWS Key Management Service (KMS) now integrates with AWS Resource Access Manager (RAM), giving you a simpler and more consistent way to share KMS keys across your AWS accounts, within your organization in AWS Organizations, and with specific IAM roles and users. You can now let trusted parties define the access they need through reusable managed permissions in RAM, while keeping full control of your keys and key policies. To share a key, create a resource share by selecting the keys to share, choosing a managed permission, and specifying the principals. You can use AWS managed permissions for common scenarios, or customer managed permissions (CMPs) authored by you or by trusted parties such as SaaS providers and central security teams. Sharing KMS keys through RAM makes enabling cross-account access faster to set up and safer to maintain. The trusted parties who need access to your keys can publish the policy once as a CMP, without the need for you to modify the key policies by hand. You simply fill in the values that scope it to your environment and attach it to the resource share. Your existing key policy is untouched, so you are always in control of your key as your environment grows. When a new policy version is available via an updated CMP, you decide when to apply it to your resource shares. This enhancement is built on new AWS RAM capabilities that are available for every resource type RAM supports. CMPs now support multiple policy statements and additional IAM condition operators, including StringNotEquals, BoolIfExists, and ArnLike, along with the ForAnyValue and ForAllValues prefixes, so you can express precise, least-privilege access. The parameterized managed permissions lets you place a temporary placeholder in CMPs that allows each resource share owner to customize and scope down CMPs to their environment, enabling CMPs to be reused and serve many accounts. CMPs can now be published and shared across accounts, so the authors can maintain one permission",
+      "summary": "AWS KMS permet désormais de partager des clés via AWS RAM, simplifiant la gestion des accès inter-comptes tout en conservant le contrôle des politiques de sécurité.",
+      "theme": "iac-opentofu",
+      "score": 70,
+      "dynamicTheme": "securite-gestion-cles"
+    },
+    {
+      "id": "db40645392da",
+      "title": "Set up, connect, and govern AI agents faster with Amazon WorkSpaces",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-AI-agents-connect-govern",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T18:00:00.000Z",
+      "excerpt": "Building AI agents has become essential. Across your organization, teams want agents to handle ERP transactions, work through a claims queue, and operate the same applications your people use every day. But how do you move from experiments to production? Before an agent touches real systems and real data, you need to verify who it acted on behalf of, what it did, and whether it stayed within the limits you set. Without that visibility, the agent stays stuck in testing, and the value is never realized. Earlier this year, we launched Amazon WorkSpaces for AI agents , extending the power and security of a cloud work environment to agents, not just people. Today, we're excited to announce new capabilities that make it even easier to operate agents confidently across your enterprise and move them from proof of concept to governed production in fewer steps. You can set up new agents or connect the ones your builders have already built, run them under your own identity providers and policies, and keep a record of everything they do. You don't need to stitch together new tools or build custom monitoring. Setup used to mean configuring the machine by hand. Now, you can just describe what your agent needs to your AI coding assistant such as Claude Code, Codex, and Kiro. Guided by AWS MCP skills, the assistant builds the WorkSpace from defaults you can adjust. If your teams build on Amazon Bedrock AgentCore, you can connect an agent directly with your AWS credentials and skip writing any agent code. New tools also reduce agent costs and increase accuracy by letting an agent carry out a series of actions in a single call and use the computer-use actions its model already knows. But an agent that can work is not necessarily an agent you can trust with mission-critical work and sensitive data. This release gives you the same oversight over an agent that you have over the employees you manage. First, agents can now sign in through any identity provider (IdP) that supports OIDC, in",
+      "summary": "Amazon WorkSpaces simplifie le déploiement et la gouvernance des agents IA en production avec identité, logs et sécurité intégrés, accélérant leur passage du POC à l'entreprise.",
+      "theme": "ia-contact-center",
+      "score": 70,
+      "dynamicTheme": "deploiement-agents-ia"
+    },
+    {
+      "id": "1b2dbebd9e5d",
+      "title": "AWS Marketplace Metering Service now supports decimal usage quantities",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-metering-service-decimal-usage-quantities/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-16T17:39:00.000Z",
+      "excerpt": "AWS Marketplace Metering Service now supports decimal usage quantities in the MeterUsage and BatchMeterUsage APIs. Previously, AWS Marketplace sellers reported usage to both APIs in whole numbers, and now they can report usage with up to six decimal places. Sellers can price and meter in the units that match how customers consume their product, for example reporting 1.5 terabytes (TB) of storage instead of 1 or 2 TB. To report decimal quantities, sellers use the new UsageQuantityAsDecimal parameter in MeterUsage and QuantityAsDecimal parameter in BatchMeterUsage, and existing integrations that report whole numbers continue to work without changes. Usage allocations, which split reported usage into buckets by tags, also support decimal quantities with the new AllocatedUsageQuantityAsDecimal parameter. This new feature is available in all AWS Regions where AWS Marketplace Metering Service is available. To learn more, see MeterUsage and BatchMeterUsage in the AWS Marketplace API Reference.",
+      "summary": "AWS Marketplace Metering supporte désormais les quantités décimales (jusqu'à 6 décimales) pour un billing plus précis et flexible, essentiel pour les SRE gérant des métriques granulaires.",
+      "theme": "build-tooling",
+      "score": 60,
+      "dynamicTheme": "facturation-cloud-precision"
+    },
+    {
+      "id": "fd2df089a059",
+      "title": "Grazing sheep in fields with solar arrays",
+      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-16T17:27:46.000Z",
+      "excerpt": "",
+      "summary": "Le pâturage ovin sous panneaux solaires réduit les coûts de maintenance et améliore la biodiversité pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "durabilite-infrastructures"
+    },
+    {
+      "id": "d231aa635479",
+      "title": "Jiff 1.0: A datetime library for Rust",
+      "url": "https://burntsushi.net/jiff/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-16T16:53:39.000Z",
+      "excerpt": "",
+      "summary": "Jiff 1.0 est une bibliothèque Rust pour manipuler les dates/heures, cruciale pour la précision temporelle en SRE et systèmes critiques.",
+      "theme": "build-tooling",
+      "score": 65,
+      "dynamicTheme": "librairies-rust-temporelles"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Les évolutions récentes d'OpenTelemetry (nouvelles versions nightly, awards communautaires) et d'AWS (S3 Vectors, Redshift) renforcent l'observabilité des systèmes à grande échelle. Les SRE doivent prioriser l'adoption de ces outils pour améliorer la détection et le débogage des incidents.",
+      "topArticles": [
+        "1401bc0bf126",
+        "119e1158a4fb",
+        "d277552cafe2",
+        "91103a513ae5",
+        "5abe1c9bde25"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & Supply Chain",
+      "trend": "Les incidents critiques (NSA, Optimizely) et les nouvelles stratégies CISA 2030 imposent une refonte des pratiques de sécurité dans la chaîne d'approvisionnement logicielle. Les SRE doivent intégrer des politiques d'admission strictes, des scans SBOM et des mécanismes de remédiation automatisée.",
+      "topArticles": [
+        "06a40bd35450",
+        "b06271f2cd1e",
+        "e3f80aa13f80",
+        "286648f1fe1e",
+        "a7708cb7e490"
+      ]
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & Tooling",
+      "trend": "Les outils de build et de vérification (Jiff, Claude Code, Maven/Gradle) évoluent vers plus de robustesse et d'automatisation. Les SRE doivent surveiller les breaking changes et adopter des pratiques de validation strictes pour garantir la fiabilité des pipelines CI/CD.",
+      "topArticles": [
+        "b563d314a26c",
+        "567d2c83df20",
+        "d231aa635479",
+        "2c43cd14957f",
+        "1b2dbebd9e5d"
+      ]
+    },
+    {
+      "id": "ia-contact-center",
+      "label": "IA dans le Contact Center",
+      "trend": "Les solutions d'IA pour les centres de contact (Amazon Connect, AWS DevOps Agent) se démocratisent avec des fonctionnalités avancées (réponses interactives, codage automatisé). Les SRE doivent évaluer leur intégration pour améliorer l'efficacité opérationnelle et réduire le MTTR.",
+      "topArticles": [
+        "e9a0eb9c2881",
+        "72ac6093e82f",
+        "d9cf17433a6d",
+        "db40645392da"
+      ]
+    },
+    {
+      "id": "iac-opentofu",
+      "label": "IaC — OpenTofu",
+      "trend": "Les évolutions d'AWS KMS et ECR avec OpenTofu soulignent l'importance de la gestion des clés et des ressources multi-comptes. Les SRE doivent anticiper les migrations pour éviter des ruptures de compatibilité dans leurs infrastructures as code.",
+      "topArticles": [
+        "8a9446f998bd",
+        "0a9c6c46d43a",
+        "1ae225480523"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "trend": "Les releases Kubernetes 1.40 confirment la suppression progressive des backends obsolètes comme IPVS, au profit de solutions plus modernes (nftables/iptables). Les équipes SRE doivent anticiper ces migrations pour éviter des ruptures de compatibilité dans leurs clusters.",
+      "topArticles": [
+        "2d69f72d1326",
+        "44692743b794"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "releases-majeures",
+      "label": "Releases majeures et innovations",
+      "trend": "Plusieurs releases nightly d'OpenTelemetry Collector et des outils AWS marquent des avancées significatives en observabilité, sécurité et gestion des données. Les SRE doivent tester ces versions pour anticiper les impacts sur leurs pipelines et infrastructures.",
+      "topArticles": [
+        "1401bc0bf126",
+        "119e1158a4fb",
+        "5abe1c9bde25"
+      ]
+    },
+    {
+      "id": "resilience-infrastructures-critiques",
+      "label": "Résilience des infrastructures critiques",
+      "trend": "Les pannes majeures du réseau interne de la NSA et des communications classifiées US mettent en lumière les défis de résilience pour les infrastructures nationales. Les SRE doivent renforcer les plans de continuité d'activité et les mécanismes de détection précoce pour les systèmes critiques.",
+      "topArticles": [
+        "b06271f2cd1e",
+        "e3f80aa13f80"
+      ]
+    },
+    {
+      "id": "leadership-technologique",
+      "label": "Leadership technologique et gouvernance",
+      "trend": "Le retour potentiel de Jensen Huang chez Nvidia souligne l'importance cruciale de la stabilité du leadership dans les entreprises technologiques, surtout dans un contexte d'innovation rapide. Les SRE doivent anticiper les impacts des changements de gouvernance sur la stratégie technique et la résilience des infrastructures.",
+      "topArticles": [
+        "cd100b735815"
+      ]
+    },
+    {
+      "id": "licences-open-source",
+      "label": "Licences et compatibilité open source",
+      "trend": "La migration d'Antfly vers Apache 2.0 illustre l'importance croissante de la gestion des licences pour les projets open source. Les SRE doivent évaluer les impacts des licences sur l'intégration, la maintenance et la conformité des outils utilisés en production.",
+      "topArticles": [
+        "3eaf4ec14a9a"
+      ]
+    },
+    {
+      "id": "resilience-ui-accessibilite",
+      "label": "Résilience et accessibilité des interfaces",
+      "trend": "Alloy CSS démontre que les composants UI peuvent fonctionner sans JavaScript, renforçant la résilience et l'accessibilité des applications. Les SRE doivent privilégier les solutions progressives et inclusives pour garantir une expérience utilisateur fiable dans tous les contextes.",
+      "topArticles": [
+        "2c43cd14957f"
+      ]
+    },
+    {
+      "id": "fiabilite-agents-ia",
+      "label": "Fiabilité des agents IA et coûts cachés",
+      "trend": "L'échec massif des agents de code (64% de coûts gaspillés) révèle les risques opérationnels et financiers des outils IA non maîtrisés. Les SRE doivent implémenter des mécanismes de validation, de fallback et de monitoring strict pour ces agents en production.",
+      "topArticles": [
+        "b563d314a26c"
+      ]
+    },
+    {
+      "id": "strategie-open-source",
+      "label": "Stratégie open source et dette technique",
+      "trend": "L'appel à améliorer les outils open source existants plutôt que d'en créer de nouveaux souligne la nécessité de réduire la dette technique. Les SRE doivent prioriser la maintenance, la documentation et l'optimisation des solutions open source pour renforcer la fiabilité des systèmes.",
+      "topArticles": [
+        "91103a513ae5"
+      ]
+    },
+    {
+      "id": "bonnes-pratiques-sre",
+      "label": "Bonnes pratiques et éthique SRE",
+      "trend": "L'article 'Loopholes Are for Assholes' rappelle l'importance de respecter les bonnes pratiques et les contraintes techniques pour garantir la fiabilité et la sécurité. Les SRE doivent éviter les contournements et privilégier les solutions robustes et documentées.",
+      "topArticles": [
+        "b392a8b728c9"
+      ]
+    },
+    {
+      "id": "economie-ia-roi",
+      "label": "Économie de l'IA : ROI et réalités",
+      "trend": "Les alertes de Baidu et Xiaomi sur le décalage entre l'engouement pour l'IA et les retours concrets soulignent la nécessité d'une approche pragmatique. Les SRE doivent évaluer le ROI des solutions IA et éviter les projets coûteux sans valeur opérationnelle claire.",
+      "topArticles": [
+        "357aa42f9e67"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité de la supply chain logicielle",
+      "trend": "La compromission d'Optimizely via des scripts tiers rappelle les risques des dépendances externes. Les SRE doivent renforcer les audits de sécurité, les scans de vulnérabilités et les mécanismes de sandboxing pour les outils tiers utilisés en production.",
+      "topArticles": [
+        "06a40bd35450"
+      ]
+    },
+    {
+      "id": "gestion-conteneurs-registries",
+      "label": "Gestion des conteneurs et registries",
+      "trend": "La réplication des suppressions d'images ECR entre régions et comptes simplifie la gestion des registries multi-régions. Les SRE doivent exploiter ces fonctionnalités pour garantir la cohérence et la sécurité des dépôts d'images.",
+      "topArticles": [
+        "0a9c6c46d43a"
+      ]
+    },
+    {
+      "id": "securite-stockage-cloud",
+      "label": "Sécurité du stockage cloud",
+      "trend": "La possibilité d'associer plusieurs clés KMS aux snapshots EBS améliore la gestion des accès et la reprise après sinistre. Les SRE doivent exploiter ces mécanismes pour renforcer la sécurité des données sensibles.",
+      "topArticles": [
+        "8a9446f998bd"
+      ]
+    },
+    {
+      "id": "observabilite-communaute",
+      "label": "Observabilité et communauté open source",
+      "trend": "Les OpenTelemetry Community Awards 2026 récompensent les contributions majeures à l'observabilité. Les SRE doivent s'impliquer dans ces communautés pour bénéficier des innovations et des bonnes pratiques partagées.",
+      "topArticles": [
+        "def514b4167d"
+      ]
+    },
+    {
+      "id": "evolution-kubernetes",
+      "label": "Évolution de Kubernetes et kube-proxy",
+      "trend": "La suppression du backend IPVS de kube-proxy dans Kubernetes 1.40 marque un tournant vers des solutions plus modernes comme nftables. Les SRE doivent planifier la migration pour éviter les incompatibilités et simplifier la maintenance.",
+      "topArticles": [
+        "2d69f72d1326"
+      ]
+    },
+    {
+      "id": "securite-gestion-cles",
+      "label": "Sécurité et gestion des clés cryptographiques",
+      "trend": "Le partage de clés KMS via AWS RAM simplifie la gestion des accès inter-comptes tout en conservant le contrôle centralisé. Les SRE doivent exploiter ces fonctionnalités pour renforcer la sécurité des infrastructures multi-comptes.",
+      "topArticles": [
+        "1ae225480523"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 40,
+    "promptTokens": 16409,
+    "completionTokens": 6503,
+    "estimatedCostEur": 0.006608912
+  }
+}
