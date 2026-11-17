@@ -70,6 +70,9 @@ npm run check-sources -w generator              # teste toutes les sources
   `npm test`, `npm run test:e2e` avant de commit.
 - Commits en français, format du repo (ne pas toucher au tag co-auteur ajouté par l'outil).
 - UI et contenus en **français**. Thème sombre uniquement.
+- Prompts LLM (`generator/src/mistral/prompts.ts`) : résumés d'articles et « trend » de
+  thèmes strictement factuels — aucune justification d'intérêt (« important/crucial pour
+  un SRE ») : le lecteur est déjà sur le thème. Le score 0-100 reste interne (top 5).
 - Ne JAMAIS committer de secret : `mistral-api-key.txt` et `*.pem` sont gitignorés.
 
 ## Schéma d'une veille (`data/veille-<date>.json`)

@@ -5,6 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { afterAll, afterEach, beforeAll, describe, it, expect } from 'vitest';
 import { chat } from '../src/mistral/client.js';
+import { analysisMessages, dynamicThemesMessages, summaryMessages } from '../src/mistral/prompts.js';
 import { enrichWithLlm } from '../src/mistral/analyze.js';
 import { loadThemesConfig } from '../src/mistral/themes.js';
 import { runPipeline } from '../src/pipeline.js';
@@ -144,6 +145,26 @@ describe('client Mistral', () => {
     await expect(
       chat([{ role: 'user', content: 'hello' }], { model: 'mistral-large-latest', baseUrl: baseUrl, retries: 1 })
     ).rejects.toThrow(/sans contenu texte.*finish_reason=stop/s);
+  });
+});
+
+describe('prompts (style éditorial)', () => {
+  it('résumés et tendances factuels : aucune justification d’intérêt pour un SRE', () => {
+    const article: Article = {
+      id: 'aaaaaaaaaaaa', title: 'A', url: 'https://x.test/a', source: 's', sourceName: 'S',
+      publishedAt: '2026-11-07T08:00:00.000Z', excerpt: 'x', summary: null, theme: null, score: null
+    };
+    const input = [{ id: article.id, source: 'S', title: 'A', summary: 'x' }];
+    const cfg = loadThemesConfig(path.join(here, '..', 'config', 'themes.json'));
+    const all = [
+      ...summaryMessages(article),
+      ...analysisMessages(input, cfg),
+      ...dynamicThemesMessages(input)
+    ].map((m) => m.content).join('\n');
+    expect(all).not.toMatch(/pourquoi c'est important/);
+    expect(all).not.toMatch(/essentiel pour un SRE/);
+    expect(all).toContain('Ne justifie pas');
+    expect(all.match(/sans justifier l'intérêt pour un SRE/g)).toHaveLength(2);
   });
 });
 

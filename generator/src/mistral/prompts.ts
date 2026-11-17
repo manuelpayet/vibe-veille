@@ -12,7 +12,7 @@ export function summaryMessages(article: Article): ChatMessage[] {
     },
     {
       role: 'user',
-      content: `Résume cet article en UNE phrase de 25 mots maximum, en français, en disant l'essentiel pour un SRE (quoi + pourquoi c'est important).
+      content: `Résume cet article en UNE phrase de 25 mots maximum, en français : le fait essentiel, ce que ça change. Ne justifie pas pourquoi ce serait important (pas de « crucial pour un SRE »).
 
 Titre : ${article.title}
 Source : ${article.sourceName}
@@ -57,7 +57,7 @@ Hors périmètre : ${cfg.horsPerimetre}
 Tâches :
 1. Pour chaque article, choisir UN thème parmi la liste (id exact). Si aucun ne convient vraiment, tu peux créer un nouveau thème (id en slug anglais, label en français).
 2. Donner un score de pertinence 0-100 pour ce profil SRE pro (impact plateforme, risque, utilité concrète).
-3. Pour chaque thème ayant au moins 1 article : écrire une "trend" en français (2-3 phrases) résumant la tendance du jour sur ce thème, et lister le top 5 des articles du thème dans "topArticles" (ids, max 5, par score décroissant).
+3. Pour chaque thème ayant au moins 1 article : écrire une "trend" en français (2-3 phrases) résumant la tendance du jour sur ce thème — uniquement les faits (annonces, chiffres, releases), sans justifier l'intérêt pour un SRE —, et lister le top 5 des articles du thème dans "topArticles" (ids, max 5, par score décroissant).
 
 JSON attendu :
 {
@@ -90,7 +90,7 @@ ${list}
 Tâche : regroupe librement ces articles en THÈMES DYNAMIQUES, ceux qui émergent vraiment aujourd'hui :
 1. 4 à 8 thèmes maximum, nommés d'après ce qui ressort concrètement de la liste (AUCUNE liste imposée) : id en slug anglais, label en français. Ne crée pas de thème "hors-sujet" : même les sujets hors périmètre pro (ex. inférence LLM, homelab) forment leurs propres thèmes ici.
 2. Pour chaque article, un assignment vers UN thème dynamique (id exact de ta liste).
-3. Pour chaque thème : écrire une "trend" en français (2-3 phrases) résumant ce qui bouge aujourd'hui sur ce sujet, et lister dans "topArticles" les ids des meilleurs articles du thème (max 5).
+3. Pour chaque thème : écrire une "trend" en français (2-3 phrases) résumant ce qui bouge aujourd'hui sur ce sujet — faits uniquement, sans justifier l'intérêt pour un SRE —, et lister dans "topArticles" les ids des meilleurs articles du thème (max 5).
 
 JSON attendu :
 {
