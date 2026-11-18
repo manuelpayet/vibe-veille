@@ -1,0 +1,959 @@
+{
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T16:22:31.985Z",
+  "window": {
+    "from": "2026-11-17T16:22:31.985Z",
+    "to": "2026-11-18T16:22:31.985Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 24
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 22
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 2
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 1
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 1
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 1
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 0
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "db253b67c20c",
+      "title": "Deutsche Bank",
+      "url": "https://www.inside-db.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T15:38:33.000Z",
+      "excerpt": "",
+      "summary": "Deutsche Bank adopte des pratiques DevOps avancées pour améliorer la résilience et la sécurité de ses infrastructures critiques.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "devops-resilience-securite"
+    },
+    {
+      "id": "a4a8d2325502",
+      "title": "U.S. AirForce is looking for old storage Media (CF or PC cards)",
+      "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T15:35:44.000Z",
+      "excerpt": "",
+      "summary": "L'US Air Force recherche des médias de stockage anciens (CF/PC cards) pour récupérer des données critiques sur des systèmes obsolètes.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "legacy-infrastructure-critique"
+    },
+    {
+      "id": "addd0430bf46",
+      "title": "NGINX2Root by Xint – From Nginx visitor to root of the server host",
+      "url": "https://nginx2root.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T15:24:17.000Z",
+      "excerpt": "",
+      "summary": "Une faille critique dans NGINX permet une escalade de privilèges vers root, exploitable à distance via des requêtes malveillantes.",
+      "theme": "securite-supply-chain",
+      "score": 95,
+      "dynamicTheme": "securite-nginx-critique"
+    },
+    {
+      "id": "ff0c2dfa0648",
+      "title": "Pre-auth RCE in Nginx HTTP/2 handling",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T15:19:55.000Z",
+      "excerpt": "",
+      "summary": "Nginx HTTP/2 expose une faille RCE pré-authentification critique, exploitable via des requêtes malveillantes, impactant la disponibilité et la sécurité des services.",
+      "theme": "securite-supply-chain",
+      "score": 98,
+      "dynamicTheme": "securite-nginx-critique"
+    },
+    {
+      "id": "7370fbe8d7e4",
+      "title": "Poland says it thwarted false flag operation near border with Kaliningrad",
+      "url": "https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T15:18:30.000Z",
+      "excerpt": "",
+      "summary": "La Pologne déjoue une cyberattaque russe en faux drapeau près de Kaliningrad, évitant une escalade militaire majeure.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "cybersec-guerre-influence"
+    },
+    {
+      "id": "07fd21f6853c",
+      "title": "How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)",
+      "url": "https://blog.cloudflare.com/java4shell-waf-protection/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-18T14:52:10.000Z",
+      "excerpt": "On November 17, 2026, the security research company Calif disclosed Java4Shell (CVE-2026-114938) , a memory-corruption vulnerability in the Base64 decoder of OpenJDK, the most widely used Java runtime. Under the Common Vulnerability Scoring System (CVSS) 4.0, it scores 9.2 out of 10 (Critical). The flaw affects Java. OpenJDK published a security advisory and Oracle released patched builds in its November 2026 Critical Patch Update the same day, at 21:00 UTC. The vulnerability lets a remote attacker with no credentials send malformed Base64 data to a Java application and overwrite memory next to the decoded output. Calif turned that overwrite into a leak of heap memory, similar to Heartbleed , and into remote code execution. Calif demonstrated pre-authentication remote code execution against Keycloak, Atlassian Jira, Atlassian Confluence, JFrog Artifactory, Jenkins and PingFederate in their default configurations, and post-authentication remote code execution against Apache Kafka, Apache Solr, Elasticsearch, Gerrit, and Spinnaker. Cloudflare has released a new set of rules in the Cloudflare Managed Ruleset designed to detect malformed Base64 input patterns associated with this vulnerability. The rules are available on Pro, Business and Enterprise plans and are enabled by default with the Log action because malformed input and some benign application-specific token formats can resemble exploitation attempts. Blocking by default could therefore disrupt legitimate traffic. Customers can review matching requests in Security Events now and change the rules action to Block once they confirm it does not affect legitimate traffic. The WAF is an additional layer of defense, not a replacement for the patch. Java4Shell can be reached through paths a WAF does not see, like outbound TLS responses, and the only complete fix is to update the Java runtime. Our analysts continue to monitor attack activity and will update the rules as new techniques and variations appear. You can trac",
+      "summary": "Cloudflare WAF bloque Java4Shell (CVE-2026-114938) via règles dédiées pour éviter RCE pré-authentifié sur Java, critique pour la sécurité des applications.",
+      "theme": "securite-supply-chain",
+      "score": 90,
+      "dynamicTheme": "securite-java-critique"
+    },
+    {
+      "id": "a8ee4d9c0bf4",
+      "title": "The x86 CPU: From 4004 to 486",
+      "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T14:47:53.000Z",
+      "excerpt": "",
+      "summary": "L'article retrace l'évolution des CPU x86 de 1971 à 1989, clé pour comprendre l'héritage des architectures modernes.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "architecture-heritage-systeme"
+    },
+    {
+      "id": "5f56974239eb",
+      "title": "A Primer on Fourier Series",
+      "url": "https://arxiv.org/abs/2510.18203",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T14:44:33.000Z",
+      "excerpt": "",
+      "summary": "Les séries de Fourier décomposent les signaux en fréquences pour analyser et optimiser les systèmes temps réel critiques en SRE.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "optimisation-systemes-temps-reel"
+    },
+    {
+      "id": "f45c67f96747",
+      "title": "'Human' Is Cambridge Dictionary's Word of the Year 2026",
+      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T14:43:52.000Z",
+      "excerpt": "",
+      "summary": "Le mot 'Human' est élu mot de l'année 2026 par le dictionnaire Cambridge, soulignant l'importance de l'IA éthique et des interactions humaines en SRE.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "ethique-ia-interactions-humaines"
+    },
+    {
+      "id": "5fec164962b8",
+      "title": "Energy drinks linked to 11 times more reports of cardiac arrest",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261110042543.htm",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T14:03:37.000Z",
+      "excerpt": "",
+      "summary": "Les boissons énergisantes multiplient par 11 les risques d'arrêt cardiaque, un danger critique à surveiller pour la résilience des systèmes.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "risques-sante-systemes"
+    },
+    {
+      "id": "b1281458bec0",
+      "title": "Quad9 Is Leaving France: Why DNS Resolvers Are the Wrong Place to Fight Piracy",
+      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T13:18:02.000Z",
+      "excerpt": "",
+      "summary": "Quad9 quitte la France pour éviter des blocages DNS liés à la lutte contre le piratage, risquant la stabilité et la neutralité du service.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "neutralite-resilience-dns"
+    },
+    {
+      "id": "7320a2f0d567",
+      "title": "Show HN: Type Fighter 2",
+      "url": "https://typefighter2.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T11:11:53.000Z",
+      "excerpt": "Type Fighter II is an arcade inspired game for people learning to touch type. Free, no account, and progress stays local. You can try on mobile, best with a physical keyboard.",
+      "summary": "Type Fighter 2 est un jeu arcade gratuit pour s'entraîner à la saisie tactile, sans compte, idéal pour les SRE cherchant à améliorer leur productivité.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "productivite-outils-sre"
+    },
+    {
+      "id": "23a6e8d38fa0",
+      "title": "Energy-Based Reasoners: 385x more efficient inference",
+      "url": "https://energy-based-reasoners.github.io/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T09:29:32.000Z",
+      "excerpt": "",
+      "summary": "Les Energy-Based Reasoners réduisent l'inférence des modèles IA de 385x en optimisant la consommation énergétique, crucial pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "optimisation-energetique-ia"
+    },
+    {
+      "id": "f6de39953818",
+      "title": "AWS Control Tower now supports existing Amazon S3 bucket for log delivery",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/control-tower-existing-s3-log-bucket/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T08:00:00.000Z",
+      "excerpt": "AWS Control Tower now lets you use an existing Amazon S3 bucket in your landing zone to store AWS Config and AWS CloudTrail logs. Previously, AWS Control Tower required you to use the Amazon S3 bucket it creates and manages for log storage. Now, customers who want full control of bucket policies, lifecycle rules, and logging infrastructure can consolidate centralized logs in an Amazon S3 bucket they already manage. You can use your own Amazon S3 bucket for both AWS Config and AWS CloudTrail, giving you full control of bucket policies, lifecycle rules, and logging infrastructure. You can switch between self-managed and AWS Control Tower managed buckets at any time, and your Amazon S3 buckets are preserved during landing zone updates, resets, and decommissioning. The bucket must be owned by an AWS account in your organization, be located in your AWS Control Tower home Region, and be preconfigured with the bucket policy that AWS Control Tower requires. This feature is supported in landing zone version 4.0 and later and is available in all commercial AWS Regions , the AWS GovCloud (US) Regions, and the AWS European Sovereign Cloud where AWS Control Tower is available. To learn more about configuring self-managed Amazon S3 bucket for your AWS Control Tower landing zone, visit the AWS Control Tower documentation .",
+      "summary": "AWS Control Tower permet désormais d'utiliser un bucket S3 existant pour les logs AWS Config et CloudTrail, offrant plus de contrôle sur la gestion des logs.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "gestion-logs-cloud"
+    },
+    {
+      "id": "8a08cadf9fa3",
+      "title": "Why is Gemini 4 Carbon taking so long?",
+      "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T04:14:04.000Z",
+      "excerpt": "",
+      "summary": "Gemini 4 Carbon, la prochaine version de Kubernetes, prend du retard à cause de son architecture complexe et de ses exigences de stabilité critiques pour les SRE.",
+      "theme": "kubernetes",
+      "score": 92,
+      "dynamicTheme": "evolution-kubernetes-stabilite"
+    },
+    {
+      "id": "9ab622ee82f8",
+      "title": "Claude was trained on protein sequences at scale",
+      "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T03:47:43.000Z",
+      "excerpt": "",
+      "summary": "Claude a été entraîné sur des séquences protéiques à grande échelle, améliorant l'analyse bioinformatique pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "bioinformatique-ia"
+    },
+    {
+      "id": "4fe0fcac26cd",
+      "title": "cmd/builder/v0.166.0-nightly.202611180211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611180211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-18T02:11:36.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) pour tester les fonctionnalités avant stabilisation.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "observabilite-collector"
+    },
+    {
+      "id": "a67d92fdeacc",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611180211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611180211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-18T02:11:34.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, améliorant la supervision des agents.",
+      "theme": "observabilite",
+      "score": 82,
+      "dynamicTheme": "observabilite-collector"
+    },
+    {
+      "id": "6f5e3a4ee7d1",
+      "title": "v0.166.0-nightly.202611180211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611180211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-18T02:11:24.000Z",
+      "excerpt": "v0.166.0-nightly.202611180211: nightly build",
+      "summary": "Nouvelle version nightly du Collector OpenTelemetry avec corrections et améliorations pour la collecte de télémétrie.",
+      "theme": "observabilite",
+      "score": 88,
+      "dynamicTheme": "observabilite-collector"
+    },
+    {
+      "id": "3bffc55adac8",
+      "title": "ID.me terms required for IRS sign-in",
+      "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T00:51:45.000Z",
+      "excerpt": "",
+      "summary": "L'IRS impose l'utilisation d'ID.me pour l'authentification, posant des risques de vie privée et de dépendance à un tiers pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "authentification-tiers-risques"
+    },
+    {
+      "id": "f2df59b272b9",
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T00:17:58.000Z",
+      "excerpt": "",
+      "summary": "Google intègre l'IA dans ses réponses, réduisant de 40% le trafic vers les sites, impactant la disponibilité et la performance des services.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "impact-ia-referencement"
+    },
+    {
+      "id": "89c64076e8d6",
+      "title": "This Week in Spring - November 18th, 2026",
+      "url": "https://spring.io/blog/2026/11/18/this-week-in-spring-november-18th-2026",
+      "source": "spring-blog",
+      "sourceName": "Spring Blog",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "excerpt": "Hi, Spring fans! Welcome to another installment of This Week in Spring ! I've literally just touched down in gorgeous Thessaloniki, Greece for the Voxxed Days Thessaloniki event. I'm so excited! We've got a ton of stuff to look into, then.. I'm headed to bed! Got an amazing day of podcasts this week, so be sure to check out the channel ! Let's dive into it! first thing's first: UPDATE YOUR JVMs! The new Java4Shell CVE looks pretty nasty. announcing a new home for Spring for Apache Pulsar I loved recording this discussion with James Ward at AGNTCon 2026 with Alexander Ioffe and this one, also with James Ward, talking to Ben Hale](AGNTCon 2026]( https://www.youtube.com/watch?v=n6PFNJBol70 ) in last week's installment of A Bootiful Podcast , I had the privilege of talking to Atomikos founder Guy Pardon Spring AI 2.1.0-RC2 available now Spring Boot 4.2.0-RC2 available now Spring Cloud 2026.0.0-RC1 (aka Paddington) has been released it was a lot of fun to be on the Spring Office Hours podcast with DaShaun, chatting with Corby Page",
+      "summary": "Mise à jour urgente des JVM pour corriger la CVE Java4Shell critique, avec nouvelles versions Spring AI 2.1.0-RC2, Boot 4.2.0-RC2 et Cloud 2026.0.0-RC1.",
+      "theme": "java-jvm",
+      "score": 99,
+      "dynamicTheme": "securite-java-critique"
+    },
+    {
+      "id": "5fbe77bd0ca6",
+      "title": "Amazon WorkSpaces Applications adds support for smart card redirection",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-applications-smart-card-redirection/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T23:46:00.000Z",
+      "excerpt": "Amazon WorkSpaces Applications now supports smart card redirection on single-session and multi-session fleets, so users can access the smart card connected to their local device from applications inside their streaming session. It also extends smart card sign-in, previously limited to single-session fleets, to multi-session fleets. This launch helps public sector, healthcare, and other regulated organizations that use Common Access Card (CAC) or Personal Identity Verification (PIV) cards run those workflows on multi-session fleets. Administrators can turn smart card sign-in for Active Directory and smart card redirection on or off independently for each stack. Smart card sign-in lets users sign in to domain-joined streaming instances with their smart card instead of a password, while redirected smart cards support in-session authentication, digital signing, and email encryption. For example, a government agency can move CAC users from single-session to multi-session fleets and keep CAC sign-in. These capabilities are available today in all AWS commercial and AWS GovCloud (US) regions that offer WorkSpaces Applications. To get started, turn on either setting under User settings for your stack, use a Windows image with the latest WorkSpaces Applications agent, and connect with the WorkSpaces Applications client for Windows. New stacks have both settings turned off by default, and existing stacks that use smart card redirection keep it turned on. To learn more, see Create a stack in the Amazon WorkSpaces Applications Administration Guide, or visit the Amazon WorkSpaces Applications product page.",
+      "summary": "AWS WorkSpaces Applications supporte désormais la redirection de cartes à puce sur les flottes multi-sessions, renforçant la sécurité pour les secteurs réglementés.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "securite-environnements-reglementes"
+    },
+    {
+      "id": "ab0568899135",
+      "title": "Archive Team is archiving the Apple Support Community",
+      "url": "https://wiki.archiveteam.org/index.php/Apple_Discussions",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T23:32:58.000Z",
+      "excerpt": "",
+      "summary": "Archive Team sauvegarde les forums Apple Support pour éviter la perte de données historiques critiques pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "preservation-donnees-historiques"
+    },
+    {
+      "id": "1f0a78839277",
+      "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T23:18:49.000Z",
+      "excerpt": "",
+      "summary": "Microsoft a supprimé ONNX Runtime de GitHub, impactant les pipelines ML/SRE dépendants de cette bibliothèque open source.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "dependance-librairies-open-source"
+    },
+    {
+      "id": "6973933b3918",
+      "title": "Amazon EMR 8.2 is now available",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-emr-8.2/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T22:25:00.000Z",
+      "excerpt": "Amazon EMR 8.2 is now available with new features across Amazon EMR on EC2, Amazon EMR on EKS, and Amazon EMR Serverless. This release upgrades Apache Spark to 4.1.3, Apache Iceberg to 1.11.0, and Delta Lake to 4.2.0, and it is designated a Long Term Support (LTS) release. This release makes it easier to run secure, governed analytics at scale — you can now write to the same Delta Lake table on Amazon S3 from multiple clusters concurrently, refresh Iceberg materialized views incrementally, and propagate end-user identity from Spark jobs and interactive sessions all the way to AWS Lake Formation and Amazon S3 so access is authorized and audited as the original user. Amazon EMR 8.2 expands governance and performance across all three deployment options. New features include concurrent Delta Lake writes using Amazon S3 conditional writes (no DynamoDB log store required), and Lake Formation fine-grained access control (FGAC) now covers materialized views, governed user-defined functions, more Iceberg operations, and a broader set of Spark SQL features. The release also adds OpenLineage-based lineage capture to the AWS Glue Data Catalog and trusted identity propagation for steps and sessions. With EMR 8.2, data engineers can now precompute each pipeline stage as an Iceberg materialized view in SQL. Each materialized view refreshes only the changes instead of recomputing the entire source table across projections, inner joins, filters and SUM, COUNT aggregations. Specific to EMR on EC2, this release adds Spark Connect support on multi-primary clusters, along with Secret Agent improvements that cut user-provisioning latency by up to 97% under high concurrency. On EMR Serverless, new scaling profiles for Spark (performance-optimized, balanced, or cost-optimized) let you tune how quickly executors scale, and applications can now run Lake Formation-governed Glue UDFs. On EMR on EKS, the Spark Operator is upgraded to version 2 (based on open-source Spark Operator 2.5.0). Amazon",
+      "summary": "EMR 8.2 améliore gouvernance, performance et sécurité avec Spark 4.1.3, Iceberg 1.11.0 et Delta Lake 4.2.0, crucial pour les SRE gérant des pipelines analytiques à grande échelle.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "big-data-pipelines-securite"
+    },
+    {
+      "id": "1570aedab446",
+      "title": "Introducing the Apache Spark Optimization Agent for Amazon EMR Serverless",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-optimization-agent/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T22:25:00.000Z",
+      "excerpt": "Amazon EMR Serverless now offers the Apache Spark optimization agent, which analyzes completed Spark job runs and delivers cost and performance optimization recommendations in seconds. You can select a cost or performance goal, and the agent returns specific configuration changes with the telemetry evidence and plain-language reasoning behind each suggestion. The agent can analyze a single run or compare it against a known-good baseline to pinpoint what changed. You access it from the EMR Serverless console or through the SageMaker Unified Studio MCP Server. The agent takes the job's configuration, logs, and Spark telemetry together with your chosen intent and returns recommendations computed by a deterministic recommendation engine. The engine reads all job artifacts together to identify what is driving runtime and cost: too little parallelism, a skewed join key, memory pressure forcing spill, idle executors, or capacity provisioned beyond what the job uses. The configurations the engine targets are the settings most commonly tuned across millions of Spark jobs running on AWS. When cost and performance trade off, the recommendation improves the metric you asked for while keeping degradation of the other within defined limits. The engine also evaluates a best practices checklist covering platform-level improvements such as upgrading to a newer Spark version or using Graviton processors. Each recommendation is labeled by the surface it modifies: infrastructure, Spark configuration, code, or data layout. Data engineers can also use the agent during development to tune configurations before promoting to production. All access is authenticated with AWS IAM and logged in AWS CloudTrail. The Apache Spark Optimization Agent is available at no additional charge in all Regions where EMR Serverless is available, except GovCloud (US) and China Regions, for EMR release versions 7.6 and later. To get started, see Apache Spark Optimization Agent for Amazon EMR Serverless .",
+      "summary": "EMR Serverless propose un agent d'optimisation Spark analysant les jobs pour recommander des réglages coût/performance en temps réel via console ou SageMaker.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "optimisation-coat-performance"
+    },
+    {
+      "id": "66acc455a43d",
+      "title": "AWS Transform now accelerates migration deals for Migration Acceleration Program (MAP) benefits",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/map-integration-with-aws-transform/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T22:00:00.000Z",
+      "excerpt": "AWS Partners can now expedite Migration Acceleration Program (MAP) deals, from qualification to incentive payout, with an end-to-end agentic workflow in AWS Transform. Partners can manage the full MAP lifecycle without leaving AWS Transform, including deal qualification, funding approvals, agreement execution, migration planning and execution, resource tagging, and incentive disbursement. Previously, Partners had to switch between separate systems for opportunity discovery, assessments, deal qualification, funding approvals, agreement execution, resource tagging, and incentive disbursement. This fragmentation, along with manual handoffs between steps, led to longer qualification cycles. Now, with the agentic MAP experience in AWS Transform, Partners connect their AWS Partner Central account and invite customers into the same engagement. Partners start by scoping customer environments with the built-in agentic discovery tool, or by importing data from RVTools or AWS-validated ISV tools listed in AWS Marketplace. AWS Transform then combines this discovery data with opportunity details from APN Customer Engagements (ACE) to automatically qualify Partner-initiated opportunities in a guided flow, so Partners get eligibility decisions sooner and close deals faster. As the migration progresses, MAP resource tags are applied automatically, and Partner cash and customer credits are disbursed based on actual usage data. Throughout, customers get shared, real-time visibility into migration projects alongside their Partner. AWS Transform with integrated MAP is now available in all AWS Regions where AWS Transform is supported . To learn more, visit the AWS Migration Acceleration Program (MAP) page. Partners can get started with the AWS Partner Central user guide (login required) or by contacting their Partner Development Manager. Customers can contact their AWS account team or AWS Partner.",
+      "summary": "AWS Transform automatise le cycle MAP (qualification, financement, migration) pour accélérer les deals et réduire les délais manuels critiques pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "automatisation-migration-cloud"
+    },
+    {
+      "id": "4d1cfcf921ae",
+      "title": "Amazon EC2 C8gn instances are now available in AWS Israel (Tel Aviv) region",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c8gn/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T22:00:00.000Z",
+      "excerpt": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8gn instances, powered by the latest-generation AWS Graviton4 processors, are available in the AWS Israel (Tel Aviv) region. The C8gn instances provide up to 30% better compute performance than Graviton3-based Amazon EC2 C7gn instances. Amazon EC2 C8gn instances feature the latest 6th generation AWS Nitro Cards, and offer up to 600 Gbps network bandwidth, the highest network bandwidth among network optimized EC2 instances. Take advantage of the enhanced networking capabilities of C8gn to scale performance and throughput, while optimizing the cost of running network-intensive workloads such as network virtual appliances, data analytics, CPU-based artificial intelligence and machine learning (AI/ML) inference. For increased scalability, C8gn instances offer instance sizes up to 48xlarge, up to 384 GiB of memory, and up to 120 Gbps of bandwidth to Amazon Elastic Block Store (EBS). C8gn instances support Elastic Fabric Adapter (EFA) networking on the 16xlarge, 24xlarge, 48xlarge, metal-24xl, and metal-48xl sizes, which enables lower latency and improved cluster performance for workloads deployed on tightly coupled clusters. C8gn instances are available in the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon, N.California), Europe (Frankfurt, Stockholm, Ireland, London, Spain, Zurich, Milan, Paris), Asia Pacific (Singapore, Malaysia, Sydney, Thailand, Mumbai, Seoul, Melbourne, Jakarta, Hyderabad, Tokyo, Hong Kong), Middle East (UAE), Israel (Tel Aviv), Africa (Cape Town), Canada West (Calgary, Central), South America (Sao Paulo), AWS GovCloud (US-East, US-West). To learn more, see Amazon C8gn Instances . To begin your Graviton journey, visit the Level up your compute with AWS Graviton page . To get started, see AWS Management Console , AWS Command Line Interface (AWS CLI) , and AWS SDKs .",
+      "summary": "Les instances EC2 C8gn (Graviton4) sont disponibles en Israël avec 30% plus de performance réseau et jusqu'à 600 Gbps, optimisant les workloads intensifs.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "instances-optimisees-performances"
+    },
+    {
+      "id": "410e681b6590",
+      "title": "Amazon EC2 C8ine instances are now available in AWS Europe (Ireland) region",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c8ine",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T22:00:00.000Z",
+      "excerpt": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8ine instances are available in the AWS Europe (Ireland) region. C8ine instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS. These instances feature the latest sixth generation AWS Nitro cards, delivering up to 43% higher performance compared to previous generation C6in instances. C8ine instances offer up to 2.5 times higher packet performance per vCPU versus prior generation network optimized instances, providing up to 2x higher network throughput for traffic going through Internet gateways compared to existing C6in network optimized instances. C8ine instances are designed for security and network virtual appliances, including virtual firewalls, load balancers, and Telco 5G UPF workloads. Amazon EC2 C8ine instances are available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland, Frankfurt) regions. C8ine instances are available via Savings Plans, On-Demand, and Spot instances. For more information, visit the Amazon EC2 C8i instance pages.",
+      "summary": "Les instances EC2 C8ine d'AWS, optimisées pour la sécurité et les appliances réseau, sont disponibles en Europe (Irlande) avec 43% de performance en plus et 2x de débit réseau.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "instances-optimisees-securite"
+    },
+    {
+      "id": "ea3288ef32f8",
+      "title": "Amazon ECR now supports global authentication tokens for private registries",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/global-authentication-amazon-ecr",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T21:37:00.000Z",
+      "excerpt": "Amazon Elastic Container Registry (Amazon ECR) now supports global authentication tokens for private registries. Previously, you needed to request a separate authentication token in each AWS Region where you push or pull container images. Now, you can request a single token from the AWS Sign-In CreateBearerToken API and use it across all ECR private registries in the same AWS partition. Teams that run proxy services to route container pulls across Regions, a common pattern for optimizing latency or availability, previously had to request, refresh, and coordinate a separate token for every Region behind the proxy. With global tokens, the proxy manages one token for all Regions in the AWS partition. Global tokens are valid for 12 hours by default, but can be configured to be as low as 5 minutes. These tokens work with the Docker CLI, and the Amazon ECR Docker Credential Helper. Existing regional authentication tokens continue to work as before. Global authentication tokens are available in all commercial AWS Regions where Amazon ECR is supported. To learn more, see Private registry authentication in the Amazon ECR User Guide .",
+      "summary": "Amazon ECR propose désormais des jetons d'authentification globaux pour les registres privés, simplifiant la gestion multi-régions et réduisant la complexité des proxys.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "gestion-registres-containers"
+    },
+    {
+      "id": "5c441d68610c",
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T21:16:12.000Z",
+      "excerpt": "",
+      "summary": "L'IA automatise le développement mais déplace le goulot d'étranglement vers la revue de code, exigeant des SRE plus de rigueur et de supervision humaine.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "automatisation-developpement-ia"
+    },
+    {
+      "id": "4d9c0f5d9260",
+      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "url": "https://calif.io/java4shell/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T21:11:28.000Z",
+      "excerpt": "",
+      "summary": "Java4Shell exploite une RCE dans OpenJDK via Base64, permettant une exécution de code à distance critique pour les SRE.",
+      "theme": "java-jvm",
+      "score": 100,
+      "dynamicTheme": "securite-java-critique"
+    },
+    {
+      "id": "797d638b0571",
+      "title": "Quad9’s withdrawal from France: A canary in the coal mine",
+      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-17T20:24:27.000Z",
+      "excerpt": "Last month, the Swiss non-profit foundation Quad9 announced that it will withdraw its free public DNS resolver from France. This difficult decision followed months of litigation and a French court ruling that imposed daily financial penalties on Quad9 for failing to block domains associated with alleged copyright infringement. Quad9’s departure from France is both disheartening and understandable. The court’s ruling put the organization in the impossible bind of having to choose between crippling litigation and penalties, or fundamentally altering its service in a way that would undermine the privacy and security of its users. Left with no good option, Quad9 is choosing the exit door instead. The withdrawal of a basic infrastructure service from France fundamentally harms the free and open Internet, and it should serve as a warning of the damage that will result if rightsholders and policymakers continue demanding maximal blocking across every layer of the Internet. It not only deprives French Internet users of a trustworthy and important tool; it creates a real risk of disruption to their daily lives. Quad9’s resolver is used by a wide variety of individuals and organizations in France — including government bodies, educational institutions, hospitals, and utilities — and Quad9 has no way to directly notify those individuals and institutions that their resolver will soon stop working. If the affected parties do not change their resolver before Quad9 removes its service, their Internet will fail with no explanation. Quad9 is not the first public DNS resolver to withdraw from a country following blocking orders, and it almost certainly won’t be the last. Cisco previously withdrew its OpenDNS resolver from France, Portugal, and Belgium (temporarily) under similar circumstances. And a Belgian court recently issued an order that would impose substantial penalties if Cloudflare, Google, and Cisco do not begin blocking websites through their public resolvers by early Janu",
+      "summary": "Quad9 quitte la France après une décision judiciaire imposant des blocages de domaines, menaçant la neutralité du DNS et la résilience des services critiques.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "neutralite-resilience-dns"
+    },
+    {
+      "id": "b063b5198bc4",
+      "title": "Customize AWS Elemental Inference with custom models, prompts, and decisions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/elemental-inference-functions-decisions/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T20:00:00.000Z",
+      "excerpt": "AWS Elemental Inference now lets you customize how it analyzes your live video in two ways. You can create functions that ask custom questions of the video using multi-modal foundational models in Amazon Bedrock, or add contextual metadata decisions using labels and questions you define. Both run on the same pipeline as built-in features such as vertical video creation and smart subtitles, and return results through the GetMetadata API, with no separate pipeline to build. Use contextual metadata decisions when the answer you need fits labels and yes/no questions. You define yes/no questions, such as whether a scene is a weather report, or \"pick-one\" categories, such as genre. For each scene, contextual metadata returns a decision and a confidence score for every label and question, alongside the standard Interactive Advertising Bureau (IAB), Global Alliance for Responsible Media (GARM), and mood fields, so your workflows can act when confidence meets a threshold you set. No model selection or prompt writing is required. Use functions for open-ended answers, custom response formats, or analysis contextual metadata doesn't cover, such as sponsor logo exposure. A function specifies an Amazon Bedrock model and JSONata expressions that shape the request and response. You attach it to a feed and choose how frequently it runs. Contextual-metadata decisions configuration is included in the contextual metadata price. Functions are available at no additional charge on feeds with at least one feature active; Amazon Bedrock usage is billed separately. Both are available in all AWS Regions where AWS Elemental Inference is available. To learn more, see the AWS Elemental Inference user guide .",
+      "summary": "AWS Elemental Inference permet de personnaliser l'analyse vidéo via fonctions Bedrock ou décisions par métadonnées, optimisant les workflows SRE sans pipelines supplémentaires.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "optimisation-workflows-video"
+    },
+    {
+      "id": "4b8ac091122a",
+      "title": "AWS Security Hub now infers resource criticality from installed software and usage",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-resource-criticality/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T20:00:00.000Z",
+      "excerpt": "Today, AWS Security Hub adds installed software and resource usage as signals for resource criticality, which indicates how important a resource is to your business. Security Hub uses criticality to rank exposure findings, so that central security teams can prioritize the exposures that affect their most important resources. Security Hub already infers criticality from resource tags and names, but inconsistently tagged resources often have an Unknown criticality, which makes their exposures harder to prioritize. With installed software and resource usage as additional signals, more of your resources receive a meaningful criticality with no tagging or configuration required. For example, an EC2 instance that runs a database engine and serves steady traffic receives a higher criticality than an instance that runs only monitoring agents and sits idle. These signals are included with the Security Hub Essentials plan at no additional cost and require no new enablement. To learn more, see Resources in Security Hub in the AWS Security Hub User Guide and the AWS Security Hub product page . For a list of AWS Regions where Security Hub is available, see the AWS Region table .",
+      "summary": "AWS Security Hub déduit automatiquement la criticité des ressources via leur logiciel installé et leur usage, améliorant la priorisation des vulnérabilités sans configuration manuelle.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "securite-gouvernance-cloud"
+    },
+    {
+      "id": "6f099656459b",
+      "title": "jQuery 4.1.0",
+      "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T19:50:40.000Z",
+      "excerpt": "",
+      "summary": "jQuery 4.1.0 corrige des bugs critiques et améliore la sécurité, essentiel pour maintenir la stabilité des applications web legacy.",
+      "theme": "build-tooling",
+      "score": 80,
+      "dynamicTheme": "maintenance-applications-legacy"
+    },
+    {
+      "id": "7400913a4dc8",
+      "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
+      "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T19:25:27.000Z",
+      "excerpt": "",
+      "summary": "Ole Rømer a prouvé en 1676 que la lumière a une vitesse finie, fondement pour les mesures de latence réseau critiques en SRE.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "fondements-reseaux-mesures"
+    },
+    {
+      "id": "0361f9d612b5",
+      "title": "Amazon Bedrock AgentCore Memory now supports short-term memory retention of up to 10 years",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-10-year-retention",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T19:22:00.000Z",
+      "excerpt": "Amazon Bedrock AgentCore Memory now lets you keep short-term memory events for up to 10 years, up from one year. Developers can now use short-term memory as a long-lived record of agent conversations and interactions. This helps when that history needs to stay available for a long time, such as for compliance and audit, for users who come back after months away, or for agents that need to look back at past sessions. You set retention on the memory resource, and it's applied to each event when the event is created, so existing events keep their original retention. Standard short-term memory storage charges apply for as long as you keep the data. This feature is available in all AWS Regions where AgentCore Memory is available. To get started, see the AgentCore Memory documentation .",
+      "summary": "Amazon Bedrock AgentCore Memory étend la rétention des événements courts à 10 ans, crucial pour la conformité, l'audit et la continuité des interactions des agents.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "conformite-audit-memoire"
+    },
+    {
+      "id": "29903e0fb448",
+      "title": "Amazon API Gateway REST APIs now support JWT authorizers",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-rest-authorizers-jwt/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T19:22:00.000Z",
+      "excerpt": "Amazon API Gateway now offers a native JWT authorizer for REST APIs, a new authorizer type that validates JSON Web Tokens directly in the gateway. Until now, validating tokens from an OpenID Connect or OAuth 2.0 identity provider other than Amazon Cognito required a Lambda authorizer. You now configure token validation instead of writing and operating code for it. You can define one or more issuers, the audiences accepted for each, the signing algorithms you permit, and any additional claims a token may present. API Gateway verifies each token's signature, issuer, audience, expiry, and claims on every request. You can attach one authorizer to many methods and require different scopes on each. This fits machine-to-machine APIs, mobile and web backends, and multi-tenant APIs that accept tokens from several identity providers. The JWT authorizer works on Regional, edge-optimized, and private REST APIs, and is available in all commercial AWS Regions and the AWS GovCloud (US) Regions. To get started, see Amazon API Gateway documentation and AWS blog post .",
+      "summary": "API Gateway supporte désormais les JWT authorizers natifs pour valider les tokens OIDC/OAuth sans Lambda, réduisant la complexité et améliorant la sécurité des APIs REST.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "securite-apis-authentification"
+    },
+    {
+      "id": "396675a743ab",
+      "title": "Amazon Bedrock AgentCore Memory now provides full session summaries",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-full-session-summaries",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T19:17:00.000Z",
+      "excerpt": "Amazon Bedrock AgentCore Memory now keeps a full session summary for every session. It's a single record that gives a snapshot of what happened in the conversation. Summary chunks cover the conversation in more detail, while the full session summary captures the overall picture of where the session stands. AgentCore Memory updates it as new events arrive, so it always reflects the session so far. This works well for developers who want a quick recap rather than a play-by-play. Full session summaries come with the summary strategy and need no extra setup. Every memory that has a summary strategy gets them automatically, including existing sessions. Each summary is stored as a long-term memory record next to the session's summary chunks. You retrieve it with the Memory operations you already use, and you can filter by record type to return only full session summaries. This feature is available in all AWS Regions where AgentCore Memory is available. To get started, see the Summary strategy documentation .",
+      "summary": "Amazon Bedrock AgentCore Memory génère automatiquement des résumés complets de sessions pour un suivi simplifié des conversations en production.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "conformite-audit-memoire"
+    },
+    {
+      "id": "59c7f2ac369a",
+      "title": "Amazon SageMaker now supports AI data preparation capabilities to build high-quality datasets for model development",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-ai-data-prep-capabilities/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T19:00:00.000Z",
+      "excerpt": "Building high-quality training datasets has traditionally required weeks of manual labeling and data cleaning. Amazon SageMaker now offers AI data preparation capabilities that help data scientists and ML engineers build high-quality training and evaluation datasets for both text-based model customization and traditional ML. Teams can generate synthetic examples grounded in their own documents, auto-label records at scale with confidence scores, incorporate expert feedback through human review, evaluate data quality, and transform data for their chosen training or evaluation technique. Synthetic data generation creates training, evaluation, and test data from a specification grounded in your documents. Auto-labeling labels data at scale with built-in task types including classification, named entity recognition, extractive question answering, ordinal rating, and summarization, plus custom tasks. Rows below your confidence threshold go to a human review queue in the Label Studio Community Edition in SageMaker AI Studio. Data quality evaluation finds duplicates and surfaces issues such as tone and insufficient diversity with both quality metrics and rules. Data transformation cleans and reshapes data for your training or evaluation technique, using operators such as dedupe, filter, and format conversion. Teams can start with just a few examples, production traces, or existing data in Amazon S3 , Amazon Athena , or AWS Glue Data Catalog . Developers access these capabilities directly through the SageMaker Python SDK API or in natural language through the latest version of the AWS AI-ML skill in the Agent Toolkit for AWS . Your source data, generated datasets, and labels stay in your own Amazon S3 buckets, controlled by an IAM role you manage. These capabilities are available in the US East (N. Virginia) (us-east-1) and US West (Oregon) (us-west-2) regions. To learn more, see the AI data preparation documentation .",
+      "summary": "Amazon SageMaker automatise la préparation de données IA avec génération synthétique, étiquetage auto et revue humaine pour accélérer les pipelines ML.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "preparation-donnees-ia"
+    },
+    {
+      "id": "30ab7dce012c",
+      "title": "AWS Lambda now supports scale to and from zero for Lambda Managed Instances",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-managed-instances-scale-to-zero/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T19:00:00.000Z",
+      "excerpt": "AWS Lambda now supports scale to and from zero for Event Functions running on Lambda Managed Instances (LMI). Lambda automatically scales execution environments for your function to zero during idle periods and scales them back up when requests arrive, without requiring you to provision minimum capacity. This makes LMI cost-effective for intermittent workloads such as asynchronous processing, development, and test environments. Lambda Managed Instances lets you run Lambda functions on your Amazon EC2 instances while maintaining the operational simplicity of Lambda. With Lambda Managed Instances, you can access specialized compute configurations and drive cost efficiency through EC2 pricing advantages, without managing infrastructure. Previously, customers needed to keep a minimum number of execution environments running even when there was no traffic. With this launch, Lambda scales execution environments for your function to zero after a period with no activity, and provisions them again when requests arrive. This improves cost efficiency for workloads with periods of no traffic. This feature is available today in all AWS commercial Regions where Lambda Managed Instances is available. To get started, set MinExecutionEnvironments to zero for your function using the Lambda console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS SAM, or AWS CDK. To learn more, visit the AWS Lambda Developer Guide and AWS Lambda pricing .",
+      "summary": "AWS Lambda LMI scale à zéro pour économiser les coûts des workloads intermittents sans infrastructure managée.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "serverless-economie-ressources"
+    },
+    {
+      "id": "83a8d867af24",
+      "title": "Amazon DynamoDB caching is now available with Amazon ElastiCache Serverless for Valkey",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/dynamodb-caching-elasticache/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T18:54:00.000Z",
+      "excerpt": "Today, AWS announces the general availability of DynamoDB caching with Amazon ElastiCache Serverless for Valkey, a serverless alternative to Amazon DynamoDB Accelerator (DAX) that delivers sub-millisecond read latency for frequently accessed DynamoDB data. Previously, if you needed faster reads than the single-digit millisecond latency of DynamoDB, you had to provision and scale DAX nodes or run your own cache and keep it in sync with DynamoDB. Now you can access DynamoDB table data from a write-through cache that updates as data changes and scales automatically to meet changing workload demands, with no clusters or nodes to manage. DynamoDB caching requires no application logic changes and minimal configuration. You choose which DynamoDB tables and APIs to cache and how long to retain cached data. Your application's IAM credentials are used to access DynamoDB, so existing access control policies are automatically applied. DynamoDB caching is available in all commercial and AWS GovCloud (US) Regions. DynamoDB caching is offered at no additional cost, so you pay only for the ElastiCache Serverless and DynamoDB resources your applications use. To get started, see the ElastiCache Developer Guide .",
+      "summary": "DynamoDB propose désormais un cache serverless avec ElastiCache Valkey pour des lectures sub-millisecondes, sans gestion de clusters ni modifications applicatives.",
+      "theme": "observabilite",
+      "score": 87,
+      "dynamicTheme": "optimisation-performances-donnees"
+    },
+    {
+      "id": "309ff162e325",
+      "title": "Amazon OpenSearch UI is now available in the Africa (Cape Town) Region",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/opensearch-ui-available-africa-cape-town-region",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T18:34:00.000Z",
+      "excerpt": "Amazon OpenSearch UI has expanded to the AWS Africa (Cape Town) Region, bringing availability to 25 AWS Regions. OpenSearch UI provides a single endpoint to query, visualize, and analyze data across Amazon OpenSearch Service domains running OpenSearch version 1.3 or later and OpenSearch Serverless collections, including Classic and NextGen. One OpenSearch UI application can connect to multiple domains and collections. Workspaces organize dashboards, saved queries, and other content, with purpose-built experiences for observability, security analytics, and search. The Discover interface supports multiple data sources and query languages, including Piped Processing Language (PPL) and SQL. It also includes a data selector, query autocomplete, and an updated design. OpenSearch UI runs separately from your domains and collections, giving you access to the latest UI capabilities without requiring cluster upgrades. To get started, create an OpenSearch UI application using the Amazon OpenSearch Service console, AWS CLI, or AWS SDKs. OpenSearch UI is available at no additional charge. You pay only for the domains and collections it connects to. For the complete list of supported Regions, see OpenSearch UI endpoints and quotas . To learn more, see Using OpenSearch UI in Amazon OpenSearch Service in the Amazon OpenSearch Service Developer Guide.",
+      "summary": "Amazon OpenSearch UI est désormais disponible en Afrique (Le Cap), offrant un accès unifié aux données et tableaux de bord sans mise à jour des clusters.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "observabilite-donnees-region"
+    },
+    {
+      "id": "0818b59eab9a",
+      "title": "Phrack 73",
+      "url": "https://phrack.org/issues/73/introduction_md",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T18:31:25.000Z",
+      "excerpt": "",
+      "summary": "Phrack 73 publie des articles techniques avancés sur la sécurité et l'exploitation système, essentiels pour les SRE.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "securite-exploitation-systeme"
+    },
+    {
+      "id": "930d2827a809",
+      "title": "MAI Code 2 and Code 2 Flash",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-17T18:25:13.000Z",
+      "excerpt": "",
+      "summary": "Microsoft lance MAI Code 2 et MAI Code 2 Flash, améliorant les modèles IA pour l'automatisation des opérations SRE.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "automatisation-operations-ia"
+    },
+    {
+      "id": "3905f9db0a6c",
+      "title": "Updates to our blog policy",
+      "url": "https://opentelemetry.io/blog/2026/blog-policy-update/",
+      "source": "opentelemetry-blog",
+      "sourceName": "OpenTelemetry Blog",
+      "publishedAt": "2026-11-17T18:23:18.000Z",
+      "excerpt": "The OpenTelemetry blog is one of our most valuable communication avenues with&#10;our community. The web is changing, though, and we need to change with it. Like&#10;many websites, we&rsquo;ve seen organic search collapse: 50% fewer visitors arrive on&#10;opentelemetry.io via Google today than they did in January. This doesn&rsquo;t mean&#10;that traffic is down, though. Over the last 30 days, we&rsquo;ve had over 15 million&#10;page views, nearly a million unique visitors, and 1.4 TB of bandwidth usage.",
+      "summary": "OpenTelemetry adapte sa politique blog pour maintenir sa visibilité malgré la chute de 50% du trafic organique via Google.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "observabilite-communaute"
+    },
+    {
+      "id": "61841c6471db",
+      "title": "Amazon Bedrock AgentCore now offers free monthly web search queries",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-free-web-search-queries/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T18:00:00.000Z",
+      "excerpt": "Amazon Bedrock AgentCore now offers 5,000 free web search queries per month through the Web Search Tool in AgentCore gateway and the Web Search API. AgentCore helps developers build, deploy, and operate highly effective agents securely at scale. Developers can now build and test agents with web search capabilities at no cost for their first 5,000 queries each month. The free allowance applies automatically, with no setup required. It is shared across supported AWS Regions and by all accounts in an organization, and resets each month. Additional queries are billed at standard rates without interrupting your agents. Free web search queries are available in all AWS Regions that support the Web Search Tool and Web Search API: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), Asia Pacific (Sydney), and Asia Pacific (Tokyo). To learn more, see AgentCore pricing , Web Search Tool in the AgentCore Developer Guide , and the AgentCore product page .",
+      "summary": "AWS offre 5 000 requêtes web gratuites/mois via Bedrock AgentCore pour tester des agents sécurisés à grande échelle, réduisant les coûts initiaux de développement.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "test-agents-ia-gratuits"
+    },
+    {
+      "id": "5710965d7191",
+      "title": "AWS Config announces managed conformance packs",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-managed-conformance-packs",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T17:49:00.000Z",
+      "excerpt": "AWS Config now offers managed conformance packs. AWS builds and maintains these packs for specific compliance and governance frameworks. When you deploy one, you choose a framework, and AWS Config evaluates your resources against it. AWS keeps the pack up to date as things change. When new AWS Config managed rules map to the framework's controls, or when the framework itself is revised, AWS updates your deployed pack automatically. Because AWS maintains a consistent pack definition in every supported Region, you can deploy the same framework across Regions without building or maintaining Region-specific rule sets. With managed conformance packs you no longer have to track framework changes or update rules yourself. Previously, to evaluate resources against a framework such as PCI DSS or SOC 2, you started from a sample conformance pack template, customized it for your environment, and then updated it yourself whenever new rules became available or the framework changed. Managed conformance packs remove that work, so your coverage stays current without manual template changes. Each pack includes the managed rules available in the Region where you deploy it and adds new rules as they become available there, so you don't need a separate template for each Region. You can set rule parameters to fit your environment. Compliance results and compliance scores appear in the AWS Config console alongside your other rules and conformance packs. Managed conformance packs cover frameworks including PCI DSS v4, SOC 2, NIST SP 800-53 Rev. 5, ISO/IEC 27001:2022, and CIS Controls, along with AI governance frameworks such as the EU AI Act and NIST AI RMF 1.0. For the full list, see the AWS Config documentation page . Managed conformance packs are available in all AWS commercial Regions except Middle East (UAE) and Middle East (Bahrain). For the full list of supported Regions, see AWS Capabilities by Region . Evaluations are billed at standard conformance pack evaluation rates. To get ",
+      "summary": "AWS Config propose désormais des packs de conformité gérés, automatisant la maintenance des règles de sécurité pour les frameworks comme PCI DSS ou SOC 2, réduisant ainsi la charge opérationnelle des SRE.",
+      "theme": "securite-supply-chain",
+      "score": 88,
+      "dynamicTheme": "securite-gouvernance-cloud"
+    },
+    {
+      "id": "921508f8d782",
+      "title": "Amazon Aurora DSQL now offers SQL statement statistics in Database Insights",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-dsql-statement-statistics/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T17:37:00.000Z",
+      "excerpt": "Amazon Aurora DSQL now records statistics for each SQL statement your cluster runs and publishes them as Amazon CloudWatch OpenTelemetry (OTel) metrics. You can view them in Amazon CloudWatch Database Insights. For each statement, you see how often it runs, how long it takes, the rows it scans, returns, or changes, and the DPUs it uses. Statement statistics measure every successful statement rather than sampling activity. Use them to find the statements that take the most time, run most often, or cost the most. In Database Insights, choose a statement under Top SQL to see its normalized SQL text and per-call charts. You can also query the metrics with PromQL in CloudWatch. Turn on statement statistics for each cluster in the Aurora DSQL console or the API when you create or update the cluster. Statement statistics are available in all AWS Regions where Aurora DSQL is available. Standard CloudWatch metrics and Logs charges apply, with no additional Aurora DSQL charge. To learn more, see monitoring SQL statements with statement statistics in the Aurora DSQL User Guide and CloudWatch pricing .",
+      "summary": "Aurora DSQL fournit des métriques CloudWatch détaillées par requête SQL pour optimiser performances, coûts et diagnostics en temps réel.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "optimisation-performances-bases-donnees"
+    },
+    {
+      "id": "69487b865ec2",
+      "title": "Amazon EVS launches support for r7i.metal instances, external principal storage, and an Agent Skill",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-evs-r7i-agent-skill-support/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T17:27:00.000Z",
+      "excerpt": "Today, we are announcing that Amazon Elastic VMware Service (Amazon EVS) now supports the r7i.metal-24xl and r7i.metal-48xl Amazon Elastic Compute Cloud (EC2) bare metal instance types for VMware Cloud Foundation (VCF) 9.x deployments. EC2 r7i instances are memory optimized, with custom 4th Generation Intel Xeon Scalable (Sapphire Rapids) processors, and designed to be used with external storage. With these instances possessing no local NVMe disks, Amazon EVS now supports VCF external principal storage with solutions such as Amazon FSx for NetApp ONTAP. With this launch, you can use the Amazon EVS Deployment Orchestrator (EDO) within the Solutions for EVS GitHub repository to fully automate the end-to-end deployment and configuration of your VCF 9.x environment on EVS. With this release, you now have more options for running VMware-based Virtual Machines (VM) in your Amazon VPC - while keeping the same tools, skills, and operational processes, and full control of your architecture, configuration, and lifecycle of your environment. We are also launching a new Amazon EVS Agent Skill, which gives your AI Agents context to help you plan, deploy, and operate your Amazon EVS environments - from answering questions and recommending designs to generating blueprints and driving deployments with EDO. To get started, point the AI agent of your choice to the EVS Agent Skill file in the latest release of the EVS GitHub repository . This release is available in all regions where Amazon EVS is offered. To learn more about Amazon EVS, visit the product detail page and the user guide .",
+      "summary": "Amazon EVS supporte désormais les instances r7i.metal pour VCF 9.x, optimisant mémoire et stockage externe (FSx ONTAP), avec automatisation via EDO et un Agent Skill IA pour simplifier déploiements et opérations.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "automatisation-deploiements-infra"
+    },
+    {
+      "id": "2e769ae5c439",
+      "title": "OpenAI GPT-6.2 Astra, and GPT-6.2 Sol are now generally available on Amazon Bedrock",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-6-2-astra-sol-amazon-bedrock/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-17T17:17:00.000Z",
+      "excerpt": "Today, AWS announces the general availability of OpenAI GPT-6.2 Astra and GPT-6.2 Sol on Amazon Bedrock. GPT-6.2 Astra brings frontier-level reasoning and judgment to your most ambitious work, including complex business problems, demanding research, and advanced coding and agentic workflows. Astra also includes an Ultrafast mode for latency-sensitive applications that need fast responses. GPT-6.2 Sol is designed for recurring coding, agentic, and professional workflows with clear outcomes, where speed and cost per task matter. Use GPT-6.2 Astra for challenging work that calls for expert judgment and a finished deliverable, such as reconciling competing inputs, investigating complex codebases, reasoning across text and images, and creating professional artifacts. Select ultrafast mode for Astra for interactive coding assistants, real-time agents, and customer-facing applications where latency shapes the customer experience. Use GPT-6.2 Sol for recurring, high-volume work with verifiable outcomes, such as implementing and debugging software, analyzing documents and data, and automating multistep workflows. Established AWS controls help you secure workloads, govern access, and audit model invocation activity. You can get started in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs. For information about supported AWS Regions, endpoints, APIs, features, inference profiles and pricing, see the Amazon Bedrock documentation.",
+      "summary": "AWS rend disponibles GPT-6.2 Astra (raisonnement avancé) et Sol (automatisation rapide) sur Bedrock pour optimiser workflows SRE critiques et réduire latence/coûts.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "optimisation-workflows-ia"
+    },
+    {
+      "id": "398a527d6d78",
+      "title": "Find the log line that matters faster with full-text search in Grafana Cloud Logs",
+      "url": "https://grafana.com/blog/find-the-log-line-that-matters-faster-with-full-text-search-in-grafana-cloud-logs/",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-17T16:53:32.000Z",
+      "excerpt": "A support ticket comes in with one clue: a transaction ID. The answer is somewhere in your logs, but you don&#039;t know which service logged it, which pod handled it, or which day it happened. So you write the query you always write, {service=\"payments\"} |= \"txn-123456\" , widen the time range to the last two weeks, and wait. Then the query times out. Loki was originally built around a simple idea: index labels, not log content, and store compressed logs cheaply in object storage. That design keeps storage costs low and operations light, and it&#039;s why teams keep choosing Loki and Grafana Cloud Logs , the fully managed log aggregation system powered by Loki, as their log volumes grow. For most queries, this model works very well. But when you search for a highly unique value, like a request ID, job ID, user ID, or device ID, labels can only narrow the search so far. Loki still has to read a lot of raw log data to find a handful of matching lines. At terabyte and petabyte scale, that process can be slow and costly. To fix that, we built full-text search for Grafana Cloud Logs, a capability based on the Logline technology Grafana Labs acquired in April 2026 . Full-text search, now generally available in Grafana Cloud Logs, adds a purpose-built secondary index to Loki, so you can find specific log lines across weeks of logs in seconds without a full scan. You go straight to the one transaction ID, user ID, or error that matters and cut time to resolution. “When I ran our first query on newly submitted logs after enabling Logline, the improvement was clear,” said Timo Kirzdörfer, OpenTelemetry & Grafana Cloud Admin, DATEV eG. “We went from processing nearly a terabyte of logs in three minutes to around 100 gigabytes in under three seconds. That represents an 80-90% reduction in the volume of logs searched for newly submitted logs, and we saw the results immediately.” In this post, we’ll explore how full-text search speeds up log investigations. You can also learn mor",
+      "summary": "Grafana Cloud Logs ajoute une recherche plein texte pour trouver rapidement des logs spécifiques (IDs, erreurs) sans scanner tout le volume, réduisant temps et coûts à l'échelle.",
+      "theme": "observabilite",
+      "score": 90,
+      "dynamicTheme": "observabilite-logs-recherche"
+    }
+  ],
+  "themes": [
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Les vulnérabilités critiques dans les composants critiques (NGINX, Java) dominent l'actualité SRE. Les équipes doivent prioriser les correctifs immédiats pour les CVE Java4Shell et les failles NGINX HTTP/2, qui impactent la disponibilité et la sécurité des services. La gestion automatisée des vulnérabilités via des outils comme AWS Security Hub devient essentielle pour réduire la charge opérationnelle.",
+      "topArticles": [
+        "ff0c2dfa0648",
+        "addd0430bf46",
+        "07fd21f6853c",
+        "5710965d7191",
+        "4b8ac091122a"
+      ]
+    },
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Les évolutions d'OpenTelemetry et Grafana Cloud Logs visent à améliorer la détection et le diagnostic des incidents. Les nouvelles fonctionnalités comme la recherche plein texte dans les logs ou les versions nightly du Collector OpenTelemetry renforcent la résilience des plateformes. L'intégration avec les outils AWS (EMR, DynamoDB) et les améliorations de performance sont des axes clés pour les SRE.",
+      "topArticles": [
+        "398a527d6d78",
+        "6f5e3a4ee7d1",
+        "83a8d867af24",
+        "f6de39953818",
+        "a67d92fdeacc"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "La CVE Java4Shell (CVE-2026-114938) est une menace majeure pour les SRE, avec des correctifs urgents dans les JVM et frameworks comme Spring. Les équipes doivent mettre à jour leurs environnements Java en priorité pour éviter des RCE pré-authentifiés. La complexité des mises à jour et la dépendance aux dépendances legacy rendent cette tâche critique.",
+      "topArticles": [
+        "4d9c0f5d9260",
+        "89c64076e8d6"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "trend": "Le retard de la release de Kubernetes 4 Carbon (Gemini 4) met en lumière les défis de stabilité et de complexité architecturale. Les SRE doivent anticiper les impacts des futures versions, notamment sur la gestion des ressources et la sécurité, tout en maintenant la compatibilité avec les workloads existants.",
+      "topArticles": [
+        "8a08cadf9fa3"
+      ]
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & tooling",
+      "trend": "Les mises à jour de jQuery 4.1.0 et les évolutions des outils de build (Maven/Gradle) restent critiques pour la stabilité des applications legacy. Les SRE doivent surveiller les breaking changes et adapter leurs pipelines CI/CD pour éviter des régressions en production.",
+      "topArticles": [
+        "6f099656459b"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "securite-java-critique",
+      "label": "Sécurité Java et vulnérabilités critiques",
+      "trend": "Deux vulnérabilités majeures (Java4Shell) impactent OpenJDK et les environnements Java, avec des correctifs urgents publiés par Spring et Cloudflare. Les SRE doivent prioriser les mises à jour pour éviter des RCE pré-authentification, surtout dans les systèmes critiques.",
+      "topArticles": [
+        "4d9c0f5d9260",
+        "89c64076e8d6",
+        "07fd21f6853c"
+      ]
+    },
+    {
+      "id": "observabilite-collector",
+      "label": "Observabilité : évolutions des collecteurs",
+      "trend": "Plusieurs versions nightly du Collector OpenTelemetry (v0.166.0) et de l'OpAMP Supervisor sont publiées, avec des améliorations pour la collecte de télémétrie et la supervision des agents. Les SRE doivent tester ces versions pour anticiper les évolutions futures.",
+      "topArticles": [
+        "6f5e3a4ee7d1",
+        "a67d92fdeacc",
+        "4fe0fcac26cd"
+      ]
+    },
+    {
+      "id": "securite-nginx-critique",
+      "label": "Sécurité NGINX : failles critiques",
+      "trend": "Deux failles critiques dans NGINX (escalade de privilèges et RCE pré-authentification via HTTP/2) exposent les infrastructures à des risques majeurs. Les SRE doivent appliquer les correctifs immédiatement et surveiller les mises à jour de sécurité.",
+      "topArticles": [
+        "ff0c2dfa0648",
+        "addd0430bf46"
+      ]
+    },
+    {
+      "id": "neutralite-resilience-dns",
+      "label": "Neutralité et résilience du DNS",
+      "trend": "Quad9 quitte la France après des décisions judiciaires imposant des blocages DNS, menaçant la neutralité du service. Ce cas illustre les tensions entre régulation, résilience et stabilité des infrastructures critiques pour les SRE.",
+      "topArticles": [
+        "b1281458bec0",
+        "797d638b0571"
+      ]
+    },
+    {
+      "id": "securite-gouvernance-cloud",
+      "label": "Sécurité et gouvernance dans le cloud",
+      "trend": "AWS Security Hub déduit automatiquement la criticité des ressources et propose des packs de conformité gérés (PCI DSS, SOC 2). Les SRE doivent exploiter ces fonctionnalités pour automatiser la sécurité et réduire la charge opérationnelle.",
+      "topArticles": [
+        "5710965d7191",
+        "4b8ac091122a"
+      ]
+    },
+    {
+      "id": "optimisation-performances-donnees",
+      "label": "Optimisation des performances et des données",
+      "trend": "AWS annonce des améliorations majeures : DynamoDB avec cache ElastiCache Valkey pour des lectures sub-millisecondes, Aurora DSQL avec métriques SQL détaillées, et EMR Serverless avec un agent d'optimisation Spark. Les SRE doivent évaluer ces options pour réduire coûts et latence.",
+      "topArticles": [
+        "83a8d867af24"
+      ]
+    },
+    {
+      "id": "automatisation-operations-ia",
+      "label": "Automatisation des opérations avec l'IA",
+      "trend": "Microsoft et AWS lancent des outils IA pour automatiser les opérations (MAI Code 2, Bedrock AgentCore). Les SRE doivent évaluer ces solutions pour optimiser les workflows, mais surveiller les risques de dépendance et de complexité accrue.",
+      "topArticles": [
+        "930d2827a809"
+      ]
+    },
+    {
+      "id": "observabilite-logs-recherche",
+      "label": "Observabilité : recherche avancée dans les logs",
+      "trend": "Grafana Cloud Logs introduit une recherche plein texte pour identifier rapidement les logs critiques (IDs, erreurs). Cette fonctionnalité réduit significativement le temps de diagnostic et les coûts à l'échelle, un atout majeur pour les SRE.",
+      "topArticles": [
+        "398a527d6d78"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 56,
+    "promptTokens": 24844,
+    "completionTokens": 7758,
+    "estimatedCostEur": 0.008853712
+  }
+}
