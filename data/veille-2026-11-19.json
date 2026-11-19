@@ -1,0 +1,851 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T16:29:50.782Z",
+  "window": {
+    "from": "2026-11-18T16:29:50.782Z",
+    "to": "2026-11-19T16:29:50.782Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 23
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 15
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 2
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 2
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 1
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 0
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "df0688a67691",
+      "title": "Google Chrome dev team declares bug report bankruptcy",
+      "url": "https://blog.plover.com/tech/bug-reports.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T16:20:12.000Z",
+      "excerpt": "",
+      "summary": "Google Chrome abandonne le traitement de milliers de rapports de bugs, priorisant les correctifs critiques.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "gestion-bugs-logiciels"
+    },
+    {
+      "id": "59ee1db7d44b",
+      "title": "I built Cornhole News. A Hacker News inspired site for news across the Midwest",
+      "url": "https://cornholenews.news",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T15:38:32.000Z",
+      "excerpt": "",
+      "summary": "Cornhole News, clone de Hacker News, agrège l'actualité du Midwest américain avec une interface minimaliste.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "outils-communautaires"
+    },
+    {
+      "id": "82dccdff1c4b",
+      "title": "Why AI Wants to Be Local – With Pete Warden (Creator of Moonshine Voice)",
+      "url": "https://thedataexchange.media/pete-warden-moonshine/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T15:38:12.000Z",
+      "excerpt": "",
+      "summary": "L'IA locale réduit la latence et améliore la confidentialité en traitant les données hors du cloud.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "ia-distribuee"
+    },
+    {
+      "id": "c5a788d7efb7",
+      "title": "Show HN: Watch weight-space programming in action with WebGPU",
+      "url": "https://tabbyml.github.io/weight-space-playground/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T15:32:47.000Z",
+      "excerpt": "I wanted to build a full weight-space programming loop entirely in the browser with WebGPU: let an LLM inspect Qwen3.5-0.8B, edit its weights, evaluate, and repeat. the full loop needed too much VRAM. so I turned it into an interactive walkthrough of a concrete example: editing 0.016% of a model&#x27;s weights to reduce reasoning loops, no gradient descent. Based on exp8 of “Sparks of Weight-Space Programming.”: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50341174",
+      "summary": "WebGPU permet d'éditer 0.016% des poids d'un LLM (Qwen3.5-0.8B) dans le navigateur pour réduire les boucles de raisonnement sans descente de gradient.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "edition-ia-navigateur"
+    },
+    {
+      "id": "033022d8319f",
+      "title": "Bring charts, queries, and context into one shareable document: Introducing Grafana Notebooks",
+      "url": "https://grafana.com/blog/bring-charts-queries-and-context-into-one-shareable-document-introducing-grafana-notebooks/",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-19T15:22:49.000Z",
+      "excerpt": "A teammate asks why you think a deployment caused checkout failures. You have an error-rate chart in your dashboard, a query that narrows the failures to one payment provider, and an explanation you&#039;ve been exploring with Grafana Assistant . To bring your teammate up to speed, you start collecting screenshots and query links, then write out how they connect. That explanation is part of the analysis. Your teammate needs to see what supports the conclusion and where you&#039;re still making an assumption. As findings come from both your own exploration in Grafana and from AI-assisted work, having one place to examine them together becomes key. Grafana Notebooks help you do just that, bringing charts, queries, and findings from Assistant together in one working document, so teammates can follow your reasoning and assess next steps. In this post, we’ll use the checkout example above to show how this works in practice, then look at how Notebooks can support rollout decisions and post-incident reviews. How Notebooks work: develop your analysis in a working document Through conversations with users, we&#039;ve heard a recurring need for a lightweight place to work through a question and share the results. Notebooks give that work room to develop inside Grafana, from an initial observation to a recommendation someone can assess. You can start with a panel you&#039;ve already found. Select Add to notebook from its dashboard menu, or from the Add menu in Explore, and choose a new or existing notebook. Then add your explanation and reorder the blocks as the argument takes shape. Your edits save automatically. Assistant can contribute to your working document, too. Add a visualization generated in an Assistant conversation directly to a notebook, whether you&#039;re using the side pane or Workspace . Once you&#039;re in the notebook, open the Assistant side pane to ask for changes to a visualization or help refining the document. You can also edit the content directly as y",
+      "summary": "Grafana Notebooks centralise graphiques, requêtes et contexte dans un document partageable pour analyser et documenter les incidents ou décisions.",
+      "theme": "observabilite",
+      "score": 90,
+      "dynamicTheme": "observabilite-documentation"
+    },
+    {
+      "id": "992a221b1550",
+      "title": "How to Make the Ink Used to Write Hamlet and the Declaration of Independence",
+      "url": "https://lithub.com/how-to-make-the-ink-used-to-write-hamlet-the-declaration-of-independence-and-beethovens-fifth/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T15:13:23.000Z",
+      "excerpt": "",
+      "summary": "Des chercheurs recréent l'encre historique de Shakespeare et de la Déclaration d'Indépendance pour des analyses scientifiques ou artistiques.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "innovation-historique"
+    },
+    {
+      "id": "9e6d3ebc91de",
+      "title": "Cooling buildings is overtaking heating them as an energy need, IEA says",
+      "url": "https://maccus.fr/en/cooling-overtaking-heating/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T14:57:14.000Z",
+      "excerpt": "",
+      "summary": "Le refroidissement des bâtiments dépasse désormais le chauffage en besoins énergétiques selon l'AIE.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "efficacite-energetique"
+    },
+    {
+      "id": "7405e856fa9b",
+      "title": "Everything you need to survive and rebuild society",
+      "url": "https://lastbook.org/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T14:47:18.000Z",
+      "excerpt": "",
+      "summary": "Un guide complet pour reconstruire la société après un effondrement, couvrant survie et résilience.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "resilience-societale"
+    },
+    {
+      "id": "2bc6f9f68451",
+      "title": "Germany and Austria Call for European Control of TikTok",
+      "url": "https://www.techcentral.ie/germany-and-austria-call-for-european-control-of-tiktok/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T14:44:50.000Z",
+      "excerpt": "",
+      "summary": "L'Allemagne et l'Autriche demandent un contrôle européen de TikTok pour renforcer la souveraineté numérique.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "souverainete-numerique"
+    },
+    {
+      "id": "948bd5f16aa8",
+      "title": "Internet traffic and attacks during the 2026 U.S. midterm elections",
+      "url": "https://blog.cloudflare.com/internet-traffic-2026-us-election/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-19T14:00:00.000Z",
+      "excerpt": "Visitors to government election websites surged 363% on November 3, the date of the 2026 midterm elections in the United States. Across Cloudflare&#x27;s election protection programs, we also detected a significant shift in the types and timing of cyberattacks throughout 2026. Unlike what we saw in other recent elections, attackers focused on gaining access to internal systems and data, rather than knocking websites offline. Government election websites faced website vulnerability attempts 180 times more often than denial-of-service (DDoS) attacks, and at roughly ten times the rate of Cloudflare&#x27;s broader customer base. We also found evidence of at least one attempt to exploit a recently disclosed critical PHP vulnerability on a state government voting website in the Western United States. These attacks peaked in late October, several weeks before the election. Vulnerability exploit attempts climbed steadily throughout 2026: from 200,000 per day in January, to 2 million per day in October. However, on Election Day in the U.S., Cloudflare detected no escalation in attack volume and zero major DDoS incidents across protected election sites, marking a sharp contrast to other recent elections, such as in Moldova last year. Our data regarding cyberattacks on election institutions came from organizations participating in Cloudflare&#x27;s free cybersecurity programs: the Athenian Project , Cloudflare for Campaigns , and Project Galileo . Together, these initiatives helped protect more than 1,400 election-related websites during the 2026 U.S. midterm elections, including those belonging to state and local governments, candidates, political parties, voting-rights advocates, journalists, and civil society groups. Cloudflare launched its first election protection program in 2016 after widespread reports of cyberattacks targeting the U.S. elections. A decade later, it is remarkable to see how far governments and campaigns have come in securing their digital infrastructure",
+      "summary": "En 2026, les cyberattaques contre les sites électoraux américains ciblaient les données plutôt que les pannes, avec 180 fois plus de tentatives d'exploitation de vulnérabilités.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "cybersec-elections"
+    },
+    {
+      "id": "766a6d9c43d6",
+      "title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
+      "url": "https://foolscap.works/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T13:21:20.000Z",
+      "excerpt": "People are scared of their ability to write and think atrophying, so I wondered: what if I built something that enhanced human creativity instead of destroying it by doing the thinking and writing for people? Foolscap is the result, or at least the first version of that idea that&#x27;s fleshed out enough to share here. It reads as you write and picks out the structure: characters, ideas, threads, what&#x27;s left hanging. You can respond to what it picks out, so there&#x27;s a dialectic between the system and you as the writer. There&#x27;s also an agent on the side, plugged into the same system, so you can ask about your book and fire off actions through conversation. It never writes into your work. The system can also follow theorems and proofs and string together their dependencies, but I haven&#x27;t made that a focus yet. There&#x27;s no Lean support, for example. If anyone&#x27;s interested in that, I&#x27;d love to hear it. I want to build this by iterating with the people who use it: a tool that uses AI not to bypass the creative process, but to bring new tools to it. There&#x27;s a free tier, and if you email hello@foolscap.works I&#x27;ll send you a code for 50% off. This is my first product, so feedback of any kind is welcome. Thanks, David",
+      "summary": "Foolscap analyse en temps réel la structure d'un texte écrit sans jamais le modifier, stimulant la créativité via un dialogue interactif.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "outils-creatifs"
+    },
+    {
+      "id": "147a1f49cc1f",
+      "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
+      "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T13:18:11.000Z",
+      "excerpt": "",
+      "summary": "Créer des zines pliables de 8 pages à partir d'une feuille A4 directement dans le navigateur.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "edition-numerique"
+    },
+    {
+      "id": "16f1070cf7c5",
+      "title": "Unblockable communication with gravity – Science Advances",
+      "url": "https://www.science.org/doi/10.1126/sciadv.aee0802",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T12:22:00.000Z",
+      "excerpt": "",
+      "summary": "Des chercheurs ont démontré une communication sans blocage via la gravité, révolutionnant les transmissions interstellaires.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "communication-physique"
+    },
+    {
+      "id": "21575d48062c",
+      "title": "Someone reported java4shell bug in September 2026",
+      "url": "https://github.com/openjdk/jdk/pull/32781",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T11:47:03.000Z",
+      "excerpt": "",
+      "summary": "Un bug Java4Shell signalé en septembre 2026 dans OpenJDK pourrait permettre des attaques critiques.",
+      "theme": "java-jvm",
+      "score": 95,
+      "dynamicTheme": "vulnerabilites-critiques"
+    },
+    {
+      "id": "12516b56a5a7",
+      "title": "How the European Commission rolled out Matrix to more than 40k staff",
+      "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T10:58:29.000Z",
+      "excerpt": "",
+      "summary": "La Commission européenne déploie Matrix pour ses 40 000 employés, remplaçant les outils de messagerie internes.",
+      "theme": "ia-contact-center",
+      "score": 80,
+      "dynamicTheme": "messagerie-entreprise"
+    },
+    {
+      "id": "5174c21f9e43",
+      "title": "What's New in PHP 8.6",
+      "url": "https://www.php.net/releases/8.6/en.php",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T09:27:15.000Z",
+      "excerpt": "",
+      "summary": "PHP 8.6 introduit des performances accrues et de nouvelles fonctionnalités comme les propriétés readonly en final.",
+      "theme": "java-jvm",
+      "score": 85,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "43aa16fb77cf",
+      "title": "SSD prices will start going down the second half of next year",
+      "url": "https://www.drivevault.io/blog/when-will-hard-drive-prices-come-down.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T09:05:34.000Z",
+      "excerpt": "",
+      "summary": "Les prix des SSD devraient baisser à partir de la seconde moitié de 2025, rendant le stockage plus abordable.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "prix-materiel"
+    },
+    {
+      "id": "205135bc9e66",
+      "title": "Do not buy RAM, compress",
+      "url": "https://curiousbits.nl/blog/do-not-buy-ram-compress/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T08:56:47.000Z",
+      "excerpt": "",
+      "summary": "Économisez en compressant la RAM au lieu d'acheter plus, réduisant ainsi les coûts et l'empreinte énergétique des serveurs.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "optimisation-ram"
+    },
+    {
+      "id": "aae03f5dc925",
+      "title": "Distributed, high-performance blob storage on SQLite",
+      "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T08:39:45.000Z",
+      "excerpt": "",
+      "summary": "SQLite supporte désormais un stockage distribué haute performance de blobs, optimisant les coûts et la scalabilité.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "stockage-distribue"
+    },
+    {
+      "id": "c93521b413ed",
+      "title": "AWS Transform supports optimized storage for server migration",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-optimized-storage/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "excerpt": "AWS Transform for migrations now recommends the optimized storage type and configuration for every server you migrate, so you no longer do it server by server. Building on recent storage assessment capabilities , AWS Transform's recommendations use each server's observed performance and capacity data to reduce overprovisioning costs and avoid performance issues after cutover. You see the expected cost before you migrate, and AWS Transform applies the approved settings automatically at launch. Recommendations cover Amazon EBS and Amazon FSx for NetApp ONTAP. For FSx for NetApp ONTAP, they include the file system layout and sizing. You choose whether to optimize for cost or for performance, and recommendations stay consistent from assessment through launch. This capability is available in all AWS Regions where AWS Transform for migrations is available . To learn more, see the AWS Transform user guide .",
+      "summary": "AWS Transform automatise le choix des types de stockage optimisés pour les migrations, réduisant coûts et risques de performance.",
+      "theme": "iac-opentofu",
+      "score": 75,
+      "dynamicTheme": "migration-cloud"
+    },
+    {
+      "id": "3bd1f210e985",
+      "title": "AWS Transform automates source and migration target actions to accelerate cutover",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-automates-source-actions/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "excerpt": "AWS Transform now automates the tasks that prepare and validate your servers during a migration, before they move and after they launch on AWS. AWS Transform is the agentic AI service that speeds up cloud migration, application modernization, and continuous tech debt reduction. With the new source actions capability, you can create actions and run them securely on your source servers at the right point in the migration, from the early stages through cutover. Post-launch actions complement this by automatically configuring and validating each workload as soon as it launches on AWS. Cutover preparation and validation are often manual, time-consuming tasks in large-scale migrations. Traditionally, migration teams log in to each source server to stop services and freeze database writes before shutdown, and then check connectivity, application health, and monitoring on each server after it launches. With source actions in AWS Transform, you define each action once, run it in bulk on the servers and waves you choose, and reuse it across accounts and migrations. AWS Transform manages these actions centrally, so you can reuse them across accounts and migrations instead of rebuilding them each time. You can monitor the status of each action and confirm your go/no-go decision before moving to the next step. Source preparation and post-launch actions are now part of the migration plan itself, so you no longer have to coordinate and run these activities by hand. This capability is available in all AWS Regions where AWS Transform for migrations is available . To get started, see the AWS Transform documentation or visit the AWS Transform product page .",
+      "summary": "AWS Transform automatise les actions de préparation et validation des serveurs avant et après migration, accélérant les coupures.",
+      "theme": "iac-opentofu",
+      "score": 80,
+      "dynamicTheme": "migration-cloud"
+    },
+    {
+      "id": "fb9b88d4f801",
+      "title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
+      "url": "https://kapteko.com/15-million-webservers/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T05:56:36.000Z",
+      "excerpt": "",
+      "summary": "Un serveur virtuel héberge 15 millions de serveurs web via smoltcp, DPDK et AF_XDP pour une performance réseau extrême.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "performance-reseau-extreme"
+    },
+    {
+      "id": "7fa09e82e434",
+      "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
+      "url": "https://verialabs.com/ruby2shell/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T05:09:11.000Z",
+      "excerpt": "",
+      "summary": "Une faille de RCE pré-authentification dans Rails permet l'exécution de code à distance via Ruby2ßhell.",
+      "theme": "java-jvm",
+      "score": 90,
+      "dynamicTheme": "vulnerabilites-logiciels"
+    },
+    {
+      "id": "29ff9249928e",
+      "title": "AWS Systems Manager Parameter Store raises API throughput limits",
+      "url": "https://aws.amazon.com/aws.amazon.com/about-aws/whats-new/2026/11/parameter-store-raises-api-throughput-limits/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T05:00:00.000Z",
+      "excerpt": "AWS Systems Manager Parameter Store has increased the default throughput limits for five API operations. For accounts that have turned on the higher throughput setting, the quotas have changed as follows, in transactions per second (TPS): GetParametersByPath (from 100 to 500 TPS) PutParameter (10 to 50) DeleteParameter (5 to 50) DescribeParameters (10 to 100) GetParameterHistory (10 to 100) Parameter Store provides powerful, hierarchical storage for configuration data. The higher quotas give more headroom to workloads that call these operations in bursts. Examples include applications that load configuration by path when many AWS Lambda functions start at once, infrastructure as code deployments that create or update many parameters, and cleanup jobs that bulk-delete stale parameters.",
+      "summary": "AWS Systems Manager Parameter Store augmente ses limites de débit API pour 5 opérations, passant de 10-100 à 50-500 TPS.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "scalabilite-api"
+    },
+    {
+      "id": "a451531046c1",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611190211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611190211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-19T02:11:19.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, avec des binaires disponibles.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-ia"
+    },
+    {
+      "id": "92cfe803e4cd",
+      "title": "cmd/builder/v0.166.0-nightly.202611190211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611190211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-19T02:11:19.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) avec des binaires disponibles.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-ia"
+    },
+    {
+      "id": "458113e3fa08",
+      "title": "v0.166.0-nightly.202611190211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611190211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-19T02:11:07.000Z",
+      "excerpt": "v0.166.0-nightly.202611190211: nightly build",
+      "summary": "Nouvelle version nightly v0.166.0 du Collector OpenTelemetry avec des mises à jour expérimentales.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-ia"
+    },
+    {
+      "id": "5c74d930eb39",
+      "title": "A Bootiful Podcast: JobRunr founder Ronald Dehuysser",
+      "url": "https://spring.io/blog/2026/11/19/a-bootiful-podcast-november-19th-2026",
+      "source": "spring-blog",
+      "sourceName": "Spring Blog",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "excerpt": "Hi, Spring fans! Come listen in on a conversation you won’t want to miss: a deep dive into JobRunner 9 with its creator, Ronald Dehuysser. If you care about distributed processing in the Java and Spring Boot ecosystem, this is your chance to hear firsthand how JobRunner makes long-running, CPU-heavy, and async workloads easier to build, scale, and observe. We’re talking durable steps, rich execution charts, smarter retries, dark mode dashboards, instant PG notify support, adaptive worker tuning, prefetching for higher throughput, and the observability tools that help you actually see what your jobs are doing. Whether you’re building back-office systems, agentic workflows, batch processing, or just want a cleaner way to orchestrate work outside your API, this release is packed with ideas worth hearing about. Join us to hear what’s new in JobRunner 9, why it matters, and how it can level up your Spring Boot applications.",
+      "summary": "JobRunner 9 simplifie l'exécution distribuée en Java/Spring Boot avec observabilité et scalabilité pour les tâches lourdes ou asynchrones.",
+      "theme": "java-jvm",
+      "score": 70,
+      "dynamicTheme": "taches-distribuees"
+    },
+    {
+      "id": "8addd5de5db0",
+      "title": "Multiple vulnerabilities in Regexp and String case conversion",
+      "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T23:52:50.000Z",
+      "excerpt": "",
+      "summary": "Plusieurs vulnérabilités critiques dans Regexp et la conversion de chaînes Ruby corrigées en urgence.",
+      "theme": "java-jvm",
+      "score": 95,
+      "dynamicTheme": "vulnerabilites-langages"
+    },
+    {
+      "id": "909b75797cd1",
+      "title": "Anthropic prices initial public offering",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T23:30:09.000Z",
+      "excerpt": "",
+      "summary": "Anthropic finalise son introduction en Bourse avec une valorisation de plusieurs dizaines de milliards de dollars.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "economie-ia"
+    },
+    {
+      "id": "93049162414a",
+      "title": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
+      "url": "https://blog.cloudflare.com/open-clairic/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-18T22:00:00.000Z",
+      "excerpt": "Cloudflare has become a neolab. We’re building our own frontier AI models for our customers and the open-source community. Today, we’re announcing two open-weight model releases: We’re introducing an updated version of Clairic . Since the preview, we’ve improved extraction from complex documents including images and PDFs (new!), with more reliable handling of tables, lists, and dates, and better grounding of answers in the source material. We’re introducing Clairic-flash , a lighter, faster version of Clairic that delivers strong extraction and prediction performance in a compact, 9-billion-parameter model. Both extraction models are hosted on Workers AI and full open weights are available on Hugging Face . We’re also excited to re-introduce ourselves as the Workers AI superintelligence team, the frontier AI research team behind Clef , Clairic, and lots more in the works. This team is working quickly to push the AI frontier and build useful models for Cloudflare’s customers and the open source community. A new version of Clairic: redesigned after the preview release Since announcing Clairic in preview, we have received a ton of use cases and helpful feedback on how customers wanted to use an extraction model. We heard about use cases ranging from extracting data from images like receipts to reading values from support tickets. We knew that we wanted extraction to be the clear focus for the model, so it had to excel at reading from unstructured data. We decided to go back to the drawing board with Clairic and redesigned our architecture, differentiating this new version of Clairic from our preview release. For ordinary text and number extraction fields, we now use parallel slot autoregressive generation instead of a single forward pass. Each field uses the tokens it has already written to choose its next token, then stops at its own end marker. All the fields advance together in the serving batch, still giving lightning-fast latency per request. This boosted our accu",
+      "summary": "Cloudflare publie deux modèles IA open-weight (Clairic et Clairic-flash) pour extraire des données de documents complexes et images.",
+      "theme": "ia-contact-center",
+      "score": 75,
+      "dynamicTheme": "ia-serveurs"
+    },
+    {
+      "id": "e2b6407cfa68",
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T21:34:07.000Z",
+      "excerpt": "",
+      "summary": "Google lance Gemini 4 Neon, un modèle d'IA optimisé pour les tâches complexes et le raisonnement avancé.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "21688fa19f0b",
+      "title": "Amazon OpenSearch Memory is now generally available",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-memory-generally-available/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T21:09:00.000Z",
+      "excerpt": "Today, AWS announced the general availability of Amazon OpenSearch Memory, a new serverless capability in Amazon OpenSearch Service for adding persistent memory to AI agents. OpenSearch Memory stores agent interactions as searchable events, derives useful memories, and retrieves relevant context across sessions, so agents can recall prior decisions, earlier interactions, and user preferences without replaying the full conversation history to the model. Customers can give agents long-term memory without provisioning infrastructure or building separate extraction, indexing, consolidation, and retrieval systems. OpenSearch Memory stores the original events verbatim, makes them searchable within seconds, and asynchronously derives structured memories. It manages the full memory lifecycle, including extraction, embedding, indexing, consolidation (adding, updating, or skipping memories as new information arrives), and retrieval using keyword, semantic, and hybrid search. Customers control access with AWS Identity and Access Management (IAM) for each memory store, with actor and session scoping, and can set expiration periods for events and memories. Because it is serverless, there are no clusters to provision, instance types to choose, or indexes to create, and capacity for extraction and search scales automatically. Amazon OpenSearch Memory is available today in US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt), and Asia Pacific (Tokyo) Regions. For pricing details about Amazon OpenSearch Memory, visit the pricing page . To learn more about Amazon OpenSearch Memory, see the technical documentation and launch blog . You can get started by visiting the technical launch blog that details how to add persistent memory to your agents with Amazon OpenSearch Memory.",
+      "summary": "Amazon OpenSearch Memory permet aux agents IA de stocker et retrouver des interactions passées sans infrastructure dédiée, via une solution serverless.",
+      "theme": "ia-contact-center",
+      "score": 80,
+      "dynamicTheme": "observabilite-ia"
+    },
+    {
+      "id": "2ea5871602ce",
+      "title": "Introducing the Apache Spark Optimization Agent for AWS Glue ETL",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-aws-glue-etl/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T20:00:00.000Z",
+      "excerpt": "AWS Glue ETL now offers the Apache Spark Optimization Agent, which analyzes completed Spark job runs and delivers cost and performance optimization recommendations within minutes. You can select a cost or performance goal, and the agent returns specific configuration changes with the telemetry evidence and reasoning behind each suggestion. You can use the agent on any completed job run from the AWS Glue console, or from your own tools through the Amazon SageMaker Unified Studio MCP Server. The agent takes the job's configuration, logs, and Spark telemetry together with your chosen goal and returns recommendations computed by a deterministic recommendation engine. The engine reads all job artifacts together to identify what is driving runtime and cost: too little parallelism, a skewed join key, memory pressure forcing spill, idle executors, or capacity provisioned beyond what the job uses. When cost and performance trade off, the agent improves the metric you chose while keeping any regression of the other within defined limits. The engine also checks best practices such as platform-level improvements like upgrading to a newer AWS Glue version or using AWS Graviton processors. Each recommendation is labeled by the area it modifies: infrastructure, Spark configuration, code, or data layout. All access is authenticated with AWS Identity and Access Management (IAM) and logged in AWS CloudTrail. The Apache Spark Optimization Agent is available at no additional charge for AWS Glue versions 4.0 and later in all Regions where AWS Glue is available, except the AWS GovCloud (US) and China Regions. To get started, see Apache Spark Optimization Agent for Amazon EMR and AWS Glue and the blog post - Introducing the Apache Spark optimization agent for Amazon EMR Serverless and AWS Glue ETL .",
+      "summary": "AWS Glue ETL propose un agent d'optimisation Spark analysant les jobs pour recommander des réglages coût/performance en temps réel.",
+      "theme": "cicd-gitlab",
+      "score": 70,
+      "dynamicTheme": "optimisation-ia"
+    },
+    {
+      "id": "14f423559ba1",
+      "title": "Amazon SageMaker AI now supports cross-Region inference routing",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-cross-region-routing/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T20:00:00.000Z",
+      "excerpt": "Today, Amazon SageMaker AI announces cross-Region inference routing, which helps keep inference applications available when a region runs short of capacity by sending requests to endpoints deployed in other AWS Regions and AWS accounts. Models served on accelerated instances can reach capacity limits in a single Region, and an unhealthy endpoint can lead to throttling and errors for end users. Previously, teams had to build and maintain their own routing, health checks, and retry logic across Regions. With cross-Region inference routing in SageMaker AI, developers create an inference router, register the real-time endpoints, asynchronous endpoints, and inference components they already run, and point their applications at the router. The router prefers endpoints in its own Region, shifts new requests to healthy destinations in other Regions as errors rise, and returns traffic gradually after the local endpoint recovers. Existing endpoints, models, and containers do not change. Endpoint owners stay in control: an endpoint policy determines which routers in other accounts can use an endpoint, and an optional cross-Region traffic cap reserves capacity for the endpoint’s local callers. Each real-time response identifies the endpoint that served the request and the reason, and router metrics in Amazon CloudWatch show where traffic went. Cross-Region inference routing is available for real-time inference in 32 commercial AWS Regions, and for asynchronous inference in 25 Regions. There is no additional charge for cross-Region inference routing. Customers pay standard SageMaker AI pricing for the endpoints that serve requests and standard Amazon CloudWatch rates for router metrics. To learn more, see the Amazon SageMaker AI Developer Guide and SageMaker AI Deployment page .",
+      "summary": "Amazon SageMaker permet désormais de router automatiquement les requêtes d'inférence vers d'autres régions AWS en cas de saturation ou d'indisponibilité locale.",
+      "theme": "ia-contact-center",
+      "score": 75,
+      "dynamicTheme": "observabilite-ia"
+    },
+    {
+      "id": "78e243c328f4",
+      "title": "AWS announces ExtendDB 1.0",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-extenddb-1-0/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T20:00:00.000Z",
+      "excerpt": "Today, Amazon Web Services (AWS) announced version 1.0 of ExtendDB, the first release of the open source Amazon DynamoDB-compatible adapter for production use. ExtendDB is fully compatible with the DynamoDB API and runs on a database backend that you choose, so developers and infrastructure teams can run DynamoDB workloads in on-premises data centers, in private or public clouds, and at the edge without rewriting application code. ExtendDB 1.0 supports four storage backends, PostgreSQL, SQLite, Cassandra, and MongoDB. For local development and continuous integration (CI), the extenddb-dev container image and the @extenddb/dev npm package run a DynamoDB-compatible endpoint over SQLite, so you don’t have to set up an external database. ExtendDB is maintained by AWS, released under the Apache 2.0 license, and developed in the open on GitHub. To learn more, see the ExtendDB project page . To get started or contribute, visit the GitHub repository .",
+      "summary": "AWS ExtendDB 1.0 permet d'exécuter des workloads DynamoDB localement ou sur n'importe quel backend compatible sans modifier le code.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "migration-cloud"
+    },
+    {
+      "id": "3cf821187c93",
+      "title": "AWS Transform custom now supports cross-account sharing of transformation definitions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-custom-cross-account-td/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T19:30:00.000Z",
+      "excerpt": "AWS Transform custom now enables you to share transformation definitions (TDs) and their associated lessons across AWS accounts, organizational units (OUs), or your entire organization in AWS Organizations through AWS Resource Access Manager (AWS RAM). AWS Transform custom is a capability of AWS Transform that performs transformations across your technology stack, including API and framework upgrades, migrations, and language translations. With this launch, you can share TDs as live resources rather than static copies, so consumers run the owner's latest published version by default while the owner maintains full control. As the TD owner, you select from four managed permissions ranging from execute-only (the default) to permissions that allow consumers to use your lessons, contribute lessons back to you, or download the TD. Lessons flow back to the owner only when the permission allows it and the consumer opts in. This capability is particularly valuable for platform engineering teams and AWS Partners who need to deploy standardized transformations across multiple accounts. A central team can create a TD once and share it organization-wide. This feature is available via the AWS Transform CLI and AWS RAM in US East (N. Virginia), Europe (Frankfurt), Europe (London), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Canada (Central) Regions. To learn more, visit the AWS Transform User Guide .",
+      "summary": "AWS permet désormais de partager des définitions de transformation entre comptes via AWS RAM pour standardiser les déploiements.",
+      "theme": "iac-opentofu",
+      "score": 70,
+      "dynamicTheme": "standardisation-cloud"
+    },
+    {
+      "id": "fbe08a4c6605",
+      "title": "Amazon CloudFront standard logging now supports CMCD and additional log fields",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-standard-logging-cmcd-fields",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T19:28:00.000Z",
+      "excerpt": "Amazon CloudFront standard logging now supports additional access log fields that were previously available only in CloudFront real-time logs. You can now include these fields in your standard logs and deliver them to Amazon S3, Amazon CloudWatch Logs, or Amazon Data Firehose, without setting up an additional data stream for real-time logs. The new fields include the IP address of the CloudFront server that handled the request, identifiers that separate traffic on a primary distribution from traffic on a staging distribution, and a media quality confidence score. They also include Common Media Client Data (CMCD) fields, which video players send with each request to report details like bitrate, buffer length, and playback session ID. Streaming teams can use these fields to match playback problems that viewers see with CloudFront delivery data, which makes troubleshooting faster. These fields are available in all CloudFront edge locations, and standard logging pricing applies. To learn more, see Standard logging page in the Amazon CloudFront Developer Guide .",
+      "summary": "CloudFront standard logging intègre désormais CMCD et nouveaux champs (IP serveur, qualité média, IDs staging) pour un débogage vidéo simplifié.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "observabilite-video"
+    },
+    {
+      "id": "2a6394fc980f",
+      "title": "Amazon CloudFront Announces WebSocket and gRPC Support for Origin Mutual TLS",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudfront-origin-mtls-websockets-grpc/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T18:00:00.000Z",
+      "excerpt": "Amazon CloudFront (CF) now supports WebSocket and gRPC traffic to application origins in AWS regions, with mutual TLS authentication between CF and the application origin (origin mTLS). Customers can now use TLS certificates to authenticate requests from CloudFront while setting up WebSocket or gRPC connections to their origins. Origin mTLS protects internet facing applications that need persistent, bidirectional or streaming connections, such as chat platforms, collaborative editing tools or live dashboards from unauthenticated requests. Previously, customers serving WebSocket or gRPC traffic through CloudFront had to use shared secrets or IP allow-lists to identify requests originating from CloudFront. This was operationally complex and did not provide strong authentication. With Origin mTLS, customers can use one TLS based authentication for HTTP, WebSocket and gRPC traffic to an application origin. This works with application origins within AWS such as Application Load Balancer and API Gateway, on-premises origins, and origins hosted outside AWS. There is no additional charge for origin mTLS, and it is available with pay-as-you-go pricing and in the Business and Premium flat-rate pricing plans. To learn more, visit the CloudFront origin mutual TLS documentation .",
+      "summary": "CloudFront supporte désormais WebSocket et gRPC avec authentification mTLS pour sécuriser les connexions aux origines.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "securite-reseau"
+    },
+    {
+      "id": "baac8e24a7eb",
+      "title": "AWS Lambda adds support for GPU instances on Lambda Managed Instances",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-gpu-managed-instances/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T18:00:00.000Z",
+      "excerpt": "AWS Lambda now supports GPU-accelerated Event Functions on Lambda Managed Instances using EC2 G-series instances . You can now run GPU-accelerated workloads including AI inference, media processing, 3D rendering, scientific computing, and financial simulations on Lambda without managing GPU drivers, frameworks, or scaling. Lambda runs multiple invocations concurrently in each execution environment and scales responsively based on GPU utilization, CPU utilization, and concurrency to keep your GPUs busy and reduce costs. GPU-accelerated functions integrate with the same 200+ AWS event sources as other Event Functions, so you can add GPU compute as another step in your serverless application. Running GPU workloads today requires customers to provision hardware, manage driver and framework dependencies, and build custom scaling and capacity management. With this launch, you can go from code to a running GPU workload in minutes. Lambda provides GPU base images preconfigured with frameworks such as vLLM, SGLang, and PyTorch. You can run workloads with large artifacts using container images and NVMe ephemeral storage of up to 32 GB each. To reduce startup time, Lambda supports Seekable OCI (SOCI) lazy loading and streaming artifacts directly from Amazon S3. For resilience, you can select G-series instance types from multiple generations in the allowed instance types for your capacity provider. Lambda provisions instances from the newest generation that meets your function requirements and falls back to older generations when capacity is unavailable. GPU-accelerated Event Functions on Lambda Managed Instances is available in all AWS Commercial Regions where Lambda Managed Instances and EC2 G-series instances are available. You can configure GPU-accelerated functions using the AWS Console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, or AWS SAM. You can also use this feature through coding assistants such as Kiro, Claude Code, or Codex by installing the Lambda Managed Ins",
+      "summary": "AWS Lambda supporte désormais les instances GPU pour exécuter des workloads accélérés sans gérer les pilotes ni le scaling.",
+      "theme": "java-jvm",
+      "score": 75,
+      "dynamicTheme": "serverless-accelere"
+    },
+    {
+      "id": "52a8addb74e4",
+      "title": "ObservabilityCON on the Road: New sessions coming to you in 2027",
+      "url": "https://grafana.com/blog/observabilitycon-on-the-road-new-sessions-coming-to-you-in-2027/",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-18T17:48:45.000Z",
+      "excerpt": "If you couldn&#039;t make it to San Francisco for ObservabilityCON 2026 , don’t worry. We’re bringing the highlights of ObservabilityCON to five more international destinations in 2027. It’s your chance to take a deeper dive into new Grafana Cloud capabilities designed to reshape cloud economics, bring context together to expand visibility into the end-user experience, and help you move toward autonomous operations. Registration is open for ObservabilityCON on the Road for: Amsterdam on Feb. 9, 2027 Frankfurt on Feb. 23, 2027 Paris on March 4, 2027 Sydney on March 11, 2027 Dallas on March 23, 2027 Register now at our early bird rate while seats last. Capacity is limited, and early bird tickets will go fast, so reserve your spot today. What to expect at ObservabilityCON on the Road With ObservabilityCON on the Road, everything the community loves most about ObservabilityCON—technical deep dives, live demos, and Grafana Labs experts who&#039;ll take your toughest questions—fits into one day in a city near you. More specifically, it&#039;s a great opportunity to: Watch Grafana Assistant take on more of the work of deploying, running, and fixing your software, from opening an investigation the moment an alert fires to validating a fix&#039;s impact in production. Open the black box on your AI agents with Grafana Cloud Agent Observability , which brings agent sessions in as a fifth telemetry signal, correlated with your metrics, logs, traces, and profiles. Get ahead of rising data volumes and costs. Hear how Mimir , the open source database that powers Grafana Cloud Metrics, is raising the ceiling on ingestion and query speed. And see how Adaptive Telemetry helps cut low-value data while retaining the insights you actually need. Close the gap between what you monitor and what your users experience, with a live digital experience monitoring demo that starts with a conversion drop and works back to the root cause. Get answers from Grafana Labs experts, test drive our lates",
+      "summary": "Grafana organise des sessions ObservabilityCON dans 5 villes en 2027 pour présenter ses nouvelles capacités cloud et l'observabilité autonome.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "evenements-observabilite"
+    },
+    {
+      "id": "7534063c1d3c",
+      "title": "We taught robots to carve marble sculptures",
+      "url": "https://eleanorwiesler.com/blog/robotic-stone-carving/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-18T17:03:53.000Z",
+      "excerpt": "",
+      "summary": "Des robots apprennent à sculpter le marbre, automatisant un artisanat traditionnel.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "automatisation-industrielle"
+    },
+    {
+      "id": "408d8c4f501b",
+      "title": "Amazon RDS for MySQL supports MySQL minor version 8.4.13",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-mysql-8413-available/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "excerpt": "Starting today, Amazon Relational Database Service (Amazon RDS) for MySQL supports MySQL minor version 8.4.13, the latest minor released by community MySQL. We recommend upgrading to the newer minor versions to accept fixes for Common Vulnerabilities and Exposures (CVEs) in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the MySQL community. Learn more about the enhancements in RDS for MySQL 8.4.13 in the Amazon RDS user guide and MySQL 8.4.13 release notes. You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy to orchestrate upgrades across your instances in phases, validating on lower-priority environments before upgrading your most critical ones. You can perform minor version upgrades in-place or via snapshot restore. Learn more about performing version upgrades in the Amazon RDS User Guide . This release is supported in all AWS Regions where Amazon RDS for MySQL is available. Amazon RDS for MySQL makes it simple to set up, operate, and scale MySQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the Amazon RDS Management Console or by using the AWS Command Line Interface (AWS CLI).",
+      "summary": "Amazon RDS supporte désormais MySQL 8.4.13, offrant correctifs de sécurité et améliorations via mises à jour automatiques.",
+      "theme": "java-jvm",
+      "score": 80,
+      "dynamicTheme": "bases-de-donnees"
+    },
+    {
+      "id": "2b26d3730e06",
+      "title": "Amazon RDS for MySQL now supports MySQL major version 9.7",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-mysql-974-available/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "excerpt": "Starting today, Amazon RDS for MySQL supports MySQL major version 9.7, the latest Long-Term Support release from MySQL community. Amazon RDS for MySQL 9.7 launches with community MySQL 9.7.4. This launch introduces support for the Replication Applier Metrics component, JSON Duality Views, and Hypergraph Optimizer. The Replication Applier Metrics help you diagnose replication lag by adding two Performance Schema tables that report per-channel applier backlog, throughput, and wait statistics, along with each worker's progress on its current transaction. JSON Duality Views let applications read and write the same relational tables as JSON documents. The Hypergraph Optimizer is an opt-in query optimizer that can improve execution plans for complex, multi-join queries. For more details, refer to the MySQL 9.7.4 release notes and the Amazon RDS for MySQL release notes . You can upgrade your database using Amazon RDS Blue/Green Deployments , in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the Amazon RDS User Guide . This release is supported in all AWS Regions where Amazon RDS for MySQL is available. Learn more about pricing details at Amazon RDS for MySQL pricing . Amazon RDS for MySQL makes it simple to set up, operate, and scale MySQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the Amazon RDS Management Console or by using the AWS Command Line Interface (AWS CLI).",
+      "summary": "Amazon RDS supporte désormais MySQL 9.7 avec outils de réplication, JSON Duality Views et optimiseur Hypergraph.",
+      "theme": "java-jvm",
+      "score": 85,
+      "dynamicTheme": "bases-de-donnees"
+    },
+    {
+      "id": "62d1e4f7190c",
+      "title": "Amazon EKS Hybrid Nodes reduces price for large hosts",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-hybrid-nodes-pricing-change/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "excerpt": "Amazon Elastic Kubernetes Service (Amazon EKS) Hybrid Nodes now has lower pricing for large nodes, capping the billed vCPU per node at 32 vCPU, so you are no longer charged for vCPUs above that per node threshold. Amazon EKS Hybrid Nodes lets you use your existing on-premises and edge infrastructure as nodes in Amazon EKS clusters. You can now use your largest servers, including those with GPUs, with Amazon EKS Hybrid Nodes at lower cost. With this change, the Amazon EKS Hybrid Nodes cost of a large server no longer grows with its vCPU count. At the first pricing tier, a 64 vCPU node now costs 50% less than before, and a 256 vCPU node costs 88% less, as both are now billed only for 32 vCPUs. This makes Amazon EKS Hybrid Nodes more cost-effective for large bare-metal and GPU servers running compute-intensive workloads, such as AI/ML training and inference, that must stay on-premises for data residency, latency, or regulatory reasons. The pricing change applies automatically to all new hybrid nodes. For the new pricing to take effect for existing hybrid nodes attached to clusters, delete and reattach them. Nodes with 32 vCPUs or fewer are still billed for their actual vCPUs, and existing tiered pricing still applies, so your effective rate falls as monthly usage grows. The new pricing is available in all AWS Regions where Amazon EKS Hybrid Nodes is available. To learn more about getting started and updated pricing details, visit the Amazon EKS Hybrid Nodes documentation and Amazon EKS pricing page .",
+      "summary": "Amazon EKS Hybrid Nodes limite désormais la facturation à 32 vCPU par nœud, réduisant jusqu'à 88% le coût des serveurs puissants comme les GPU.",
+      "theme": "kubernetes",
+      "score": 80,
+      "dynamicTheme": "kubernetes-economie"
+    },
+    {
+      "id": "1b5471842805",
+      "title": "Amazon Cognito now supports point-in-time recovery",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-point-in-time-recovery/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "excerpt": "Amazon Cognito now supports point-in-time recovery (PITR), so you can restore the user data in a user pool to an earlier time. Amazon Cognito helps you implement secure sign-in and access control for users, AI agents, and microservices. Previously, you had to build and maintain your own export and restore process, and restored users received new identifiers and had to reset their passwords. With PITR, you choose a recovery point, preview how many users, groups, multi-factor authentication (MFA) settings, and passkeys the recovery will create, update, or delete, and then start or cancel the recovery. Recovered users keep their identifiers, passwords, MFA settings, and passkeys, so they can sign in without resetting their credentials. For example, if a script deletes or modifies users by mistake, you can restore the user data to the moment before it ran. PITR is enabled automatically for user pools on the Essentials and Plus feature plans at no additional charge. The recovery window is up to 1 day on Essentials and up to 14 days on Plus. You can initiate and manage a recovery using the AWS Management Console, the Amazon Cognito API, AWS Command Line Interface (AWS CLI), or AWS SDKs. PITR is available in all AWS Regions where Amazon Cognito is available. To learn more, see Point-in-time recovery in the Amazon Cognito Developer Guide.",
+      "summary": "Amazon Cognito propose désormais une récupération instantanée des données utilisateurs, préservant identifiants et mots de passe sans réinitialisation.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "securite-identite"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Grafana renforce ses capacités d'observabilité avec l'introduction des Grafana Notebooks, centralisant graphiques, requêtes et contexte dans un document partageable. OpenTelemetry Collector publie plusieurs versions nightly (v0.166.0) avec des binaires disponibles, et Grafana annonce des sessions ObservabilityCON dans 5 villes en 2027.",
+      "topArticles": [
+        "033022d8319f",
+        "a451531046c1",
+        "92cfe803e4cd",
+        "458113e3fa08",
+        "52a8addb74e4"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "Un bug critique Java4Shell a été signalé en septembre 2026 dans OpenJDK, potentiellement exploitable pour des attaques RCE. Plusieurs vulnérabilités critiques dans Regexp et la conversion de chaînes Ruby ont été corrigées. PHP 8.6 introduit des performances accrues et des propriétés readonly en final.",
+      "topArticles": [
+        "21575d48062c",
+        "8addd5de5db0",
+        "7fa09e82e434",
+        "5174c21f9e43",
+        "2b26d3730e06"
+      ]
+    },
+    {
+      "id": "ia-contact-center",
+      "label": "IA dans le contact center",
+      "trend": "La Commission européenne déploie Matrix pour ses 40 000 employés, remplaçant les outils de messagerie internes. Cloudflare publie deux modèles IA open-weight (Clairic et Clairic-flash) pour extraire des données de documents complexes. Amazon OpenSearch Memory permet aux agents IA de stocker et retrouver des interactions passées sans infrastructure dédiée.",
+      "topArticles": [
+        "12516b56a5a7",
+        "21688fa19f0b",
+        "93049162414a",
+        "14f423559ba1"
+      ]
+    },
+    {
+      "id": "iac-opentofu",
+      "label": "IaC — OpenTofu",
+      "trend": "AWS Transform supporte désormais le partage inter-comptes de définitions de transformation via AWS RAM. AWS Transform automatise le choix des types de stockage optimisés pour les migrations, réduisant coûts et risques de performance.",
+      "topArticles": [
+        "3bd1f210e985",
+        "c93521b413ed",
+        "3cf821187c93"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & Supply-chain",
+      "trend": "Les cyberattaques contre les sites électoraux américains en 2026 ciblaient davantage les données que les pannes, avec 180 fois plus de tentatives d'exploitation de vulnérabilités. Plusieurs vulnérabilités critiques dans Regexp et la conversion de chaînes Ruby ont été corrigées en urgence.",
+      "topArticles": [
+        "948bd5f16aa8"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "trend": "Amazon EKS Hybrid Nodes réduit la facturation à 32 vCPU par nœud, diminuant jusqu'à 88% le coût des serveurs puissants comme les GPU.",
+      "topArticles": [
+        "62d1e4f7190c"
+      ]
+    },
+    {
+      "id": "cicd-gitlab",
+      "label": "CI/CD — GitLab CI",
+      "trend": "AWS Glue ETL propose un agent d'optimisation Spark analysant les jobs pour recommander des réglages coût/performance en temps réel.",
+      "topArticles": [
+        "2ea5871602ce"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "observabilite-ia",
+      "label": "Observabilité et IA intégrée",
+      "trend": "L'observabilité évolue avec l'intégration de l'IA pour automatiser l'analyse des logs, des métriques et des traces. Grafana Notebooks, OpenTelemetry Collector et Amazon OpenSearch Memory permettent de centraliser et contextualiser les données pour une meilleure prise de décision en temps réel.",
+      "topArticles": [
+        "a451531046c1",
+        "92cfe803e4cd",
+        "458113e3fa08",
+        "21688fa19f0b",
+        "14f423559ba1"
+      ]
+    },
+    {
+      "id": "migration-cloud",
+      "label": "Migrations et optimisations cloud",
+      "trend": "Les outils d'automatisation des migrations cloud se sophistiquent avec AWS Transform, qui optimise le stockage et accélère les coupures via des actions automatisées. Des solutions comme ExtendDB permettent d'exécuter des workloads DynamoDB localement, réduisant les coûts et la complexité.",
+      "topArticles": [
+        "3bd1f210e985",
+        "c93521b413ed",
+        "78e243c328f4"
+      ]
+    },
+    {
+      "id": "releases-majeures",
+      "label": "Sorties logicielles majeures",
+      "trend": "Plusieurs mises à jour critiques et majeures sont publiées aujourd'hui, avec PHP 8.6, MySQL 9.7 et des modèles d'IA comme Gemini 4 Neon. Ces releases introduisent des fonctionnalités avancées, des correctifs de sécurité et des optimisations de performance, impactant directement les environnements de production.",
+      "topArticles": [
+        "5174c21f9e43",
+        "e2b6407cfa68"
+      ]
+    },
+    {
+      "id": "vulnerabilites-critiques",
+      "label": "Vulnérabilités et sécurité logicielle",
+      "trend": "Plusieurs vulnérabilités critiques sont signalées aujourd'hui, notamment Java4Shell dans OpenJDK, des failles Ruby2ßhell dans Rails, et des problèmes dans Regexp et les conversions de chaînes Ruby. Ces alertes soulignent l'importance de la veille sécurité et des correctifs urgents.",
+      "topArticles": [
+        "21575d48062c"
+      ]
+    },
+    {
+      "id": "ia-distribuee",
+      "label": "IA locale et distribuée",
+      "trend": "L'IA locale gagne en importance avec des modèles comme Clairic et Clairic-flash de Cloudflare, optimisés pour extraire des données complexes sans dépendre du cloud. Les outils comme WebGPU permettent d'éditer des poids de LLM directement dans le navigateur, réduisant la latence et améliorant la confidentialité.",
+      "topArticles": [
+        "82dccdff1c4b"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 48,
+    "promptTokens": 20995,
+    "completionTokens": 6843,
+    "estimatedCostEur": 0.007640416000000001
+  }
+}
