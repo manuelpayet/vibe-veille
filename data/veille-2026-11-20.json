@@ -1,0 +1,953 @@
+{
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T16:02:15.293Z",
+  "window": {
+    "from": "2026-11-19T16:02:15.293Z",
+    "to": "2026-11-20T16:02:15.293Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 19
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 23
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 1
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 2
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 2
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 2
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 1
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "8f3be2c20612",
+      "title": "From AI agents to fishing dashboards: The latest stories from Unprompted, the Grafana Labs engineering blog",
+      "url": "https://grafana.com/blog/from-ai-agents-to-fishing-dashboards-the-latest-stories-from-unprompted/",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-20T15:07:25.000Z",
+      "excerpt": "Some of the best technical insights come from sharing what you&#039;ve built and what you&#039;ve learned along the way. That&#039;s one of the core ideas behind Unprompted , the blog we launched on Medium earlier this year to give Grafana Labs engineers and our broader OSS community a space to showcase their work. From behind-the-scenes engineering stories and technical deep dives to creative use cases for Grafana (a fishing dashboard, anyone?), it&#039;s a place to share ideas and learn from one another. To give you a sense of what you&#039;ll find, we&#039;ve rounded up a few recent posts covering everything from Grafana&#039;s architecture to monitoring your favorite reality TV show. Behind the scenes at Grafana Labs These posts explore some of the technical challenges our teams have tackled at Grafana Labs, including the decisions, tradeoffs, and lessons that shaped their work. Our journey to improve Grafana Assistant dashboarding mode Making an AI agent faster, more reliable, and less expensive takes a lot more than fine-tuning your prompts. Senior Software Engineer Dominik Broj shares how the team used production telemetry, offline evaluations, and Agent Observability to improve dashboarding mode in Grafana Assistant , reducing error rates by 73%, latency p95 by 50%, and cost by 18%. How and why we&#039;re bringing data sources out of the Grafana monolith Grafana data sources have historically been closely tied to the Grafana monolith. To make it easier to develop, maintain, and release data source plugins independently of Grafana&#039;s core release cycle, the team has been working to decouple them from the monolith. But what does that entail, exactly? Kate Vredenburgh, Senior Manager, Engineering, walks through it all, including the challenges of migrating existing code and how the team used AI agents to help along the way. How we provision Grafana Play dashboards at scale with Git Sync and Terraform Grafana Play is our public sandbox where you can explore ",
+      "summary": "Grafana Labs partage des retours d'expérience techniques variés, dont l'optimisation de Grafana Assistant et la modularisation des sources de données.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "veille-grafana-ecosysteme"
+    },
+    {
+      "id": "8ca4060d63f5",
+      "title": "Why there are still no non-WebKit browsers on iOS",
+      "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T15:03:31.000Z",
+      "excerpt": "",
+      "summary": "Apple impose toujours WebKit comme moteur de rendu sur iOS, bloquant les navigateurs non basés dessus.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "restrictions-ecosysteme-apple"
+    },
+    {
+      "id": "bbe099f2944c",
+      "title": "Anthropic employee claims general proof of the Riemann Hypothesis [pdf]",
+      "url": "https://alpo.ge/remark.pdf",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T14:16:21.000Z",
+      "excerpt": "",
+      "summary": "Un employé d'Anthropic affirme avoir prouvé l'hypothèse de Riemann, un problème mathématique majeur non résolu depuis 1859.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "avancees-mathematiques-ia"
+    },
+    {
+      "id": "fd2811614640",
+      "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T13:29:59.000Z",
+      "excerpt": "",
+      "summary": "Les marchés mondiaux chutent malgré l’introduction en Bourse record d’Anthropic, en pleine correction du secteur IA.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "marches-financiers-ia"
+    },
+    {
+      "id": "6cd75d08ed77",
+      "title": "If you stop writing code, you also get worse at reviewing it",
+      "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T12:41:38.000Z",
+      "excerpt": "",
+      "summary": "Cesser d'écrire du code réduit la capacité à en faire une revue efficace.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "pratiques-dev-et-revue-de-code"
+    },
+    {
+      "id": "82d4562a8102",
+      "title": "The Making of Oxygene",
+      "url": "https://jeanmicheljarre.com/aaa/the-making-of-oxygene",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T10:41:10.000Z",
+      "excerpt": "",
+      "summary": "Jean-Michel Jarre raconte la création de son album Oxygène, révolutionnant la musique électronique en 1976.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "culture-tech-historique"
+    },
+    {
+      "id": "000028228240",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T10:01:41.000Z",
+      "excerpt": "",
+      "summary": "Une IA a conçu et vérifié Frostbite, une nouvelle architecture CPU, sans intervention humaine directe.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "innovation-hardware-ia"
+    },
+    {
+      "id": "dbff0d10d054",
+      "title": "What people are building, discovered through new domains",
+      "url": "https://startups.novumsignals.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T09:54:33.000Z",
+      "excerpt": "",
+      "summary": "Les nouveaux domaines révèlent des tendances émergentes dans les projets tech, reflétant l'innovation actuelle.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "tendances-projets-tech-emergents"
+    },
+    {
+      "id": "7c01653370c3",
+      "title": "UK fridges secured from hackers",
+      "url": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T09:52:20.000Z",
+      "excerpt": "https:&#x2F;&#x2F;www.pentestpartners.com&#x2F;security-blog&#x2F;the-fridge-hac...",
+      "summary": "Les réfrigérateurs connectés au Royaume-Uni sont désormais sécurisés contre les piratages grâce à une mise à jour obligatoire.",
+      "theme": "securite-supply-chain",
+      "score": 80,
+      "dynamicTheme": "securite-iot-grand-public"
+    },
+    {
+      "id": "601ef0d322ce",
+      "title": "If you can't explain something in simple terms, you don't understand it (2017)",
+      "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T09:43:19.000Z",
+      "excerpt": "",
+      "summary": "Simplifier une idée prouve sa maîtrise : expliquer clairement un concept complexe change la transmission des savoirs.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "methodes-de-transmission-des-savoirs"
+    },
+    {
+      "id": "11f79f6f88ff",
+      "title": "Signal Is Serious About Protecting Your Privacy",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T09:42:16.000Z",
+      "excerpt": "",
+      "summary": "Signal renforce la protection des données avec chiffrement de bout en bout et métadonnées minimisées.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "securite-communication-chiffree"
+    },
+    {
+      "id": "93419bb5765b",
+      "title": "Carnival Cruises emits ten times more sulphur oxide than all of Europe's cars (2019)",
+      "url": "https://ecohustler.com/article/one-corporation-to-pollute-them-all/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T09:13:09.000Z",
+      "excerpt": "",
+      "summary": "Carnival Cruises émet dix fois plus d'oxydes de soufre que l'ensemble des voitures en Europe.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "impact-environnemental-industries"
+    },
+    {
+      "id": "2daee802f37d",
+      "title": "Announcing the general availability of a new AWS Local Zone in Bogotá, Colombia",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-local-zone-bogota-colombia/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-20T08:00:00.000Z",
+      "excerpt": "Today, AWS announces the general availability of a new Local Zone in Bogotá, Colombia, bringing AWS infrastructure closer to end users for applications that require single-digit millisecond latency. You can use the Bogotá Local Zone for workloads such as real-time gaming, live video streaming, medical imaging, and financial transaction processing. AWS Local Zones are infrastructure deployments that place compute, storage, networking, and other select AWS services closer to metropolitan areas, with the same APIs and tools as AWS Regions. You pay only for what you use, with no minimum commitment. Pricing options include On-Demand, Savings Plans, and Spot Instances. AWS Local Zones are available in more than 30 locations worldwide. The AWS Local Zone in Bogotá supports Amazon Elastic Compute Cloud (Amazon EC2) with C7i, M7i, and R7i instances, Amazon S3 with the One Zone-Infrequent Access storage class, Amazon EBS with local snapshots and volume types gp3, gp2, and io1, Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), Amazon Virtual Private Cloud (Amazon VPC), AWS Direct Connect, and Application Load Balancer. To get started, enable the AWS Local Zone in Bogotá (us-east-1-bog-1a) from the Regions and Zones tab in the AWS Global View or by using the ModifyAvailabilityZoneGroup API. For pricing information, visit the AWS Local Zones pricing page . To learn more, visit the AWS Local Zones overview page .",
+      "summary": "AWS lance une Zone Locale à Bogotá pour des latences <10ms, supportant EC2, EBS, ECS/EKS et S3 One Zone.",
+      "theme": "observabilite",
+      "score": 60,
+      "dynamicTheme": "deploiement-infrastructure-aws-latam"
+    },
+    {
+      "id": "6601e041d7ec",
+      "title": "\"I can tell you wrote this yourself\"",
+      "url": "https://em-online.bearblog.dev/i-can-tell-you-wrote-this-yourself/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T07:13:21.000Z",
+      "excerpt": "",
+      "summary": "Un outil détecte les textes générés par IA avec une précision élevée, rendant l'authenticité humaine plus vérifiable.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "detection-contenu-genere-ia"
+    },
+    {
+      "id": "24c785006a2b",
+      "title": "FFmpeg 9.1 'Gauss'",
+      "url": "https://ffmpeg.org/download.html#release_9.1",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T04:02:39.000Z",
+      "excerpt": "",
+      "summary": "FFmpeg 9.1 'Gauss' améliore les performances vidéo avec de nouveaux codecs et optimisations.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "outils-multimedia-open-source"
+    },
+    {
+      "id": "ce9f48ed34aa",
+      "title": "PostgreSQL 19",
+      "url": "https://www.postgresql.org/docs/release/19.0/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T03:45:45.000Z",
+      "excerpt": "",
+      "summary": "PostgreSQL 19 améliore les performances, la sécurité et la gestion des données avec des optimisations majeures.",
+      "theme": "java-jvm",
+      "score": 90,
+      "dynamicTheme": "evolutions-bases-de-donnees-sql"
+    },
+    {
+      "id": "5d07306ad11d",
+      "title": "What Comes After AGI?",
+      "url": "https://institute.deepmind.com/essays/what-comes-after-agi/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T02:44:13.000Z",
+      "excerpt": "",
+      "summary": "L’article explore les étapes possibles après l’AGI, transformant radicalement l’avenir technologique et sociétal.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "futur-de-l-agi-et-impacts-societaux"
+    },
+    {
+      "id": "a5874bb7d06c",
+      "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
+      "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T02:43:49.000Z",
+      "excerpt": "",
+      "summary": "PostgreSQL 19 intègre un outil natif de nettoyage de table bloat, accélérant les performances sans outils externes.",
+      "theme": "java-jvm",
+      "score": 95,
+      "dynamicTheme": "evolutions-bases-de-donnees-sql"
+    },
+    {
+      "id": "a3d556b13d8c",
+      "title": "cmd/builder/v0.166.0-nightly.202611200211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611200211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-20T02:11:24.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) avec des binaires disponibles pour la branche principale.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-open-source"
+    },
+    {
+      "id": "0cd2d117b272",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611200211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611200211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-20T02:11:20.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly v0.166.0 de l'OpAMP Supervisor pour le Collector OpenTelemetry est disponible.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-open-source"
+    },
+    {
+      "id": "160d0761533f",
+      "title": "v0.166.0-nightly.202611200211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611200211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-20T02:11:10.000Z",
+      "excerpt": "v0.166.0-nightly.202611200211: nightly build",
+      "summary": "Nouvelle version nightly v0.166.0 du Collector OpenTelemetry avec des mises à jour et corrections.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-open-source"
+    },
+    {
+      "id": "df98bcb7b8aa",
+      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T02:01:09.000Z",
+      "excerpt": "",
+      "summary": "OpenSSL corrige une faille critique de buffer overflow dans EVP_EncodeBlock() (CVE-2026-121481, score CVSS 9.8).",
+      "theme": "securite-supply-chain",
+      "score": 98,
+      "dynamicTheme": "securite-cryptographie-open-source"
+    },
+    {
+      "id": "2e07f6ca0216",
+      "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+      "url": "https://blog.cloudflare.com/nginx2root/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-20T01:58:29.000Z",
+      "excerpt": "On November 18, 2026, F5 and nginx.org disclosed ten vulnerabilities in nginx. Five of them, detailed by the Xint research team and published under the name nginx2root , are memory corruption flaws that an unauthenticated attacker can use to crash an nginx worker or, per Xint&#x27;s research, run commands on the server. Xint also found a Linux kernel bug that turns that foothold into root on the host, including from inside a Docker container. Other teams found the two HTTP/2 bugs independently: F5 also credits Rapid7, Wiz Research and Ikotas Labs for CVE-2026-123007, and Metnir, Wiz Research, and Palo Alto Networks Unit 42 for CVE-2026-123633. nginx is an HTTP web server that also serves as reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server. nginx runs a large share of the world&#x27;s web servers, so this is a patch-now event. But if your nginx server is reachable only through Cloudflare&#x27;s proxy, attackers cannot reach the vulnerable code paths for the most serious of these bugs, giving you protection while you update your servers. Here is where Cloudflare stands, what that protection covers, where it stops, and how the bugs work. The short version Cloudflare&#x27;s edge is not affected. Much of the proxy that handles customer traffic at our edge now runs on FL2, written in Rust. We reviewed the parts still built on our heavily modified nginx fork against all five bugs before disclosure, and an update closing the related code paths finished rolling out globally before the vulnerabilities were published. The same releases fix five other nginx CVEs, including CVE-2026-118899, an infinite loop while reading a request body over TLS 1.3. Origins behind Cloudflare&#x27;s HTTP proxy are shielded from the HTTP/2 and HTTP/3 attacks. For proxied hostnames, Cloudflare terminates every client HTTP/2 and HTTP/3 connection at our edge and opens a separate connection to your origin. The attacker&#x27;s frames never reach your nginx. The ",
+      "summary": "Cinq vulnérabilités critiques dans nginx permettent une exécution de code à distance ou l'obtention de droits root, mais Cloudflare protège ses clients via son proxy.",
+      "theme": "securite-supply-chain",
+      "score": 90,
+      "dynamicTheme": "securite-serveurs-web-nginx"
+    },
+    {
+      "id": "ad94344260a0",
+      "title": "Vint Cerf on why TCP/IP was never patented",
+      "url": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-20T01:06:12.000Z",
+      "excerpt": "",
+      "summary": "TCP/IP n'a jamais été breveté, permettant son adoption mondiale et la croissance d'Internet.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "fondamentaux-reseaux-internet"
+    },
+    {
+      "id": "d91d1c588775",
+      "title": "Spring Boot 4.0.10 available now",
+      "url": "https://spring.io/blog/2026/11/20/spring-boot-4-0-10-available-now",
+      "source": "spring-blog",
+      "sourceName": "Spring Blog",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "excerpt": "On behalf of the team and everyone who has contributed, I'm happy to announce that Spring Boot 4.0.10 has been released and is now available from Maven Central. This release includes 97 bug fixes, documentation improvements, and dependency upgrades . Thanks to all those who have contributed with issue reports and pull requests. How can you help? If you're interested in helping out, check out the \"ideal for contribution\" tag in the issue repository. If you have general questions, please ask on stackoverflow.com using the spring-boot tag . Project Page | GitHub | Issues | Documentation | Stack Overflow",
+      "summary": "Spring Boot 4.0.10 corrige 97 bugs et met à jour ses dépendances via Maven Central.",
+      "theme": "build-tooling",
+      "score": 70,
+      "dynamicTheme": "frameworks-java-spring"
+    },
+    {
+      "id": "f5738990b4d4",
+      "title": "Spring Boot 4.1.3 available now",
+      "url": "https://spring.io/blog/2026/11/20/spring-boot-4-1-3-available-now",
+      "source": "spring-blog",
+      "sourceName": "Spring Blog",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "excerpt": "On behalf of the team and everyone who has contributed, I'm happy to announce that Spring Boot 4.1.3 has been released and is now available from Maven Central. This release includes 112 bug fixes, documentation improvements, and dependency upgrades . Thanks to all those who have contributed with issue reports and pull requests. How can you help? If you're interested in helping out, check out the \"ideal for contribution\" tag in the issue repository. If you have general questions, please ask on stackoverflow.com using the spring-boot tag . Project Page | GitHub | Issues | Documentation | Stack Overflow",
+      "summary": "Spring Boot 4.1.3 est disponible avec 112 correctifs, améliorations de docs et mises à jour de dépendances.",
+      "theme": "build-tooling",
+      "score": 70,
+      "dynamicTheme": "frameworks-java-spring"
+    },
+    {
+      "id": "1971f8878793",
+      "title": "JEP targeted to JDK 28: 547: Lazy Constants (4th Preview)",
+      "url": "https://inside.java/2026/11/20/jep547-target-jdk28/",
+      "source": "inside-java",
+      "sourceName": "Inside Java (OpenJDK)",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "excerpt": "The following JEP is targeted to JDK 28: 547: Lazy Constants (Fourth Preview)",
+      "summary": "JDK 28 intègre une 4e préversion de JEP 547 pour des constantes paresseuses, optimisant l'initialisation.",
+      "theme": "java-jvm",
+      "score": 80,
+      "dynamicTheme": "evolutions-java-openjdk"
+    },
+    {
+      "id": "0ef520e618ff",
+      "title": "AWS DevOps Agent now supports Slack code channels and Microsoft Teams two-way conversations",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-devops-agent-slack-code-channels-teams-two-way/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T22:30:00.000Z",
+      "excerpt": "AWS DevOps Agent now supports dedicated Slack code channels and two-way conversations in Microsoft Teams, so on-call engineers and DevOps teams can investigate and resolve incidents where they already work together. AWS DevOps Agent investigates incidents across AWS, multicloud, and on-premises environments. Slack code channels give each investigation its own channel. Choose Open in code channel on an investigation card, and your team and the agent work on the investigation together in that channel. You can ask follow-up questions without @mentioning the agent. If you registered your Slack workspace before this launch, update your Slack permissions to use code channels. For Microsoft Teams, before this launch, users received only one-way notifications from AWS DevOps Agent. Now you can mention AWS DevOps Agent in a connected private or shared channel to ask questions, explore your AWS resources, and steer investigations. The agent replies in a thread under your message. To get started, turn on Bidirectional mode when you associate the channel with your Agent Space. A channel member then authorizes the association before the agent posts. These capabilities are available in all commercial AWS Regions where AWS DevOps Agent is currently supported. To get started, see the following resources: Using Slack code channels Connecting Microsoft Teams AWS DevOps Agent product page",
+      "summary": "AWS DevOps Agent intègre Slack et Teams pour investigations collaboratives en temps réel dans les canaux dédiés.",
+      "theme": "ccaa-aws-connect",
+      "score": 75,
+      "dynamicTheme": "collaboration-devops-aws"
+    },
+    {
+      "id": "42de13e52fe8",
+      "title": "AWS Marketplace now supports agentic payments with AgentCore",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/marketplace-agentic-payments-agentcore/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T21:30:00.000Z",
+      "excerpt": "AWS Marketplace now supports agentic payments over the x402 protocol, so AI agents can discover and buy select products and pay per request in US dollars through AgentCore payments, part of Amazon Bedrock AgentCore. Agents often need paid APIs, data, or content mid-task, but access usually requires a person to sign up, add a payment method, and create an API key. With agentic payments, customers skip that per-seller setup, and charges settle on their existing AWS bill with no crypto wallet required. Customers enable the AWS Marketplace payment connector in AgentCore payments, then they or their agents find listings through the AWS Marketplace connector in AgentCore Gateway. For example, a research agent can buy a single web search, or a coding agent can call a paid guardrail service. Customers can set spending limits, approved sellers, and guardrails before agents transact, Private Marketplace policies still apply, and transactions appear in AWS CloudTrail and AWS Cost Explorer. AWS Marketplace sellers can charge AI agents per request without building a sign-up flow or billing system. They register with AWS Marketplace, configure agentic payments for their listings, and integrate the AWS Marketplace x402 SDK . AWS Marketplace collects customer payments and pays sellers through their AWS Marketplace seller disbursements, like other AWS Marketplace transactions. The capability is available in all AWS Regions where AgentCore payments is available. To learn more, see AWS Marketplace and the Amazon Bedrock AgentCore Developer Guide . To list as a seller, see the AWS Marketplace Seller Guide.",
+      "summary": "AWS Marketplace permet aux agents IA d'acheter des services via AgentCore avec paiement intégré, facturé sur la facture AWS existante.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "monetisation-ia-aws-marketplace"
+    },
+    {
+      "id": "fd424ad3cc79",
+      "title": "Amazon Cognito now supports client ID metadata documents",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-client-id-metadata-documents/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T21:00:00.000Z",
+      "excerpt": "Amazon Cognito now supports OAuth client ID metadata documents (CIMD). Amazon Cognito helps you implement secure sign-in and access control for users, AI agents, and microservices in minutes. With CIMD, Model Context Protocol (MCP) clients and AI agents can sign users in to your user pool without registering a separate app client. Previously, each external client needed its own app client, either created in advance or through dynamic client registration, and you had to manage and clean up those clients over time. With CIMD, a client uses an HTTPS URL as its client ID and publishes a JSON metadata document at that URL. When the client starts sign-in, Cognito fetches and validates the document and uses it to identify the client and validate its sign-in request. You decide which clients to accept with CIMD policies that map URL patterns to one of your app clients, and Cognito grants only the scopes and grant types that both the app client and the metadata document allow. For example, a company that runs an MCP server can accept an AI assistant by allowing the URL where that assistant publishes its metadata without creating or maintaining an app client for it. CIMD is available on the Essentials and Plus feature plans in all AWS Regions where Amazon Cognito is available. To learn more, see Client ID metadata documents (CIMD) in the Amazon Cognito Developer Guide.",
+      "summary": "Amazon Cognito permet désormais d'identifier les clients via des métadonnées JSON hébergées sur une URL, supprimant la gestion d'app clients dédiés.",
+      "theme": "ccaa-aws-connect",
+      "score": 70,
+      "dynamicTheme": "securite-identite-aws-cognito"
+    },
+    {
+      "id": "1d0096baee42",
+      "title": "9.9.2",
+      "url": "https://github.com/gradle/gradle/releases/tag/v9.9.2",
+      "source": "gradle-releases",
+      "sourceName": "Gradle (releases GitHub)",
+      "publishedAt": "2026-11-19T20:59:54.000Z",
+      "excerpt": "The Gradle team is excited to announce Gradle 9.9.2. Here are the highlights of this release: Performance improvements for Kotlin DSL compilation Test filtering for non-method JUnit Platform tests Wrapper settings preserved on upgrade Predefined groups in the Problems API Read the Release Notes We would like to thank the following community members for their contributions to this release of Gradle: Aurimas , devareddy05 , DragonFSKY , fru1tworld , Ivan Khanas , Jeremy Schoemaker , John Burns , Labh R Jethe , Marcin Mycek , monkey , Nelson Osacky , Roberto Perez Alcolea , Róbert Papp , SeungTaek Lim , Stefan Oehme , 万彬宇 , 한의준 . Upgrade instructions Switch your build to use Gradle 9.9.2 by updating your wrapper: ./gradlew :wrapper --gradle-version=9.9.2 && ./gradlew :wrapper See the Gradle 9.x upgrade guide to learn about deprecations, breaking changes and other considerations when upgrading. For Java, Groovy, Kotlin and Android compatibility, see the full compatibility notes . Reporting problems If you find a problem with this release, please file a bug on GitHub Issues adhering to our issue guidelines. If you're not sure you're encountering a bug, please use the forum . We hope you will build happiness with Gradle, and we look forward to your feedback via Twitter or on GitHub .",
+      "summary": "Gradle 9.9.2 améliore la performance du Kotlin DSL et ajoute des filtres de tests JUnit, avec une mise à jour simplifiée.",
+      "theme": "build-tooling",
+      "score": 65,
+      "dynamicTheme": "outils-build-gradle"
+    },
+    {
+      "id": "ac91d0317c6e",
+      "title": "Amazon Aurora DSQL now delivers up to 50% higher write throughput",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-dsql-higher-write-throughput/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T20:53:00.000Z",
+      "excerpt": "With upgrades to its storage layer, Amazon Aurora DSQL now delivers up to 50% higher write throughput for many transactional workloads. Data loads finish sooner, and tables whose primary key always increases, such as tables keyed by a timestamp, an identity column, or a time-ordered ID like ULID or UUIDv7, see even greater benefits. Applications such as audit logs, ledgers, and event feeds are read in time order, and keying them by time keeps those reads fast. You can now use that design for write-heavy tables too. In our tests, an audit log table keyed by event time accepted up to 200% more inserts per second. The improvement is available in all AWS Regions where Aurora DSQL is available, for new and existing clusters, at no additional cost. To learn more, see the Aurora DSQL User Guide .",
+      "summary": "Aurora DSQL améliore jusqu'à 50% le débit d'écriture, surtout pour les tables à clé croissante comme les logs ou les registres.",
+      "theme": "java-jvm",
+      "score": 85,
+      "dynamicTheme": "bases-de-donnees-managed-aws-aurora"
+    },
+    {
+      "id": "349dfab38686",
+      "title": "Amazon CloudFront adds IP based routing and connection logs to SaaS Manager",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-ip-based-routing-connection-logging",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T20:26:00.000Z",
+      "excerpt": "Amazon CloudFront now allows web development and SaaS platforms to serve different tiers of customers on the same wildcard domain by using IP addresses to route them to the right configuration. For example, these platforms can serve premium and pro customers from dedicated Anycast static IP address lists, each with its own configuration, and serve free-tier customers on the shared CloudFront IP addresses, all under *. example.com . Additionally, these customers also have visibility into viewer connections with connection logging. Previously, CloudFront chose the configuration from the domain name alone, so the same domain always went to the same configuration. With address-based selection, you can register the same wildcard domain on several IP lists and send each list to its own tenant. Because you control which clients resolve to which IP list, you can shift traffic between your service tiers without your customers needing to make any changes. You can also serve IoT devices, embedded SDKs, and older TLS clients that connect by IP address without sending a domain name in the TLS handshake (Server Name Indication, or SNI). With viewer fallback, you choose a distribution to accept these connections, and CloudFront uses the Host header in each request to serve the right content. Connection logs now also record HTTPS connections to these tenants which helps you troubleshoot how clients connect. These features are available at all CloudFront edge locations. To learn more, see Address-based selection and Connection Logs in the Amazon CloudFront Developer Guide.",
+      "summary": "CloudFront permet désormais de router des clients par IP sur un même domaine, avec logs de connexion, pour différencier les services tiers.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "reseaux-cdn-aws-cloudfront"
+    },
+    {
+      "id": "0f5079033fe0",
+      "title": "Amazon CloudFront simplifies domain moves and onboarding for SaaS Manager",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-domain-moves-distribution-tenants",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T20:22:00.000Z",
+      "excerpt": "Amazon CloudFront now lets web development platforms and SaaS providers move a customer's domain to their platform in a single request with no downtime, and serve requests to the domain while the TLS certificate is being configured. The CloudFront multi-tenant distributions allow these platforms to serve many customer domains from one shared configuration. Together, these features help move existing AWS customers to multi-tenant distributions without impacting their traffic. Previously, moving a domain that was already in use required disabling the original distribution, using a wildcard workaround, or contacting AWS Support. Now you can bring customer domains onto your multi-tenant setup as part of creating or updating a tenant. With the new OnDomainTakeover option, CloudFront checks domain ownership through DNS records and then moves one or more domains in a single request. This works within an AWS account or across accounts. If you add a domain before its certificate is issued, CloudFront serves it over HTTP until you attach a certificate. That gives you time to validate the domain with AWS Certificate Manager (ACM) or another certificate authority and attach the certificate once it's issued. These features are available in all edge locations at no additional cost. To learn more, see Move domains and Domains without a certificate in the Amazon CloudFront Developer Guide.",
+      "summary": "CloudFront permet désormais de migrer des domaines SaaS vers des distributions multi-locataires sans interruption ni certificat TLS immédiat.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "reseaux-cdn-aws-cloudfront"
+    },
+    {
+      "id": "b71c609a313a",
+      "title": "Amazon Connect launches Resolutions, an agentic solution for high-volume operational work",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-resolutions/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T20:06:00.000Z",
+      "excerpt": "Amazon Connect Customer announces the general availability of Resolutions, an agentic operations solution that resolves high-volume work end-to-end, including refund requests, transaction disputes, fraud investigations, and insurance claims. Resolutions helps businesses reduce resolution times and cost to serve by combining the reasoning of AI agents with the reliability of deterministic workflows. Every request follows business policy, gets the oversight it requires, and ends in a verifiable outcome. Managers describe a process in natural language or upload standard operating procedures (SOPs), and Resolutions generates a Work plan in minutes. As it builds the Work plan, Resolutions asks clarifying questions that surface exceptions, set decision rules, and define approval thresholds, closing the gaps an SOP leaves open. Resolutions then opens a Resolutions Case for each incoming request and applies the right Work plan. AI agents gather information, apply policy, act across your business applications, and ask customers for missing details to drive every Case to completion. Each Step can run on prebuilt AI agents, AI agents configured in Amazon Connect Customer, or your own, while human specialists handle approvals and exceptions with the context they need to act. For example, a bank resolving a transaction dispute can have AI agents pull the transaction history, check the claim against chargeback rules, email the cardholder for a missing receipt, and issue a provisional credit, so a specialist reviews only the disputes that need judgment. Resolutions verifies each outcome and records every action and decision, giving operations leaders an auditable, real-time view of progress, workload, and service level risk. To learn more, visit our documentation, webpage , and pricing page .",
+      "summary": "Amazon Connect Resolutions automatise les cas opérationnels à haut volume (litiges, remboursements) en combinant IA et workflows déterministes pour réduire temps et coûts.",
+      "theme": "ia-contact-center",
+      "score": 90,
+      "dynamicTheme": "contact-center-ia-aws-connect"
+    },
+    {
+      "id": "ee7abd3b3fd5",
+      "title": "AWS Lambda durable functions now supports OpenTelemetry tracing",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-otel/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T20:00:00.000Z",
+      "excerpt": "AWS Lambda announces OpenTelemetry (OTel) support for Lambda durable functions. You can now trace your durable executions and emit traces to Amazon CloudWatch and other industry-standard observability tools. This helps you find bottlenecks in your system, root cause failures faster, and understand how your workflows behave in production. With Lambda durable functions, you can build resilient, multi-step applications and AI workflows that run for up to one year, with built-in checkpointing and automatic retries. Durable functions can run for hours, or days, suspending and resuming across many Lambda invocations. The new OpenTelemetry plugin emits a unified trace that spans a full durable execution, including steps, waits, callbacks, and chained function invocations. You can use the trace to gain operational insights across your executions including step durations, retries, and failures across executions. The OpenTelemetry plugin is available for the TypeScript, Python, and Java SDKs. You can enable OpenTelemetry support by adding the OpenTelemetry plugin package alongside the Durable Execution SDK and register it on your durable handler or using an environment variable. OpenTelemetry support for Lambda durable functions is available in all AWS Regions that support Lambda durable functions. To get started, see the OpenTelemetry plugin documentation , the plugin interface documentation , and the sample application . To learn more, read the blog post .",
+      "summary": "AWS Lambda Durable Functions supporte désormais OpenTelemetry pour tracer les exécutions longues et analyser les workflows en production.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "serverless-observabilite-aws-lambda"
+    },
+    {
+      "id": "7a5dd1a42bc2",
+      "title": "AWS Marketplace agent mode now helps you assess, buy, and deploy solutions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace/aws-marketplace-agent-mode-expansion",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T20:00:00.000Z",
+      "excerpt": "You can now assess a seller's security, buy, and deploy supported products in one conversation with AWS Marketplace agent mode, the conversational AI experience for procuring cloud solutions. You share your requirement once, and agent mode applies them as it guides you through discovery, purchase, and deployment. Describe your use case in natural language to get recommended software, services, AI agents and tools, and multi-product solutions that fit your business needs. To assess a seller's security, request documents such as System and Organization Controls (SOC) 2 reports, and get a criterion-by-criterion assessment against a standard cloud security questionnaire, the Consensus Assessments Initiative Questionnaire (CAIQ). When you're ready to buy, sign in with your AWS account. Agent mode explains pricing and terms so you know what you're committing to, shows your organizations' purchase requirements, and completes the purchase after you review the terms and confirm. For supported products, agent mode reviews your AWS environment, proposes a deployment plan with the estimated monthly cost, and deploys after you approve. It then shows you how to start using the product and helps you troubleshoot if a step fails. Agent mode is available in all AWS Regions where AWS Marketplace is available. To get started, open agent mode on the AWS Marketplace website. To learn more, see Agent mode for AWS Marketplace in the AWS Marketplace Buyer Guide.",
+      "summary": "AWS Marketplace Agent Mode simplifie l'évaluation, l'achat et le déploiement de solutions cloud via une IA conversationnelle en un seul échange.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "monetisation-ia-aws-marketplace"
+    },
+    {
+      "id": "2f2b4044a1f9",
+      "title": "Amazon WorkSpaces Applications now supports WebAuthn redirection",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-applications-webauthn-redirection/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T19:57:00.000Z",
+      "excerpt": "Amazon WorkSpaces Applications now supports WebAuthn redirection, so users can sign in to websites and applications in their streaming session with a FIDO2 authenticator on their local device, such as a security key, Windows Hello, or Touch ID. Previously, an authenticator attached to the user's computer was not available inside the streaming session, so organizations that require phishing-resistant multi-factor authentication (MFA) had to use weaker sign-in methods or keep those applications off WorkSpaces Applications. This helps organizations with FIDO2 requirements stream those applications. When an application in the session makes a WebAuthn request, WorkSpaces Applications forwards it to the user's device, where the authenticator signs it and returns the response. Private keys never leave the user's device. Administrators turn it on per stack in the console or API, and on Windows fleets can limit it to an allow list of processes. For example, a bank can let employees sign in to Microsoft 365 in their streaming session with the same security key they use on their laptop. WebAuthn redirection is available at no additional charge in all AWS commercial Regions and AWS GovCloud (US) Regions where WorkSpaces Applications is available. To get started, select Enable WebAuthn redirection under User Settings for your stack, use an image with the WorkSpaces Applications agent released on or after October 20, 2026, and connect with the WorkSpaces Applications client for Windows (1.5.0 or later) or macOS (1.6.0 or later). To learn more, see WebAuthn redirection in the Amazon WorkSpaces Applications Administration Guide, or visit the Amazon WorkSpaces Applications product page.",
+      "summary": "Amazon WorkSpaces Applications permet désormais la redirection WebAuthn, renforçant l'authentification FIDO2 dans les sessions cloud sans exposer les clés privées.",
+      "theme": "securite-supply-chain",
+      "score": 75,
+      "dynamicTheme": "securite-identite-aws-workspaces"
+    },
+    {
+      "id": "075c7c893fc7",
+      "title": "Amazon Route 53 now supports health checks for private endpoints",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-private-endpoint-health-checks/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T19:50:00.000Z",
+      "excerpt": "Amazon Route 53 now offers Private Endpoint Health Checks, enabling business-critical workloads that never touch the public internet, such as internal APIs, databases, and self-hosted nodes behind internal load balancers or in private subnets, to use native health monitoring and automatic DNS failover. Customers can health-check any reachable private target by IP address, domain, or port over HTTP, HTTPS, or TCP. Customers can associate these health checks with Route 53 DNS records across routing policies in private hosted zones, so Route 53 routes traffic only to healthy endpoints and manages failover automatically. Previously, teams built custom control loops using Amazon CloudWatch alarms, AWS Lambda functions, and the Route 53 API to achieve DNS failover for private resources. With t his approach , failover took several minutes and added operational burden. Detection and DNS failover with Private Endpoint Health Checks are designed to complete in seconds rather than minutes, the service is fully managed, and nothing is exposed to the public internet. The feature supports on-premises and hybrid endpoints reachable from the VPC over AWS Direct Connect or AWS Site-to-Site VPN, enabling resilience patterns such as active-passive disaster recovery and cross-Region DR over AWS Transit Gateway or AWS Cloud WAN. Amazon Route 53 Private Endpoint Health Checks is available today in all AWS commercial regions. To learn more, visit the Amazon Route 53 Developer Guide and the Route 53 pricing page.",
+      "summary": "Route 53 permet désormais des checks de santé pour endpoints privés, automatisant la surveillance et le failover DNS en secondes.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "reseaux-dns-aws-route53"
+    },
+    {
+      "id": "36e390bbe2dc",
+      "title": "AWS Revenue Measurement now supports deal-level revenue attribution for AWS Marketplace offers and opportunities",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-revenue-measurement-deal-attribution/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T19:25:00.000Z",
+      "excerpt": "Today, AWS announces deal-level revenue attribution for AWS Revenue Measurement (previously Partner Revenue Measurement) capabilities. AWS Partners can now see how the AWS revenue measured for their products maps to specific AWS Marketplace offers and/or APN Customer Engagements (ACE) opportunities. Until now, partners who implemented AWS Revenue Measurement via Resource Tagging , User Agent String or AWS Marketplace Metering could view aggregated, product-level attributed revenue. With this launch, partners can view attributed revenue by offers and opportunities on the Attributed Revenue dashboard in AWS Partner Central for components hosted in partners' own AWS accounts. Two new capabilities make this possible: Revenue Attribution IDs and Marketplace Revenue Share. A Revenue Attribution ID is a unique identifier that allows partners to allocate a product's measured AWS revenue to specific offers and opportunities. Partners create a Revenue Attribution ID, associate it with their deals, and enter a monthly attributed revenue allocation percentage for each deal. Partners with SaaS products on AWS Marketplace can automate allocation to offers with Marketplace Revenue Share. Each month, partners enter the percentage of the product's attributed revenue contributed by AWS Marketplace deals in the Revenue Attribution page, and AWS then calculates the attributed revenue for each active offer. Partners can use Revenue Attribution IDs alongside Marketplace Revenue Share to adjust a calculated offer amount or attribute revenue to opportunities for future months. Both capabilities build on AWS Revenue Measurement, so partners can extend their current product-level implementations to gain deal-level insights. Partners can manage Revenue Attribution IDs and Marketplace Revenue Share in AWS Partner Central or through the AWS Revenue Measurement and Marketplace Revenue Share APIs . AWS Revenue Measurement is generally available in all commercial Regions. To learn more, review the",
+      "summary": "AWS permet désormais aux partenaires de visualiser la répartition des revenus par offre et opportunité sur AWS Marketplace via Revenue Measurement.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "monetisation-partenariats-aws-marketplace"
+    },
+    {
+      "id": "33f5b8cab3c0",
+      "title": "AWS Lambda now supports a 30-minute timeout for on-demand Event Functions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-30-minute-ondemand-event-functions/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T19:00:00.000Z",
+      "excerpt": "AWS Lambda now supports a 30-minute function timeout for Event Functions that run on demand, doubling the 15-minute limit for synchronous , asynchronous , and event source mapping (ESM) invocations. On Lambda Managed Instances , synchronous invocations also support up to 30 minutes, while asynchronous and ESM invocations keep the 90-minute timeout launched in September 2026. You can now run long-running workloads such as AI inference, media transcoding, and financial calculations for spiky or steady-state traffic without re-architecting your applications. Customers use Event Functions to build event-driven processors, API backends, and data pipelines. By default, Event Functions run on demand, and Lambda scales them automatically to handle spiky traffic. For steady-state traffic, you can also run them on Lambda Managed Instances, which runs functions on Amazon EC2 instances and maintains the operational simplicity of Lambda. For data-intensive workloads such as AI inference and media processing that run on demand and need longer continuous execution, the 15-minute function timeout had required customers to adopt architectural workarounds. With today's launch, these workloads can run for up to 30 minutes, including when you use Lambda durable functions or invoke your functions from AWS Step Functions Standard workflows . For Event Functions that run on demand, the 30-minute timeout is available in all commercial AWS Regions . On Lambda Managed Instances, it is available for synchronous invocations in all Regions where Lambda Managed Instances is available. You can set the function timeout by using the Lambda console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, or AWS SAM. You can also use coding assistants such as Kiro, Claude Code, or Codex with the Agent Toolkit for AWS . Standard AWS Lambda pricing applies. To learn more, visit the AWS Lambda Developer Guide .",
+      "summary": "AWS Lambda passe à 30 minutes de timeout pour les Event Functions à la demande, simplifiant les workloads longs comme l'IA ou le transcodage.",
+      "theme": "java-jvm",
+      "score": 80,
+      "dynamicTheme": "serverless-aws-lambda"
+    },
+    {
+      "id": "9312f8e22c3c",
+      "title": "AWS Transform combines migration assessment and planning in one experience",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-assessment-and-planning",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T19:00:00.000Z",
+      "excerpt": "AWS Transform for migrations now combines migration assessment and migration planning into a single migration job. Previously, you ran separate jobs to build a total cost of ownership (TCO) business case and to plan your migration. With this launch, you upload your on-premises inventory once and use it for both assessment and planning, in any order. After you upload your inventory data, you can estimate your AWS costs and build a business case, group your infrastructure into applications and plan migration waves, or do both. You can rerun either workflow as your data improves. For example, build a business case first and then plan waves from the same inventory, or plan your waves first and then estimate the cost of a single wave. Because assessment and planning share one inventory, your business case and migration plan stay consistent without moving data between jobs. After you finalize your plan and assessment, you can continue in the same job to migrate your networks, deploy landing zones, and migrate servers, storage, and containers. This newest release is available in all AWS Regions where AWS Transform is offered . To learn more about migrating with AWS Transform, visit the product page and documentation .",
+      "summary": "AWS Transform fusionne évaluation et planification des migrations en un seul processus, simplifiant TCO et vagues de migration avec une seule source de données.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "migrations-cloud-aws"
+    },
+    {
+      "id": "f8aa7a40e1fe",
+      "title": "AWS Transform extends application-centric migration across the lifecycle",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-application-centric-migration",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T19:00:00.000Z",
+      "excerpt": "AWS Transform now puts applications at the center of every stage of the migration journey, so you can discover, plan, migrate, validate, and track the applications your business runs on rather than just the servers underneath them. Application-level grouping has been part of AWS rehost workflows for years, and AWS Transform now carries that same view through your entire migration. Enterprise migrations typically involve thousands of servers, but the questions that drive decisions are about applications. Using discovery data, AWS Transform identifies application boundaries and dependencies, then surfaces logical groupings of applications, each with its own total cost of ownership (TCO) and migration tracking. AWS Transform also adds built-in surveys, letting application owners validate ownership, system boundaries, and business criticality. A new migration dashboard keeps everyone aligned as the migration moves forward. It gives your team, partners, and leadership one current view of your applications, inventory, assessments, wave plans, and migration status. The dashboard pulls in data from every job in a workspace and updates as work progresses, so no one has to build or maintain separate status reports. You can customize the dashboard and ask questions about migration progress in chat. With a more connected workflow and improved visibility across the migration, AWS Transform lets you move to the cloud with more confidence. This capability is available in all AWS Regions where AWS Transform is offered . To learn more about migrating with AWS Transform, visit the product page .",
+      "summary": "AWS Transform centralise la migration cloud autour des applications, simplifiant leur suivi et leur évaluation de bout en bout.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "migrations-cloud-aws"
+    },
+    {
+      "id": "487653ec6928",
+      "title": "Amazon IVS Real-Time Streaming now provides a Linux broadcast SDK",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ivs-real-time-streaming-linux-broadcast-sdk",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T18:49:00.000Z",
+      "excerpt": "The Amazon Interactive Video Service (Amazon IVS) Linux broadcast SDK is now available for IVS Real-Time Streaming. Applications running on Linux can join an IVS stage, receive audio from participants, and send audio back to the stage in real time. The SDK provides a C API and Go language bindings. The Linux broadcast SDK is ideal for AI applications that enrich live streams by processing audio, such as transcription, translation, and content moderation, as well as voice agents that converse with participants. Amazon IVS is a managed live streaming solution designed to make low-latency or real-time video available to viewers around the world. Visit the AWS Region table for a full list of AWS Regions where the Amazon IVS console and APIs for control and creation of video streams are available. To learn more, see IVS Broadcast SDK: Linux Guide .",
+      "summary": "Amazon IVS propose désormais un SDK Linux pour diffuser et traiter en temps réel l'audio des streams interactifs.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "media-streaming-aws-ivs"
+    },
+    {
+      "id": "75e1b4b6fbc6",
+      "title": "8.14.8",
+      "url": "https://github.com/gradle/gradle/releases/tag/v8.14.8",
+      "source": "gradle-releases",
+      "sourceName": "Gradle (releases GitHub)",
+      "publishedAt": "2026-11-19T18:06:54.000Z",
+      "excerpt": "The Gradle team is excited to announce Gradle 8.14.8. Here are the highlights of this release: Java 24 support GraalVM Native Image toolchain selection Enhancements to test reporting Build Authoring improvements Read the Release Notes We would like to thank the following community members for their contributions to this release of Gradle: Aurimas , Ben Bader , Björn Kautler , chandre92 , Daniel Hammer , Danish Nawab , Florian Dreier , Ivy Chen , Jendrik Johannes , jimmy1995-gu , Madalin Valceleanu , Na Minhyeok . Upgrade instructions Switch your build to use Gradle 8.14.8 by updating your wrapper: ./gradlew :wrapper --gradle-version=8.14.8 && ./gradlew :wrapper See the Gradle 8.x upgrade guide to learn about deprecations, breaking changes and other considerations when upgrading. For Java, Groovy, Kotlin and Android compatibility, see the full compatibility notes . Reporting problems If you find a problem with this release, please file a bug on GitHub Issues adhering to our issue guidelines. If you're not sure you're encountering a bug, please use the forum . We hope you will build happiness with Gradle, and we look forward to your feedback via Twitter or on GitHub .",
+      "summary": "Gradle 8.14.8 ajoute le support de Java 24 et améliore les outils de test et de reporting.",
+      "theme": "build-tooling",
+      "score": 60,
+      "dynamicTheme": "outils-build-gradle"
+    },
+    {
+      "id": "6f2bb672de78",
+      "title": "AWS Elemental MediaTailor adds Dynamic Avail Sizing for live HLS",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-elemental-mediatailor-dynamic-avail-sizing-live-hls",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "excerpt": "AWS Elemental MediaTailor now supports Dynamic Avail Sizing, which reduces the slate viewers see when ad breaks, also called avails, in live HLS streams go unfilled. MediaTailor is a server-side ad insertion and channel assembly service that personalizes ads in live and on-demand video streams. When the ad decision server returns fewer ads than a break allows, dynamic avail sizing omits the unfilled time and resumes programming early instead of showing slate. To keep playback continuous, MediaTailor holds back a configurable reserve of content behind the live edge and draws on it when a break ends early. When the reserve runs low, MediaTailor requests extra ad time in later breaks to refill it. Free ad-supported streaming TV (FAST) channel operators can use dynamic avail sizing to keep viewers watching programming instead of filler content. Customers turn on dynamic avail sizing for each playback session by adding query parameters to the session initialization URL, with no change to their playback configuration. To learn more, see Dynamic avail sizing in the AWS Elemental MediaTailor User Guide.",
+      "summary": "AWS Elemental MediaTailor réduit les temps morts lors des coupures pub en live HLS en supprimant les créneaux vides sans afficher de slate.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "media-streaming-aws-elemental"
+    },
+    {
+      "id": "620ed54a8220",
+      "title": "Amazon Cognito now supports AWS Secrets Manager for app client secrets",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-secrets-manager-integration/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "excerpt": "Amazon Cognito now integrates with AWS Secrets Manager , so you can store and manage your user pool app client secrets in Secrets Manager. Amazon Cognito helps you implement secure sign-in and access control for users, AI agents, and microservices in minutes. An app client secret authenticates your application to Cognito. Previously, you had to manage and rotate these secrets in Cognito directly. With this integration, you can leverage Secrets Manager for capabilities including rotation, access control with AWS Identity and Access Management (IAM) policies, and encryption with an AWS managed key or your own AWS Key Management Service (AWS KMS) customer managed key. This can help with periodic credential rotation or compliance requirements; this also helps with keeping secrets out of the console. You can enable this integration for either a new or an existing app client, and disable it at any time. This integration is available in all AWS Regions where Amazon Cognito and AWS Secrets Manager are available, except AWS European Sovereign Cloud (Germany). Standard AWS Secrets Manager charges apply. To learn more, see the Amazon Cognito Developer Guide for instructions.",
+      "summary": "Amazon Cognito gère désormais ses secrets clients via AWS Secrets Manager pour rotation, contrôle d'accès et chiffrement centralisés.",
+      "theme": "ccaa-aws-connect",
+      "score": 65,
+      "dynamicTheme": "securite-identite-aws-cognito"
+    },
+    {
+      "id": "284519d405d7",
+      "title": "AWS WAF launches new Security Analytics Dashboard for real-time investigations",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/aws-waf-security-analytics-dashboard/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "excerpt": "AWS WAF now gives you one place to find and stop unwanted traffic across every application in your account. The new AWS WAF security analytics dashboard brings together traffic from all of your protection packs (web ACLs), whether they protect Regional resources or Amazon CloudFront distributions, into a single view. The dashboard also lets you search request logs right in the console, with no logging pipeline to build, and includes 21 days of full-fidelity request data at no additional cost. It is available alongside the existing dashboard for each protection pack (WebACL), which continues to work as it does today. Until now, spotting a trend across your applications, such as a bot campaign hitting several endpoints or a spike in blocked requests, meant opening each web ACL in turn or individually querying AWS WAF logs. With the AWS WAF security analytics dashboard, you can analyze traffic data from every protection pack (WebACL) at once. You can filter and group traffic by dimensions such as client IP address, country, ASN, user agent, JA4 fingerprint, host, path, rule triggered, and labels. You can see which endpoints are affected and how traffic is changing across all of them. The data is full-fidelity rather than sampled, and filters apply across the whole dashboard. Investigating individual requests has also required delivering AWS WAF logs to Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose and writing queries. AWS WAF Security analytics dashboard includes a logs widget that lets you search and explore raw request logs in the console, down to the full HTTP request, with no log delivery to configure. When you find unwanted traffic, you can block an IP address or a country directly from the page. You can also filter by the labels that managed rules attach to requests to see what a rule in Count mode would block before you enforce it. The AWS WAF security analytics dashboard is available at no additional cost in all commercial AWS Regions where AWS WAF",
+      "summary": "AWS WAF propose un tableau de bord analytique unifié pour surveiller et bloquer les menaces en temps réel sur toutes les applications.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "securite-application-aws-waf"
+    },
+    {
+      "id": "122be7cf5dd9",
+      "title": "Claude solves two open problems in the physics of black holes",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-19T17:30:44.000Z",
+      "excerpt": "",
+      "summary": "Claude résout deux problèmes ouverts en physique des trous noirs, révolutionnant la compréhension théorique.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "avancees-mathematiques-ia"
+    },
+    {
+      "id": "9e80c9c95e26",
+      "title": "AWS Partner Central now supports AI-assisted listing experience for product, services, and solutions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-ai-listing/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T17:00:00.000Z",
+      "excerpt": "AWS Marketplace search, Agent Mode, and AWS sales teams use listings to recommend partner offerings to AWS customers. Partners who sell software and services can now create and improve their listings in AWS Partner Central with the new AI-assisted listing experience. It drafts content from a partner's website and other materials, then shows which sections need clearer details, use cases, or evidence of customer outcomes. For single-AMI products, it also drafts the usage instructions buyers see after subscribing. Partners see, for each section, whether it meets what buyers look for, and choose which suggestions to use and review all content before publishing. Partners can position products and professional services as distinct solutions for different industries, use cases, or outcomes. Each solution gets its own AWS Marketplace page, bringing its case studies and AWS Specializations together with the listing's pricing, reviews, and trust information, so buyers can evaluate and buy from the same page. Buyers can filter search results by Specialization. Partners not ready to share public pricing can publish without it using leads-only listings, through which interested customers request a private offer that reaches the partner as a lead in AWS Partner Central. Partners can test metering and billing setup before publishing, and ask the assistant metering questions while integrating. These capabilities are available now to AWS Marketplace partners in all AWS Regions, except the AWS GovCloud (US) Regions and the China Regions. To get started, open AWS Partner Central and choose \"Products and services\" or \"Solutions\". To learn more, see AI-assisted listing experience and Deciding what to list in the AWS Marketplace Seller Guide .",
+      "summary": "AWS Partner Central propose une assistance IA pour créer et optimiser les fiches produits, améliorant leur visibilité et conversion sur AWS Marketplace.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "monetisation-partenariats-aws-marketplace"
+    },
+    {
+      "id": "420a480e89bb",
+      "title": "Aurora PostgreSQL with express configuration now supports Amazon VPC",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-express-vpc/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T17:00:00.000Z",
+      "excerpt": "Aurora PostgreSQL databases created with express configuration can now move into an Amazon Virtual Private Cloud (VPC) with a single API call or a modify action in the Amazon RDS console. This helps you take AI-built prototypes and other applications to production without migrating data, while meeting your security and compliance requirements. You can also create a new database cluster inside a VPC using express configuration. With express configuration, Aurora PostgreSQL lets you create and query a serverless database in seconds. Connectivity runs through an internet access gateway, which makes this a good fit for rapid prototyping and AI agent-driven development. When your application is ready for production, a single ModifyDBCluster API call moves the cluster into a VPC and turns off the internet access gateway. That gives you security groups, private subnets, and features such as Aurora Global Database, Amazon RDS Blue/Green Deployments, and Amazon RDS Proxy. The move requires no data migration, keeps your cluster endpoint the same, and interrupts connectivity only briefly. You can also reverse it with the same API call. This feature is available in all AWS Regions where Aurora PostgreSQL with express configuration is available. To get started, use the Amazon RDS console , AWS CLI, or AWS SDKs. To learn more, see the Aurora User Guide .",
+      "summary": "Aurora PostgreSQL en configuration express peut désormais intégrer un VPC via une seule API, simplifiant le passage en production sans migration ni interruption.",
+      "theme": "java-jvm",
+      "score": 75,
+      "dynamicTheme": "bases-de-donnees-managed-aws-aurora"
+    },
+    {
+      "id": "f3eae1897a22",
+      "title": "Amazon Aurora now supports moving clusters to a different VPC",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-move-clusters-to-different-vpc/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-19T17:00:00.000Z",
+      "excerpt": "Aurora PostgreSQL and Aurora MySQL clusters can now move from one Amazon Virtual Private Cloud (VPC) to another without data migration. You can move a cluster with a single API call or a modify action in the Amazon RDS console. This lets you move a cluster to a VPC with more IP address space or a non-overlapping CIDR range, consolidate your network architecture, or meet changing security and compliance requirements. Previously, moving an Aurora cluster to a different VPC meant creating a new cluster in the target VPC, migrating your data, and updating your applications with new connection strings. Now, a single ModifyDBCluster API call moves your existing cluster to the new VPC. Your data stays in place, your cluster endpoint stays the same, and connectivity is interrupted only briefly during the move. Before you start, turn off features that are tied to the cluster's current VPC, such as Aurora Global Database, Amazon RDS Proxy, and Amazon RDS Blue/Green Deployments. You can set them up again in the new VPC after the move. This feature is available for Aurora PostgreSQL and Aurora MySQL in all AWS Regions where Aurora PostgreSQL with express configuration is available. To get started, use the Amazon RDS console , AWS CLI, or AWS SDKs. To learn more, see the Aurora User Guide .",
+      "summary": "Aurora permet désormais de déplacer des clusters PostgreSQL/MySQL vers un autre VPC sans migration de données via une seule API.",
+      "theme": "java-jvm",
+      "score": 70,
+      "dynamicTheme": "bases-de-donnees-managed-aws-aurora"
+    },
+    {
+      "id": "8c48840c1bff",
+      "title": "Grafana Labs’ First Executive Briefing Center Coming to Ginza",
+      "url": "https://grafana.com/blog/grafana-labs-ebc1/",
+      "source": "grafana-blog",
+      "sourceName": "Grafana Blog",
+      "publishedAt": "2026-11-19T16:32:02.000Z",
+      "excerpt": "Grafana Labs does not have a headquarters office. Since its founding in 2014, it has been fully remote-first. It began with three co-founders living on different continents, and today our team spans more than 50 countries. From day one, the organization was designed with the assumption that everyone works remotely. Real-time meetings are kept to a minimum, information is shared through documentation, and we have cultivated a culture that trusts people to “work autonomously.” At its core lies the transparency and autonomy of open source. And now, we are building the world’s first Executive Briefing Center (EBC) in Ginza, Tokyo. A remote-first company creating a physical space—what does that mean? This article is the first in a three-part series following the EBC launch project. From the background of the concept to site selection, design philosophy, and even the demolition process, we will walk you through the journey. Not an “office,” but an “EBC” We do not call this place an “office.” It is an Executive Briefing Center, or EBC for short. As a remote-first company, there is no need to commute to a fixed location every day. However, there has never been a place anywhere in the world where people can directly experience the Grafana product, or share the same physical space with customers and the community to engage with technology. The EBC is designed to serve three roles. A place to experience the product A space where customers can directly interact with Grafana solutions, experiencing how observability solves real challenges through demos and briefings—not through a screen, but through face-to-face conversations in the same space. A starting point for innovation A flexible space design that is not bound by fixed layouts, allowing the environment to adapt to different purposes and foster new ideas and use cases. A hub for the community A venue open for meetups and technical events, where people in the Grafana community can naturally gather and connect. We are buildi",
+      "summary": "Grafana Labs ouvre son premier centre physique à Tokyo pour rencontrer clients et communauté, tout en restant 100% remote.",
+      "theme": "observabilite",
+      "score": 60,
+      "dynamicTheme": "veille-grafana-ecosysteme"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Les releases nightly d'OpenTelemetry Collector (v0.166.0) et ses composants (builder, OpAMP Supervisor) confirment une accélération des mises à jour pour le tracing et la collecte de métriques. Grafana Labs met en avant des optimisations dans Grafana Assistant et la modularisation des sources de données, tandis que PostgreSQL 19 et Aurora PostgreSQL intègrent des outils natifs de nettoyage de table bloat et des améliorations de performance. CloudFront ajoute des fonctionnalités de routage IP et de logs de connexion pour les SaaS Manager.",
+      "topArticles": [
+        "a3d556b13d8c",
+        "0cd2d117b272",
+        "160d0761533f",
+        "ee7abd3b3fd5",
+        "8f3be2c20612"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "PostgreSQL 19 et Aurora PostgreSQL introduisent des optimisations majeures pour les performances et la gestion des données, avec un outil natif de nettoyage de table bloat. Spring Boot 4.0.10 et 4.1.3 corrigent 97 et 112 bugs respectivement, tandis que JDK 28 intègre une 4e préversion de JEP 547 pour des constantes paresseuses. AWS Lambda étend son timeout à 30 minutes pour les Event Functions à la demande.",
+      "topArticles": [
+        "a5874bb7d06c",
+        "ce9f48ed34aa",
+        "ac91d0317c6e",
+        "1971f8878793",
+        "33f5b8cab3c0"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & Supply Chain",
+      "trend": "OpenSSL corrige une faille critique de buffer overflow (CVE-2026-121481, CVSS 9.8) dans EVP_EncodeBlock(). Cloudflare publie un article sur cinq vulnérabilités critiques dans nginx, tandis que Signal renforce son chiffrement de bout en bout et minimise les métadonnées. AWS WAF lance un tableau de bord analytique unifié pour surveiller les menaces en temps réel.",
+      "topArticles": [
+        "df98bcb7b8aa",
+        "2e07f6ca0216",
+        "11f79f6f88ff",
+        "284519d405d7",
+        "7c01653370c3"
+      ]
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & Tooling",
+      "trend": "Gradle 9.9.2 améliore la performance du Kotlin DSL et ajoute des filtres de tests JUnit. Gradle 8.14.8 ajoute le support de Java 24 et améliore les outils de test. Spring Boot 4.0.10 et 4.1.3 corrigent des bugs et mettent à jour les dépendances.",
+      "topArticles": [
+        "d91d1c588775",
+        "f5738990b4d4",
+        "1d0096baee42",
+        "75e1b4b6fbc6"
+      ]
+    },
+    {
+      "id": "ccaa-aws-connect",
+      "label": "CCaaS — Amazon Connect / AWS",
+      "trend": "Amazon Connect Resolutions automatise les cas opérationnels à haut volume. Amazon Cognito permet désormais d'identifier les clients via des métadonnées JSON hébergées sur une URL, et gère les secrets clients via AWS Secrets Manager. Amazon WorkSpaces Applications supporte désormais la redirection WebAuthn pour renforcer l'authentification FIDO2.",
+      "topArticles": [
+        "0ef520e618ff",
+        "fd424ad3cc79",
+        "620ed54a8220"
+      ]
+    },
+    {
+      "id": "ia-contact-center",
+      "label": "IA dans le Contact Center",
+      "trend": "Amazon Connect lance Resolutions, une solution agentique pour automatiser les cas opérationnels à haut volume (litiges, remboursements) en combinant IA et workflows déterministes. AWS DevOps Agent intègre Slack et Teams pour des investigations collaboratives en temps réel.",
+      "topArticles": [
+        "b71c609a313a"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "bases-de-donnees-managed-aws-aurora",
+      "label": "Bases de données managées AWS Aurora",
+      "trend": "Aurora PostgreSQL/MySQL voit plusieurs améliorations majeures : DSQL augmente le débit d'écriture de 50%, l'intégration VPC est simplifiée via une seule API, et le déplacement de clusters entre VPC est désormais possible sans migration. Ces évolutions réduisent la complexité opérationnelle pour les équipes SRE gérant des workloads critiques.",
+      "topArticles": [
+        "ac91d0317c6e",
+        "420a480e89bb",
+        "f3eae1897a22"
+      ]
+    },
+    {
+      "id": "veille-grafana-ecosysteme",
+      "label": "Écosystème Grafana et observabilité",
+      "trend": "Grafana Labs continue d'étendre son écosystème avec des retours techniques concrets (optimisation de Grafana Assistant, modularisation des sources de données) et une expansion physique en Asie pour renforcer son ancrage local. L'observabilité open-source évolue avec des releases nightly majeures du Collector et de l'OpAMP Supervisor, intégrant des fonctionnalités critiques pour les SRE.",
+      "topArticles": [
+        "8f3be2c20612",
+        "8c48840c1bff"
+      ]
+    },
+    {
+      "id": "monetisation-ia-aws-marketplace",
+      "label": "Monétisation et IA sur AWS Marketplace",
+      "trend": "AWS Marketplace introduit des fonctionnalités agentiques pour les paiements (AgentCore) et l'assistance IA pour créer des fiches produits. Les partenaires peuvent désormais visualiser la répartition des revenus par offre via Revenue Measurement, tandis que les agents IA peuvent acheter des services directement via le marketplace.",
+      "topArticles": [
+        "42de13e52fe8",
+        "7a5dd1a42bc2"
+      ]
+    },
+    {
+      "id": "reseaux-cdn-aws-cloudfront",
+      "label": "Réseaux et CDN avec AWS CloudFront",
+      "trend": "CloudFront ajoute le routage basé sur IP pour différencier les services tiers sur un même domaine, avec des logs de connexion pour une meilleure traçabilité. La migration de domaines SaaS vers des distributions multi-locataires est désormais simplifiée, sans interruption ni certificat TLS immédiat.",
+      "topArticles": [
+        "349dfab38686",
+        "0f5079033fe0"
+      ]
+    },
+    {
+      "id": "avancees-mathematiques-ia",
+      "label": "Avancées mathématiques et IA",
+      "trend": "Un employé d'Anthropic affirme avoir prouvé l'hypothèse de Riemann, un problème mathématique majeur non résolu depuis 1859. Par ailleurs, un outil d'IA (Claude) résout deux problèmes ouverts en physique des trous noirs, illustrant l'impact croissant de l'IA sur la recherche fondamentale.",
+      "topArticles": [
+        "bbe099f2944c",
+        "122be7cf5dd9"
+      ]
+    },
+    {
+      "id": "securite-cryptographie-open-source",
+      "label": "Sécurité et cryptographie open source",
+      "trend": "Une faille critique (CVE-2026-121481, CVSS 9.8) dans OpenSSL touche EVP_EncodeBlock(), nécessitant une correction urgente. Cinq vulnérabilités critiques dans nginx permettent une exécution de code à distance ou l'obtention de droits root, mais Cloudflare protège ses clients via son proxy. Ces incidents soulignent l'importance de la veille sécurité pour les SRE.",
+      "topArticles": [
+        "df98bcb7b8aa"
+      ]
+    },
+    {
+      "id": "serverless-aws-lambda",
+      "label": "Serverless et AWS Lambda",
+      "trend": "AWS Lambda étend ses capacités avec un timeout de 30 minutes pour les Event Functions à la demande, simplifiant les workloads longs (IA, transcodage). Les Durable Functions supportent désormais OpenTelemetry pour tracer les exécutions longues, offrant une visibilité accrue sur les workflows serverless en production.",
+      "topArticles": [
+        "33f5b8cab3c0"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 55,
+    "promptTokens": 25368,
+    "completionTokens": 7993,
+    "estimatedCostEur": 0.009079848000000001
+  }
+}
