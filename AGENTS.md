@@ -37,11 +37,11 @@ app/         PWA SvelteKit 3 (SPA, adapter-static, fallback 404.html)
              static/                   manifest.webmanifest, icons/, config.json (généré au deploy)
 data/        veilles commitées par le bot (tout l'historique conservé)
 e2e/         tests Playwright + fixtures (e2e/fixtures/data)
-watchdog/    Worker Cloudflare (déployé hors repo npm, wrangler) : cron triggers 07:07/07:37/08:22 UTC
+watchdog/    Worker Cloudflare (déployé hors repo npm, wrangler) : cron triggers 08:07/08:37/09:22 UTC
              -> POST API workflow_dispatch veille.yml (GH_PAT en secret Cloudflare). Déclencheur
              PRINCIPAL de la veille (le scheduler GitHub droppe des runs sans trace).
              README local : setup + alternative cron-job.org. Non un workspace npm racine.
-.github/workflows/  ci.yml (typecheck+tests+build+dry-run+e2e), veille.yml (cron 07:07/07:37/08:22 UTC
+.github/workflows/  ci.yml (typecheck+tests+build+dry-run+e2e), veille.yml (cron 08:07/08:37/09:22 UTC
                     en FALLBACK + manuel [input force] : génère, commit data/, notif ntfy,
                     ping healthchecks.io ; garde-fou idempotent data/veille-<date>.json = 1 veille/jour max),
                     deploy-pages.yml (push main)
@@ -137,7 +137,7 @@ npm run check-sources -w generator              # teste toutes les sources
   `active`, fichier sur `main`. Dégradation massive constatée depuis les incidents du
   2026-08-26 (GitHub Community #206019/#206027/#207346). → le déclencheur principal est
   le **watchdog externe** (`watchdog/`, Worker Cloudflare, 3 dispatches/jour) ; le cron
-  veille.yml (créneaux décalés 07:07/07:37/08:22 UTC) reste en fallback + garde-fou
+  veille.yml (créneaux décalés 08:07/08:37/09:22 UTC ≈ 9h heure de France) reste en fallback + garde-fou
   idempotent (skip si `data/veille-<YYYY-MM-DD>.json` existe, bypass avec l'input `force`
   du workflow_dispatch) + heartbeat healthchecks.io (secret `HEALTHCHECKS_PING_URL`,
   check 1x/jour grace 2h) pour être alerté d'une veille manquante. Ne pas remettre un

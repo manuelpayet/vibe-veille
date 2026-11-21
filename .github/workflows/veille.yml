@@ -8,9 +8,9 @@ on:
     # Créneaux décalés en minutes : GitHub documente un pic de charge (et des runs
     # manqués) au début de chaque heure. Plusieurs créneaux = rattrapage si l'un d'eux
     # est manqué ; le garde-fou ci-dessous rend les doublons impossibles.
-    - cron: '7 7 * * *'   # 07:07 UTC
-    - cron: '37 7 * * *'  # 07:37 UTC (rattrapage)
-    - cron: '22 8 * * *'  # 08:22 UTC (dernier rattrapage)
+    - cron: '7 8 * * *'   # 08:07 UTC ≈ 09:00 heure de France (CET, hiver)
+    - cron: '37 8 * * *'  # 08:37 UTC (rattrapage)
+    - cron: '22 9 * * *'  # 09:22 UTC (dernier rattrapage)
   workflow_dispatch: # déclenchement manuel
     inputs:
       force:
