@@ -5,7 +5,7 @@ sous forte charge « some queued jobs may be dropped », sans aucun run créé n
 (dégradation massive constatée depuis les incidents du 2026-08-26, cf. discussions
 GitHub Community #206019, #206027, #207346). D'où ce watchdog externe qui déclenche
 le workflow `veille.yml` via l'API `workflow_dispatch`, 3 fois le matin :
-**07:07 / 07:37 / 08:22 UTC**. Le garde-fou idempotent de `veille.yml` garantit qu'une
+**08:07 / 08:37 / 09:22 UTC** (≈ 9h00 heure de France en hiver, CET). Le garde-fou idempotent de `veille.yml` garantit qu'une
 seule veille est générée par jour (les appels suivants sont des no-op).
 
 ## Option A (recommandée) : Worker Cloudflare, gratuit
@@ -31,7 +31,7 @@ seule veille est générée par jour (les appels suivants sont des no-op).
    Workers & Pages → `vibe-veille-watchdog` → Logs. Un run doit apparaître dans
    Actions → « Veille quotidienne » à chaque créneau (événement `workflow_dispatch`).
 6. Test manuel sans attendre le cron : `npm run dev` puis
-   `curl "http://localhost:8787/__scheduled?cron=7+7+*+*+*"`.
+   `curl "http://localhost:8787/__scheduled?cron=7+8+*+*+*"`.
 
 ## Option B (zéro code) : cron-job.org, gratuit
 
@@ -43,7 +43,7 @@ Créer 3 jobs (fréquence cron, UTC) :
   - `Authorization: Bearer <PAT>` (même PAT qu'en option A)
   - `Accept: application/vnd.github+json`
   - `X-GitHub-Api-Version: 2022-11-28`
-- Crons : `7 7 * * *`, `37 7 * * *`, `22 8 * * *`
+- Crons : `7 8 * * *`, `37 8 * * *`, `22 9 * * *`
 
 Inconvénients : pas de SLA, timeout 30 s (suffisant ici, l'API répond en < 1 s), pas de retry.
 
