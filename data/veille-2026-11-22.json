@@ -1,0 +1,474 @@
+{
+  "date": "2026-11-22",
+  "generatedAt": "2026-11-22T15:12:54.339Z",
+  "window": {
+    "from": "2026-11-21T15:12:54.339Z",
+    "to": "2026-11-22T15:12:54.339Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 15
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 0
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "3c4f4993adca",
+      "title": "Show HN: I built a game where you are an LLM's subagent",
+      "url": "https://github.com/gulivan/worker755",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T13:56:58.000Z",
+      "excerpt": "",
+      "summary": "Un jeu où le joueur incarne un sub-agent d'un LLM, explorant l'interaction homme-IA de manière ludique.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "ia-interaction-ludique"
+    },
+    {
+      "id": "0ceef4b235ec",
+      "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T09:57:01.000Z",
+      "excerpt": "",
+      "summary": "Muru combine Rust et IA pour accélérer les serveurs Python via mod_WSGI, améliorant les performances et la sécurité.",
+      "theme": "build-tooling",
+      "score": 75,
+      "dynamicTheme": "optimisation-rust-ia"
+    },
+    {
+      "id": "bf1d56f79e08",
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T08:57:34.000Z",
+      "excerpt": "",
+      "summary": "En 2028, 87% de l'énergie d'Anthropic proviendra du gaz et 11% du charbon, selon Better Data Center Project.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "energie-data-centers"
+    },
+    {
+      "id": "d26d10b87f22",
+      "title": "Notes on the discrete Fourier transform (DFT)",
+      "url": "https://eli.thegreenplace.net/2026/notes-on-the-discrete-fourier-transform-dft/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T06:52:25.000Z",
+      "excerpt": "",
+      "summary": "L'article explique la transformée de Fourier discrète (DFT), outil clé pour analyser les signaux numériques.",
+      "theme": "hors-sujet",
+      "score": 20
+    },
+    {
+      "id": "1fd500df4662",
+      "title": "Show HN: The Riemann Proof Handbook",
+      "url": "https://github.com/tamnd/riemann-handbook",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T05:46:30.000Z",
+      "excerpt": "",
+      "summary": "Le Riemann Proof Handbook simplifie la vérification formelle des preuves mathématiques complexes.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "verification-formelle"
+    },
+    {
+      "id": "3400785e0033",
+      "title": "Fast-Anything: Don't rewrite it in Rust. Rewrite the 5% that's slow",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T04:10:09.000Z",
+      "excerpt": "",
+      "summary": "Optimiser uniquement les 5% de code lent plutôt que tout réécrire en Rust pour des gains de performance ciblés.",
+      "theme": "build-tooling",
+      "score": 80,
+      "dynamicTheme": "optimisation-ciblée-rust"
+    },
+    {
+      "id": "9212cb3d4e2e",
+      "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+      "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T04:04:56.000Z",
+      "excerpt": "",
+      "summary": "Toyota, Nissan et Honda standardisent des pièces pour réduire leurs coûts de production.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "standardisation-industrielle"
+    },
+    {
+      "id": "7893687ce631",
+      "title": "Data Processing Incidents on Inference Providers",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T02:14:14.000Z",
+      "excerpt": "",
+      "summary": "Des incidents de traitement de données ont touché des fournisseurs d'inférence, perturbant les services d'IA.",
+      "theme": "securite-supply-chain",
+      "score": 90,
+      "dynamicTheme": "incidents-ia-inference"
+    },
+    {
+      "id": "d6d870fec344",
+      "title": "cmd/builder/v0.166.0-nightly.202611220211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611220211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-22T02:11:30.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) avec des binaires disponibles pour la branche principale.",
+      "theme": "observabilite",
+      "score": 95,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "307691ed60e1",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611220211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611220211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-22T02:11:28.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, avec binaires disponibles.",
+      "theme": "observabilite",
+      "score": 95,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "3435f6e6019a",
+      "title": "v0.166.0-nightly.202611220211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611220211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-22T02:11:16.000Z",
+      "excerpt": "v0.166.0-nightly.202611220211: nightly build",
+      "summary": "Nouvelle version nightly v0.166.0 du Collector OpenTelemetry avec des mises à jour non stabilisées.",
+      "theme": "observabilite",
+      "score": 95,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "78ed71768c6f",
+      "title": "The Mythology of Conscious AI",
+      "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T02:10:02.000Z",
+      "excerpt": "",
+      "summary": "L'IA consciente reste une fiction, malgré les débats sur son potentiel futur.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "mythes-ia-consciente"
+    },
+    {
+      "id": "c4a226a4ddc4",
+      "title": "Sandwich Simulator",
+      "url": "https://stulle.app/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T00:07:59.000Z",
+      "excerpt": "",
+      "summary": "Sandwich Simulator permet de générer des sandwichs virtuels avec des outils de simulation avancés pour les développeurs.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "simulation-developpement"
+    },
+    {
+      "id": "cfc547c2291f",
+      "title": "PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors",
+      "url": "https://github.com/sebaandrada-cell/PcapAnalyzer",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-21T22:09:58.000Z",
+      "excerpt": "",
+      "summary": "PcapAnalyzer, un analyseur de pcap auto-hébergé, détecte 27 problèmes réseau automatiquement.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "analyse-reseau-securite"
+    },
+    {
+      "id": "522b28941c1f",
+      "title": "Advice for the next 100 Rust GUIs",
+      "url": "https://linebender.org/blog/next-100-guis/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-21T21:17:53.000Z",
+      "excerpt": "",
+      "summary": "Rust accélère le développement d'interfaces graphiques avec des outils modernes et performants pour les 100 prochaines années.",
+      "theme": "build-tooling",
+      "score": 60,
+      "dynamicTheme": "rust-ui-gui"
+    },
+    {
+      "id": "cfea722a5658",
+      "title": "Pandex – Official European Law for AI Agents, over MCP",
+      "url": "https://www.pandex.io",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-21T20:47:41.000Z",
+      "excerpt": "",
+      "summary": "L'UE adopte Pandex, une loi encadrant les agents IA via MCP, marquant un tournant réglementaire européen.",
+      "theme": "ia-contact-center",
+      "score": 70,
+      "dynamicTheme": "reglementation-ia-europe"
+    },
+    {
+      "id": "6d859339b158",
+      "title": "Upload2Shell (CVE-2026-125396)",
+      "url": "https://pwn.ai/upload2shell",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-21T18:29:29.000Z",
+      "excerpt": "",
+      "summary": "Une faille Upload2Shell (CVE-2026-125396) permet une exécution de code à distance via des uploads malveillants.",
+      "theme": "securite-supply-chain",
+      "score": 98,
+      "dynamicTheme": "securite-cve-exploits"
+    },
+    {
+      "id": "c6e0f6fe1d32",
+      "title": "Inkling-2-Mini in 5.4 GB Memory",
+      "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-21T18:02:19.000Z",
+      "excerpt": "",
+      "summary": "Un modèle d'IA léger (Inkling-2-Mini) fonctionne avec seulement 5,4 Go de mémoire, réduisant les besoins matériels.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "ia-legere-performante"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Nouvelle version nightly v0.166.0 du Collector OpenTelemetry avec des mises à jour non stabilisées, incluant des binaires pour le builder et l'OpAMP Supervisor. Ces releases visent à améliorer la collecte et le traitement des télémétries avant la stabilisation.",
+      "topArticles": [
+        "d6d870fec344",
+        "307691ed60e1",
+        "3435f6e6019a"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Deux articles majeurs : un incident de traitement de données sur des fournisseurs d'inférence IA et une faille critique (CVE-2026-125396) permettant une exécution de code à distance via des uploads malveillants. PcapAnalyzer, un outil auto-hébergé, propose également 27 détecteurs de problèmes réseau.",
+      "topArticles": [
+        "6d859339b158",
+        "7893687ce631",
+        "cfc547c2291f"
+      ]
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & tooling",
+      "trend": "Deux articles soulignent l'optimisation ciblée des performances : Muru (Rust + IA pour accélérer les serveurs Python) et une approche pragmatique pour réécrire uniquement les 5% de code lent en Rust plutôt que tout migrer. Rust confirme son rôle clé dans les outils modernes.",
+      "topArticles": [
+        "3400785e0033",
+        "0ceef4b235ec",
+        "522b28941c1f"
+      ]
+    },
+    {
+      "id": "ia-contact-center",
+      "label": "IA dans le contact center",
+      "trend": "L'UE adopte Pandex, une loi encadrant les agents IA via MCP, marquant un tournant réglementaire pour les contact centers européens utilisant des agents virtuels ou des copilotes.",
+      "topArticles": [
+        "cfea722a5658"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "releases-majeures",
+      "label": "Releases majeures (OpenTelemetry)",
+      "trend": "Plusieurs versions nightly du Collector OpenTelemetry (v0.166.0) et de ses composants (builder, OpAMP Supervisor) sont publiées aujourd'hui. Ces mises à jour non stabilisées introduisent des fonctionnalités expérimentales pour les pipelines de télémétrie.",
+      "topArticles": [
+        "d6d870fec344",
+        "307691ed60e1",
+        "3435f6e6019a"
+      ]
+    },
+    {
+      "id": "ia-interaction-ludique",
+      "label": "Interaction homme-IA ludique",
+      "trend": "Un jeu expérimental met en scène un joueur comme sub-agent d'un LLM, explorant les dynamiques d'interaction homme-IA de manière interactive et pédagogique. Ce projet illustre l'évolution des interfaces utilisateur vers des expériences gamifiées.",
+      "topArticles": [
+        "3c4f4993adca"
+      ]
+    },
+    {
+      "id": "optimisation-rust-ia",
+      "label": "Optimisation Rust et IA",
+      "trend": "Muru, un serveur Rust assisté par IA, accélère les applications Python via mod_WSGI en combinant performance et sécurité. L'approche cible l'optimisation des goulots d'étranglement plutôt que des réécritures massives, avec un focus sur les gains concrets.",
+      "topArticles": [
+        "0ceef4b235ec"
+      ]
+    },
+    {
+      "id": "optimisation-ciblée-rust",
+      "label": "Optimisation ciblée en Rust",
+      "trend": "Une méthodologie prône l'optimisation des 5% de code lent plutôt que la réécriture totale en Rust, avec des gains de performance mesurables. Cette approche pragmatique s'aligne sur les bonnes pratiques de profiling et de ciblage des bottlenecks.",
+      "topArticles": [
+        "3400785e0033"
+      ]
+    },
+    {
+      "id": "analyse-reseau-securite",
+      "label": "Analyse réseau et sécurité",
+      "trend": "PcapAnalyzer, un outil auto-hébergé, détecte automatiquement 27 problèmes réseau via l'analyse de fichiers pcap. Cette solution open-source répond aux besoins de surveillance passive et de détection d'anomalies en environnement critique.",
+      "topArticles": [
+        "cfc547c2291f"
+      ]
+    },
+    {
+      "id": "securite-cve-exploits",
+      "label": "Sécurité et vulnérabilités critiques",
+      "trend": "Une nouvelle faille (CVE-2026-125396) dans Upload2Shell permet une exécution de code à distance via des uploads malveillants. Cette vulnérabilité rappelle l'importance des contrôles stricts sur les entrées utilisateur et des mises à jour de sécurité.",
+      "topArticles": [
+        "6d859339b158"
+      ]
+    },
+    {
+      "id": "ia-legere-performante",
+      "label": "Modèles d'IA légers et performants",
+      "trend": "Inkling-2-Mini démontre qu'un modèle d'IA peut fonctionner avec seulement 5,4 Go de mémoire, réduisant drastiquement les coûts matériels. Cette avancée ouvre des perspectives pour le déploiement d'IA sur des infrastructures limitées.",
+      "topArticles": [
+        "c6e0f6fe1d32"
+      ]
+    },
+    {
+      "id": "energie-data-centers",
+      "label": "Énergie et data centers",
+      "trend": "Anthropic prévoit que 87% de son énergie en 2028 proviendra du gaz et 11% du charbon, selon le Better Data Center Project. Cette dépendance aux énergies fossiles soulève des questions sur la durabilité des infrastructures IA à grande échelle.",
+      "topArticles": [
+        "bf1d56f79e08"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 20,
+    "promptTokens": 6732,
+    "completionTokens": 3303,
+    "estimatedCostEur": 0.0030619440000000005
+  }
+}
