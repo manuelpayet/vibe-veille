@@ -1,0 +1,756 @@
+{
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T19:10:25.964Z",
+  "window": {
+    "from": "2026-11-22T19:10:25.964Z",
+    "to": "2026-11-23T19:10:25.964Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 19
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 1
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 10
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 1
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 1
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 1
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 1
+    }
+  ],
+  "articles": [
+    {
+      "id": "74b9081d9889",
+      "title": "v1.13.10",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.10",
+      "source": "opentofu-releases",
+      "sourceName": "OpenTofu (releases GitHub)",
+      "publishedAt": "2026-11-23T19:10:12.000Z",
+      "excerpt": "1.13.10 SECURITY ADVISORIES: Upgrade Go toolchain to 1.27.4 to address GO-2026-6859, an HTTP/1 server crash due to a MaxBytesReader header race. ( #4831 ) BUG FIXES: Overriding resources for indexed modules now works correctly during tofu test . ( #4859 ) Fix symbol libraries preventing plan when used in modules. ( #4816 Fix symbol libraries crash when uninitialized. ( #4861 ) Full Changelog : v1.13.9...v1.13.10",
+      "summary": "OpenTofu v1.13.10 corrige des failles de sécurité Go et des bugs de modules et symboles.",
+      "theme": "iac-opentofu",
+      "score": 75,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "42afc3642f4f",
+      "title": "Apple removed my open-source app from EU App Stores after 9 years",
+      "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T18:48:10.000Z",
+      "excerpt": "",
+      "summary": "Apple a supprimé une application open source de son App Store européen après 9 ans de présence.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "regulations-et-ecosysteme"
+    },
+    {
+      "id": "4a01a17c65c4",
+      "title": "AWS Partner Central expands analytics access with Partner Central Agents and Data Subscriptions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-analytics-agent-s3/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T17:36:00.000Z",
+      "excerpt": "AWS Partners and AWS Marketplace sellers now have two new ways to access their analytics data in AWS Partner Central. Partner Central Agents answer questions in plain language, and Data Subscriptions deliver Partner Central data to an Amazon Simple Storage Service (Amazon S3) bucket every day. Partner Central Agents answer questions about leads, marketing campaigns, opportunities and pipeline, and funding, without navigating dashboards or exporting to spreadsheets. AWS Marketplace sellers can also ask about usage, agreements and renewals, billing, collections, and disbursements. Partners can get the same answers in their own artificial intelligence (AI) assistants and agents through the Partner Central Model Context Protocol (MCP) server. Data Subscriptions deliver ready-to-use datasets to an S3 bucket daily, covering leads, marketing campaigns, partner account relationships, opportunities and pipeline, and AWS Marketplace usage, agreements, and renewals. Because the data lives in a partner's own S3 bucket, partners can connect it to the tools of their choice, such as a business intelligence (BI) tool, a customer relationship management (CRM) system like Salesforce or HubSpot, or a generative AI assistant, and build the reports they need. Both features use existing AWS Identity and Access Management (IAM) policies and permissions, so partners see only the data they are already allowed to see, and exported data stays in their own AWS account. These capabilities are available in all AWS Regions where AWS Partner Central is available. To get started, sign in to AWS Partner Central and ask an analytics question, such as \"What are my top opportunities this quarter?\" To set up Data Subscriptions, choose Settings , and then choose Data Subscriptions . To learn more, see Data Subscriptions in the Partner Central Guide .",
+      "summary": "AWS Partners accèdent désormais à leurs données analytiques via des agents IA et des exports quotidiens S3, simplifiant l'intégration et l'analyse.",
+      "theme": "ccaas-aws-connect",
+      "score": 80,
+      "dynamicTheme": "aws-partner-ecosystem"
+    },
+    {
+      "id": "e034cbcda52a",
+      "title": "AgentCore runtime instances are now generally available in the AWS GovCloud (US-West) Region",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-runtime-instances-govcloud",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T17:21:00.000Z",
+      "excerpt": "Amazon Bedrock AgentCore runtime instances are now available in the AWS GovCloud (US-West) Region. Runtime instances run your agents on Amazon EC2 instances in your own account, while AgentCore handles provisioning, patching, scaling, and lifecycle management. With runtime instances, teams in AWS GovCloud (US) can choose GPU-accelerated, memory-optimized, or compute-optimized instance types for their agents and run agent sessions of up to 14 days. Agent instances, storage volumes, and session data stay in the AWS GovCloud (US-West) Region, which helps public sector organizations and their partners meet data residency and compliance requirements. Runtime instances work alongside the default serverless, microVM-based AgentCore runtime, so you can pick the right compute for each agent without changing how you deploy or invoke it. You are charged for the management of the compute provisioned, in addition to your Amazon EC2 costs. To get started, visit AWS News Blog or AgentCore documentation . To learn about pricing, visit AgentCore pricing .",
+      "summary": "Les instances AgentCore d'Amazon Bedrock sont désormais disponibles dans AWS GovCloud (US-West) pour exécuter des agents sur EC2 avec gestion automatisée.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "aws-govcloud-et-bedrock"
+    },
+    {
+      "id": "cb793a567b2e",
+      "title": "How should an LLM see a computer?",
+      "url": "https://www.greptile.com/blog/trex-computer-use",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T17:19:25.000Z",
+      "excerpt": "",
+      "summary": "Les LLM doivent intégrer une vision systémique des ordinateurs pour interagir efficacement avec leur environnement technique.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "llm-et-vision-systemique"
+    },
+    {
+      "id": "109d2f6894af",
+      "title": "Kagi Mail (public beta)",
+      "url": "https://blog.kagi.com/kagi-mail-public-beta",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T17:17:01.000Z",
+      "excerpt": "",
+      "summary": "Kagi lance une bêta publique de son service de messagerie axé sur la confidentialité et l'absence de publicité.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "messagerie-et-confidentialite"
+    },
+    {
+      "id": "3c69fd56490c",
+      "title": "Dario is hyping the dangers so OSS models are illegal and *he* stays in control",
+      "url": "https://twitter.com/ylecun/status/2124550037912920090",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T17:07:26.000Z",
+      "excerpt": "",
+      "summary": "Dario souligne les risques des modèles open source pour en restreindre l'usage et conserver son contrôle exclusif.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "regulations-et-licences-ia"
+    },
+    {
+      "id": "8ff68a49db63",
+      "title": "Amazon CloudFront Announces HTTP/2 Support for Connections to Origins",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-cloudfront-http2-origins/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "excerpt": "Amazon CloudFront now supports HTTP/2 connections to custom origins and VPC origins. HTTP/2 lets CloudFront send many requests over fewer connections to your origin. This means fewer connections and TLS handshakes for your origin to handle, which improves performance for API and agentic workloads, such as AI agents calling MCP servers or mobile and web apps calling backend APIs. Until now, CloudFront connected to origins only over HTTP/1.1, which handles one request at a time per connection. When traffic spiked, for example when an AI agent made many tool calls at once, CloudFront had to open more origin connections. Each new connection added latency and load. With HTTP/2, those requests share connections, so your origin does less work and responds faster. HTTP/2 is also supported for WebSocket connections that support extended CONNECT. If your origin doesn't support HTTP/2, CloudFront automatically falls back to HTTP/1.1, so you don't need to change anything on your origin. HTTP/2 to origins is available from all CloudFront edge locations. There is no additional cost for using HTTP/2 to origins. To learn more, visit Origin HTTP version in the CloudFront Developer Guide.",
+      "summary": "CloudFront supporte désormais HTTP/2 vers les origines, réduisant connexions et latence pour les APIs et charges AI.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "cloudfront-et-performances-reseau"
+    },
+    {
+      "id": "60fd17d3da0d",
+      "title": "Ladybird is now in alpha",
+      "url": "https://ladybird.org/posts/alpha/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T16:13:12.000Z",
+      "excerpt": "",
+      "summary": "Ladybird, un nouveau navigateur open source, entre en phase alpha, offrant une alternative aux solutions existantes.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "navigateurs-open-source"
+    },
+    {
+      "id": "17c082550a2d",
+      "title": "Kubernetes v1.38 Sneak Peek",
+      "url": "https://kubernetes.io/blog/2026/11/23/kubernetes-v1-38-sneak-peek/",
+      "source": "k8s-blog",
+      "sourceName": "Kubernetes Blog",
+      "publishedAt": "2026-11-23T16:00:00.000Z",
+      "excerpt": "As we get closer to the release date for Kubernetes v1.38, the project develops and matures, features may be deprecated, removed, or replaced with better ones for the project's overall health. This blog post outlines some of the planned changes for the Kubernetes v1.38 release that the release team feels you should be aware of for the continued maintenance of your Kubernetes environment and keeping up to date with the latest changes. The information listed below is based on the current status of the v1.38 release and may change before the actual release date. Deprecations and removals for Kubernetes v1.38 kubectl: WebSocket opt-out environment variables removed kubectl has used WebSockets instead of SPDY by default for kubectl exec , attach and cp since v1.30, and for kubectl port-forward since v1.31. The KUBECTL_REMOTE_COMMAND_WEBSOCKETS and KUBECTL_PORT_FORWARD_WEBSOCKETS environment variables let you turn that behavior off. These variables are going to be removed in v1.38. kubectl will then always try WebSockets first and fall back to SPDY when it needs to (the same as the current default behavior). If your scripts or CI environments set either of these environment variables, you can remove them since they will no longer have any effect. To learn more, refer to KEP-4006: Transition from SPDY to WebSockets . kubectl: name dropped from kuberc credential plugin allowlist entries The kuberc file keeps kubectl user preferences separate from cluster credentials in the kubeconfig, including an allowlist of the credential plugins kubectl is allowed to run. In the beta kubectl.config.k8s.io/v1beta1 API, an allowlist entry can use name as an alias for command . The name field (not command ) has been deprecated since v1.36. With kuberc expected to graduate to stable in v1.38, the new kubectl.config.k8s.io/v1 API will not include name . If any of your allowlist entries use name , change them to command now. To learn more, refer to KEP-3104: Separate kubectl user preferences ",
+      "summary": "Kubernetes v1.38 supprime les variables d'environnement de désactivation WebSocket pour kubectl et retire le nom des entrées de la liste blanche du plugin credential kuberc.",
+      "theme": "kubernetes",
+      "score": 90,
+      "dynamicTheme": "kubernetes-et-evolutions-core"
+    },
+    {
+      "id": "973d7b5f3866",
+      "title": "AWS Global Accelerator now preserves client IPs for NLBs with TLS listeners",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/global-accelerator-client-ip-nlb-tls/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T16:00:00.000Z",
+      "excerpt": "AWS Global Accelerator now preserves the client IP address for traffic sent to Network Load Balancer (NLB) endpoints with TLS listeners. You can terminate TLS at your NLB and still see the original client IP address in your application. This means you can apply security groups, geo-blocking, rate limiting, fraud detection, audit logging, allowlists, and compliance controls based on the real client IP. Previously, you couldn't add an NLB with a TLS listener to an accelerator that had client IP address preservation enabled. You had to choose between terminating TLS at the NLB and seeing the real client IP address. With this launch, you get both. This helps with workloads that need TLS termination at Layer 4, such as non-HTTP TCP protocols, applications that require static or Elastic IP addresses, and high-throughput traffic where a Layer 7 load balancer isn't a fit. To enable this feature, add an NLB with a TLS listener as an endpoint to an accelerator with client IP address preservation setting turned on, the same way you add any NLB. No additional configuration is required! Client IP address preservation for NLBs with TLS listeners is available at no additional charge in all AWS commercial Regions, excluding the AWS GovCloud (US) and China Regions. Standard Global Accelerator pricing applies. To learn more, see Client IP address preservation in the AWS Global Accelerator Developer Guide and Create a listener for your Network Load Balancer in the User Guide for Network Load Balancers.",
+      "summary": "AWS Global Accelerator préserve désormais l'IP client pour les NLB avec TLS, permettant sécurité et contrôle sans compromis.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "aws-networking-et-securite"
+    },
+    {
+      "id": "7f73e08fea4a",
+      "title": "Announcing metal size for Amazon EC2 G7 instances",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-metal-size/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T16:00:00.000Z",
+      "excerpt": "Today, AWS announces the general availability of the metal size for Amazon Elastic Compute Cloud (Amazon EC2) G7 instances, accelerated by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs. G7 instances deliver up to 4.6x AI inference performance and up to 2.1x graphics performance compared to G6. Customers can use the metal size of G7 instances to run physical AI simulations, deploy AI agent sandboxes, and accelerate graphics workloads that need direct access to bare metal infrastructure. G7 metal instances enable customers to run specialized workloads that require a custom virtualization stack, hypervisor-level GPU drivers, or licensing-restricted applications. The metal size of G7 instances feature 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory per GPU and custom Intel Xeon 6 processors. They support 192 virtual CPUs (vCPUs), 768 GiB of system memory, and 700 Gbps of Elastic Fabric Adapter (EFA) networking bandwidth. The new metal size is available in the AWS US East (N. Virginia) Region. You can purchase G7 metal instances as On-Demand Instances, Spot Instances, or as part of Savings Plans. To get started, use the AWS Management Console , AWS Command Line Interface (AWS CLI), or AWS SDKs. To learn more, visit the G7 instance page .",
+      "summary": "AWS lance les instances EC2 G7 bare metal avec 8 GPU NVIDIA RTX PRO 4500 Blackwell, boostant IA et graphismes jusqu'à 4,6x.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "aws-ec2-et-gpu-accelere"
+    },
+    {
+      "id": "b1caefccb46a",
+      "title": "Cyberleek posted the GTA 6 Xbox build executable",
+      "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3jzqe/cyberleek_posted_the_gta_6_xbox_build_executable/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T14:49:44.000Z",
+      "excerpt": "",
+      "summary": "Un exécutable de la version Xbox de GTA 6 fuite sur internet, révélant des détails techniques du jeu.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "leaks-et-securite-des-jeux"
+    },
+    {
+      "id": "6844a29e5137",
+      "title": "v3.8.0",
+      "url": "https://github.com/traefik/traefik/releases/tag/v3.8.0",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-23T14:45:59.000Z",
+      "excerpt": "Important: Please read the migration guide . Enhancement: [acme] Add reusePrivateKey option ( #13004 @ldez ) [docker, k8s/ingress, middleware, k8s/crd, k8s/gatewayapi] Add per router responding timeouts ( #13537 @sdelicata ) [k8s] Strip managedFields in informers ( #13396 @kevinpollet ) [k8s, k8s/gatewayapi] Support BackendTLSPolicy for TLSRoute ( #13332 @kevinpollet ) [k8s, nomad] Remove redundant provider config hashing ( #13446 @kevinpollet ) [k8s/crd] Add new forwarding timeouts in ServersTransport ( #12716 @LBF38 ) [k8s/crd] Resolve urn:k8s:configmap: in a plugin configuration ( #14118 @emilevauge ) [k8s/gatewayapi] Support Backend TLS policy for gRPC backends ( #13265 @KirylJazzSax ) [k8s/gatewayapi] Update Gateway API statuses once routing config is built ( #13327 @AnatoleLucet ) [k8s/gatewayapi] Consume TCPRoute through its v1 version and drop Gateway API v1.5.x support ( #13626 @rtribotte ) [k8s/gatewayapi] Isolate the Kubernetes Gateway API listeners ( #13738 @rtribotte ) [k8s/gatewayapi] Add Gateway API ListenerSet (GEP-1713) support ( #12909 @mydoomfr ) [k8s/gatewayapi] Add GatewayClass option ( #14029 @kevinpollet ) [k8s/gatewayapi] Support Gateway client certificate validation ( #14129 @gndz07 ) [k8s/gatewayapi] Support HTTPRoute backendRequest timeout ( #14130 @rtribotte ) [k8s/gatewayapi] Support Gateway backend client certificate ( #14119 @nmengin ) [k8s/gatewayapi] Support HTTPRoute retry ( #14127 @Neffi42 ) [k8s/gatewayapi] Support HTTPRoute RequestMirror filter ( #14123 @juliens ) [k8s/gatewayapi] Support ClusterTrustBundle CA certificate references ( #13410 @aliamerj ) [k8s/gatewayapi] Support Gateway API listener filters ( #14320 @rtribotte ) [k8s/ingress] Add reportNodeInternalIPs option to report node internal IPs in Ingress status ( #12920 @qwerty8811 ) [k8s/ingress] Optimize loadService calls for multiple paths sharing the same service host:port ( #13407 @nandorKollar ) [k8s/ingress-nginx] Add disableHTTPEntryPoint option ( #13354 @sinashah",
+      "summary": "Traefik v3.8.0 ajoute des timeouts par route, améliore la gestion TLS et supporte mieux Kubernetes Gateway API.",
+      "theme": "helm-traefik",
+      "score": 88,
+      "dynamicTheme": "traefik-et-proxy-modernes"
+    },
+    {
+      "id": "271634d3ffb7",
+      "title": "v3.7.20",
+      "url": "https://github.com/traefik/traefik/releases/tag/v3.7.20",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-23T14:42:28.000Z",
+      "excerpt": "Bug fixes: [acme] Bump github.com/go-acme/lego/v5 to v5.7.0 ( #14343 @ldez ) [acme, tls] Keep the OCSP staple cache janitor alive ( #14257 @rtribotte ) [docker, docker/swarm, http, k8s/knative] Redact static provider fields ( #14305 @jspdown ) [k8s] Split YAML test fixtures on CRLF document separators ( #13866 @masharma2004 ) [k8s/ingress-nginx] Apply the upstream vhost after the auth middleware ( #13787 @SaiPisey2 ) [logs] Redact the static plugin provider configuration ( #14304 @jspdown ) [middleware] Limit Brotli writer memory in the Compress middleware ( #14324 @rtribotte ) [middleware, k8s/ingress-nginx] Support the ^~ location modifier in ingress-nginx server-snippet ( #13904 @ArchitDewan ) [otel] Bump go.opentelemetry.io/otel/sdk/log to v1.47.0 ( #14315 @amazon7737 ) [otel] Bump go.opentelemetry.io/otel to v1.47.0 ( #14316 @kevinpollet ) [tls] Detect TLS options conflicts on hosts with a trailing dot ( #14192 @juliens ) Documentation: [accesslogs] Document entryPointName, trace_id and span_id JSON access log fields ( #14302 @kunalvirwal ) [k8s/crd] Add Failover TraefikService to the list affected by safeNaming ( #14262 @NEwa-05 ) [middleware, k8s/gatewayapi] Fix Gateway API conformance report and CRS ruleset links ( #14253 @sarankumar1325 )",
+      "summary": "Traefik v3.7.20 corrige des bugs de sécurité, améliore la gestion TLS/OCSP et redéfinit les logs statiques.",
+      "theme": "helm-traefik",
+      "score": 85,
+      "dynamicTheme": "traefik-et-securite"
+    },
+    {
+      "id": "558adad29284",
+      "title": "v2.11.64",
+      "url": "https://github.com/traefik/traefik/releases/tag/v2.11.64",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-23T14:38:09.000Z",
+      "excerpt": "Bug fixes: [logs] Redact the static plugin provider configuration ( #14304 @jspdown ) [otel] Bump go.opentelemetry.io/otel to v1.47.0 ( #14316 @kevinpollet ) [tls] Detect TLS options conflicts on hosts with a trailing dot ( #14192 @juliens )",
+      "summary": "Traefik v2.11.64 corrige des bugs de logs, de traces OpenTelemetry et de conflits TLS sur les noms de domaine.",
+      "theme": "helm-traefik",
+      "score": 75,
+      "dynamicTheme": "traefik-et-compatibilite"
+    },
+    {
+      "id": "4f7ed590dcad",
+      "title": "Building a wireless network adapter for the Super Nintendo",
+      "url": "https://boland.dev/snet/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T14:16:37.000Z",
+      "excerpt": "",
+      "summary": "Un adaptateur réseau sans fil a été créé pour la Super Nintendo, permettant une connectivité moderne.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "retrocomputing-et-hardware"
+    },
+    {
+      "id": "e3a79f42fb3c",
+      "title": "Nvidia Reinstates Jensen Huang as CEO",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T14:00:18.000Z",
+      "excerpt": "https:&#x2F;&#x2F;nvidianews.nvidia.com&#x2F;news&#x2F;nvidia-board-reinstates-j...",
+      "summary": "Nvidia réinstalle Jensen Huang comme PDG, renforçant sa direction stratégique pour l'IA et les GPU.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "strategie-corporate-et-ia"
+    },
+    {
+      "id": "452141429dfc",
+      "title": "Probing DNS at Cloudflare",
+      "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-23T14:00:00.000Z",
+      "excerpt": "Imagine this: you’ve just pushed a release. All the unit tests passed and your dashboards are green. You sit back to relax but then suddenly your phone starts blowing up: prod is broken. This is something the Cloudflare DNS team has experienced firsthand. In one rollout of the service that publishes DNS records to our edge, a scheduling bug let some record changes sit unpublished for hours. The service stayed up and was healthy, but new hostnames were slow to resolve and certificates couldn&#x27;t be issued until the bug was squashed. DNS failures are hard to catch because they are slow, spread across the network, and partial in where they cause impact. We needed to figure out a way to test DNS the way customers experience it: constantly, from every data center, and against production. For us, the answer was to extend Flamingo, the end-to-end testing framework we were already using to run hundreds of millions of tests a day against Cloudflare&#x27;s edge. This post covers how Flamingo&#x27;s modular design lets us add DNS support, how we measure propagation, and how those measurements now decide whether a release goes ahead or gets rolled back. A little background At Cloudflare we’re obsessed with improving performance and safety for our customers. It’s crucial that our code is tested constantly, both at scale and against the real Cloudflare edge that our users operate in. That’s one reason why we created a tool called Flamingo: to measure the behavior of our production environments and make sure that code in lower-tier environments behaves as expected. We’ve already written a little about how this tool has been used in the upgrades to our CDN stack. However, this is only a small portion of how we use Flamingo internally. One of the features of Flamingo is its modular architecture that enables teams to extend the capabilities of the tool to speak other networking protocols. In our case, we wanted to use these modular capabilities to test DNS. What is Flamingo? Testi",
+      "summary": "Cloudflare étend son outil Flamingo pour tester en continu la propagation DNS depuis ses datacenters et bloquer les déploiements défaillants.",
+      "theme": "observabilite",
+      "score": 78,
+      "dynamicTheme": "dns-et-resilience-infrastructure"
+    },
+    {
+      "id": "81ecb7742efe",
+      "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T13:42:38.000Z",
+      "excerpt": "We built NariQ: 3-bit-or-lower quantizations of Qwen3.8-27B that retain near-BF16 quality across agentic tasks, math, multilingual reasoning, and image understanding. To our knowledge, this is the first 3-bit-or-lower quantization that retains BF16 lvl performance on long-horizon agentic tasks. Benchmarks (BF16 &#x2F; 3-bit &#x2F; 2.5-bit &#x2F; 2-bit): - DeepSWE: 39.8 &#x2F; 41.0 &#x2F; 41.9 &#x2F; 28.6 - Terminal-Bench 2.1: 62.6 &#x2F; 63.8 &#x2F; 60.2 &#x2F; 52.4 - AIME 25+26: 97.7 &#x2F; 98.3 &#x2F; 96.5 &#x2F; 86.0 - MSGM: 94.0 &#x2F; 93.1 &#x2F; 91.8 &#x2F; 90.6 - RealWorldQA: 82.4 &#x2F; 82.4 &#x2F; 81.3 &#x2F; 80.9 Decode speed is comparable to other quants on an RTX PRO 6000. Context-length results below (3-bit &#x2F; 2.5-bit &#x2F; 2-bit &#x2F; Unsloth UD-IQ3_XXS): - 4K: 88.9 &#x2F; 99.2 &#x2F; 111.7 &#x2F; 94.7 - 16K: 84.5 &#x2F; 93.8 &#x2F; 105.1 &#x2F; 89.8 - 64K: 70.7 &#x2F; 77.5 &#x2F; 85.0 &#x2F; 74.8 Running these currently require our llama.cpp fork: ( https:&#x2F;&#x2F;github.com&#x2F;nari-labs&#x2F;nari-llama.cpp ) Feedback and questions welcome. We&#x27;d love to hear how these perform on your workloads.",
+      "summary": "NariQ réduit Qwen3.8-27B à 10 Go en 3 bits sans perte de performance BF16 sur tâches complexes.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "optimisation-llm-et-compression"
+    },
+    {
+      "id": "b1ae1a6721c6",
+      "title": "Win4wine – Run Windows Shell as the Linux Desktop on Wine",
+      "url": "https://github.com/mikuta0407/win4wine",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T12:28:11.000Z",
+      "excerpt": "",
+      "summary": "Win4wine permet d'exécuter l'interface Windows directement sur un bureau Linux via Wine.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "interoperabilite-os-et-wine"
+    },
+    {
+      "id": "96b9f4625de5",
+      "title": "The next circle of security hell",
+      "url": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T11:34:16.000Z",
+      "excerpt": "",
+      "summary": "Gentoo propose un nouveau modèle de sécurité pour Linux, changeant radicalement la gestion des permissions et des conteneurs.",
+      "theme": "securite-supply-chain",
+      "score": 95,
+      "dynamicTheme": "securite-linux-et-modeles-permissifs"
+    },
+    {
+      "id": "677c0e35fb16",
+      "title": "Nospeaker ─ Make your MacBook's trackpad talk using its haptic motor",
+      "url": "https://github.com/os6/nospeaker",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T11:31:54.000Z",
+      "excerpt": "",
+      "summary": "Nospeaker active le moteur haptique du trackpad d'un MacBook pour émuler des sons via des vibrations.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "innovations-hardware-et-usages"
+    },
+    {
+      "id": "5094532b4e2e",
+      "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+      "url": "https://z.ai/blog/glm-5.4",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T10:06:43.000Z",
+      "excerpt": "",
+      "summary": "GLM-5.4 introduit un premier transformateur de boucles pour coder de manière généralisée, améliorant l'automatisation des tâches.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "llm-et-automatisation-du-code"
+    },
+    {
+      "id": "51bc582a24f8",
+      "title": "Don't keep your SSH keys on disk",
+      "url": "https://jola.dev/posts/you-cant-afford-ssh-keys-disk",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T09:55:38.000Z",
+      "excerpt": "",
+      "summary": "Évitez de stocker vos clés SSH sur disque pour limiter les risques de compromission et renforcer la sécurité.",
+      "theme": "securite-supply-chain",
+      "score": 92,
+      "dynamicTheme": "securite-ssh-et-bonnes-pratiques"
+    },
+    {
+      "id": "c227f599a821",
+      "title": "Amazon SageMaker Studio now supports training job submission and model deployment for SageMaker HyperPod clusters",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-studio-hyperpod/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "excerpt": "Amazon SageMaker Studio now provides a native developer experience for Amazon SageMaker HyperPod, enabling data scientists to submit distributed training jobs, deploy models, and monitor workloads through a visual interface on HyperPod clusters orchestrated with Amazon Elastic Kubernetes Service (Amazon EKS). SageMaker HyperPod is a purpose-built infrastructure for distributed training and fine-tuning of foundation models at scale, designed to reduce infrastructure management overhead. Submitting training jobs and deploying custom models on HyperPod at scale requires familiarity with kubectl and authoring Kubernetes manifests, creating operational burden for data scientists who prefer to work in an interactive development environment. With this launch, data scientists can now submit distributed PyTorch and Ray training jobs and deploy models from Amazon SageMaker JumpStart, Amazon S3, or Amazon FSx, through single-page forms with a live YAML preview in SageMaker Studio. Compute configurations in the forms provide reusable resource presets that data scientists select when submitting training jobs or deploying models, eliminating manual compute entry. Metrics and logs are embedded directly in the detail pages, powered by HyperPod Observability and Amazon Managed Service for Prometheus, surfacing Kubernetes conditions and events, CloudWatch logs, and embedded metrics so data scientists can diagnose workloads without leaving their environment. For teams managing multiple workloads and using HyperPod task governance, Studio provides a unified queue view where users can see all pending tasks across training jobs and inference services, and adjust a task's priority class directly to optimize cluster utilization. These updates are available for HyperPod clusters orchestrated by Amazon EKS, in all AWS Regions where Amazon SageMaker HyperPod and Amazon SageMaker Studio are currently supported. To learn more, visit the Amazon SageMaker HyperPod in Studio documentation .",
+      "summary": "SageMaker Studio simplifie l'entraînement et le déploiement de modèles sur HyperPod via une interface visuelle, réduisant la complexité Kubernetes pour les data scientists.",
+      "theme": "ia-contact-center",
+      "score": 82,
+      "dynamicTheme": "aws-sagemaker-et-mlops"
+    },
+    {
+      "id": "e3b8a060fe6e",
+      "title": "Amazon Connect Customer AI agents now fill in step-by-step guides",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-ai-agents-fill-guides/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "excerpt": "AI agents in Amazon Connect Customer can now populate fields of a step-by-step guide for contact center agents during live customer interactions. With step-by-step guides, managers can design forms and other user interfaces for common workflows, such as rebooking a trip or submitting a claim. Now, AI agents can fill in a guide when it first loads and suggest updates during live conversations, saving time and improving data accuracy. When contact center agents speak to customers, they spend valuable time recording the information they need to solve the customer's problem in a step-by-step guide. For example, when a traveler calls an airline to change her flight, the agent might record her booking reference, dates of travel, and seat preferences. Now, Connect Customer's AI agents can automatically suggest and populate information like this, based on the context of the conversation. Human agents can review each suggestion, accept or reject suggestions individually or in bulk, and make any edits before submitting. The agent can focus on the customer and the problem at hand rather than on manual data entry. You can use AI agents with step-by-step guides in the following AWS regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), and Europe (London). To learn more and get started, see step-by-step guides in the Amazon Connect Customer administrator guide.",
+      "summary": "Amazon Connect AI remplit automatiquement les guides pas à pas pour les agents du centre d'appels, réduisant la saisie manuelle et accélérant les interactions.",
+      "theme": "ia-contact-center",
+      "score": 80,
+      "dynamicTheme": "aws-connect-et-ia-client"
+    },
+    {
+      "id": "3cd5fd111b89",
+      "title": "AWS CodeDeploy now supports suspending Amazon EC2 Auto Scaling processes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-codedeploy-suspend-asg-processes/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "excerpt": "AWS CodeDeploy can now suspend Amazon EC2 Auto Scaling processes during EC2 in-place deployments to Auto Scaling groups. CodeDeploy is a fully managed service that automates application deployments to Amazon EC2 instances, on-premises servers, AWS Lambda functions, and Amazon ECS services. This launch helps prevent scaling activities from terminating or replacing instances while CodeDeploy is updating them, which can cause a deployment to fail. You can choose to suspend any combination of these processes (Terminate, AZRebalance, InstanceRefresh, and ScheduledActions) on a deployment group, or on a single deployment. CodeDeploy suspends the processes you choose before it deploys and resumes them when the deployment succeeds, fails, or is stopped, so you don't need custom scripts to suspend and resume processes during deployments. A setting on the deployment group applies to every deployment in that group, including deployments that your existing pipelines start. You can configure this feature by using the CodeDeploy console, AWS Command Line Interface (AWS CLI), or AWS SDKs. This feature is available in all AWS Regions , including the AWS GovCloud (US) Regions and the China Regions. To learn more, see Suspending Amazon EC2 Auto Scaling processes during deployments in the AWS CodeDeploy User Guide , or visit the AWS CodeDeploy product page .",
+      "summary": "AWS CodeDeploy suspend désormais les processus d'Auto Scaling EC2 pendant les déploiements in-place pour éviter les échecs.",
+      "theme": "cicd-gitlab",
+      "score": 70,
+      "dynamicTheme": "aws-codedeploy-et-automatisation"
+    },
+    {
+      "id": "f7e0e838d30c",
+      "title": "AWS Systems Manager Automation now automates operational tasks in Azure and Google Cloud",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-multicloud-automation/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "excerpt": "AWS Systems Manager Automation now lets you create custom workflows (runbooks) that can automate operational tasks across Microsoft Azure, Google Cloud, and AWS resources. Automation helps you make changes safely at scale, such as remediating misconfigurations or cleaning up idle resources. Runbooks can roll out in controlled batches, pause for approval, and stop if errors pass a threshold. Instead of maintaining separate tools and credentials for each cloud, teams can now author and execute runbooks from a single place. Six new runbook actions call Azure and Google Cloud APIs, check a resource's state, and wait for operations to finish without custom code. You can target Azure resources by subscription, region, resource group, resource type, and tag. Google Cloud resources can be targeted by project, zone, asset type, and label. For more complex logic, aws:executeScript now includes Azure and Google Cloud Python SDKs and gets short-lived credentials from your Systems Manager Cloud Connector, so you don't store secrets in runbooks. For example, you can stop tagged development virtual machines outside business hours or fix storage buckets that don't meet your security policy. To get started, use the AWS-provided runbooks that install the SSM Agent or the Amazon Inspector agent on your Azure or Google Cloud virtual machines, or create your own custom workflow. This capability is available in all AWS Regions where you can create a Systems Manager Cloud Connector. To learn more, see Run automations on multicloud resources in the AWS Systems Manager User Guide, or visit the AWS Systems Manager product page .",
+      "summary": "AWS Systems Manager Automation automatise désormais des tâches multi-cloud (Azure, GCP) via des runbooks unifiés, simplifiant la gestion des ressources.",
+      "theme": "cicd-gitlab",
+      "score": 65,
+      "dynamicTheme": "aws-multi-cloud-et-automatisation"
+    },
+    {
+      "id": "e35ce14b60c4",
+      "title": "Amazon EC2 Capacity Blocks for ML now supports search across multiple instance types and AWS Regions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-blocks-ml-flex-search/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "excerpt": "Amazon EC2 Capacity Blocks for ML now lets customers search across multiple instance types and AWS Regions in a single search, making it easier to find and reserve the capacity their ML workloads need. With Capacity Blocks for ML, customers can reserve accelerated compute instances such as Amazon EC2 P6-B300, P6-B200, and Trn2 instances, for a future start date and for up to 6 months. Until now, customers looking to buy Capacity Blocks had to run a separate search for every instance type and Region combination. Starting today, customers can use a single search in the AWS Management Console to look for Capacity Blocks across multiple instance types and Regions, making it easier to secure capacity without repeated searches. Customers can also programmatically search for capacity across multiple instance types within a Region with a single API call using DescribeCapacityBlockOfferings. This feature is available for all Instance Capacity Blocks in AWS Regions where EC2 Capacity Blocks for ML are offered. For a complete list of supported regions, refer to Capacity Blocks documentation . To get started, visit the Capacity Blocks page in the Amazon EC2 console .",
+      "summary": "EC2 Capacity Blocks pour ML permet désormais de rechercher des instances multi-types et multi-régions en une seule action, simplifiant la réservation de capacité.",
+      "theme": "build-tooling",
+      "score": 60,
+      "dynamicTheme": "aws-ec2-et-capacite-ml"
+    },
+    {
+      "id": "8e7071e9ff9d",
+      "title": "Yes, 17M lines of Lean is a lot",
+      "url": "https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T05:00:49.000Z",
+      "excerpt": "",
+      "summary": "Lean 4 atteint 17 millions de lignes de code, marquant une croissance majeure pour ce langage de preuve formelle.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "langages-de-preuve-et-formels"
+    },
+    {
+      "id": "608fdf467c17",
+      "title": "SRE Weekly Issue #544",
+      "url": "https://sreweekly.com/sre-weekly-issue-544/",
+      "source": "sre-weekly",
+      "sourceName": "SRE Weekly (newsletter)",
+      "publishedAt": "2026-11-23T04:06:38.000Z",
+      "excerpt": "View on sreweekly.com A message from our sponsor, JAMS Software : Our support team moved its on-call off PagerDuty in under an hour. JAMS Incident Management checks your PagerDuty account read-only, then imports: schedules, rotations, and overrides escalation policies, teams, and people without emailing, texting, or calling anyone ☞ Run the PagerDuty conversion, free for 14 days The fix-forward trap Do you resolve an incident with a quick symptom-based mitigation or resolve the underlying problem? This is an incident commander&#8217;s perspective, and the four questions in the section toward the end are excellent. Brent Chapman Fix-mas 2026 Uptime Labs is back again with Fix-mas! Last year was full of plenty of goodies, and I&#8217;m looking forward to what they have planned for this year. Uptime Labs 29 October 2026 Binance Security Incident: Initial Findings and Response Update Here&#8217;s Binance&#8217;s write-up of their security breach. While the focus is security, it&#8217;s well worth reading both for the reliability implications and because it&#8217;s a great incident analysis. Binance Degrade gracefully: designing AI features that keep working when the model doesn&#8217;t This article shows us some of the ways to engineer reliability into and around features that depend on LLMs. I like the idea of building a fallback that doesn&#8217;t use models. Komal Ahuja &mdash; incident.io Quick thoughts on the GCP europe-west2-b outage Here are some thoughts from Lorin Hochstein on the GCP outage report I linked previously. I feel like &#8220;quick thoughts&#8221; really undersells the analysis here. Lorin Hochstein Your 02:30 cron job might run twice on October 25 What exactly will happen to your cron job during a daylight saving time transition? Will it run twice? Will it be skipped? These folks did a lot of homework for us. RunWisp Post Incident Report for Microsoft 365 Really well done, Microsoft! This report has a ton of interesting detail to dig into. Microsof",
+      "summary": "JAMS migre les on-call depuis PagerDuty en 1h, Binance analyse une faille majeure et des outils améliorent la résilience des IA.",
+      "theme": "ia-contact-center",
+      "score": 88,
+      "dynamicTheme": "sre-et-resilience-operations"
+    },
+    {
+      "id": "35cfea2e7f27",
+      "title": "XNU Linux: Full OS X GUI Userspace on Linux",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T03:49:24.000Z",
+      "excerpt": "",
+      "summary": "XNU Linux permet d'exécuter l'interface graphique d'OS X sur Linux via un noyau modifié.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "compatibility-os-et-kernel"
+    },
+    {
+      "id": "47b6ee4882ca",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611230212",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611230212",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-23T02:12:31.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, avec binaires disponibles.",
+      "theme": "observabilite",
+      "score": 72,
+      "dynamicTheme": "observabilite-et-opamp"
+    },
+    {
+      "id": "e71ce3430140",
+      "title": "cmd/builder/v0.166.0-nightly.202611230212",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611230212",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-23T02:12:30.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) avec binaires disponibles pour la branche principale.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "observabilite-et-collector-opentelemetry"
+    },
+    {
+      "id": "e5f41ceed55c",
+      "title": "v0.166.0-nightly.202611230212",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611230212",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-23T02:12:21.000Z",
+      "excerpt": "v0.166.0-nightly.202611230212: nightly build",
+      "summary": "Nouvelle version nightly v0.166.0 du Collector OpenTelemetry avec des mises à jour et corrections.",
+      "theme": "observabilite",
+      "score": 72,
+      "dynamicTheme": "observabilite-et-collector-opentelemetry"
+    },
+    {
+      "id": "048482af0e5e",
+      "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
+      "url": "https://spelunkr.tv",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T01:13:51.000Z",
+      "excerpt": "",
+      "summary": "Un réseau TV alternatif gratuit est créé à partir de vidéos oubliées de l'Internet Archive, offrant un accès inédit à du contenu historique.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "archives-et-innovation-media"
+    },
+    {
+      "id": "b45f26cf4654",
+      "title": "Evolving the Java Language: An Inside Perspective",
+      "url": "https://inside.java/2026/11/23/evolving-java-language/",
+      "source": "inside-java",
+      "sourceName": "Inside Java (OpenJDK)",
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "excerpt": "In this JavaOne keynote, Java Language Architect Brian Goetz takes you inside the process of evolving Java. Through examples spanning lambdas, records, pattern matching, virtual threads, etc., he explores the decisions, constraints, and tradeoffs behind features that feel like they’ve always belonged.",
+      "summary": "Java intègre records, pattern matching et virtual threads pour moderniser le langage avec des évolutions réfléchies.",
+      "theme": "java-jvm",
+      "score": 85,
+      "dynamicTheme": "evolutions-langage-java"
+    },
+    {
+      "id": "6ec4fb28b43f",
+      "title": "Nespresso's project to reduce grams of coffee per capsule",
+      "url": "https://alvinbunk.wordpress.com/2026/11/01/nespresso-project-olympus/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T23:57:45.000Z",
+      "excerpt": "",
+      "summary": "Nespresso réduit la quantité de café par capsule pour diminuer ses coûts et son impact environnemental.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "innovation-produit-et-eco-responsabilite"
+    },
+    {
+      "id": "4f0ed76760ef",
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-22T21:01:16.000Z",
+      "excerpt": "",
+      "summary": "L'article explique comment exécuter des modèles d'IA locaux comme Qwen avec Inkling et Unsloth pour débutants.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "llm-local-et-tutoriels"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "observabilite",
+      "trend": "CloudFront supporte désormais HTTP/2 vers les origines, réduisant la latence pour les APIs et charges AI, tandis que l'OpAMP Supervisor et le Collector OpenTelemetry voient des mises à jour nightly pour améliorer la collecte et la supervision des métriques.",
+      "topArticles": [
+        "452141429dfc",
+        "47b6ee4882ca",
+        "e5f41ceed55c",
+        "8ff68a49db63",
+        "e71ce3430140"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Gentoo propose un nouveau modèle de sécurité pour Linux, changeant radicalement la gestion des permissions et des conteneurs, tandis que des recommandations renforcent la protection des clés SSH et des politiques d'images.",
+      "topArticles": [
+        "96b9f4625de5",
+        "51bc582a24f8",
+        "973d7b5f3866"
+      ]
+    },
+    {
+      "id": "helm-traefik",
+      "label": "Helm / Traefik",
+      "trend": "Traefik v3.8.0 introduit des timeouts par route et améliore la gestion TLS, tandis que les versions v3.7.20 et v2.11.64 corrigent des bugs de sécurité et de logs, consolidant la stabilité des déploiements.",
+      "topArticles": [
+        "6844a29e5137",
+        "271634d3ffb7",
+        "558adad29284"
+      ]
+    },
+    {
+      "id": "ia-contact-center",
+      "label": "IA dans le contact center",
+      "trend": "Amazon Connect intègre des agents IA pour automatiser les guides pas à pas et simplifier les interactions, tandis que SageMaker Studio supporte désormais les clusters HyperPod pour des déploiements de modèles plus accessibles.",
+      "topArticles": [
+        "608fdf467c17",
+        "c227f599a821",
+        "e3b8a060fe6e"
+      ]
+    },
+    {
+      "id": "cicd-gitlab",
+      "label": "CI/CD — GitLab CI",
+      "trend": "AWS Systems Manager Automation étend ses capacités multi-cloud (Azure, GCP) via des runbooks unifiés, tandis que CodeDeploy supporte désormais la suspension des processus d'Auto Scaling pendant les déploiements.",
+      "topArticles": [
+        "3cd5fd111b89",
+        "f7e0e838d30c"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "trend": "Kubernetes v1.38 supprime des variables d'environnement obsolètes pour kubectl et retire des entrées de liste blanche dans les plugins credential, marquant une étape de nettoyage des APIs et configurations historiques.",
+      "topArticles": [
+        "17c082550a2d"
+      ]
+    },
+    {
+      "id": "iac-opentofu",
+      "label": "IaC — OpenTofu",
+      "trend": "OpenTofu v1.13.10 corrige des failles de sécurité Go et des bugs de modules, renforçant la fiabilité des infrastructures définies par code.",
+      "topArticles": [
+        "74b9081d9889"
+      ]
+    },
+    {
+      "id": "ccaas-aws-connect",
+      "label": "CCaaS — Amazon Connect / AWS",
+      "trend": "AWS Partner Central étend l'accès aux données analytiques via des agents IA et des exports S3 quotidiens, simplifiant l'intégration pour les partenaires.",
+      "topArticles": [
+        "4a01a17c65c4"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "Java intègre des évolutions comme les records, le pattern matching et les virtual threads, modernisant le langage avec des changements réfléchis pour les développeurs.",
+      "topArticles": [
+        "b45f26cf4654"
+      ]
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & tooling",
+      "trend": "EC2 Capacity Blocks pour ML permet désormais de rechercher des instances multi-types et multi-régions en une seule action, simplifiant la réservation de capacité pour les workloads ML.",
+      "topArticles": [
+        "e35ce14b60c4"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "releases-majeures",
+      "label": "Releases majeures et correctifs",
+      "trend": "Plusieurs correctifs de sécurité et mises à jour majeures sont publiés aujourd'hui, notamment pour des outils centraux comme OpenTofu, Traefik et Kubernetes. Les versions corrigent des vulnérabilités Go, des bugs de modules et des problèmes de compatibilité TLS, reflétant une attention accrue à la stabilité et à la sécurité des infrastructures.",
+      "topArticles": [
+        "74b9081d9889"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 42,
+    "promptTokens": 18930,
+    "completionTokens": 6540,
+    "estimatedCostEur": 0.007093200000000001
+  }
+}
