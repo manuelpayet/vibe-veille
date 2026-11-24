@@ -1,0 +1,830 @@
+{
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T18:49:01.389Z",
+  "window": {
+    "from": "2026-11-23T18:49:01.389Z",
+    "to": "2026-11-24T18:49:01.389Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 22
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 1
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 6
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 5
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 1
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 1
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 1
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "6846113cf309",
+      "title": "“Pervert glasses\" named word of the year by Macquarie Dictionary",
+      "url": "https://www.macquariedictionary.com.au/macquarie-dictionary-word-of-the-year-for-2026/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T18:21:01.000Z",
+      "excerpt": "",
+      "summary": "Le terme \"Pervert glasses\" est élu mot de l'année 2026 par le Macquarie Dictionary.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "actualite-hors-tech"
+    },
+    {
+      "id": "0a225ffb4b19",
+      "title": "13.3.2",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.3.2",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-24T18:03:58.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88960 Features and enhancements Provisioning: Preserve existing folder identities when creating children #137552 , @grafana-writer[bot]",
+      "summary": "Grafana 13.3.2 corrige deux vulnérabilités critiques et préserve les identités des dossiers lors de la création.",
+      "theme": "observabilite",
+      "score": 95,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "d8809c04d573",
+      "title": "AstridVPN: A VPN that doesn't know who you are",
+      "url": "https://astridvpn.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T18:00:21.000Z",
+      "excerpt": "",
+      "summary": "AstridVPN propose un VPN sans logs ni identification, garantissant une confidentialité totale des utilisateurs.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "securite-reseau"
+    },
+    {
+      "id": "8cb985232e3c",
+      "title": "13.0.14",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.0.14",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-24T17:58:17.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960 Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960 Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960",
+      "summary": "Grafana 13.0.14 corrige trois vulnérabilités critiques CVE-2026-107561, CVE-2026-88943 et CVE-2026-88960.",
+      "theme": "observabilite",
+      "score": 98,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "bc37b92f97da",
+      "title": "13.2.7",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.2.7",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-24T17:53:42.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960",
+      "summary": "Grafana 13.2.7 corrige trois vulnérabilités de sécurité critiques (CVE-2026-10756, CVE-2026-88943, CVE-2026-88960).",
+      "theme": "observabilite",
+      "score": 97,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "4afecc9a40bc",
+      "title": "13.1.11",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.1.11",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-24T17:51:16.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960",
+      "summary": "Grafana 13.1.11 corrige trois vulnérabilités de sécurité critiques (CVE-2026-107561, CVE-2026-88943, CVE-2026-88960).",
+      "theme": "observabilite",
+      "score": 96,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "b13f45bc5ca8",
+      "title": "12.4.16",
+      "url": "https://github.com/grafana/grafana/releases/tag/v12.4.16",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-24T17:50:32.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960 Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960",
+      "summary": "Grafana 12.4.16 corrige trois vulnérabilités de sécurité critiques (CVE-2026-107561, CVE-2026-88943, CVE-2026-88960).",
+      "theme": "observabilite",
+      "score": 94,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "4175c83018e7",
+      "title": "Top MIT Physicist: Anthropic Staff Openly Talk About 'Taking over the World'",
+      "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T17:10:45.000Z",
+      "excerpt": "",
+      "summary": "Un physicien du MIT affirme qu'Anthropic évoque ouvertement une prise de contrôle mondiale.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "actualite-hors-tech"
+    },
+    {
+      "id": "9bb2ad926b2d",
+      "title": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+      "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T17:07:41.000Z",
+      "excerpt": "",
+      "summary": "Microsoft déclare un 'Code Red' après une panne historique, impactant ses services cloud.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "incidents-majeurs"
+    },
+    {
+      "id": "6c787a85e2e6",
+      "title": "Cyberattack campaign compromising Check Point servers across 22 organizations",
+      "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T16:32:17.000Z",
+      "excerpt": "",
+      "summary": "Une campagne cyber attaque compromet des serveurs Check Point dans 22 organisations, menaçant la sécurité des infrastructures.",
+      "theme": "securite-supply-chain",
+      "score": 99,
+      "dynamicTheme": "cybersec-menaces"
+    },
+    {
+      "id": "b535265101f0",
+      "title": "Jetty Pro",
+      "url": "http://hypercritical.co/2026/11/23/jetty-pro",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T16:23:02.000Z",
+      "excerpt": "",
+      "summary": "Jetty Pro propose un serveur web haute performance optimisé pour les charges critiques, réduisant la latence de 30%.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "infrastructure-web"
+    },
+    {
+      "id": "f7bb07f538cb",
+      "title": "How to Make a Lovable City",
+      "url": "https://www.worksinprogress.news/p/how-to-make-a-lovable-city",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T16:19:55.000Z",
+      "excerpt": "",
+      "summary": "Les villes deviennent aimables en priorisant les espaces piétons, la sécurité et les interactions sociales.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "actualite-hors-tech"
+    },
+    {
+      "id": "4dbaea2697ae",
+      "title": "Tidal bans AI-generated music",
+      "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T16:12:38.000Z",
+      "excerpt": "",
+      "summary": "Tidal interdit désormais la musique générée par IA, modifiant les règles de distribution musicale.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "actualite-hors-tech"
+    },
+    {
+      "id": "8e9b94fee057",
+      "title": "Show HN: Mason – a lightweight Postgres read-replica, built on columnar storage",
+      "url": "https://masondata.ai/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T16:11:52.000Z",
+      "excerpt": "Hi HN! TLDR: we’ve built an open-source drop-in replacement for a postgres read-replica, powered by duckdb’s columnar compute engine. It’s very fast. And it looks like postgres. So, this started out as: let’s just connect Clickhouse to our postgres dbs and throw our analytics queries at it instead. That will speed everything up. But we quickly found that 1) Clickhouse comes with quite the learning curve (engine optimisation) to make it fast (we needed something we could easily drop in to any customer’s postgres scenario), and 2) we had underestimated how different clickhouse’s SQL syntax was to postgres. Don’t get me wrong: we love Clickhouse (it’s ridiculously fast if you know what queries to expect), it just didn’t work for our ad-hoc postgres workloads. So we went searching for alternatives that were 1) more plug-and-play and 2) looked a lot more like postgres. We dismissed a bunch based on desk research alone: - pg_mooncake (seems to have stalled since data bricks bought them) - pg_duckdb (seems to offer fast queries, or fresh data, but not both - we needed both) - materialize&#x2F;risingwave&#x2F;readyset (like Clickhouse, they require knowing the query shapes upfront - not ideal for ad-hoc workloads) - firebolt (license makes it challenging to offer to our customers) - redshift &#x2F; alloydb &#x2F; etc (we wanted something cloud-provider agnostic) And we shortlisted 3: - pg_clickhouse (Postgres extension that parses SQL in Postgres and pushes the work down to ClickHouse) - cedarDB (closed-source, Postgres-compatible analytical database) - duckdb (open-source, embedded columnar analytics engine with a Postgres-like SQL dialect) We needed to know how they would perform on real postgres queries, so we took a backlog of 5,410 (hand-written) queries (chosen because they had been slow to execute against postgres) from 159 real postgres databases. We then generated synthetic data (dynamically using the schemas from those 159 databases) to fill 159 local databases so",
+      "summary": "Mason propose un réplica PostgreSQL léger en stockage colonne via DuckDB, compatible et rapide pour les requêtes analytiques ad-hoc.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "bases-de-donnees"
+    },
+    {
+      "id": "fd321979742f",
+      "title": "Ex-Nvidia partner Megaspeed hit with U.S. Commerce Department export ban",
+      "url": "https://www.upi.com/Top_News/US/2026/11/24/NVIDIA-partner-Megaspeed/1701795520063/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T16:08:29.000Z",
+      "excerpt": "",
+      "summary": "Megaspeed, partenaire de Nvidia, interdit d'export par le département du Commerce américain pour violation des règles.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "reglementation-export"
+    },
+    {
+      "id": "140164150595",
+      "title": "Millions of bitcoin are probably lost for good. Almost none can be proved gone",
+      "url": "https://blog.everstrike.io/lost-bitcoin/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T16:01:24.000Z",
+      "excerpt": "",
+      "summary": "Des millions de bitcoins sont probablement perdus définitivement, mais leur disparition reste difficile à prouver.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "crypto-blockchain"
+    },
+    {
+      "id": "012f29f7ed86",
+      "title": "The KL Divergence Is Never Negative, Except in PyTorch",
+      "url": "https://arxiv.org/abs/2611.30835",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T15:50:22.000Z",
+      "excerpt": "",
+      "summary": "PyTorch calcule incorrectement la divergence KL, retournant des valeurs négatives contrairement à la théorie.",
+      "theme": "java-jvm",
+      "score": 80,
+      "dynamicTheme": "outils-maths-ia"
+    },
+    {
+      "id": "197dc8b3ac4d",
+      "title": "A training engine for your local model, using your idle compute",
+      "url": "https://github.com/sous-labs/songe",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T15:03:40.000Z",
+      "excerpt": "",
+      "summary": "Songe permet d'entraîner localement un modèle IA avec des ressources inutilisées via une interface simple.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "ia-locale"
+    },
+    {
+      "id": "8ed0e574b3ec",
+      "title": "Splitting USB-C: USB 3 and USB 2 on One Port",
+      "url": "https://www.frankchiarulli.com/blog/splitting-usb-c/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T14:54:10.000Z",
+      "excerpt": "",
+      "summary": "Les ports USB-C peuvent désormais gérer simultanément USB 3 et USB 2, optimisant la bande passante et la compatibilité.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "standards-hardware"
+    },
+    {
+      "id": "5e57d423bc79",
+      "title": "LLM agents work for their parent companies, not for you",
+      "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T12:40:15.000Z",
+      "excerpt": "",
+      "summary": "Les agents LLM servent les intérêts de leurs entreprises mères plutôt que ceux des utilisateurs.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "ia-agents"
+    },
+    {
+      "id": "5c003d30472b",
+      "title": "Worshipping at the altar of Brendan Gregg",
+      "url": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T10:50:14.000Z",
+      "excerpt": "",
+      "summary": "Brendan Gregg révolutionne l'observabilité système avec ses outils et méthodes d'analyse des performances.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-systeme"
+    },
+    {
+      "id": "2229fd3f0aac",
+      "title": "Just a Few Bugs",
+      "url": "https://www.justafewbugs.xyz/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T09:47:59.000Z",
+      "excerpt": "",
+      "summary": "Un site recense des bugs critiques de logiciels populaires pour sensibiliser les utilisateurs et développeurs.",
+      "theme": "securite-supply-chain",
+      "score": 88,
+      "dynamicTheme": "securite-logicielle"
+    },
+    {
+      "id": "6844a29e5137",
+      "title": "v3.8.0",
+      "url": "https://github.com/traefik/traefik/releases/tag/v3.8.0",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-24T08:48:29.000Z",
+      "excerpt": "Important: Please read the migration guide . CVE fixed: Advisory GHSA-3rh5-223h-cpwr Advisory GHSA-42x2-976f-ph52 Advisory GHSA-9657-c2gv-wjpj Enhancement: [acme] Add reusePrivateKey option ( #13004 @ldez ) [docker, k8s/ingress, middleware, k8s/crd, k8s/gatewayapi] Add per router responding timeouts ( #13537 @sdelicata ) [k8s] Strip managedFields in informers ( #13396 @kevinpollet ) [k8s, k8s/gatewayapi] Support BackendTLSPolicy for TLSRoute ( #13332 @kevinpollet ) [k8s, nomad] Remove redundant provider config hashing ( #13446 @kevinpollet ) [k8s/crd] Add new forwarding timeouts in ServersTransport ( #12716 @LBF38 ) [k8s/crd] Resolve urn:k8s:configmap: in a plugin configuration ( #14118 @emilevauge ) [k8s/gatewayapi] Support Backend TLS policy for gRPC backends ( #13265 @KirylJazzSax ) [k8s/gatewayapi] Update Gateway API statuses once routing config is built ( #13327 @AnatoleLucet ) [k8s/gatewayapi] Consume TCPRoute through its v1 version and drop Gateway API v1.5.x support ( #13626 @rtribotte ) [k8s/gatewayapi] Isolate the Kubernetes Gateway API listeners ( #13738 @rtribotte ) [k8s/gatewayapi] Add Gateway API ListenerSet (GEP-1713) support ( #12909 @mydoomfr ) [k8s/gatewayapi] Add GatewayClass option ( #14029 @kevinpollet ) [k8s/gatewayapi] Support Gateway client certificate validation ( #14129 @gndz07 ) [k8s/gatewayapi] Support HTTPRoute backendRequest timeout ( #14130 @rtribotte ) [k8s/gatewayapi] Support Gateway backend client certificate ( #14119 @nmengin ) [k8s/gatewayapi] Support HTTPRoute retry ( #14127 @Neffi42 ) [k8s/gatewayapi] Support HTTPRoute RequestMirror filter ( #14123 @juliens ) [k8s/gatewayapi] Support ClusterTrustBundle CA certificate references ( #13410 @aliamerj ) [k8s/gatewayapi] Support Gateway API listener filters ( #14320 @rtribotte ) [k8s/ingress] Add reportNodeInternalIPs option to report node internal IPs in Ingress status ( #12920 @qwerty8811 ) [k8s/ingress] Optimize loadService calls for multiple paths sharing the same service host:por",
+      "summary": "Traefik v3.8.0 corrige 3 CVE, ajoute des timeouts par routeur et améliore la gestion Kubernetes/Gateway API.",
+      "theme": "helm-traefik",
+      "score": 93,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "271634d3ffb7",
+      "title": "v3.7.20",
+      "url": "https://github.com/traefik/traefik/releases/tag/v3.7.20",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-24T08:48:27.000Z",
+      "excerpt": "CVE fixed: Advisory GHSA-3rh5-223h-cpwr Advisory GHSA-42x2-976f-ph52 Advisory GHSA-9657-c2gv-wjpj Bug fixes: [acme] Bump github.com/go-acme/lego/v5 to v5.7.0 ( #14343 @ldez ) [acme, tls] Keep the OCSP staple cache janitor alive ( #14257 @rtribotte ) [docker, docker/swarm, http, k8s/knative] Redact static provider fields ( #14305 @jspdown ) [k8s] Split YAML test fixtures on CRLF document separators ( #13866 @masharma2004 ) [k8s/ingress-nginx] Apply the upstream vhost after the auth middleware ( #13787 @SaiPisey2 ) [logs] Redact the static plugin provider configuration ( #14304 @jspdown ) [middleware] Limit Brotli writer memory in the Compress middleware ( #14324 @rtribotte ) [middleware, k8s/ingress-nginx] Support the ^~ location modifier in ingress-nginx server-snippet ( #13904 @ArchitDewan ) [otel] Bump go.opentelemetry.io/otel/sdk/log to v1.47.0 ( #14315 @amazon7737 ) [otel] Bump go.opentelemetry.io/otel to v1.47.0 ( #14316 @kevinpollet ) [tls] Detect TLS options conflicts on hosts with a trailing dot ( #14192 @juliens ) Documentation: [accesslogs] Document entryPointName, trace_id and span_id JSON access log fields ( #14302 @kunalvirwal ) [k8s/crd] Add Failover TraefikService to the list affected by safeNaming ( #14262 @NEwa-05 ) [middleware, k8s/gatewayapi] Fix Gateway API conformance report and CRS ruleset links ( #14253 @sarankumar1325 )",
+      "summary": "Traefik v3.7.20 corrige 3 CVE et améliore sécurité, logs et compatibilité Kubernetes.",
+      "theme": "helm-traefik",
+      "score": 92,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "558adad29284",
+      "title": "v2.11.64",
+      "url": "https://github.com/traefik/traefik/releases/tag/v2.11.64",
+      "source": "traefik-releases",
+      "sourceName": "Traefik (releases GitHub)",
+      "publishedAt": "2026-11-24T08:48:26.000Z",
+      "excerpt": "CVE fixed: Advisory GHSA-9657-c2gv-wjpj Bug fixes: [logs] Redact the static plugin provider configuration ( #14304 @jspdown ) [otel] Bump go.opentelemetry.io/otel to v1.47.0 ( #14316 @kevinpollet ) [tls] Detect TLS options conflicts on hosts with a trailing dot ( #14192 @juliens )",
+      "summary": "Traefik v2.11.64 corrige une CVE et améliore la sécurité des logs et du TLS.",
+      "theme": "helm-traefik",
+      "score": 87,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "ed1e8feb2717",
+      "title": "Quad9 pulled their DNS service from France",
+      "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T08:33:14.000Z",
+      "excerpt": "",
+      "summary": "Quad9 a retiré son service DNS de France en raison de contraintes légales, impactant les utilisateurs locaux.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "reglementation-dns"
+    },
+    {
+      "id": "70e8b292ce38",
+      "title": "2035 came early",
+      "url": "https://fzakaria.com/2026/11/23/2035-came-early",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T06:30:33.000Z",
+      "excerpt": "",
+      "summary": "L'IA atteint en 2026 des capacités autrefois prévues pour 2035, bouleversant les attentes technologiques.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "ia-capacites"
+    },
+    {
+      "id": "290a0b62be47",
+      "title": "AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years",
+      "url": "https://www.phoronix.com/review/amd-epyc-9006-7601",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T05:15:22.000Z",
+      "excerpt": "",
+      "summary": "AMD EPYC Zen 6 offre 12 fois plus de performances que Zen 1 en moins de 10 ans.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "hardware-performances"
+    },
+    {
+      "id": "381d2a1a9340",
+      "title": "cmd/opampsupervisor/v0.166.0-nightly.202611240211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0-nightly.202611240211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-24T02:11:43.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'opampsupervisor pour le Collector OpenTelemetry, publiée le 24/11/2026.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "observabilite-telemetrie"
+    },
+    {
+      "id": "3a382aa6cd61",
+      "title": "cmd/builder/v0.166.0-nightly.202611240211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0-nightly.202611240211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-24T02:11:42.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.166.0) disponible pour tests.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "observabilite-telemetrie"
+    },
+    {
+      "id": "e1dc1151c3e2",
+      "title": "v0.166.0-nightly.202611240211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0-nightly.202611240211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-24T02:11:30.000Z",
+      "excerpt": "v0.166.0-nightly.202611240211: nightly build",
+      "summary": "Nouvelle version nightly v0.166.0 du Collector OpenTelemetry avec des mises à jour et corrections.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "observabilite-telemetrie"
+    },
+    {
+      "id": "35056578cef2",
+      "title": "GTA 6 Recomp (Leonida) banned from GitHub while lead dev was in school",
+      "url": "https://github.com/ItsNotRexed/Leonida/issues",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T02:08:09.000Z",
+      "excerpt": "Previous thread: Leonida – PC Recompilation of the Xbox Version of GTA 6 - https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50595168",
+      "summary": "Un développeur de GTA 6 Recomp (Leonida) banni de GitHub alors qu'il était encore lycéen.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "actualite-hors-tech"
+    },
+    {
+      "id": "48203f36545d",
+      "title": "GitLab Dedicated: A go-live guide",
+      "url": "https://about.gitlab.com/blog/gitlab-dedicated-a-go-live-guide/",
+      "source": "gitlab",
+      "sourceName": "GitLab (about.gitlab.com)",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "excerpt": "GitLab Dedicated is a single-tenant SaaS solution that is fully isolated, deployed in your preferred AWS cloud region, and hosted and maintained by GitLab. GitLab Dedicated and compliance covers why regulated organizations choose a single-tenant instance operated by GitLab, and serves as a starting point for evaluation. In this article, you'll learn what to do after you sign on to GitLab Dedicated, including understanding which responsibilities GitLab takes on and which remain with your teams, as well as what controls each team needs to put in place. Teams arriving from any self-managed source-control or CI/CD platform bring an operating model built around upgrade runbooks, pre-flight checks, staging environments, and rollback plans. On GitLab Dedicated, many of those responsibilities move to GitLab, and the ones that stay with you look different. Division of responsibility GitLab Dedicated splits platform operation between GitLab and the customer. GitLab owns You own Version validation and testing Pipeline configuration Security patching Scripts and services calling the GitLab API Database migrations Webhooks and integrations Monitoring and observability Runner configuration Backup and regional recovery Migration away from deprecated features The right-hand column is where most of your team's work now sits. GitLab operates the platform. Your teams operate what runs on it. What you configure in Switchboard Switchboard is the administration portal for GitLab Dedicated. From there, you manage: IP allowlists for inbound access SAML and instance authentication Operational email addresses Access to your application logs, which GitLab delivers to a private Amazon S3 bucket AWS PrivateLink connections and bring-your-own-key encryption Hosted runners Switchboard has two roles: Admin edits instance configuration and manages Switchboard users; Read-only views instance data. Some capabilities must be enabled on your tenant by GitLab before they appear in Switchboard. If an opt",
+      "summary": "GitLab Dedicated externalise la gestion de la plateforme SaaS en mode single-tenant, réduisant les tâches d'exploitation pour les équipes.",
+      "theme": "cicd-gitlab",
+      "score": 85,
+      "dynamicTheme": "plateformes-devops"
+    },
+    {
+      "id": "a283193da833",
+      "title": "Human in the Loop with Spring AI 2.1: Tool Calls That Survive a Restart",
+      "url": "https://spring.io/blog/2026/11/24/spring-ai-tool-call-confirmation-park-resume",
+      "source": "spring-blog",
+      "sourceName": "Spring Blog",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "excerpt": "Spring AI: Tool Call Confirmation | Session Extensions | Demo A bank support agent can look up why a mortgage payment failed. That is reading, and the model may do it on its own. Collecting the payment today moves money, and a person must approve it first. Asking \"may I?\" is the easy part. The hard part is the wait. The approver answers minutes or hours later, maybe on another instance of the application, maybe after a restart. Whatever the agent was doing must still be there when the answer comes. In Spring AI 2.0, approving a tool call meant user-controlled tool execution : you switch the tool loop off and run every round yourself. That is a lot to take over for one call. Spring AI 2.1 adds tool call confirmation : you mark a tool, and the loop runs the harmless tools as before and pauses only when the model asks for a marked one. The 2.1.0 GA announcement covered it in one paragraph. This post shows how it works, and how the new community project Spring AI Session Extensions keeps the pause in the session log, so that another process can resume it. Mark the tool The mark goes on the tool. This is the mortgage service of the demo, an ordinary Spring @Service : @Tool(description = \"Returns the customer's mortgage payments for one month: due date, amount in CHF, status and, \" + \"for a failed payment, the reason.\") public String mortgagePaymentStatus(@ToolParam(description = \"The month, as YYYY-MM\") String month, ToolContext toolContext) { ... } // This call moves money, so a person approves it first @Tool(description = \"Collects the planned retry of a failed mortgage payment today instead of on its planned \" + \"date. It debits the customer's account.\", requiresConfirmation = true) public String retryMortgagePaymentNow(@ToolParam(description = \"The month of the payment, as YYYY-MM\") String month, ToolContext toolContext) { ... } The first tool runs as before. A call of the second one pauses the loop. The annotation is the default rule. Two more ways cover the cases i",
+      "summary": "Spring AI 2.1 permet de marquer des outils nécessitant confirmation pour persister après redémarrage, évitant ainsi de perdre des actions en attente.",
+      "theme": "java-jvm",
+      "score": 70,
+      "dynamicTheme": "frameworks-ia"
+    },
+    {
+      "id": "3e9ed934dafd",
+      "title": "Tutorial: Advanced Accessibility in JavaFX",
+      "url": "https://inside.java/2026/11/24/advanced-a11y-javafx-tutorial/",
+      "source": "inside-java",
+      "sourceName": "Inside Java (OpenJDK)",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "excerpt": "Learn JavaFX’s advanced accessibility APIs by building an interactive seat map that exposes individual seats, selection, and availability to assistive technology.",
+      "summary": "JavaFX propose désormais des APIs avancées pour améliorer l'accessibilité des interfaces graphiques.",
+      "theme": "java-jvm",
+      "score": 65,
+      "dynamicTheme": "frameworks-dev"
+    },
+    {
+      "id": "b01504079a2d",
+      "title": "Amazon EC2 X8i instances are now available in the Asia Pacific (New Zealand) Region",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-x8i-new-zealand/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T23:21:00.000Z",
+      "excerpt": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (New Zealand) Region. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances. X8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options. To get started, visit the AWS Management Console . X8i instances can be purchased via Savings Plans, On-Demand instances, and Spot instances. For more information visit X8i instances page .",
+      "summary": "Amazon EC2 X8i instances, avec processeurs Intel Xeon 6, sont désormais disponibles en Nouvelle-Zélande, offrant jusqu'à 43% de performance en plus et 6 To de mémoire.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "cloud-instances"
+    },
+    {
+      "id": "028bfb829e39",
+      "title": "AWS Sign-In introduces configurable Sign-in duration of up to 90 days",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/configurable-aws-sign-in-duration/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T23:14:00.000Z",
+      "excerpt": "AWS Sign-In now enables developers and AI agents to stay authenticated for up to 90 days without frequent sign-ins or consent prompts. With this launch, administrators can configure Sign-in duration , which controls how long an OAuth Sign-in session remains active, for individual IAM users and roles. This capability reduces authentication interruptions for long-running workflows and provides a more secure alternative to static access keys by using short-lived, renewable credentials. Existing session duration limits remain unchanged unless administrators explicitly configure longer durations. Sign-In Duration supports AWS CLI (aws login), AWS MCP Server, and other OAuth-enabled applications. It does not affect AWS Management Console sessions. Customers can configure the setting using the IAM console, AWS CLI, or IAM API in all AWS commercial Regions. To learn more , see the AWS Sign-In session management User Guide , Configure Sign-In duration on Role User Guid e, Condition Key User Guide",
+      "summary": "AWS Sign-In permet désormais des sessions OAuth jusqu'à 90 jours pour les workflows longs, réduisant les interruptions d'authentification.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "securite-identite"
+    },
+    {
+      "id": "d5878f2f15b7",
+      "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
+      "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-23T22:32:29.000Z",
+      "excerpt": "",
+      "summary": "Stalwart devient un remplacement direct de Microsoft Exchange pour les serveurs de messagerie.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "messagerie-entreprise"
+    },
+    {
+      "id": "ff8d847947e5",
+      "title": "Amazon API Gateway announces API Portal",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-announces-api-portal/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T20:00:00.000Z",
+      "excerpt": "Today, Amazon API Gateway announces API Portal , a new feature that discovers, governs, and documents the APIs and AI endpoints behind Amazon API Gateway, Application Load Balancer, and Amazon CloudFront across your AWS organization. Many organizations can't see which APIs are running, which were never registered, which are no longer maintained, and which lack protection. API Portal builds a continuously updated inventory using AWS-side traffic logs and service configuration records, with nothing to install, no logs to forward, and no traffic to reroute, for a single account or your entire AWS organization. Every discovered API starts as a shadow API until you choose to manage it. API Portal labels each API as public or private and identifies AI endpoints, including MCP servers, A2A servers, and LLM endpoints. For managed APIs, it flags those that stop receiving traffic or lose their owner and evaluates security posture against best practices such as authentication, throttling, and AWS WAF protection. With AWS WAF API Security , it also shows the security events detected per API. You can publish any managed API in a documentation portal for internal teams or external partners, with your branding, Amazon Cognito access control, and interactive Try it pages. If you already use API Gateway Portals, your portals continue to work and are now managed from the Documentation Portals section of API Portal. API Portal is available in 32 AWS Regions; see the Amazon API Gateway FAQ and pricing pages for details. To get started, see the following resources: Amazon API Gateway product page Introducing API and AI security on AWS blog API Portal documentation AWS WAF API Security documentation",
+      "summary": "Amazon API Gateway lance API Portal pour inventorier, sécuriser et documenter automatiquement les APIs et endpoints IA dans toute l'organisation AWS.",
+      "theme": "hors-sujet",
+      "score": 0,
+      "dynamicTheme": "api-management"
+    },
+    {
+      "id": "8fae549343f9",
+      "title": "Amazon SageMaker HyperPod now supports managed observability and user management extensions for Slurm clusters",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-extensions/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T20:00:00.000Z",
+      "excerpt": "Amazon SageMaker HyperPod now supports managed cluster extensions for Slurm clusters. You can install, configure, update, and remove managed features through the SageMaker AI console or API. The first two extensions cover observability and user management. Earlier, every observability or user management change for HyperPod Slurm clusters meant editing lifecycle scripts and then replacing or rerunning nodes. Now, HyperPod manages these features for you, and you keep lifecycle scripts and custom AMIs for your organization's own software. For each extension, you declare a configuration. HyperPod validates it and applies it to every node, including nodes you add later. It then reports the extension's status and the health of each node. The observability extension collects node, GPU, Elastic Fabric Adapter (EFA), Slurm job, and Slurm cluster metrics. It sends them to Amazon CloudWatch or Amazon Managed Service for Prometheus, and you can add Amazon Managed Grafana dashboards. The user management extension creates users and groups with the same IDs on every node. It also controls who can sign in with SSH and use sudo on each node type, with local users, Active Directory, or both. Cluster extensions are available at no additional charge in all AWS Regions where Amazon SageMaker HyperPod is available. You pay only for the AWS resources you use. To learn more, see Cluster extensions in the Amazon SageMaker AI Developer Guide, read the launch blog , or visit the Amazon SageMaker HyperPod product page .",
+      "summary": "Amazon SageMaker HyperPod automatise l'observabilité et la gestion des utilisateurs pour les clusters Slurm, simplifiant leur maintenance et leur supervision.",
+      "theme": "observabilite",
+      "score": 82,
+      "dynamicTheme": "observabilite-cloud"
+    },
+    {
+      "id": "89805270f453",
+      "title": "Amazon OpenSearch Service now supports OpenSearch version 3.9",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-opensearch-3-9",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T19:30:00.000Z",
+      "excerpt": "You can now run OpenSearch version 3.9 on Amazon OpenSearch Service. OpenSearch 3.9 helps you reduce vector memory and storage, evaluate search quality with more large language model (LLM) providers, build more responsive AI agents, and control access to shared resources. This release adds a new half-float vector type and a bf16 encoder, which store each vector dimension in 16 bits to reduce the memory and storage your vector indexes need. New 2-bit and 4-bit scalar quantization lets you choose the right balance of compression and recall for each workload. Base64-encoded vector ingestion makes request payloads smaller, which speeds up bulk loading. In addition, radial search now uses a redesigned graph traversal to improve both recall and throughput. In Search Relevance Workbench, LLM-as-a-Judge now works with Amazon Bedrock and other LLM providers through ML Commons connectors. You can also retry failed documents, edit ratings, and reuse earlier judgments to reduce repeated LLM calls. OpenSearch 3.9 also adds gRPC streaming for model predictions and agent execution. Responses come back token by token, so your agentic applications can show answers as they’re generated. Finally, the new resource sharing and access control framework allows you to share resources such as anomaly detectors and machine learning models with specific users and roles without granting broad access. OpenSearch 3.9 is available in all AWS Regions where Amazon OpenSearch Service is offered. To learn how to upgrade, see Upgrading Amazon OpenSearch Service domains in the Amazon OpenSearch Service Developer Guide.",
+      "summary": "Amazon OpenSearch Service supporte désormais OpenSearch 3.9 avec compression vectorielle, LLM étendu et contrôle d'accès granulaire.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "bases-de-donnees"
+    },
+    {
+      "id": "74b9081d9889",
+      "title": "v1.13.10",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.10",
+      "source": "opentofu-releases",
+      "sourceName": "OpenTofu (releases GitHub)",
+      "publishedAt": "2026-11-23T19:10:12.000Z",
+      "excerpt": "1.13.10 SECURITY ADVISORIES: Upgrade Go toolchain to 1.27.4 to address GO-2026-6859, an HTTP/1 server crash due to a MaxBytesReader header race. ( #4831 ) BUG FIXES: Overriding resources for indexed modules now works correctly during tofu test . ( #4859 ) Fix symbol libraries preventing plan when used in modules. ( #4816 Fix symbol libraries crash when uninitialized. ( #4861 ) Full Changelog : v1.13.9...v1.13.10",
+      "summary": "OpenTofu v1.13.10 corrige des failles de sécurité Go et des bugs de planification et de test.",
+      "theme": "iac-opentofu",
+      "score": 90,
+      "dynamicTheme": "infrastructure-iaac"
+    },
+    {
+      "id": "b34dde520722",
+      "title": "AWS WAF introduces simplified pricing",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-introduces-simplified-pricing/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-23T18:51:00.000Z",
+      "excerpt": "AWS WAF now offers simplified pricing that follows what you protect instead of how you configure it. Previously, you paid separate charges for each web ACL, rule, rule group subscription, and capacity tier, making every security decision a billing calculation. Now, your bill follows three dimensions: the resources you protect, the traffic AWS WAF inspects, and the level of protection you apply. This makes the cost-benefit trade-off easy to understand, and adding or changing rules no longer changes your rate. This new pricing goes into effect on Feb 1, 2027. The new model makes protection costs predictable before you deploy. Each web ACL now includes up to 2,500 WCU at no extra charge, up from 1,500, and you can add rules such as Bot Control common protections or the Anti-DDoS rule group without additional fees. You pay a resource fee for each protected resource, a base request fee for every request AWS WAF inspects, and a premium request fee only for traffic evaluated by advanced protections like Bot Control targeted protections, Fraud Control, API Security, and AI Security. AWS WAF's new pricing is effective from Feb 1, 2027 in all AWS commercial Regions, including Cape Town, Hong Kong, Hyderabad, Jakarta, Malaysia, Melbourne, Mumbai, New Zealand, Osaka, Seoul, Singapore, Sydney, Taipei, Thailand, Tokyo, Calgary, Frankfurt, Ireland, London, Milan, Paris, Spain, Stockholm, Zurich, Tel Aviv, Sao Paulo, N. Virginia, Ohio, N. California, Oregon, as well as in AWS GovCloud, China Regions, and AWS Isolated Regions. To learn more, visit the AWS WAF pricing page and review the AWS WAF Developer Guide as well as the blog post AWS WAF pricing now follows what you protect, not how you configure it .",
+      "summary": "AWS WAF simplifie sa tarification en 2027 : coût basé sur les ressources protégées et le trafic inspecté, avec des protections avancées payantes.",
+      "theme": "securite-supply-chain",
+      "score": 78,
+      "dynamicTheme": "securite-reseau"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Plusieurs correctifs critiques sont publiés aujourd'hui pour Grafana (versions 12.4.16 à 13.3.2) et OpenTelemetry Collector (v0.166.0-nightly), couvrant des vulnérabilités CVE récurrentes. Traefik v3.8.0 et v3.7.20 corrigent également des CVE et améliorent la sécurité des logs et du TLS. Amazon SageMaker HyperPod et OpenSearch Service introduisent des fonctionnalités d'observabilité avancées.",
+      "topArticles": [
+        "8cb985232e3c",
+        "bc37b92f97da",
+        "4afecc9a40bc",
+        "0a225ffb4b19",
+        "b13f45bc5ca8"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & Supply Chain",
+      "trend": "Une campagne cyber attaque cible des serveurs Check Point dans 22 organisations, soulignant l'importance des politiques de sécurité et des scans réguliers. AWS WAF simplifie sa tarification en 2027 avec des protections avancées payantes. Un site recense des bugs critiques de logiciels populaires pour sensibiliser les équipes.",
+      "topArticles": [
+        "6c787a85e2e6",
+        "2229fd3f0aac",
+        "b34dde520722"
+      ]
+    },
+    {
+      "id": "helm-traefik",
+      "label": "Helm / Traefik",
+      "trend": "Traefik publie trois releases majeures aujourd'hui (v3.8.0, v3.7.20, v2.11.64) avec des correctifs de sécurité, des améliorations de logs et une meilleure compatibilité Kubernetes/Gateway API. Les versions v3.x introduisent des timeouts par routeur.",
+      "topArticles": [
+        "6844a29e5137",
+        "271634d3ffb7",
+        "558adad29284"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "PyTorch retourne des valeurs négatives pour la divergence KL, contrairement à la théorie, impactant les calculs statistiques. Spring AI 2.1 et JavaFX introduisent des fonctionnalités avancées pour les workflows IA et l'accessibilité.",
+      "topArticles": [
+        "012f29f7ed86",
+        "a283193da833",
+        "3e9ed934dafd"
+      ]
+    },
+    {
+      "id": "iac-opentofu",
+      "label": "IaC — OpenTofu",
+      "trend": "OpenTofu v1.13.10 corrige des failles de sécurité Go et des bugs de planification et de test, renforçant la fiabilité des pipelines IaC.",
+      "topArticles": [
+        "74b9081d9889"
+      ]
+    },
+    {
+      "id": "cicd-gitlab",
+      "label": "CI/CD — GitLab",
+      "trend": "GitLab Dedicated externalise la gestion des plateformes SaaS en mode single-tenant, réduisant les tâches d'exploitation pour les équipes DevOps.",
+      "topArticles": [
+        "48203f36545d"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "releases-majeures",
+      "label": "Mises à jour critiques de logiciels",
+      "trend": "Plusieurs correctifs de sécurité majeurs sont publiés aujourd'hui pour Grafana (versions 13.x et 12.x) et Traefik (v3.x et v2.x), ciblant des CVE critiques identiques. Ces mises à jour s'accompagnent d'améliorations fonctionnelles comme la gestion des identités ou la compatibilité Kubernetes, reflétant une priorité absolue sur la sécurité et la stabilité des plateformes.",
+      "topArticles": [
+        "8cb985232e3c",
+        "bc37b92f97da",
+        "4afecc9a40bc",
+        "0a225ffb4b19",
+        "b13f45bc5ca8"
+      ]
+    },
+    {
+      "id": "actualite-hors-tech",
+      "label": "Actualités hors périmètre technique",
+      "trend": "Plusieurs articles relèvent de l'actualité générale ou culturelle, comme l'élection du mot de l'année 2026 par le Macquarie Dictionary ou des sujets sociétaux comme la musique générée par IA ou les villes 'aimables'. Ces éléments, bien que non techniques, reflètent des tendances sociétales influençant indirectement l'écosystème tech.",
+      "topArticles": [
+        "6846113cf309",
+        "4175c83018e7",
+        "f7bb07f538cb",
+        "4dbaea2697ae",
+        "35056578cef2"
+      ]
+    },
+    {
+      "id": "observabilite-telemetrie",
+      "label": "Observabilité et télémétrie",
+      "trend": "OpenTelemetry continue d'évoluer avec des versions nightly du Collector et de ses outils associés (opampsupervisor, builder), intégrant des corrections et optimisations. Ces mises à jour visent à renforcer la collecte et l'analyse des métriques, traces et logs, essentiels pour le monitoring des infrastructures modernes.",
+      "topArticles": [
+        "381d2a1a9340",
+        "3a382aa6cd61",
+        "e1dc1151c3e2"
+      ]
+    },
+    {
+      "id": "securite-reseau",
+      "label": "Sécurité réseau et confidentialité",
+      "trend": "AstridVPN propose un VPN sans logs ni identification, tandis qu'une campagne cyber attaque cible des serveurs Check Point dans 22 organisations. Ces événements illustrent l'intensification des menaces et l'importance des solutions de confidentialité et de protection des infrastructures critiques.",
+      "topArticles": [
+        "b34dde520722",
+        "d8809c04d573"
+      ]
+    },
+    {
+      "id": "bases-de-donnees",
+      "label": "Bases de données et stockage",
+      "trend": "Mason introduit un réplica PostgreSQL léger en stockage colonne via DuckDB, optimisé pour les requêtes analytiques ad-hoc. Par ailleurs, Amazon OpenSearch Service supporte désormais OpenSearch 3.9 avec des fonctionnalités avancées comme la compression vectorielle et le contrôle d'accès granulaire, reflétant une évolution vers des bases de données plus performantes et sécurisées.",
+      "topArticles": [
+        "89805270f453",
+        "8e9b94fee057"
+      ]
+    },
+    {
+      "id": "observabilite-systeme",
+      "label": "Observabilité système et performances",
+      "trend": "Brendan Gregg reste une référence incontournable avec ses méthodes d'analyse des performances système, tandis que des outils comme Jetty Pro optimisent les serveurs web pour des charges critiques. Ces évolutions soulignent l'importance croissante de l'observabilité fine pour garantir la résilience des infrastructures.",
+      "topArticles": [
+        "5c003d30472b"
+      ]
+    },
+    {
+      "id": "incidents-majeurs",
+      "label": "Incidents et pannes majeures",
+      "trend": "Microsoft a déclaré un 'Code Red' après une panne historique impactant ses services cloud, soulignant la vulnérabilité des infrastructures critiques face aux incidents majeurs. Ces événements rappellent l'importance de la résilience et de la préparation aux pannes pour les équipes SRE.",
+      "topArticles": [
+        "9bb2ad926b2d"
+      ]
+    },
+    {
+      "id": "ia-capacites",
+      "label": "Capacités et impacts de l'IA",
+      "trend": "L'IA atteint en 2026 des capacités initialement prévues pour 2035, bouleversant les attentes technologiques. Les agents LLM servent désormais les intérêts de leurs entreprises mères plutôt que ceux des utilisateurs, marquant un tournant dans l'utilisation de l'IA.",
+      "topArticles": [
+        "70e8b292ce38"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 45,
+    "promptTokens": 18916,
+    "completionTokens": 6403,
+    "estimatedCostEur": 0.007015
+  }
+}
