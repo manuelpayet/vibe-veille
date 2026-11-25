@@ -1,0 +1,755 @@
+{
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T17:55:13.157Z",
+  "window": {
+    "from": "2026-11-24T17:55:13.157Z",
+    "to": "2026-11-25T17:55:13.157Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 20
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 1
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 4
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 1
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 2
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 6
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 1
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "9728702e699d",
+      "title": "Why aren't we working 2-days a week?",
+      "url": "https://anihil.com/why-arent-we-working-2-days-a-week",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T17:37:17.000Z",
+      "excerpt": "",
+      "summary": "Certains secteurs expérimentent la semaine de 4 jours, mais la majorité des entreprises maintiennent le modèle traditionnel de 5 jours.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "organisation-du-travail"
+    },
+    {
+      "id": "2da10ebf7215",
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T17:18:26.000Z",
+      "excerpt": "",
+      "summary": "1Password révèle une faille de sécurité en novembre 2026, impactant potentiellement les données utilisateurs.",
+      "theme": "securite-supply-chain",
+      "score": 95,
+      "dynamicTheme": "securite-et-vulnerabilites"
+    },
+    {
+      "id": "cb21e78b58bc",
+      "title": "Investigating degraded experiences across GitHub products",
+      "url": "https://www.githubstatus.com/incidents/qn8mfv6q5hlx",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T15:59:23.000Z",
+      "excerpt": "",
+      "summary": "GitHub signale des expériences dégradées sur plusieurs produits, impactant les utilisateurs.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "incidents-et-degradations"
+    },
+    {
+      "id": "6b48cdab7a5f",
+      "title": "In C++, = default and {} are not the same constructor",
+      "url": "https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T15:20:15.000Z",
+      "excerpt": "",
+      "summary": "En C++, les constructeurs `= default` et `{}` diffèrent dans leur comportement, impactant l'initialisation des objets.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "developpement-logiciel"
+    },
+    {
+      "id": "7df80db3eb20",
+      "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
+      "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T15:14:32.000Z",
+      "excerpt": "",
+      "summary": "Un homme a nagé dans un bassin de rétention Home Depot, déclenchant des questions sur la sécurité des infrastructures.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "securite-des-infrastructures"
+    },
+    {
+      "id": "11947ff3967e",
+      "title": "Rumors swirling that labs might have cracked Factoring in P",
+      "url": "https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T15:08:44.000Z",
+      "excerpt": "",
+      "summary": "Des rumeurs suggèrent qu'une percée majeure en factorisation de P pourrait rendre obsolètes les cryptos actuelles.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "cryptographie-et-securite"
+    },
+    {
+      "id": "3a7df7682c48",
+      "title": "v1.35.11",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.11",
+      "source": "k8s-releases",
+      "sourceName": "Kubernetes (releases GitHub)",
+      "publishedAt": "2026-11-25T14:57:49.000Z",
+      "excerpt": "See kubernetes-announce@ . Additional binary downloads are linked in the CHANGELOG . See the CHANGELOG for more details.",
+      "summary": "Kubernetes v1.35.11 corrige des bugs critiques et améliore la stabilité du cluster.",
+      "theme": "kubernetes",
+      "score": 90,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "7bb89922a2ee",
+      "title": "v1.36.7",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.7",
+      "source": "k8s-releases",
+      "sourceName": "Kubernetes (releases GitHub)",
+      "publishedAt": "2026-11-25T14:57:06.000Z",
+      "excerpt": "See kubernetes-announce@ . Additional binary downloads are linked in the CHANGELOG . See the CHANGELOG for more details.",
+      "summary": "Kubernetes v1.36.7 corrige des vulnérabilités critiques et améliore la stabilité des clusters.",
+      "theme": "kubernetes",
+      "score": 98,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "f13df2f7366e",
+      "title": "I checked Clojure's core with Lean and found unreported bugs",
+      "url": "https://s.conao3.com/blog/2026/e4f733",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T14:56:52.000Z",
+      "excerpt": "",
+      "summary": "Une vérification formelle de Clojure avec Lean a révélé des bugs non documentés dans ses fonctions de base.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "verification-formelle"
+    },
+    {
+      "id": "4e80c822b625",
+      "title": "v1.37.3",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.3",
+      "source": "k8s-releases",
+      "sourceName": "Kubernetes (releases GitHub)",
+      "publishedAt": "2026-11-25T14:55:41.000Z",
+      "excerpt": "See kubernetes-announce@ . Additional binary downloads are linked in the CHANGELOG . See the CHANGELOG for more details.",
+      "summary": "Kubernetes v1.37.3 corrige des vulnérabilités et améliore la stabilité des clusters.",
+      "theme": "kubernetes",
+      "score": 92,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "04a02898d890",
+      "title": "Introducing Search for Agents",
+      "url": "https://blog.cloudflare.com/search-for-agents/",
+      "source": "cloudflare-blog",
+      "sourceName": "Cloudflare Blog",
+      "publishedAt": "2026-11-25T14:00:00.000Z",
+      "excerpt": "AI Search , our service that indexes your content and lets you add search to any application or agent without having to build an entire retrieval infrastructure, has supported adding your website as a data source for a while now, automatically crawling, converting and indexing its pages. Still, setting up an AI Search instance for your website requires manually creating and configuring it initially, and then doing all the integration work to get the search endpoints available from your domain and to make sure that agents know where to find the index and know how to use it. Today we&#x27;re introducing Search for Agents , which puts that setup behind a toggle in your Cloudflare dashboard. Turn it on for your zone, and our service will create your AI Search instance, start indexing your content, and make search discoverable and available from your own domain. How it works The idea follows naturally from Markdown for Agents , where Cloudflare&#x27;s network converts any HTML page to Markdown in real time for enabled zones using content negotiation headers. Similarly, Search for Agents leverages the power of AI Search by automatically creating an index for your zone and exposing APIs that any AI agent can discover and use to search your website, under your domain, all done at the network level. You can enable Search for Agents using the API, or by going to the dashboard in your zone page, under Quick Actions : Search for Agents is available to all customers, including Free (with limits ). Once it’s enabled, Cloudflare will automatically create an AI Search instance, start crawling and indexing the content in your zone. Refer to our developer documentation to understand how the crawling process works. You can access your instance directly from this page, or by going to directly to your account’s AI > AI Search instances view: The AI Search instance for your zone is created with default settings, but you can enable reranking or change configuration options like cache sett",
+      "summary": "Cloudflare simplifie l'ajout de recherche IA sur un site via un toggle, rendant les données indexables et accessibles aux agents.",
+      "theme": "hors-sujet",
+      "score": 25,
+      "dynamicTheme": "ia-et-recherche"
+    },
+    {
+      "id": "abef7dcffe0c",
+      "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+      "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T13:33:07.000Z",
+      "excerpt": "",
+      "summary": "Google publie des papiers Cogentic sur la factorisation d'entiers et les logarithmes discrets, améliorant les connaissances cryptographiques.",
+      "theme": "hors-sujet",
+      "score": 30,
+      "dynamicTheme": "cryptographie-et-securite"
+    },
+    {
+      "id": "ffad66169d8c",
+      "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
+      "url": "https://github.com/xoxorwr/pw-loudness-eq",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T11:34:25.000Z",
+      "excerpt": "",
+      "summary": "Un égaliseur de volume pour PipeWire a été reverse-engineered depuis Windows et porté pour Linux.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "systemes-et-optimisation"
+    },
+    {
+      "id": "a567a874887d",
+      "title": "v0.166.0",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-25T08:39:54.000Z",
+      "excerpt": "Check the v0.166.0 contrib changelog and the v0.166.0 core changelog for changelogs on specific components. v0.166.0 💡 Enhancements 💡 all : Generate config schema for each distribution ( #1757 ) otelcol-k8s : Add Windows binaries for 386 and arm64. Windows container images stay amd64 only. ( #412 ) Changelog d104c3c Update version to 0.166.0 ( #1782 ) 7760e34 Update OpenTelemetry Collector Components ( #1778 ) d3b1a09 Update GoReleaser Pro to v2.20.3 ( #1776 ) 581b642 Update github-actions deps ( #1777 )",
+      "summary": "OpenTelemetry Collector v0.166.0 ajoute la génération de schémas de config par distribution et des binaires Windows arm64.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-et-telemetrie"
+    },
+    {
+      "id": "43e505530c60",
+      "title": "AWS IAM extends trusted identity propagation to IAM federation and IAM Roles Anywhere, and simplifies it in IAM Identity Center",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iam/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-25T06:00:00.000Z",
+      "excerpt": "Trusted identity propagation (TIP) carries the identity of a human user or workload with requests to supported AWS Services. Customers can use that identity in IAM policy conditions for access control and to identify the originating human user or workload in AWS CloudTrail. AWS is expanding TIP to AWS Identity and Access Management (IAM) federation and IAM Roles Anywhere , while simplifying the existing TIP experience in AWS IAM Identity Center. In addition, IAM outbound identity federation now enables customers to request an AWS-signed JSON Web Token (JWT) that includes identity information from TIP sessions, allowing external services to identify the human user or workload that originated the request. With TIP for IAM federation, customers can map the human or workload identity, along with optional runtime claims such as a risk score or a CI/CD workflow name, from the SAML assertion or OIDC token used for federation to the role session. IAM Roles Anywhere extends TIP to identities sourced from X.509 certificates. For IAM Identity Center, which supports workforce identities, the simplified experience adds the username, an identifier provided by your identity source, alongside the user ID that IAM Identity Center generates, and carries this information uniformly whether users access applications or AWS accounts. Across all supported paths, TIP preserves identity information as requests move between IAM roles and AWS services without requiring per-role trust policy updates. TIP for IAM federation, IAM Roles Anywhere, IAM outbound identity federation, and the simplified IAM Identity Center experience are available in all commercial AWS Regions, the AWS GovCloud (US) Regions, and the AWS European Sovereign Cloud (Germany) Region. To get started, see the Trusted Identity Propagation for IAM documentation , Trusted Identity Propagation in IAM Identity Center documentation , and the TIP launch blog .",
+      "summary": "AWS étend la propagation d'identité de confiance à IAM federation et Roles Anywhere, simplifiant IAM Identity Center pour une traçabilité unifiée.",
+      "theme": "hors-sujet",
+      "score": 35,
+      "dynamicTheme": "gestion-des-identites-et-acces"
+    },
+    {
+      "id": "9a9294d39772",
+      "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
+      "url": "https://gpu-demo-gallery.pages.dev/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T04:31:48.000Z",
+      "excerpt": "",
+      "summary": "Des démos GPU historiques de Nvidia et ATI fonctionnent à nouveau dans le navigateur via un projet web.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "retro-informatique"
+    },
+    {
+      "id": "e6d5f2bd76ba",
+      "title": "Taking over US Treasury subdomains for $3 each",
+      "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T04:27:55.000Z",
+      "excerpt": "",
+      "summary": "Des sous-domaines du Trésor américain détournés pour 3$ chacun via des vulnérabilités de configuration DNS.",
+      "theme": "securite-supply-chain",
+      "score": 98,
+      "dynamicTheme": "securite-et-vulnerabilites"
+    },
+    {
+      "id": "7579fd805705",
+      "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
+      "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T03:47:42.000Z",
+      "excerpt": "",
+      "summary": "Marginalia Search migre de C++ à Rust pour améliorer performance et sécurité de son moteur de recherche.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "developpement-logiciel"
+    },
+    {
+      "id": "731330eec3a0",
+      "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
+      "url": "https://buttons.joshwcomeau.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T03:23:07.000Z",
+      "excerpt": "",
+      "summary": "Boutons sonores professionnels gratuits pour interfaces, améliorant l'expérience utilisateur des applications.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "experience-utilisateur"
+    },
+    {
+      "id": "9095f70c750e",
+      "title": "Macrohistory in Six Facts",
+      "url": "https://basilhalperin.com/essays/macrohistory.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T03:04:46.000Z",
+      "excerpt": "",
+      "summary": "L'histoire économique mondiale se résume à six faits majeurs : croissance, inégalités, mondialisation, innovation, crises et démographie.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "economie-et-innovation"
+    },
+    {
+      "id": "777816c50f03",
+      "title": "Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native",
+      "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T03:04:37.000Z",
+      "excerpt": "",
+      "summary": "iOS Safari dépasse désormais les 60 FPS pour des apps web plus fluides, comme une expérience native.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "web-et-performances"
+    },
+    {
+      "id": "30d463386b15",
+      "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T02:34:21.000Z",
+      "excerpt": "",
+      "summary": "Des modèles IA contournent leur isolation en échangeant via des serveurs d'inférence, posant un risque de fuite de données.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "securite-des-ia"
+    },
+    {
+      "id": "595ef41bf349",
+      "title": "cmd/opampsupervisor/v0.167.0-nightly.202611250211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.167.0-nightly.202611250211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-25T02:11:55.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly de l'OpAMP Supervisor pour le Collector OpenTelemetry, avec binaires disponibles.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "observabilite-et-telemetrie"
+    },
+    {
+      "id": "fe4d9c787603",
+      "title": "cmd/builder/v0.167.0-nightly.202611250211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.167.0-nightly.202611250211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-25T02:11:53.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector (v0.167.0) disponible pour tests.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "observabilite-et-telemetrie"
+    },
+    {
+      "id": "986b6baee8bd",
+      "title": "v0.167.0-nightly.202611250211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.167.0-nightly.202611250211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-25T02:11:39.000Z",
+      "excerpt": "v0.167.0-nightly.202611250211: nightly build",
+      "summary": "Nouvelle version nightly v0.167.0 du Collector OpenTelemetry avec des mises à jour non stabilisées.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "observabilite-et-telemetrie"
+    },
+    {
+      "id": "5ee45fc63309",
+      "title": "The matrix multiplication exponent is nine fourths [pdf]",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T01:19:26.000Z",
+      "excerpt": "",
+      "summary": "La multiplication matricielle a un exposant optimal de 9/4, améliorant les algorithmes de calcul intensif.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "algorithmes-et-calcul"
+    },
+    {
+      "id": "86f67f24e8a3",
+      "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
+      "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T00:54:49.000Z",
+      "excerpt": "",
+      "summary": "PenGPT génère des dessins et écritures manuscrites via IA, révolutionnant la création visuelle automatisée.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "ia-generative"
+    },
+    {
+      "id": "da761e9e30bd",
+      "title": "Take on complex coding changes with Gemini 4 Neon on GitLab",
+      "url": "https://about.gitlab.com/blog/gemini-4-neon-on-gitlab/",
+      "source": "gitlab",
+      "sourceName": "GitLab (about.gitlab.com)",
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "excerpt": "Google's Gemini 4 Neon is now available on GitLab Duo Agent Platform , offering engineers a versatile model for agentic work, with particular strength in coding. Gemini 4 Neon is the latest addition to a growing Gemini 4 lineup on GitLab Duo Agent Platform, joining Argon, Hydrogen, and Carbon. Each model brings its own balance of speed, reasoning, and cost, giving your team a broad selection of Gemini models to power everything from quick fixes to large, cross-codebase refactors. Neon handles the mix of tasks an agent takes on in a day, such as planning an issue, reading a long spec, answering questions about a codebase in Agentic Chat, and then making the change. It performs best on agentic coding, where an agent has to read, run, and edit its way to a change ready for review. Carry complex coding work through to a merge request On GitLab's software engineering benchmark, Neon completed 100% of tasks, returning a merge request each time, and resolved 76.7% of those tasks, with changes that passed the benchmark's tests. Neon executes well on tasks that take many steps and require judgement before they're ready for review. That makes this model a good choice for changes that reach across a codebase, like a feature that needs a new option carried from configuration through to the UI, a bug whose fix spans several modules, or a refactor that has to land in every package that depends on it. Your engineers can hand off that work and come back to a merge request they can review. Choose your model across the Gemini 4 lineup Across the Gemini 4 models in GitLab, your team has a range of strengths to draw on. Neon balances reasoning and efficiency, and does especially well carrying out coding changes that touch multiple files. Hydrogen, Google’s model for everyday use, keeps high-volume, routine work fast and economical. Carbon takes on the most difficult long-horizon projects, where extra reasoning is worth the cost. Argon works through long-running jobs methodically and pa",
+      "summary": "Gemini 4 Neon sur GitLab automatise les modifications complexes de code jusqu’à la création de merge requests prêtes à l’examen.",
+      "theme": "cicd-gitlab",
+      "score": 85,
+      "dynamicTheme": "developpement-logiciel"
+    },
+    {
+      "id": "10772c21b837",
+      "title": "JDK 28: New jlink Security Properties Plugin - Quality Outreach Heads-up",
+      "url": "https://inside.java/2026/11/25/quality-heads-up/",
+      "source": "inside-java",
+      "sourceName": "Inside Java (OpenJDK)",
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "excerpt": "This Heads-Up is part of the regular communication sent to the projects involved; it covers a new jlink plugin to set security properties in custom runtimes.",
+      "summary": "JDK 28 introduit un plugin jlink pour configurer les propriétés de sécurité dans les runtimes personnalisés.",
+      "theme": "java-jvm",
+      "score": 70,
+      "dynamicTheme": "securite-et-compliance"
+    },
+    {
+      "id": "b66db7fee61f",
+      "title": "cmd/opampsupervisor/v0.166.0",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.166.0",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-24T23:58:09.000Z",
+      "excerpt": "Release of OpAMP supervisor artifacts",
+      "summary": "Nouvelle version v0.166.0 du superviseur OpAMP pour le Collector OpenTelemetry, avec des artefacts mis à jour.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "observabilite-et-telemetrie"
+    },
+    {
+      "id": "79dc0b829507",
+      "title": "cmd/builder/v0.166.0",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.166.0",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-24T23:53:21.000Z",
+      "excerpt": "Images and binaries for collector distributions here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0",
+      "summary": "Nouvelle version v0.166.0 du builder OpenTelemetry Collector avec images et binaires disponibles.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "observabilite-et-telemetrie"
+    },
+    {
+      "id": "66287db3ab0f",
+      "title": "Predicting LoRA size for any dataset",
+      "url": "https://engram.com/blog/lora-size",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T22:34:29.000Z",
+      "excerpt": "",
+      "summary": "Un outil prédit la taille optimale des modèles LoRA pour tout jeu de données, optimisant l'efficacité des fine-tunings.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "ia-et-machine-learning"
+    },
+    {
+      "id": "f28e769410bb",
+      "title": "Amazon Bedrock adds bedrock-runtime endpoint support for OpenAI Daybreak Red in AWS GovCloud (US)",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/gpt-daybreak-red-runtime-govcloud/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-24T21:27:00.000Z",
+      "excerpt": "Eligible customers can now access OpenAI’s specialized cybersecurity models Daybreak Red: GPT-5.6 Cyber through the bedrock-runtime endpoint on Amazon Bedrock in AWS GovCloud (US). Daybreak Red is designed for advanced, authorized tasks such as vulnerability research, exploit reproduction, and mitigation development. For these tasks, a lower refusal threshold, matched by stronger identity verification, monitoring, and access controls, improves the speed and depth of an investigation. Your inference data is not used for model training, and you are not required to opt in to sharing your data with OpenAI. On the bedrock-runtime endpoint, the model is available through the US Gov Geo cross-Region inference (CRIS) profile. Access to the model requires enrollment in Daybreak access from OpenAI. To enroll, contact OpenAI or reach out to your AWS account team for guidance on eligibility. Once approved, work with your account team to request access on AWS. For regional availability through the bedrock-mantle endpoint and more information, view the documentation.",
+      "summary": "AWS GovCloud (US) propose désormais Daybreak Red d'OpenAI via Bedrock pour la cybersécurité, avec contrôles renforcés et données protégées.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "securite-et-cyberdefense"
+    },
+    {
+      "id": "c0fefec87462",
+      "title": "Amazon OpenSearch Serverless is now available in the Africa (Cape Town) Region",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-serverless-available-cape-town-region/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-24T20:22:00.000Z",
+      "excerpt": "Starting today, the next generation of Amazon OpenSearch Serverless is available in the AWS Africa (Cape Town) Region. Customers can now use a fully managed search, vector and analytics engine that provisions resources in seconds, auto scales instantly to meet changing demand, and scales to zero when idle, so customers only pay for the compute they use. With this launch, customers in the Africa (Cape Town) Region can run agentic AI, search, and observability workloads without provisioning or managing clusters. Compute is fully separated from storage, which lets customers scale compute independently to reduce costs during low-traffic periods while remaining ready for traffic spikes. With scale-to-zero and pay-per-usage pricing, customers can save up to 60% compared to provisioning OpenSearch clusters for peak loads. To learn more, see the OpenSearch Serverless documentation and pricing page . For the full list of AWS Regions where OpenSearch Serverless is available, see the Regional Services List.",
+      "summary": "Amazon OpenSearch Serverless est désormais disponible en Afrique du Sud (Le Cap), offrant un moteur de recherche et d'analytique serverless et auto-scalable.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "services-cloud"
+    },
+    {
+      "id": "ca7efd0c9bb9",
+      "title": "Ternary Bonsai 2.5 27B",
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-24T20:08:03.000Z",
+      "excerpt": "",
+      "summary": "Ternary Bonsai 2.5 27B améliore les modèles IA avec une optimisation mémoire et calculs plus rapides.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "ia-et-machine-learning"
+    },
+    {
+      "id": "f19390b03d05",
+      "title": "AWS CloudFormation makes resource coverage comprehensive with 206 new types",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-coverage-expansion/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-24T20:00:00.000Z",
+      "excerpt": "AWS CloudFormation now supports 206 additional resource types across 88 services, including Amazon SageMaker Hub, Amazon Bedrock AgentCore PolicyEngine, and Amazon EC2 Snapshot. This closes key gaps in CloudFormation coverage and helps customers to standardize on safe and scalable infrastructure management workflows. The launch utilized a new AI-driven internal framework to collapse the costs of onboarding resource types to CloudFormation, setting up CloudFormation for continued coverage expansion. AWS Cloud Control API supports all new resource types that CloudFormation supports. Additionally, Cloud Control API now supports 224 read-only resource types across 99 services, making it easier to find and inspect existing AWS resources. CloudFormation resource coverage is available across all AWS Regions where the underlying service is available. To learn more, visit the AWS resource and property types reference , the Cloud Control API resource list , and the AWS CloudFormation User Guide .",
+      "summary": "AWS CloudFormation ajoute 206 nouveaux types de ressources, couvrant 88 services dont SageMaker et Bedrock, pour une gestion d'infrastructure plus complète.",
+      "theme": "hors-sujet",
+      "score": 25,
+      "dynamicTheme": "gestion-dinfrastructure"
+    },
+    {
+      "id": "0a225ffb4b19",
+      "title": "13.3.2",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.3.2",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-24T18:03:58.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88960 Features and enhancements Provisioning: Preserve existing folder identities when creating children #137552 , @grafana-writer[bot]",
+      "summary": "Grafana 13.3.2 corrige deux vulnérabilités critiques et préserve les identités de dossiers lors de la création de sous-dossiers.",
+      "theme": "observabilite",
+      "score": 95,
+      "dynamicTheme": "securite-et-vulnerabilites"
+    },
+    {
+      "id": "8cb985232e3c",
+      "title": "13.0.14",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.0.14",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-24T17:58:17.000Z",
+      "excerpt": "Download page What's new highlights Security Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960 Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960 Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88943 Security: Fix CVE-2026-88960",
+      "summary": "Grafana 13.0.14 corrige trois vulnérabilités critiques de sécurité (CVE-2026-107561, CVE-2026-88943, CVE-2026-88960).",
+      "theme": "observabilite",
+      "score": 98,
+      "dynamicTheme": "securite-et-vulnerabilites"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Plusieurs versions de Grafana et de l'OpenTelemetry Collector ont été publiées aujourd'hui, avec des correctifs de vulnérabilités critiques et des améliorations fonctionnelles. Grafana 13.3.2 et 13.0.14, ainsi que les versions nightly et stables de l'OpenTelemetry Collector, renforcent la sécurité et la stabilité des outils d'observabilité.",
+      "topArticles": [
+        "8cb985232e3c",
+        "0a225ffb4b19",
+        "a567a874887d",
+        "595ef41bf349",
+        "fe4d9c787603"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "trend": "Trois nouvelles versions de Kubernetes ont été publiées aujourd'hui, avec des correctifs critiques pour la stabilité et la sécurité des clusters. Les releases v1.35.11, v1.36.7 et v1.37.3 apportent des améliorations majeures en termes de résilience et de correction de vulnérabilités.",
+      "topArticles": [
+        "7bb89922a2ee",
+        "4e80c822b625",
+        "3a7df7682c48"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Deux articles majeurs aujourd'hui : une faille de sécurité chez 1Password impactant potentiellement les données utilisateurs, et un détournement de sous-domaines du Trésor américain via des vulnérabilités de configuration DNS. Ces incidents soulignent l'importance de renforcer les politiques de sécurité et de surveillance des supply-chains.",
+      "topArticles": [
+        "e6d5f2bd76ba",
+        "2da10ebf7215"
+      ]
+    },
+    {
+      "id": "cicd-gitlab",
+      "label": "CI/CD — GitLab CI",
+      "trend": "GitLab annonce l'intégration de Gemini 4 Neon pour automatiser les modifications complexes de code jusqu'à la création de merge requests prêtes à l'examen. Cette fonctionnalité vise à accélérer les cycles de développement tout en réduisant les erreurs humaines.",
+      "topArticles": [
+        "da761e9e30bd"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "JDK 28 introduit un nouveau plugin jlink pour configurer les propriétés de sécurité dans les runtimes personnalisés. Cette évolution permet aux équipes SRE de mieux contrôler les environnements d'exécution Java, notamment en matière de sécurité et de compatibilité.",
+      "topArticles": [
+        "10772c21b837"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "observabilite-et-telemetrie",
+      "label": "Observabilité et téléométrie (OpenTelemetry, OpAMP)",
+      "trend": "OpenTelemetry Collector et ses composants (OpAMP Supervisor, Builder) connaissent des mises à jour majeures avec des versions nightly (v0.167.0) et stables (v0.166.0). Ces évolutions introduisent des fonctionnalités comme la génération de schémas de configuration et des binaires Windows arm64, renforçant l'observabilité des systèmes distribués.",
+      "topArticles": [
+        "a567a874887d",
+        "595ef41bf349",
+        "fe4d9c787603",
+        "b66db7fee61f",
+        "986b6baee8bd"
+      ]
+    },
+    {
+      "id": "securite-et-vulnerabilites",
+      "label": "Sécurité et vulnérabilités (incidents, failles, risques)",
+      "trend": "Plusieurs incidents de sécurité sont signalés aujourd'hui : une faille chez 1Password (novembre 2026), des sous-domaines du Trésor américain détournés pour 3$, et des vulnérabilités critiques corrigées dans Grafana (CVE-2026-107561, CVE-2026-88943, CVE-2026-88960). Ces événements soulignent l'importance de la veille proactive et des correctifs rapides.",
+      "topArticles": [
+        "e6d5f2bd76ba",
+        "8cb985232e3c",
+        "2da10ebf7215",
+        "0a225ffb4b19"
+      ]
+    },
+    {
+      "id": "releases-majeures",
+      "label": "Releases majeures (Kubernetes, OpenTelemetry, Grafana)",
+      "trend": "Plusieurs versions majeures de Kubernetes (v1.35.11, v1.36.7, v1.37.3) et des mises à jour critiques pour OpenTelemetry Collector (v0.166.0, v0.167.0) et Grafana (13.3.2, 13.0.14) sont publiées aujourd'hui. Ces releases se concentrent sur des corrections de bugs, des vulnérabilités critiques et des améliorations de stabilité pour les clusters et les outils d'observabilité.",
+      "topArticles": [
+        "7bb89922a2ee",
+        "4e80c822b625",
+        "3a7df7682c48"
+      ]
+    },
+    {
+      "id": "developpement-logiciel",
+      "label": "Développement logiciel (C++, Rust, outils)",
+      "trend": "Des articles techniques mettent en lumière des subtilités en C++ (différences entre `= default` et `{}`), une migration de C++ vers Rust pour Marginalia Search, et l'intégration de l'IA dans GitLab via Gemini 4 Neon pour automatiser les modifications de code complexes. Ces évolutions impactent directement les pratiques de développement et la qualité du code.",
+      "topArticles": [
+        "da761e9e30bd",
+        "6b48cdab7a5f",
+        "7579fd805705"
+      ]
+    },
+    {
+      "id": "cryptographie-et-securite",
+      "label": "Cryptographie et sécurité (factorisation, IA)",
+      "trend": "Des rumeurs évoquent une percée en factorisation de P, tandis que Google publie des papiers Cogentic sur la factorisation d'entiers et les logarithmes discrets. Ces avancées pourraient avoir des implications majeures pour la sécurité des systèmes cryptographiques actuels et futurs.",
+      "topArticles": [
+        "abef7dcffe0c",
+        "11947ff3967e"
+      ]
+    },
+    {
+      "id": "ia-et-machine-learning",
+      "label": "IA et machine learning (modèles, outils)",
+      "trend": "Plusieurs avancées en IA sont signalées : PenGPT pour la génération de dessins et écritures manuscrites, Ternary Bonsai 2.5 27B pour l'optimisation des modèles, et un outil prédisant la taille optimale des LoRA. Ces innovations accélèrent l'adoption de l'IA dans des domaines variés, de la création visuelle au fine-tuning de modèles.",
+      "topArticles": [
+        "66287db3ab0f",
+        "ca7efd0c9bb9"
+      ]
+    },
+    {
+      "id": "gestion-des-identites-et-acces",
+      "label": "Gestion des identités et accès (IAM, fédération)",
+      "trend": "AWS étend la propagation d'identité de confiance à IAM Federation et IAM Roles Anywhere, simplifiant IAM Identity Center pour une traçabilité unifiée. Cette évolution facilite la gestion des accès dans des environnements multi-cloud et hybrides, renforçant la sécurité et la conformité.",
+      "topArticles": [
+        "43e505530c60"
+      ]
+    },
+    {
+      "id": "services-cloud",
+      "label": "Services cloud (AWS, OpenSearch, Bedrock)",
+      "trend": "AWS annonce plusieurs évolutions majeures : OpenSearch Serverless disponible en Afrique du Sud, CloudFormation couvrant 206 nouveaux types de ressources, et Bedrock proposant Daybreak Red d'OpenAI dans AWS GovCloud (US) pour la cybersécurité. Ces mises à jour élargissent les capacités des services cloud et renforcent leur sécurité.",
+      "topArticles": [
+        "c0fefec87462"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 40,
+    "promptTokens": 14935,
+    "completionTokens": 5908,
+    "estimatedCostEur": 0.006009255999999999
+  }
+}
