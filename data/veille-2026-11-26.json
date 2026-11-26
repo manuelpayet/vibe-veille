@@ -1,0 +1,562 @@
+{
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T17:40:25.523Z",
+  "window": {
+    "from": "2026-11-25T17:40:25.523Z",
+    "to": "2026-11-26T17:40:25.523Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 18
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 2
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 1
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 1
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "1d45997e4997",
+      "title": "AMD Specific Patches for Llama.cpp",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T17:11:29.000Z",
+      "excerpt": "",
+      "summary": "AMD publie des correctifs spécifiques pour Llama.cpp, optimisant les performances sur ses GPU.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "optimisation-hardware-ia"
+    },
+    {
+      "id": "4fdce5f029af",
+      "title": "One guy is doing an hunger strike at Anthropic, currently in his 3rd day",
+      "url": "https://twitter.com/ElliotC1/status/2125689373337489419",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T16:55:15.000Z",
+      "excerpt": "",
+      "summary": "Un employé d'Anthropic entame une grève de la faim pour protester contre les conditions de travail.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "conditions-travail-tech"
+    },
+    {
+      "id": "7b836b1fe0ea",
+      "title": "NP_R ≠ PAR_R",
+      "url": "https://github.com/samueleverett01/bss-permanent-separations",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T16:50:55.000Z",
+      "excerpt": "",
+      "summary": "NP_R ≠ PAR_R : séparation permanente des classes de complexité NP et PAR.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "recherche-theorique-informatique"
+    },
+    {
+      "id": "56fe98799c74",
+      "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
+      "url": "https://michidk.github.io/sidebyside/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T15:00:06.000Z",
+      "excerpt": "",
+      "summary": "Un outil permet d'exécuter trois machines virtuelles Linux dans un onglet navigateur, chacune avec un navigateur différent.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "outils-developpement-systeme"
+    },
+    {
+      "id": "051a20c09a83",
+      "title": "45°C inlets just killed the chiller. Most people haven't noticed yet",
+      "url": "https://www.theregister.com/hpc/2026/11/26/45c-inlets-just-killed-the-chiller-most-people-havent-noticed-yet/5311831",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T13:48:11.000Z",
+      "excerpt": "",
+      "summary": "Des températures d'entrée à 45°C ont rendu les refroidisseurs inutilisables, impactant les centres de données.",
+      "theme": "hors-sujet",
+      "score": 90,
+      "dynamicTheme": "infrastructure-physique-datacenter"
+    },
+    {
+      "id": "3c7a8f135f71",
+      "title": "Nextcloud Office Desktop app",
+      "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T11:50:49.000Z",
+      "excerpt": "",
+      "summary": "Nextcloud lance une application de bureau pour son suite bureautique en ligne, intégrant édition et collaboration.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "collaboration-productivite"
+    },
+    {
+      "id": "91ef480232c5",
+      "title": "Intel One Mono font",
+      "url": "https://github.com/intel/intel-one-mono",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T10:11:01.000Z",
+      "excerpt": "",
+      "summary": "Intel lance One Mono, une police de caractères monospace open source optimisée pour le code et le terminal.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "design-et-ergonomie"
+    },
+    {
+      "id": "64a870b6a927",
+      "title": "Moat: Your OpenRouter Replacement",
+      "url": "https://commandcode.ai/moat",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T06:32:48.000Z",
+      "excerpt": "",
+      "summary": "Moat remplace OpenRouter comme solution open source pour router les requêtes LLM avec plus de contrôle.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "orchestration-llm"
+    },
+    {
+      "id": "6cd17244579f",
+      "title": "An algebraic quantization of gravity from the null cone",
+      "url": "https://arxiv.org/abs/2611.34924",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T05:37:51.000Z",
+      "excerpt": "",
+      "summary": "Une nouvelle approche algébrique quantifie la gravité via le cône de lumière, transformant les équations d'Einstein en un cadre quantique.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "recherche-theorique-physique"
+    },
+    {
+      "id": "9be815415677",
+      "title": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
+      "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T05:12:59.000Z",
+      "excerpt": "",
+      "summary": "Le *Lions' Commentary on Unix* a inspiré secrètement Unix pendant 20 ans sans être officiellement publié.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "histoire-informatique"
+    },
+    {
+      "id": "971f7afa718c",
+      "title": "Unconditional Integer Factorization in Subexponential Time",
+      "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T04:59:56.000Z",
+      "excerpt": "",
+      "summary": "Un nouvel algorithme factorise des entiers en temps sous-exponentiel sans condition préalable, révolutionnant la cryptographie.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "recherche-theorique-cryptographie"
+    },
+    {
+      "id": "0212b5e046a6",
+      "title": "Minipg: PostgreSQL as a Single Executable",
+      "url": "https://progrium.github.io/minipg/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T03:00:48.000Z",
+      "excerpt": "",
+      "summary": "Minipg intègre PostgreSQL en un seul exécutable, simplifiant son déploiement et son exécution.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "bases-de-donnees-embarquees"
+    },
+    {
+      "id": "0918125762b1",
+      "title": "cmd/builder/v0.167.0-nightly.202611260211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.167.0-nightly.202611260211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-26T02:11:27.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector avec des binaires pour la branche principale.",
+      "theme": "observabilite",
+      "score": 85,
+      "dynamicTheme": "observabilite-et-tracing"
+    },
+    {
+      "id": "f15439d6416e",
+      "title": "cmd/opampsupervisor/v0.167.0-nightly.202611260211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.167.0-nightly.202611260211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-26T02:11:25.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "OpenTelemetry publie une version nightly de l'opampsupervisor pour améliorer la supervision des agents.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "observabilite-et-tracing"
+    },
+    {
+      "id": "1f97ef276eec",
+      "title": "v0.167.0-nightly.202611260211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.167.0-nightly.202611260211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-26T02:11:15.000Z",
+      "excerpt": "v0.167.0-nightly.202611260211: nightly build",
+      "summary": "Nouvelle version nightly v0.167.0 du Collector OpenTelemetry avec des mises à jour non stabilisées.",
+      "theme": "observabilite",
+      "score": 75,
+      "dynamicTheme": "observabilite-et-tracing"
+    },
+    {
+      "id": "02a12ac8770d",
+      "title": "Collection of preserved UI style guides",
+      "url": "https://aresluna.org/ui-style-guides/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T00:40:00.000Z",
+      "excerpt": "",
+      "summary": "Une collection de guides de style UI préservés pour standardiser les interfaces utilisateur.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "design-et-ergonomie"
+    },
+    {
+      "id": "d8fe47121776",
+      "title": "Decision Models in Spring AI 2.1: Yes, No, and How Sure",
+      "url": "https://spring.io/blog/2026/11/26/spring-ai-decision-models-guardrails-judges",
+      "source": "spring-blog",
+      "sourceName": "Spring Blog",
+      "publishedAt": "2026-11-26T00:00:00.000Z",
+      "excerpt": "Spring AI: Decision Models | Decision Extensions | Demo Applications often need to make decisions with a predefined set of outcomes: Is this message a jailbreak attempt? Which team should handle this support ticket? How helpful is this answer? A chat model can handle these tasks, but the application still has to turn its text reply into a boolean, an enum or a numeric score. Last year we used a chat model and recursive advisors to implement LLM-as-a-Judge . That is still a useful approach, particularly when an evaluation requires general knowledge , reasoning or a written explanation of what went wrong. For many classification and evaluation tasks, however, the input contains all the information needed to make the decision. Specialized decision models can perform these tasks at comparable accuracy, with considerably lower latency and cost, and they provide typed answers together with probability information. In an independent study , Jev came within three points of a frontier chat model on such tasks, at a median latency of 0.15 seconds and less than 1% of the cost. It fell behind where the verdict had to be derived, as in math, code and logic. Spring AI 2.1 adds a DecisionModel API for these decisions. It is not a Chat Model : a decision model works with predefined outcomes and returns typed answers with probabilities. That makes it a different programming abstraction, not only a faster model. This allows applications to incorporate model-based decisions directly into their control flow , without relying on text generation and parsing. In this article we compare a small local model with TypeSafe's hosted Jev model, and explore two practical applications: a guardrail and a judge . The API builds on the ideas we explored in Spring AI and TypeSafe Jev in September. They are now part of Spring AI itself and work with three providers. See Coming from Spring AI TypeSafe for what moved where. A big thank you goes to Thomas Vitale , whose contributions shaped the DecisionM",
+      "summary": "Spring AI 2.1 introduit des modèles de décision dédiés pour des choix prédéfinis, réduisant latence et coût tout en fournissant des réponses typées et probabilistes.",
+      "theme": "java-jvm",
+      "score": 70,
+      "dynamicTheme": "frameworks-ia"
+    },
+    {
+      "id": "771364aed2d6",
+      "title": "Episode 76 “Java in the Age of AI” [AtA]",
+      "url": "https://inside.java/podcast/76/",
+      "source": "inside-java",
+      "sourceName": "Inside Java (OpenJDK)",
+      "publishedAt": "2026-11-26T00:00:00.000Z",
+      "excerpt": "A discussion of Java's expanding support for AI workloads, from current strengths to future capabilities",
+      "summary": "Java renforce son support pour les charges de travail IA, avec des évolutions actuelles et futures.",
+      "theme": "java-jvm",
+      "score": 65,
+      "dynamicTheme": "langages-programmation"
+    },
+    {
+      "id": "a1356d98cece",
+      "title": "Bare Metal Qwen",
+      "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T22:15:34.000Z",
+      "excerpt": "",
+      "summary": "Qwen tourne directement sur bare metal sans OS, optimisant performances et latence pour l'IA.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "optimisation-hardware-ia"
+    },
+    {
+      "id": "dc69597abec1",
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T21:18:02.000Z",
+      "excerpt": "https:&#x2F;&#x2F;archive.ph&#x2F;pcUgy",
+      "summary": "Le New York Times déconseille aux photographes de mettre à jour Photoshop à cause de ses fonctionnalités IA.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "impact-ia-sur-metiers"
+    },
+    {
+      "id": "bc2737d3be64",
+      "title": "Slow Ubuntu security response times",
+      "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T20:38:00.000Z",
+      "excerpt": "",
+      "summary": "Ubuntu corrige ses vulnérabilités de sécurité plus lentement, impactant la réactivité des systèmes.",
+      "theme": "securite-supply-chain",
+      "score": 95,
+      "dynamicTheme": "securite-logicielle"
+    },
+    {
+      "id": "0e01e5db69b9",
+      "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+      "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T20:35:50.000Z",
+      "excerpt": "",
+      "summary": "Une faille critique pré-authentification (CVE-2026-99362) dans le serveur NFS du noyau Linux permet un accès root à distance depuis 12 ans.",
+      "theme": "securite-supply-chain",
+      "score": 100,
+      "dynamicTheme": "securite-logicielle"
+    },
+    {
+      "id": "4c2d8b27e013",
+      "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-25T20:00:00.000Z",
+      "excerpt": "Today, AWS announces a developer preview of a new extension for orchestrating Lambda MicroVMs with Lambda durable functions . The extension adds durable operations for running work on MicroVMs and managing their lifecycle. You can use the new operations to build software factories, security scanners, or orchestrate CI/CD jobs that run untrusted or agent-generated code in isolated sandboxes. With Lambda durable functions, you can build resilient, multi-step applications and AI workflows that run for up to one year, with built-in checkpointing and automatic retries. Lambda MicroVMs are a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for running user-generated or AI-generated code. With this launch, you can run individual tasks in a MicroVM or launch a MicroVM session, where tasks share the same files and memory. The durable function manages the MicroVM lifecycle and runs each task as a durable operation. It checkpoints progress, retries failed tasks, and refreshes MicroVM tokens as needed. A single durable function can orchestrate multiple MicroVMs in parallel, and you can trigger it from event sources such as Amazon SQS or Amazon EventBridge . An optional worker library runs inside your MicroVM image to receive tasks, send heartbeats, and report results. The MicroVM extension is available as a developer preview for the AWS Durable Execution SDK for TypeScript and Python . To get started, add the extensions package to your function alongside the Durable Execution SDK ( JS/TS , Python ) and add the MicroVM worker library ( JS/TS , Python ) to your MicroVM image. Developer preview features may change, so do not use them for production workloads. The extension is available in all AWS Regions that support Lambda durable functions and Lambda MicroVMs. To learn more, see the MicroVM orchestration documentation and the sample application . To share feedback, open an issue in the Durable Execution SDK Git",
+      "summary": "AWS Lambda permet désormais d'orchestrer des MicroVMs avec des fonctions durables, pour exécuter des tâches isolées jusqu'à un an avec reprise automatique.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "serverless-et-virtualisation"
+    },
+    {
+      "id": "a30252339f1d",
+      "title": "Amazon CloudWatch Omni now integrates with PagerDuty",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/",
+      "source": "aws-whats-new",
+      "sourceName": "AWS What's New",
+      "publishedAt": "2026-11-25T20:00:00.000Z",
+      "excerpt": "Amazon CloudWatch Omni alerts can now automatically create PagerDuty incidents, so notifications flow directly into your existing incident management workflows. This reduces mean time to resolution (MTTR) by eliminating manual notification steps and ensuring consistent incident workflows. CloudWatch Omni is a fully managed AI-powered observability experience built on open standards that unifies monitoring for AI agents, applications, and infrastructure. PagerDuty is an incident management platform that routes alerts to the right on-call responders and coordinates their response. When an Omni alert fires, Omni creates a PagerDuty incident. In PagerDuty, Omni alerts follow your existing on-call schedules and escalation policies, so critical alerts reach the right responder wherever they are, at any hour. Omni alerts include severity, the affected service, and a link back to the related data in Omni, so responders have the context they need to diagnose the problem. For PagerDuty integration in Amazon CloudWatch Omni regional availability, see Supported Regions for CloudWatch Omni . To learn more, visit Amazon CloudWatch Omni documentation and refer to the Omni PagerDuty integration page.",
+      "summary": "CloudWatch Omni génère automatiquement des incidents PagerDuty pour accélérer la résolution des alertes.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "observabilite-et-tracing"
+    },
+    {
+      "id": "c31465abe4a5",
+      "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+      "url": "https://scottaaronson.blog/?p=10379",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-25T19:11:27.000Z",
+      "excerpt": "See also The matrix multiplication exponent is nine fourths [pdf] - https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50637220",
+      "summary": "Des avancées majeures en calcul matriciel réduisent l'exposant de multiplication à 9/4, révolutionnant l'informatique théorique.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "recherche-theorique-informatique"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "OpenTelemetry Collector publie plusieurs versions nightly (v0.167.0) avec des améliorations pour le builder et l'opampsupervisor, tandis que CloudWatch Omni s'intègre à PagerDuty pour automatiser la gestion des incidents.",
+      "topArticles": [
+        "0918125762b1",
+        "f15439d6416e",
+        "1f97ef276eec",
+        "a30252339f1d"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Une faille critique pré-authentification (CVE-2026-99362) dans le serveur NFS du noyau Linux permet un accès root à distance depuis 12 ans, tandis qu'Ubuntu corrige ses vulnérabilités de sécurité plus lentement que ses concurrents.",
+      "topArticles": [
+        "0e01e5db69b9",
+        "bc2737d3be64"
+      ]
+    },
+    {
+      "id": "java-jvm",
+      "label": "Java / JVM",
+      "trend": "Spring AI 2.1 introduit des modèles de décision pour réduire latence et coût, et Java renforce son support pour les charges de travail IA avec des évolutions actuelles et futures.",
+      "topArticles": [
+        "d8fe47121776",
+        "771364aed2d6"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "observabilite-et-tracing",
+      "label": "observabilite-et-tracing",
+      "trend": "OpenTelemetry Collector et ses composants (builder, opampsupervisor) voient des mises à jour nightly majeures, avec une intégration renforcée de CloudWatch Omni à PagerDuty pour une gestion proactive des incidents.",
+      "topArticles": [
+        "0918125762b1",
+        "f15439d6416e",
+        "1f97ef276eec",
+        "a30252339f1d"
+      ]
+    },
+    {
+      "id": "optimisation-hardware-ia",
+      "label": "Optimisation hardware pour l'IA",
+      "trend": "AMD publie des correctifs spécifiques pour Llama.cpp, améliorant les performances sur ses GPU. Qwen est désormais exécutable directement en bare metal, éliminant les overheads liés aux OS pour des gains de latence et de débit significatifs.",
+      "topArticles": [
+        "1d45997e4997",
+        "a1356d98cece"
+      ]
+    },
+    {
+      "id": "securite-logicielle",
+      "label": "Sécurité logicielle et vulnérabilités",
+      "trend": "Une faille critique pré-authentification dans le serveur NFS du noyau Linux (CVE-2026-99362) permet un accès root à distance depuis 12 ans. Ubuntu est pointé du doigt pour ses temps de réponse lents aux correctifs de sécurité.",
+      "topArticles": [
+        "0e01e5db69b9",
+        "bc2737d3be64"
+      ]
+    },
+    {
+      "id": "recherche-theorique-informatique",
+      "label": "Recherche théorique en informatique",
+      "trend": "Une avancée majeure réduit l'exposant de multiplication matricielle à 9/4, révolutionnant les algorithmes sous-jacents. La séparation permanente des classes de complexité NP et PAR (NP_R ≠ PAR_R) est désormais prouvée.",
+      "topArticles": [
+        "7b836b1fe0ea",
+        "c31465abe4a5"
+      ]
+    },
+    {
+      "id": "design-et-ergonomie",
+      "label": "Design et ergonomie des outils",
+      "trend": "Intel lance One Mono, une police monospace open source optimisée pour le code et le terminal. Une collection de guides de style UI préservés est mise à disposition pour standardiser les interfaces utilisateur.",
+      "topArticles": [
+        "91ef480232c5",
+        "02a12ac8770d"
+      ]
+    },
+    {
+      "id": "serverless-et-virtualisation",
+      "label": "Serverless et virtualisation légère",
+      "trend": "AWS Lambda étend son support pour orchestrer des MicroVMs avec des fonctions durables, permettant d'exécuter des tâches isolées jusqu'à un an avec reprise automatique, combinant isolation et flexibilité.",
+      "topArticles": [
+        "4c2d8b27e013"
+      ]
+    },
+    {
+      "id": "recherche-theorique-cryptographie",
+      "label": "Recherche théorique en cryptographie",
+      "trend": "Un nouvel algorithme factorise des entiers en temps sous-exponentiel sans condition préalable, bouleversant les fondements de la cryptographie moderne et ses implémentations actuelles.",
+      "topArticles": [
+        "971f7afa718c"
+      ]
+    },
+    {
+      "id": "infrastructure-physique-datacenter",
+      "label": "Infrastructure physique des datacenters",
+      "trend": "Des températures d'entrée à 45°C ont rendu les refroidisseurs inutilisables, impactant directement la disponibilité des centres de données. Un rappel critique sur l'importance du refroidissement et de la résilience thermique.",
+      "topArticles": [
+        "051a20c09a83"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 27,
+    "promptTokens": 9687,
+    "completionTokens": 3857,
+    "estimatedCostEur": 0.003911472
+  }
+}
