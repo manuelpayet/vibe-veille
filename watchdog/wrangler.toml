@@ -2,7 +2,8 @@ name = "vibe-veille-watchdog"
 main = "src/index.js"
 compatibility_date = "2026-11-01"
 
-# 3 créneaux le matin (UTC) : le garde-fou idempotent de veille.yml fait qu'un seul
-# produit la veille du jour, les deux autres sont des no-op.
+# 3 créneaux le matin (UTC) : 08:07 UTC ≈ 09:00 heure de France (CET, hiver).
+# Le garde-fou idempotent de veille.yml fait qu'un seul produit la veille du jour,
+# les deux autres sont des no-op.
 [triggers]
-crons = ["7 7 * * *", "37 7 * * *", "22 8 * * *"]
+crons = ["7 8 * * *", "37 8 * * *", "22 9 * * *"]

@@ -1,5 +1,5 @@
 // Watchdog externe de la veille : déclenche le workflow "Veille quotidienne"
-// via l'API workflow_dispatch, 3 fois le matin (07:07 / 07:37 / 08:22 UTC).
+// via l'API workflow_dispatch, 3 fois le matin (08:07 / 08:37 / 09:22 UTC ≈ 9h heure de France).
 // Le garde-fou idempotent du workflow garantit 1 veille/jour max.
 // Le token GitHub (PAT avec scope "workflow" ou fine-grained "Actions: read and write"
 // sur ce repo) est stocké en secret Cloudflare : GH_PAT. Jamais commité.

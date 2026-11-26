@@ -14,18 +14,18 @@ app/         PWA SvelteKit (adapter-static, SPA) : veille du jour, historique /v
              badge "Nouveau", service worker offline, manifest
  data/        veilles générées, commitées par le workflow (tout l'historique est conservé)
 e2e/         tests Playwright (fixtures dans e2e/fixtures/data)
-watchdog/    Worker Cloudflare (cron triggers 07:07/07:37/08:22 UTC) qui déclenche veille.yml
+watchdog/    Worker Cloudflare (cron triggers 08:07/08:37/09:22 UTC) qui déclenche veille.yml
              via l'API workflow_dispatch (GH_PAT en secret) — déclencheur principal, car le
              scheduler GitHub `schedule:` est best-effort et droppe des runs sans trace.
              Voir watchdog/README.md (alternative zero-code : cron-job.org)
-.github/workflows/veille.yml        cron 07:07/07:37/08:22 UTC (fallback) + manuel (case « force ») :
+.github/workflows/veille.yml        cron 08:07/08:37/09:22 UTC (fallback) + manuel (case « force ») :
                                     génère la veille, commit data/, notif ntfy, ping healthchecks.io —
                                     garde-fou idempotent (1 veille/jour max)
 .github/workflows/deploy-pages.yml  sur push main : build app (data/ embarqué) + deploy-pages
 .github/workflows/ci.yml            typecheck + tests unitaires + build + dry-run générateur + e2e
 ```
 
-Flux d'une veille : `veille.yml` (créneaux 07:07 / 07:37 / 08:22 UTC) → collecte (RSS/Atom, API Hacker News, RSS Reddit,
+Flux d'une veille : `veille.yml` (créneaux 08:07 / 08:37 / 09:22 UTC ≈ 9h heure de France) → collecte (RSS/Atom, API Hacker News, RSS Reddit,
 statuspage.io) sur les dernières 24 h → dédup par URL → **mistral-small-latest** résume chaque
 article en FR (1 phrase) → **mistral-large-latest** classe par thème (liste fixe pro, voir
 `generator/config/themes.json`), score 0-100, tendance du thème en 2-3 phrases, top 5 par thème
@@ -52,7 +52,7 @@ push lui-même** : un commit poussé avec le `GITHUB_TOKEN` ne lance aucun workf
    grace 2 h) et mettre son Ping URL dans les secrets Actions : `HEALTHCHECKS_PING_URL`.
    `veille.yml` ping cette URL à chaque run (`/fail` si échec) : si aucun ping n'arrive,
    healthchecks.io alerte (le cron GitHub ne prévient jamais d'un run droppé).
-5. Premier run : **Actions → "Veille quotidienne" → Run workflow** (ou attendre le premier créneau, 07:07 UTC).
+5. Premier run : **Actions → "Veille quotidienne" → Run workflow** (ou attendre le premier créneau, 08:07 UTC).
    Le workflow est idempotent : si `data/veille-<date du jour>.json` existe déjà, il ne régénère rien
    (sauf dispatch manuel avec la case « force » cochée).
 4. Notifications push : ouvrir le lien « Notifs push » du site (pointe vers `https://ntfy.sh/<topic>`)
