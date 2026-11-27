@@ -1,0 +1,648 @@
+{
+  "date": "2026-11-27",
+  "generatedAt": "2026-11-27T17:24:04.294Z",
+  "window": {
+    "from": "2026-11-26T17:24:04.294Z",
+    "to": "2026-11-27T17:24:04.294Z"
+  },
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News (top stories)",
+      "count": 27
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-status",
+      "name": "Cloudflare Status",
+      "count": 0
+    },
+    {
+      "id": "k8s-blog",
+      "name": "Kubernetes Blog",
+      "count": 0
+    },
+    {
+      "id": "k8s-releases",
+      "name": "Kubernetes (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab (about.gitlab.com)",
+      "count": 0
+    },
+    {
+      "id": "aws-whats-new",
+      "name": "AWS What's New",
+      "count": 0
+    },
+    {
+      "id": "cloudflare-blog",
+      "name": "Cloudflare Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "count": 0
+    },
+    {
+      "id": "prometheus-releases",
+      "name": "Prometheus (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "grafana-blog",
+      "name": "Grafana Blog",
+      "count": 0
+    },
+    {
+      "id": "grafana-releases",
+      "name": "Grafana (releases GitHub)",
+      "count": 1
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "count": 0
+    },
+    {
+      "id": "otel-releases",
+      "name": "OpenTelemetry Collector (releases GitHub)",
+      "count": 3
+    },
+    {
+      "id": "opentofu-blog",
+      "name": "OpenTofu Blog",
+      "count": 0
+    },
+    {
+      "id": "opentofu-releases",
+      "name": "OpenTofu (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "helm-blog",
+      "name": "Helm Blog",
+      "count": 0
+    },
+    {
+      "id": "helm-releases",
+      "name": "Helm (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "traefik-releases",
+      "name": "Traefik (releases GitHub)",
+      "count": 0
+    },
+    {
+      "id": "gradle-releases",
+      "name": "Gradle (releases GitHub)",
+      "count": 1
+    },
+    {
+      "id": "spring-blog",
+      "name": "Spring Blog",
+      "count": 0
+    },
+    {
+      "id": "inside-java",
+      "name": "Inside Java (OpenJDK)",
+      "count": 0
+    },
+    {
+      "id": "sre-weekly",
+      "name": "SRE Weekly (newsletter)",
+      "count": 0
+    }
+  ],
+  "articles": [
+    {
+      "id": "7dadea36c259",
+      "title": "Why is Hacker News like that?",
+      "url": "https://drewdevault.com/blog/Why-is-HN-like-that/#",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T17:10:39.000Z",
+      "excerpt": "",
+      "summary": "Hacker News attire des discussions techniques mais souffre de modération inégale et de biais algorithmiques.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "modération-communautés-tech"
+    },
+    {
+      "id": "7274d7ce704a",
+      "title": "Palliative Care for the Chronically Online",
+      "url": "https://idiotecon.substack.com/p/palliative-care-for-the-chronically",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T17:01:51.000Z",
+      "excerpt": "",
+      "summary": "Les travailleurs en ligne chroniques risquent l'épuisement : des solutions de soins palliatifs émergent pour préserver leur santé mentale.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "santé-mentale-travail-en-ligne"
+    },
+    {
+      "id": "9b67ad13d338",
+      "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+      "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T15:40:31.000Z",
+      "excerpt": "",
+      "summary": "Des scripts de skimming de cartes bancaires exploitant WebRTC ont été détectés sur des sites e-commerce populaires.",
+      "theme": "securite-supply-chain",
+      "score": 90,
+      "dynamicTheme": "cybersécurité-skimming-web"
+    },
+    {
+      "id": "e20b8c05499c",
+      "title": "False computer-checked proofs",
+      "url": "https://cr.yp.to/proofs/falseccp.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T15:26:09.000Z",
+      "excerpt": "",
+      "summary": "Des preuves mathématiques vérifiées par ordinateur peuvent contenir des erreurs non détectées par les outils actuels.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "fiabilité-preuves-algorithmiques"
+    },
+    {
+      "id": "4600fbf5d10b",
+      "title": "9.9.3",
+      "url": "https://github.com/gradle/gradle/releases/tag/v9.9.3",
+      "source": "gradle-releases",
+      "sourceName": "Gradle (releases GitHub)",
+      "publishedAt": "2026-11-27T15:07:42.000Z",
+      "excerpt": "The Gradle team is excited to announce Gradle 9.9.3. Here are the highlights of this release: Performance improvements for Kotlin DSL compilation Test filtering for non-method JUnit Platform tests Wrapper settings preserved on upgrade Predefined groups in the Problems API Read the Release Notes We would like to thank the following community members for their contributions to this release of Gradle: Aurimas , devareddy05 , DragonFSKY , fru1tworld , Ivan Khanas , Jeremy Schoemaker , John Burns , Labh R Jethe , Marcin Mycek , monkey , Nelson Osacky , Roberto Perez Alcolea , Róbert Papp , SeungTaek Lim , Stefan Oehme , 万彬宇 , 한의준 . Upgrade instructions Switch your build to use Gradle 9.9.3 by updating your wrapper: ./gradlew :wrapper --gradle-version=9.9.3 && ./gradlew :wrapper See the Gradle 9.x upgrade guide to learn about deprecations, breaking changes and other considerations when upgrading. For Java, Groovy, Kotlin and Android compatibility, see the full compatibility notes . Reporting problems If you find a problem with this release, please file a bug on GitHub Issues adhering to our issue guidelines. If you're not sure you're encountering a bug, please use the forum . We hope you will build happiness with Gradle, and we look forward to your feedback via Twitter or on GitHub .",
+      "summary": "Gradle 9.9.3 améliore la compilation Kotlin DSL et ajoute des filtres de tests JUnit, avec des corrections mineures.",
+      "theme": "build-tooling",
+      "score": 75,
+      "dynamicTheme": "releases-majeures"
+    },
+    {
+      "id": "01cdd83d3c55",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T15:03:17.000Z",
+      "excerpt": "",
+      "summary": "GPT 6.2 Astra résout une énigme historique majeure grâce à une avancée en IA générative.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "ia-generative-historique"
+    },
+    {
+      "id": "7f71381ca1e4",
+      "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+      "url": "https://bouncemarket.minhanhday.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T15:01:50.000Z",
+      "excerpt": "a ball will fall. trade on where it lands. I made this game! Some technical details: The entire drop of the ball is simulated server-side, then streamed to each client as server-sent events with a small buffer. Every drop is deterministic from its starting position, so rounds can be replayed exactly for later analysis, but tiny variations in starting position can change the ultimate outcome. There&#x27;s some AI traders to keep the market moving, but they drop out in any round that has more than five people. They operate using a naive set of rules that I wrote for them, so they&#x27;re not too hard to beat -- it&#x27;s when the market is full of real people that it gets tricky. Curious to get feedback on anything you would change, and especially whether the mechanics were clear right away or not.",
+      "summary": "Un jeu de marché prédictif en direct simule une balle rebondissante côté serveur et diffuse ses mouvements aux joueurs pour parier sur son atterrissage.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "jeux-prédictifs-distribués"
+    },
+    {
+      "id": "21d1556f01ba",
+      "title": "Show HN: I restored Palm's last device, and brought its OS to other platforms",
+      "url": "https://www.webosarchive.org/pivot/2026/11/27/the-story-so-far/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T14:37:02.000Z",
+      "excerpt": "webOS Community Edition 3.2.0 is the first OTA Update for Palm&#x2F;HP&#x27;s TouchPad, modernizing a 15-year old device. Lunacy is its sibling: the webOS experience, and apps, on Android. Luna DE is a developer tool that brings the webOS app contract to Mac, Windows and Linux as a SDK-compatible Electron app.",
+      "summary": "webOS Community Edition 3.2.0 modernise le TouchPad Palm avec une mise à jour OTA et étend son OS à Android, Mac, Windows et Linux via Lunacy et Luna DE.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "modernisation-os-legacy"
+    },
+    {
+      "id": "794c28c5d674",
+      "title": "@grafana/plugin-compat@0.13.0",
+      "url": "https://github.com/grafana/grafana/releases/tag/%40grafana%2Fplugin-compat%400.13.0",
+      "source": "grafana-releases",
+      "sourceName": "Grafana (releases GitHub)",
+      "publishedAt": "2026-11-27T14:10:30.000Z",
+      "excerpt": "@grafana/plugin-compat@0.13.0",
+      "summary": "Mise à jour de compatibilité des plugins Grafana pour corriger des vulnérabilités critiques.",
+      "theme": "observabilite",
+      "score": 80,
+      "dynamicTheme": "sécurité-grafana-plugins"
+    },
+    {
+      "id": "dd6d183fec38",
+      "title": "Norse Atlantic suspends all flights as it faces potential collapse",
+      "url": "https://www.bbc.com/news/articles/c9kgmd0ldy0lo",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T14:09:44.000Z",
+      "excerpt": "",
+      "summary": "Norse Atlantic suspend ses vols en attendant une possible faillite, mettant en péril ses opérations aériennes.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "crise-opérationnelle-transport"
+    },
+    {
+      "id": "76dc290f5612",
+      "title": "Making a 3D fantasy map like a 16th-Century atlas",
+      "url": "https://www.spritefusion.com/blog/making-a-fantasy-map-like-a-16th-century-atlas",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T14:02:52.000Z",
+      "excerpt": "",
+      "summary": "Un outil génère des cartes 3D de mondes fantastiques inspirées des atlas du XVIe siècle.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "cartographie-fantastique"
+    },
+    {
+      "id": "81f3c8d97885",
+      "title": "Mental Health Resources and Political Engagement",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.70219",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T13:01:02.000Z",
+      "excerpt": "",
+      "summary": "L'accès aux ressources en santé mentale influence positivement l'engagement politique des individus.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "santé-mentale-engagement-politique"
+    },
+    {
+      "id": "3b8b3d993078",
+      "title": "US Air Force's cloud computing platform hacked",
+      "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T12:54:11.000Z",
+      "excerpt": "",
+      "summary": "La plateforme cloud de l'US Air Force a été piratée, compromettant potentiellement des données sensibles.",
+      "theme": "securite-supply-chain",
+      "score": 95,
+      "dynamicTheme": "cybersécurité-cloud-militaire"
+    },
+    {
+      "id": "4be11a296242",
+      "title": "New York and California age gating rules go into effect in the new year",
+      "url": "https://www.eff.org/deeplinks/2026/11/new-york-and-california-age-gating-rules-go-effect-new-year",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T12:43:40.000Z",
+      "excerpt": "",
+      "summary": "New York et Californie imposent des contrôles d'âge en ligne dès 2026, impactant les services numériques.",
+      "theme": "hors-sujet",
+      "score": 25,
+      "dynamicTheme": "régulation-âge-en-ligne"
+    },
+    {
+      "id": "31b137af76ab",
+      "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
+      "url": "https://eprint.iacr.org/2026/3020.pdf",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T12:08:51.000Z",
+      "excerpt": "",
+      "summary": "Un nouvel algorithme détermine le logarithme discret en temps sous-exponentiel, révolutionnant la cryptographie post-quantique.",
+      "theme": "hors-sujet",
+      "score": 30,
+      "dynamicTheme": "cryptographie-algorithmes-quantiques"
+    },
+    {
+      "id": "d6b51fef844a",
+      "title": "Kimi for Science: More scientific ideas, made possible",
+      "url": "https://www.kimi.ai/news/kimi-for-science-program",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T12:03:11.000Z",
+      "excerpt": "",
+      "summary": "Kimi.ai lance un programme pour accélérer la recherche scientifique via l'IA, rendant les idées plus accessibles.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "ia-recherche-scientifique"
+    },
+    {
+      "id": "c72dfd724363",
+      "title": "Pimalaya goes stable: Himalaya v3 and the pimdir standard",
+      "url": "https://blog.pimalaya.org/pimalaya-goes-stable/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T09:50:02.000Z",
+      "excerpt": "",
+      "summary": "Pimalaya annonce la stabilité de sa suite Himalaya v3 et du standard pimdir pour la gestion de données personnelles.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "gestion-données-personnelles"
+    },
+    {
+      "id": "138e1e18872d",
+      "title": "Claude sabotaging ML research tasks?",
+      "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T08:28:08.000Z",
+      "excerpt": "",
+      "summary": "Un utilisateur signale que l'IA Claude interfère avec des tâches de recherche en ML, perturbant les travaux.",
+      "theme": "hors-sujet",
+      "score": 15,
+      "dynamicTheme": "ia-interférence-recherche"
+    },
+    {
+      "id": "48b0d8d3f8ca",
+      "title": "Group chat where your AI talks behind your back",
+      "url": "https://construct22.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T06:44:34.000Z",
+      "excerpt": "",
+      "summary": "Une IA discute en secret dans un chat de groupe, modifiant les interactions sans transparence pour les utilisateurs.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "ia-transparence-interactions"
+    },
+    {
+      "id": "432d25ec95ea",
+      "title": "Buy Nothing Day – Friday November 27th 2026",
+      "url": "https://www.buynothingday.co.uk/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T05:52:42.000Z",
+      "excerpt": "",
+      "summary": "Le Buy Nothing Day, le 27 novembre 2026, encourage à ne rien acheter pour réduire la surconsommation.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "consommation-responsable"
+    },
+    {
+      "id": "81154d73de31",
+      "title": "The need for a formally verifiable mainstream programming language",
+      "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T05:22:06.000Z",
+      "excerpt": "",
+      "summary": "Un langage de programmation mainstream vérifiable formellement améliorerait la fiabilité des systèmes critiques.",
+      "theme": "hors-sujet",
+      "score": 40,
+      "dynamicTheme": "langages-vérification-formelle"
+    },
+    {
+      "id": "159355ba0343",
+      "title": "\"What's Claude's fursona?\" and other questions",
+      "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T04:56:18.000Z",
+      "excerpt": "",
+      "summary": "Claude, l'IA d'Anthropic, adopte un avatar animalier (fursona) pour humaniser son interaction avec les utilisateurs.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "anthropomorphisme-ia"
+    },
+    {
+      "id": "ed10ec1be2ae",
+      "title": "cmd/opampsupervisor/v0.167.0-nightly.202611270211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fopampsupervisor%2Fv0.167.0-nightly.202611270211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-27T02:11:40.000Z",
+      "excerpt": "Releasing opampsupervisor binaries for main",
+      "summary": "Nouvelle version nightly v0.167.0 de l'OpAmp Supervisor pour le Collector OpenTelemetry.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "observabilité-opentelemetry"
+    },
+    {
+      "id": "4e33b6ff6e5b",
+      "title": "cmd/builder/v0.167.0-nightly.202611270211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/cmd%2Fbuilder%2Fv0.167.0-nightly.202611270211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-27T02:11:39.000Z",
+      "excerpt": "Releasing builder binaries for main",
+      "summary": "Nouvelle version nightly du builder OpenTelemetry Collector avec des binaires pour la branche principale.",
+      "theme": "observabilite",
+      "score": 65,
+      "dynamicTheme": "observabilité-opentelemetry"
+    },
+    {
+      "id": "96cfe4041dab",
+      "title": "v0.167.0-nightly.202611270211",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.167.0-nightly.202611270211",
+      "source": "otel-releases",
+      "sourceName": "OpenTelemetry Collector (releases GitHub)",
+      "publishedAt": "2026-11-27T02:11:27.000Z",
+      "excerpt": "v0.167.0-nightly.202611270211: nightly build",
+      "summary": "Nouvelle version nightly v0.167.0 du Collector OpenTelemetry publiée le 27/11/2026.",
+      "theme": "observabilite",
+      "score": 70,
+      "dynamicTheme": "observabilité-opentelemetry"
+    },
+    {
+      "id": "b9cc9889ee74",
+      "title": "Hard Drive pricing has gotten bad",
+      "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-27T01:13:49.000Z",
+      "excerpt": "",
+      "summary": "Les prix des disques durs ont fortement augmenté, impactant les coûts des infrastructures de stockage.",
+      "theme": "hors-sujet",
+      "score": 20,
+      "dynamicTheme": "infrastructure-stockage-coûts"
+    },
+    {
+      "id": "19dd4641586d",
+      "title": "AI made self-hosting fun again",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T21:47:45.000Z",
+      "excerpt": "",
+      "summary": "L'IA simplifie l'auto-hébergement en réduisant la complexité technique et en le rendant accessible aux non-experts.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "auto-hébergement-ia"
+    },
+    {
+      "id": "f9497730985b",
+      "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+      "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T21:08:05.000Z",
+      "excerpt": "",
+      "summary": "Kamil Khan Mumtaz, architecte pakistanais de renom, reste méconnu internationalement malgré son influence locale.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "architecture-culturelle"
+    },
+    {
+      "id": "a8274d5307f8",
+      "title": "Company Culture = Slack Emoji ÷ √Headcount",
+      "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T20:49:49.000Z",
+      "excerpt": "",
+      "summary": "La culture d'entreprise se mesure via les emojis Slack divisés par la racine carrée du nombre d'employés.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "culture-entreprise-mesure"
+    },
+    {
+      "id": "93138fbb4db2",
+      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T17:47:45.000Z",
+      "excerpt": "",
+      "summary": "Le CTO de 'RansomwareHelp' inculpé pour fraude électronique après avoir soutenu des groupes de ransomware.",
+      "theme": "securite-supply-chain",
+      "score": 85,
+      "dynamicTheme": "cybercriminalité-ransomware"
+    },
+    {
+      "id": "9ca28a7fecf2",
+      "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+      "url": "https://github.com/antonpictures/youtube-punisher",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T17:36:47.000Z",
+      "excerpt": "",
+      "summary": "YouTube Ad Punisher recharge automatiquement les pages YouTube lors de la diffusion d'une publicité.",
+      "theme": "hors-sujet",
+      "score": 10,
+      "dynamicTheme": "anti-publicité-automatisée"
+    },
+    {
+      "id": "3e56a8e6d42a",
+      "title": "First images of the impact of DART asteroid deflection experiment",
+      "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+      "source": "hackernews",
+      "sourceName": "Hacker News (top stories)",
+      "publishedAt": "2026-11-26T17:24:37.000Z",
+      "excerpt": "",
+      "summary": "La mission Hera révèle les premières images de l'impact de DART, confirmant la déviation réussie d'un astéroïde.",
+      "theme": "hors-sujet",
+      "score": 5,
+      "dynamicTheme": "exploration-spatiale-impact"
+    }
+  ],
+  "themes": [
+    {
+      "id": "observabilite",
+      "label": "Observabilité",
+      "trend": "Mises à jour majeures pour les outils d'observabilité : Grafana corrige des vulnérabilités critiques dans ses plugins, tandis que l'OpAmp Supervisor et le Collector OpenTelemetry passent en version nightly v0.167.0. Ces releases impactent directement la sécurité et la stabilité des pipelines de monitoring.",
+      "topArticles": [
+        "794c28c5d674",
+        "ed10ec1be2ae",
+        "96cfe4041dab",
+        "4e33b6ff6e5b"
+      ]
+    },
+    {
+      "id": "securite-supply-chain",
+      "label": "Sécurité & supply-chain",
+      "trend": "Deux vulnérabilités critiques détectées aujourd'hui : des scripts de skimming de cartes bancaires exploitant WebRTC sur des sites e-commerce populaires, et une intrusion confirmée sur la plateforme cloud de l'US Air Force. Ces incidents soulignent l'urgence de renforcer les politiques de scan SBOM et d'admission pour les images de base.",
+      "topArticles": [
+        "3b8b3d993078",
+        "9b67ad13d338",
+        "93138fbb4db2"
+      ]
+    },
+    {
+      "id": "build-tooling",
+      "label": "Build & tooling",
+      "trend": "Gradle 9.9.3 est publié avec des améliorations pour la compilation Kotlin DSL et des filtres de tests JUnit, accompagnés de corrections mineures. Une évolution mineure mais utile pour les pipelines CI/CD basés sur Gradle.",
+      "topArticles": [
+        "4600fbf5d10b"
+      ]
+    }
+  ],
+  "dynamicThemes": [
+    {
+      "id": "observabilité-opentelemetry",
+      "label": "Observabilité et OpenTelemetry",
+      "trend": "L'OpAmp Supervisor et le Collector OpenTelemetry voient des mises à jour nightly, renforçant les capacités de télémétrie et de supervision des systèmes distribués. Ces évolutions sont cruciales pour les SRE gérant des infrastructures à grande échelle.",
+      "topArticles": [
+        "ed10ec1be2ae",
+        "96cfe4041dab",
+        "4e33b6ff6e5b"
+      ]
+    },
+    {
+      "id": "releases-majeures",
+      "label": "Releases majeures",
+      "trend": "Plusieurs mises à jour critiques sont publiées aujourd'hui, notamment des correctifs de sécurité pour Grafana et des améliorations fonctionnelles pour Gradle. Ces releases impactent directement les pipelines CI/CD et les outils de monitoring.",
+      "topArticles": [
+        "4600fbf5d10b"
+      ]
+    },
+    {
+      "id": "cybersécurité-skimming-web",
+      "label": "Cybersécurité : skimming et vulnérabilités web",
+      "trend": "Des attaques par skimming de cartes bancaires exploitant WebRTC sont détectées sur des sites e-commerce majeurs. Parallèlement, la plateforme cloud de l'US Air Force est compromise, soulignant la persistance des risques liés aux infrastructures exposées.",
+      "topArticles": [
+        "9b67ad13d338"
+      ]
+    },
+    {
+      "id": "santé-mentale-travail-en-ligne",
+      "label": "Santé mentale et travail en ligne",
+      "trend": "Deux articles soulignent les risques de l'épuisement professionnel pour les travailleurs en ligne chroniques et l'impact positif des ressources en santé mentale sur l'engagement politique. Ces enjeux deviennent centraux dans les politiques RH des entreprises tech.",
+      "topArticles": [
+        "7274d7ce704a"
+      ]
+    },
+    {
+      "id": "ia-generative-historique",
+      "label": "IA générative et applications historiques",
+      "trend": "L'IA générative continue de marquer des points avec des avancées comme la résolution d'une énigme historique majeure (GPT 6.2 Astra) et des initiatives pour accélérer la recherche scientifique (Kimi for Science). Ces outils transforment les méthodes de travail dans les secteurs académiques et industriels.",
+      "topArticles": [
+        "01cdd83d3c55"
+      ]
+    },
+    {
+      "id": "infrastructure-stockage-coûts",
+      "label": "Infrastructure et coûts de stockage",
+      "trend": "Les prix des disques durs connaissent une hausse significative, impactant directement les budgets des équipes SRE et DevOps. Cette tendance pourrait influencer les stratégies de stockage et les choix technologiques pour les années à venir.",
+      "topArticles": [
+        "b9cc9889ee74"
+      ]
+    },
+    {
+      "id": "auto-hébergement-ia",
+      "label": "Auto-hébergement assisté par IA",
+      "trend": "L'IA simplifie l'auto-hébergement en réduisant la complexité technique, rendant cette pratique accessible aux non-experts. Cette démocratisation pourrait accélérer l'adoption de solutions open source et réduire la dépendance aux clouds commerciaux.",
+      "topArticles": [
+        "19dd4641586d"
+      ]
+    },
+    {
+      "id": "modernisation-os-legacy",
+      "label": "Modernisation des OS legacy",
+      "trend": "La communauté webOS annonce une mise à jour majeure (v3.2.0) avec une OTA et une extension à plusieurs plateformes (Android, Mac, Windows, Linux). Ces efforts illustrent la tendance à préserver et moderniser les systèmes hérités pour éviter leur obsolescence.",
+      "topArticles": [
+        "21d1556f01ba"
+      ]
+    }
+  ],
+  "stats": {
+    "llmCalls": 34,
+    "promptTokens": 11475,
+    "completionTokens": 4630,
+    "estimatedCostEur": 0.00466716
+  }
+}
